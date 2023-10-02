@@ -1,0 +1,96 @@
+H: {H: 1}
+H2: {H: 2}
+H2O: {H: 2, O: 1}
+OH: {O: 1, H: 1}
+O: {O: 1}
+O2: {O: 2}
+CO: {C: 1, O: 1}
+CO2: {C: 1, O: 2}
+HCO: {H: 1, C: 1, O: 1}
+H2CO: {H: 2, C: 1, O: 1}
+C: {C: 1}
+CH: {C: 1, H: 1}
+CH2: {C: 1, H: 2}
+CH3: {C: 1, H: 3}
+CH4: {C: 1, H: 4}
+S: {S: 1}
+S2: {S: 2}
+S3: {S: 3}
+S4: {S: 4}
+H2S: {H: 2, S: 1}
+HS: {H: 1, S: 1}
+SO: {S: 1, O: 1}
+SO2: {S: 1, O: 2}
+CS: {C: 1, S: 1}
+CS2: {C: 1, S: 2}
+OCS: {O: 1, C: 1, S: 1}
+CN: {C: 1, N: 1}
+HCN: {H: 1, C: 1, N: 1}
+N: {N: 1}
+N2: {N: 2}
+NH: {N: 1, H: 1}
+NH2: {N: 1, H: 2}
+NH3: {N: 1, H: 3}
+C2: {C: 2}
+C2H: {C: 2, H: 1}
+C2H2: {C: 2, H: 2}
+C2H4: {C: 2, H: 4}
+'NO': {N: 1, O: 1}
+HNO: {H: 1, N: 1, O: 1}
+HO2: {H: 1, O: 2}
+HNCO: {H: 1, N: 1, C: 1, O: 1}
+N2O: {N: 2, O: 1}
+H2O2: {H: 2, O: 2}
+O3: {O: 3}
+NO2: {N: 1, O: 2}
+NO3: {N: 1, O: 3}
+SO3: {S: 1, O: 3}
+HNO2: {H: 1, N: 1, O: 2}
+HNO3: {H: 1, N: 1, O: 3}
+H2SO4: {H: 2, S: 1, O: 4}
+HCl: {H: 1, Cl: 1}
+Cl: {Cl: 1}
+Cl2: {Cl: 2}
+HOCl: {H: 1, O: 1, Cl: 1}
+N2H4: {N: 2, H: 4}
+ClO: {Cl: 1, O: 1}
+C2H6: {C: 2, H: 6}
+CH3OH: {C: 1, H: 4, O: 1}
+CH2CO: {C: 2, H: 2, O: 1}
+CH3CHO: {C: 2, O: 1, H: 4}
+C3H4: {C: 3, H: 4}
+C3H6: {C: 3, H: 6}
+C4H2: {C: 4, H: 2}
+C4H4: {C: 4, H: 4}
+OClO: {O: 2, Cl: 1}
+HCS: {H: 1, C: 1, S: 1}
+C2H3: {C: 2, H: 3}
+C2H5: {C: 2, H: 5}
+NCO: {N: 1, C: 1, O: 1}
+1CH2: {C: 1, H: 2}
+HCCO: {H: 1, C: 2, O: 1}
+NNH: {N: 2, H: 1}
+HSO: {H: 1, S: 1, O: 1}
+CH3O: {C: 1, H: 3, O: 1}
+H2COH: {H: 3, C: 1, O: 1}
+H2CN: {H: 2, C: 1, N: 1}
+N2H2: {N: 2, H: 2}
+C4H: {C: 4, H: 1}
+HCNOH: {H: 2, C: 1, N: 1, O: 1}
+C2H2OH: {C: 2, H: 3, O: 1}
+CH3CO: {C: 2, H: 3, O: 1}
+CH2CHO: {C: 2, O: 1, H: 3}
+C2H3OH: {C: 2, H: 4, O: 1}
+C2H4OH: {C: 2, H: 5, O: 1}
+CH3O2: {C: 1, H: 3, O: 2}
+HSO3: {H: 1, S: 1, O: 3}
+O1D: {O: 1}
+N2H3: {N: 2, H: 3}
+NH2CO: {N: 1, H: 2, C: 1, O: 1}
+HS4: {H: 1, S: 4}
+C4H3: {C: 4, H: 3}
+CH2N2: {C: 1, H: 2, N: 2}
+N2D: {N: 1}
+CH2CN: {C: 2, H: 2, N: 1}
+CH3CN: {C: 2, H: 3, N: 1}
+HCCCN: {H: 1, C: 3, N: 1}
