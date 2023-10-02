@@ -122,6 +122,7 @@ class ReactionExplorer():
             self.reference_pressure = 1.01325e6
 
     def evaluate_rates(self, T, P):
+        '''P in bars'''
         # compute the density
         k_boltz = const.k*1e7
         den = 1e6*P/(k_boltz*T)
