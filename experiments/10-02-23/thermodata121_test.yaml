@@ -672,8 +672,8 @@ species:
     model: Shomate
     temperature-ranges: [0.0, 1200.0, 6000.0]
     data:
-    - [5.193767, 93.23249, -44.85457, 7.882279, 0.551175, 25.5409, 217.5163]
-    - [71.35268, 6.174497, -1.19109, 0.079564, -15.58917, -25.7327, 277.368]
+    - [5.193767, 93.23249, -44.85457, 7.882279, 0.551175, 18.1409, 217.5163]
+    - [71.35268, 6.174497, -1.19109, 0.079564, -15.58917, -33.1327, 277.368]
   note: Estimated from thermodynamic data at 298 K and species H2CO
 - name: H2COH
   composition: {H: 3, C: 1, O: 1}
@@ -681,8 +681,8 @@ species:
     model: Shomate
     temperature-ranges: [0.0, 3000.0, 6000.0]
     data:
-    - [20.559, 95.615, -31.306, 3.5141, 0.025109, -19.0, 241.9]
-    - [111.5, 3.0, 0.0, 0.0, 0.0, -85.7, 310.6]
+    - [20.559, 95.615, -31.306, 3.5141, 0.025109, -25.3, 241.9]
+    - [111.5, 3.0, 0.0, 0.0, 0.0, -92.0, 310.6]
   note: Estimated from thermodynamic data at 298 K and species CH3OH
 - name: H2CN
   composition: {H: 2, C: 1, N: 1}
@@ -872,38 +872,63 @@ species:
   note: Estimated from thermodynamic data at 298 K and species C4H2
 
 reactions:
-# Fit to Xu 2015
+
+#
+# H + H2CO (+ M) <=> CH3O (+ M)
+#
+
+# new Kevin
 - equation: H + H2CO (+ M) <=> CH3O (+ M)
   type: falloff
-  low-P-rate-constant: {A: 1.13e-20, b: -3.973, Ea: 3281.8}
-  high-P-rate-constant: {A: 8.96e-12, b: -0.205, Ea: 1877.0}
+  low-P-rate-constant: {A: 1.22e-23, b: -3.0, Ea: 2900}
+  high-P-rate-constant: {A: 6.561000e+03, b: -5, Ea: 4000}
 
-# Kevin
+# old Kevin
 - equation: H + H2CO (+ M) <=> CH3O (+ M)
   type: falloff
   low-P-rate-constant: {A: 5.13e-22, b: -3.0, Ea: 3360.0}
   high-P-rate-constant: {A: 8.0e-10, b: 0.0, Ea: 3160.0}
 
-# Shami
-- equation: CH3O + M <=> H + H2CO + M
-  type: falloff
-  low-P-rate-constant: {A: 9.0e-11, b: 0.0, Ea: 6790.0}
-  high-P-rate-constant: {A: 1560000000000000.0, b: -0.39, Ea: 13300.0}
+#
+# H + H2CO (+ M) <=> H2COH (+ M)
+#
 
-# Fit to Xu 2015
+# new Kevin
 - equation: H + H2CO (+ M) <=> H2COH (+ M)
   type: falloff
-  low-P-rate-constant: {A: 4.98e-28, b: -1.625, Ea: 3032.0}
-  high-P-rate-constant: {A: 5.80e-09, b: -1.095, Ea: 3074.9}
+  low-P-rate-constant: {A: 2.816221180078707e-29, b: -1.2, Ea: 2900}
+  high-P-rate-constant: {A: 3.0e-12, b: 0.0, Ea: 3500}
 
-# Kevin
+# old Kevin
 - equation: H + H2CO (+ M) <=> H2COH (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.0e-33, b: 0.0, Ea: 600.0}
   high-P-rate-constant: {A: 3.0e-14, b: 0.0, Ea: 600.0}
 
-# Shami
-- equation: H2COH + M <=> H + H2CO + M
-  type: falloff
-  low-P-rate-constant: {A: 1.66e-10, b: 0.0, Ea: 12630.0}
-  high-P-rate-constant: {A: 3000000000.0, b: 0.0, Ea: 14600.0}
+#
+# CH3 + O <=> H2CO + H
+#
+
+# Kevin new
+- equation: CH3 + O <=> H2CO + H
+  rate-constant: {A: 9.0e-11, b: 0.0, Ea: 0.0}
+
+# Kevin new
+- equation: CH3 + O <=> HCO + H2
+  rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
+
+# Kevin old
+- equation: CH3 + O <=> H2CO + H
+  rate-constant: {A: 1.4e-10, b: 0.0, Ea: 0.0}
+
+#
+# H2CO + H <=> HCO + H2
+#
+
+# Kevin new
+- equation: H2CO + H <=> HCO + H2
+  rate-constant: {A: 2.28e-19, b: 2.65, Ea: 766.5}
+
+# Kevin old
+- equation: H2CO + H <=> HCO + H2
+  rate-constant: {A: 3.75936e-14, b: 1.05, Ea: 1650.0}
