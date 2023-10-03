@@ -41,12 +41,12 @@ In summary, here are the new thermodynamics and rates that should be used
 - equation: H + H2CO (+ M) <=> CH3O (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.22e-23, b: -3.0, Ea: 2900}
-  high-P-rate-constant: {A: 6.561000e+03, b: -5, Ea: 4000}
+  high-P-rate-constant: {A: 6.56e+03, b: -5, Ea: 4000}
 
 # Fit to Xu et al. (2015)
 - equation: H + H2CO (+ M) <=> H2COH (+ M)
   type: falloff
-  low-P-rate-constant: {A: 2.816221180078707e-29, b: -1.2, Ea: 2900}
+  low-P-rate-constant: {A: 2.82e-29, b: -1.2, Ea: 2900}
   high-P-rate-constant: {A: 3.0e-12, b: 0.0, Ea: 3500}
 
 # Given by Xu et al. (2015)
