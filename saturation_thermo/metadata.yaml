@@ -1,0 +1,30 @@
+
+H2O:
+  sublimation: https://www.engineeringtoolbox.com/ice-thermal-properties-d_576.html
+  vaporization: https://www.engineeringtoolbox.com/water-vapor-saturation-pressure-d_599.html
+  T_triple: NIST
+  T_critical: NIST
+
+CO2:
+  notes: "Both sublimiation and vaporization are from the Atmos code: 
+          https://github.com/VirtualPlanetaryLaboratory/atmos"
+  T_triple: NIST
+  T_critical: NIST
+
+NH3: 
+  sublimation: Lodders & Fegley (1998), Table 1.20
+  vaporization: Lodders & Fegley (1998), Table 1.20, and NIST for saturation at critical temperature
+  T_triple: Lodders & Fegley (1998), Table 1.20
+  T_critical: NIST
+
+C2H2:
+  sublimation: CRC Handbook of Chemistry and Physics 85th edition
+  vaporization: NIST
+  T_triple: NIST
+  T_critical: NIST
+
+HCN:
+  sublimation: Lodders & Fegley (1998), Table 1.20
+  vaporization: Lodders & Fegley (1998), Table 1.20, and Matweb for saturation at critical temperature
+  T_triple: Lodders & Fegley (1998), Table 1.20
+  T_critical: Matweb
