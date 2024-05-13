@@ -94,11 +94,13 @@ class SaturationPropertiesFitter():
     def to_dict(self):
         sol = {}
         sol['model'] = 'LinearLatentHeat'
-        sol['mu'] = float(self.mu)
-        sol['T-ref'] = float(self.T_ref)
-        sol['P-ref'] = float(self.P_ref)
-        sol['T-triple'] = float(self.T_triple)
-        sol['T-critical'] = float(self.T_critical)
+        tmp = {}
+        tmp['mu'] = float(self.mu)
+        tmp['T-ref'] = float(self.T_ref)
+        tmp['P-ref'] = float(self.P_ref)
+        tmp['T-triple'] = float(self.T_triple)
+        tmp['T-critical'] = float(self.T_critical)
+        sol['parameters'] = tmp
         sol['vaporization'] = {}
         sol['vaporization']['A'] = float(self.A_v)
         sol['vaporization']['B'] = float(self.B_v)
@@ -112,6 +114,7 @@ class SaturationPropertiesFitter():
     
     def to_file(self, filename):
         sol = self.to_dict()
+        sol['parameters'] = flowmap(sol['parameters'])
         sol['vaporization'] = flowmap(sol['vaporization'])
         sol['sublimation'] = flowmap(sol['sublimation'])
         sol['super-critical'] = flowmap(sol['super-critical'])
@@ -143,13 +146,14 @@ class SaturationProperties():
     def init2(self, filename):
         with open(filename,'r') as f:
             tmp = yaml.load(f,Loader=yaml.Loader)
-        self.mu = tmp['mu']
-        self.T_triple = tmp['T-triple']
-        self.T_critical = tmp['T-critical']
-        self.T_ref = tmp['T-ref']
+        tmp1 = tmp['parameters']
+        self.mu = tmp1['mu']
+        self.T_triple = tmp1['T-triple']
+        self.T_critical = tmp1['T-critical']
+        self.T_ref = tmp1['T-ref']
         if self.T_ref < self.T_triple:
             raise Exception("T_ref must be bigger than T_triple")
-        self.P_ref = tmp['P-ref']
+        self.P_ref = tmp1['P-ref']
         self.A_v = tmp['vaporization']['A']
         self.B_v = tmp['vaporization']['B']
         self.A_s = tmp['sublimation']['A']

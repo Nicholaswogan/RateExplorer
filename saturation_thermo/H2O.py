@@ -20,6 +20,29 @@ def get_data():
     PH2O_SOL = np.append(PH2O1,PH2O)
     return T_SOL, PH2O_SOL
 
+def sat_H2O_atmos(T):
+    T0 = 273.15
+    Pzero = 6.103E-3
+    AMV = 18.
+    VAPL = 597.3
+    SUBL = 677.
+    R = 1.9872
+    A0 = 0.553
+    BK = 1.38E-16
+    
+    HL = SUBL
+    A = 0
+    if T < T0:
+        pass
+    else:
+        HL = VAPL + A0*T0
+        A = A0
+
+    P1 = Pzero * (T0/T)**(AMV*A/R)
+    P2 = np.exp(AMV*HL/R * (1./T0 - 1./T))
+    PV = P1 * P2 # bars
+    return PV
+
 def main():
     
     mu = 18.01534
@@ -39,8 +62,14 @@ def main():
     entry = {}
     entry['T'] = np.linspace(200,600,100)
     entry['P'] = np.array([10.0**(6.8543 - 1897/(T-64.848)) for T in entry['T']])
-    entry['label'] = 'Rimmer2021'
+    entry['label'] = 'Rimmer (2021)'
     data = [entry]
+
+    entry = {}
+    entry['T'] = np.linspace(T_data[0],642,100)
+    entry['P'] = np.array([sat_H2O_atmos(T) for T in entry['T']])
+    entry['label'] = 'Atmos code'
+    data.append(entry)
 
     gas_g = 'H2O'
     fitting.plot_sat(h, gas_g, T_data, P_data, data)

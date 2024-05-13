@@ -3,7 +3,7 @@ import utils
 import fitting
 
 def sat_NH3(T):
-    # Lodders & Fegley (1998), Table 1.20
+    # Lodders & Fegley (1998), Table 1.20, Valid 160 K to 300 K
     if T < 195.4:
         a, b = 6.900, -1588
     else:
@@ -14,7 +14,7 @@ def sat_NH3_photochem(T):
     A = 14.8
     B = -5420.0
     C = 0.000711
-    return np.exp(A + B/T + C/T**2.0)
+    return np.exp(A + B/T + C/T**2.0) # bars
 
 def main():
     gas_g = 'NH3'
@@ -38,7 +38,7 @@ def main():
     entry = {}
     entry['T'] = np.linspace(150,405,100)
     entry['P'] = np.array([sat_NH3_photochem(T) for T in entry['T']])
-    entry['label'] = 'Photochem_v0.5.4'
+    entry['label'] = 'Photochem v0.5.4'
     data = [entry]
 
     fitting.plot_sat(h, gas_g, T_data, P_data, data)

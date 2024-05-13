@@ -13,7 +13,7 @@ def plot_sat(h, gas_g, T_data, P_data, data = None):
     ax = axs[0]
     TT = np.linspace(T_data[0],h.T_critical+1,1000)
     P = np.array([h.sat_pressure(h.A_v,h.B_v,h.A_s,h.B_s,h.A_c,h.B_c,T) for T in TT])/1e6
-    ax.plot(T_data, P_data/1e6,marker='o',ms=2,ls='',label='Data')
+    ax.plot(T_data, P_data/1e6,marker='o',ms=3,ls='',label='Data')
     ax.plot(TT, P,'--',label='Fit')
     if data is not None:
         for d in data:
@@ -39,6 +39,7 @@ def plot_sat(h, gas_g, T_data, P_data, data = None):
 
     plt.subplots_adjust(wspace=0.3,hspace=0.3)
     plt.savefig('figures/'+gas_g+'_sat.pdf',bbox_inches='tight')
+    plt.close()
 
 def Psat_coeffs(r, gas_g, coeffs_c, T):
     Gs = utils.gibbs_energy_shomate(coeffs_c, T)
@@ -55,7 +56,7 @@ def objective_(x, r, gas_g, Psat_data, T_data):
     return fval1
 
 def fit_thermo(gas_g, T_low, T_high):
-    r = utils.ReactionExplorer('zahnle_hot.yaml')
+    r = utils.ReactionExplorer('thermodata121.yaml')
 
     sat_fcn = utils.SaturationProperties()
     sat_fcn.init2('results/'+gas_g+'_sat.yaml')
@@ -201,3 +202,4 @@ def fit_thermo(gas_g, T_low, T_high):
 
     plt.subplots_adjust(wspace=0.3,hspace=0.3)
     plt.savefig('figures/'+gas_g+'_thermo.pdf',bbox_inches='tight')
+    plt.close()

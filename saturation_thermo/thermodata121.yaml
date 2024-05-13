@@ -182,6 +182,14 @@ species:
     data:
     - [79.88051, 3.276394, -0.0001, 1.0e-05, -1.179851, 107.0, 399.7013]
   note: From the NIST database
+- name: S8
+  composition: {S: 8}
+  thermo:
+    model: Shomate
+    temperature-ranges: [0.0, 6000.0]
+    data:
+    - [180.6697, 1.918988, -0.52013, 0.044394, -2.270155, 39.45, 635.5496]
+  note: From the NIST database
 - name: H2S
   composition: {H: 2, S: 1}
   thermo:
