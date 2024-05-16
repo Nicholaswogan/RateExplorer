@@ -37,6 +37,8 @@ class SaturationPropertiesFitter():
         if T_ref < T_triple:
             raise Exception("T_ref must be bigger than T_triple")
         self.P_ref = P_ref
+
+        self.dlog10P_critical = 2
     
     def _latent_heat(self, A, B, T):
         return A + B*T
@@ -85,7 +87,7 @@ class SaturationPropertiesFitter():
         # Deal with supercritical
         P_c = self.sat_pressure(self.A_v,self.B_v,self.A_s,self.B_s,0,0,self.T_critical)
         T = self.T_critical + 5
-        P = 10.0**(np.log10(P_c) + 2)
+        P = 10.0**(np.log10(P_c) + self.dlog10P_critical)
         self.A_c = (self.R/self.mu)*(1/self.T_critical - 1/T)**(-1)*np.log(P/P_c)
         self.B_c = 0.0
 
