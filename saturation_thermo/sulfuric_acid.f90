@@ -8,7 +8,15 @@ module sulfuric_acid
 contains
 
   !> Computes the saturation vapor pressure of H2SO4 and H2O above a condensed sulfuric
-  !> acid droplet.
+  !> acid droplet. This a parameterization/fit to Equation 11 in Dai et al. (2023): 
+  !> https://doi.org/10.1029/2021JE007060 , except ignoring their third term relevant to the
+  !> curvature of the droplet's surface. Here, I assume the saturation vapor pressure of
+  !> H2SO4 is given by Kulmala & Laaksonen (1990) (Equation 12 in Dai et al. (2023)), and
+  !> the saturation vapor pressure of pure H2O is given by www.engineeringtoolbox.com .
+  !> Furthermore, for the chemical potentials of Equation 11 of Dai et al. (2023), I use
+  !> the thermodynamics laid out by Zeleznik (1991): https://doi.org/10.1063/1.555899 .
+  !> Zeleznik (1991) is only valid from 150 K to 350 K, so here I have implemented a simple
+  !> expontential extrapolation of their results to higher and lower temperatures.
   subroutine binary_saturation_pressure(T, x_H2SO4, P_H2SO4, P_H2O)
     real(dp), intent(in) :: T !! Temperature (K)
     real(dp), intent(in) :: x_H2SO4 !! Mole fraction of H2SO4 in a condensed droplet. Note that
