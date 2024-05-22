@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import utils
 
 SPECIES = ['H2O','CO2','NH3','C2H2','C2H4','C2H6','CH3CN',
-           'N2O','HCCCN','HCN','CH4','S2','S3','S4','S8','H2SO4']
+           'N2O','HCCCN','HCN','CH4','S8','H2SO4']
 
 def plot_all():
     

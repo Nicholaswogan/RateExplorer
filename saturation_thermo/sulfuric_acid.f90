@@ -7,6 +7,16 @@ module sulfuric_acid
 
 contains
 
+  !> So we can call from C
+  subroutine binary_saturation_pressure_c(T, x_H2SO4, P_H2SO4, P_H2O) bind(c)
+    use iso_c_binding
+    real(c_double), value, intent(in) :: T
+    real(c_double), value, intent(in) :: x_H2SO4
+    real(c_double), intent(out) :: P_H2SO4
+    real(c_double), intent(out) :: P_H2O
+    call binary_saturation_pressure(T, x_H2SO4, P_H2SO4, P_H2O)
+  end subroutine
+
   !> Computes the saturation vapor pressure of H2SO4 and H2O above a condensed sulfuric
   !> acid droplet. This a parameterization/fit to Equation 11 in Dai et al. (2023): 
   !> https://doi.org/10.1029/2021JE007060 , except ignoring their third term relevant to the
@@ -260,61 +270,3 @@ contains
   end function
 
 end module
-
-
-program main
-  use iso_fortran_env, only: dp => real64
-  use sulfuric_acid, only: binary_saturation_pressure
-  implicit none
-
-  call main_()
-
-contains
-
-  subroutine main_()
-    integer, parameter :: n = 30
-    real(dp), allocatable :: T(:), P_H2SO4(:,:), P_H2O(:,:)
-    real(dp), allocatable :: x_H2SO4(:)
-    integer :: i, j
-
-    allocate(T(n))
-    call linspace(150.0_dp, 600.0_dp, T)
-    x_H2SO4 = [1.0e-4_dp, 0.075_dp, 0.511_dp, 0.98_dp]
-    allocate(P_H2SO4(n,size(x_H2SO4)),P_H2O(n,size(x_H2SO4)))
-
-    do j = 1,size(x_H2SO4)
-      do i = 1,n
-        call binary_saturation_pressure(T(i),x_H2SO4(j),P_H2SO4(i,j),P_H2O(i,j))
-      enddo
-    enddo
-
-    open(2,file='H2SO4_H2O.dat',form='unformatted',status='replace')
-    write(2) T
-    write(2) x_H2SO4
-    write(2) P_H2SO4
-    write(2) P_H2O
-    close(2)
-
-  end subroutine
-
-  subroutine linspace(from, to, array)
-    real(dp), intent(in) :: from, to
-    real(dp), intent(out) :: array(:)
-    real(dp) :: range
-    integer :: n, i
-    n = size(array)
-    range = to - from
-
-    if (n == 0) return
-
-    if (n == 1) then
-      array(1) = from
-      return
-    end if
-
-    do i=1, n
-      array(i) = from + range * (i - 1) / (n - 1)
-    end do
-  end subroutine
-
-end program

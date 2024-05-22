@@ -1,8 +1,26 @@
 import utils
 import numpy as np
-from scipy import io
+import ctypes as ct
+import numba as nb
+import subprocess
 from matplotlib import pyplot as plt
 from zeleznik import saturation_vapor_pressures
+
+def create_binary_saturation_pressure():
+    subprocess.call('gfortran sulfuric_acid.f90 -fPIC -O3 -o sulfuric_acid.so'.split())
+    binary_saturation_pressure_c = ct.CDLL('sulfuric_acid.so').binary_saturation_pressure_c
+    binary_saturation_pressure_c.argtypes = [ct.c_double, ct.c_double, ct.c_void_p, ct.c_void_p]
+    binary_saturation_pressure_c.restype = None
+    
+    @nb.njit(nb.types.Array(nb.float64,1,'C')(nb.float64,nb.float64))
+    def binary_saturation_pressure(T, x_H2SO4):
+        P_H2SO4, P_H2O = np.array(0.0,np.double), np.array(0.0,np.double)
+        binary_saturation_pressure_c(T, x_H2SO4, P_H2SO4.ctypes.data, P_H2O.ctypes.data)
+        return np.array([P_H2SO4.item(), P_H2O.item()])
+        
+    return binary_saturation_pressure
+
+binary_saturation_pressure = create_binary_saturation_pressure()
 
 def print_variable(arr, varname):
     str = 'real(dp), parameter :: '+varname+'(*) = &\n'
@@ -171,13 +189,8 @@ def plot_comparison():
     ax = axs[0]
     ax1 = axs[1]
     TT = np.linspace(150,350,15)
-    TT1 = np.linspace(150,600,100)
-
-    with io.FortranFile('H2SO4_H2O.dat','r') as f:
-        Ts = f.read_record(np.float64)
-        x_H2SO4 = f.read_record(np.float64)
-        P_H2SO4 = f.read_record(np.float64).reshape((Ts.shape[0],x_H2SO4.shape[0]),order='F')
-        P_H2O = f.read_record(np.float64).reshape((Ts.shape[0],x_H2SO4.shape[0]),order='F')
+    TT1 = np.linspace(150,600,30)
+    x_H2SO4 = np.array([1.0e-4, 0.075, 0.511, 0.98])
 
     ax.plot(TT1,[h_H2SO4.sat_pressure(T)/1e6 for T in TT1], c='k', lw=2)
     ax1.plot(TT1,[h_H2O.sat_pressure(T)/1e6 for T in TT1], c='k', lw=2)
@@ -192,8 +205,9 @@ def plot_comparison():
         tmp = np.array([saturation_vapor_pressures(T, x1, h_H2SO4, h_H2O)/1e6 for T in TT])
         ax.plot(TT,tmp[:,0], c='C0', ls=ls, lw=2,marker=marker)
         ax1.plot(TT,tmp[:,1], c='C0', ls=ls, lw=2,marker=marker)
-        ax.plot(Ts,P_H2SO4[:,i]/1e6, c='C1', ls=ls, lw=1,marker=marker)
-        ax1.plot(Ts,P_H2O[:,i]/1e6, c='C1', ls=ls, lw=1,marker=marker)
+        tmp1 = np.array([binary_saturation_pressure(T, x1) for T in TT1])
+        ax.plot(TT1,tmp1[:,0]/1e6, c='C1', ls=ls, lw=1,marker=marker)
+        ax1.plot(TT1,tmp1[:,1]/1e6, c='C1', ls=ls, lw=1,marker=marker)
         ax.plot([],[],c='k',ls=ls, lw=2, label='$x_\mathrm{H_2SO_4}$ = %.2e'%(x1),marker=marker)
 
     ax2 = ax.twinx()
