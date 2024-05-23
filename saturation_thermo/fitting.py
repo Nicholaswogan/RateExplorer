@@ -124,7 +124,7 @@ def fit_thermo(gas_g, T_low, T_high):
     thermo['data'].append([float('%e'%sol2.x[0]),0.0,0.0,0.0,0.0,float('%e'%sol2.x[1]),float('%e'%sol2.x[2])])
     thermo['data'].append([float('%e'%sol3.x[0]),0.0,0.0,0.0,0.0,float('%e'%sol3.x[1]),float('%e'%sol3.x[2])])
     entry = copy.deepcopy(r.mech['species'][gas_g])
-    entry['name'] = gas_g+'[c]'
+    entry['name'] = gas_g+'aer'
     entry['condensate'] = True
     entry['triple-temperature'] = sat_fcn.T_triple
     entry['critical-temperature'] = sat_fcn.T_critical
