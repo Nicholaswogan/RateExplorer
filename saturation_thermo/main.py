@@ -71,12 +71,11 @@ def collect_files():
         tmp['thermo'] = thermo['thermo']
         tmp1.append(tmp)
     
-    with open('results/all_sat.yaml','w') as f:
+    with open('results/condensates.yaml','w') as f:
         yaml.dump(out1,f,Dumper=utils.CustomDumper,sort_keys=False,width=70)
 
-    with open('results/all_thermo.yaml','w') as f:
-        yaml.dump(tmp1,f,Dumper=utils.CustomDumper,sort_keys=False,width=70)
-        
+    with open('results/condensates_shomate.yaml','w') as f:
+        yaml.dump(tmp1,f,Dumper=utils.CustomDumper,sort_keys=False,width=70)     
             
 if __name__ == '__main__':
     main()
