@@ -2,6 +2,10 @@ import numpy as np
 import utils
 import fitting
 
+def sat_H2SO4_rimmer(T):
+    log10P = 4.4753 - 3229.0/(T + 7.1192e5) - 3.1723e6/T**2 + 4.0832e8/T**3 - 2.0312e10/T**4
+    return 10.0**log10P
+
 def sat_H2SO4(T):
     # Dai et al. (2022)
     Tc = 905

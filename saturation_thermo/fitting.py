@@ -55,6 +55,12 @@ def objective_(x, r, gas_g, Psat_data, T_data):
     fval1 = np.log10(Psat) - np.log10(Psat_data)
     return fval1
 
+def objective_1(x, r, gas_g, Psat_goal, A, G, T):
+    F = x[0]
+    coeffs_c = [A,0.0,0.0,0.0,0.0,F,G]
+    Psat_ = Psat_coeffs(r, gas_g, coeffs_c, T)
+    return np.array([(Psat_ - Psat_goal)])
+
 def fit_thermo(gas_g, T_low, T_high):
     r = utils.ReactionExplorer('thermodata121.yaml')
 
@@ -82,6 +88,14 @@ def fit_thermo(gas_g, T_low, T_high):
     sol2 = optimize.root(objective_, x_init, method='lm', args=(r, gas_g, Psat_data, T_data))
     if not sol2.success:
         raise Exception()
+    
+    x_init = [sol2.x[1]]
+    coeffs_c = [float(sol1.x[0]),0.0,0.0,0.0,0.0,float(sol1.x[1]),float(sol1.x[2])]
+    Psat_goal = Psat_coeffs(r, gas_g, coeffs_c, sat_fcn.T_triple)
+    sol22 = optimize.root(objective_1, x_init, method='lm', args=(r, gas_g, Psat_goal, sol2.x[0], sol2.x[2], sat_fcn.T_triple))
+    if not sol22.success:
+        raise Exception()
+    sol2.x[1] = sol22.x[0]
 
     T_data = np.linspace(sat_fcn.T_critical,T_high,100)
     Psat_data = np.array([sat_fcn.sat_pressure(T) for T in T_data])/1e6 # bars
@@ -93,6 +107,14 @@ def fit_thermo(gas_g, T_low, T_high):
     sol3 = optimize.root(objective_, x_init, method='lm', args=(r, gas_g, Psat_data, T_data))
     if not sol3.success:
         raise Exception()
+
+    x_init = [sol3.x[1]]
+    coeffs_c = [float(sol2.x[0]),0.0,0.0,0.0,0.0,float(sol2.x[1]),float(sol2.x[2])]
+    Psat_goal = Psat_coeffs(r, gas_g, coeffs_c, sat_fcn.T_critical)
+    sol33 = optimize.root(objective_1, x_init, method='lm', args=(r, gas_g, Psat_goal, sol3.x[0], sol3.x[2], sat_fcn.T_critical))
+    if not sol33.success:
+        raise Exception()
+    sol3.x[1] = sol33.x[0]
 
     thermo = {}
     thermo['model'] = 'Shomate'
@@ -198,7 +220,13 @@ def fit_thermo(gas_g, T_low, T_high):
     ax.set_xlabel('Temperature (K)')
 
     ax = axs[1,3]
-    ax.set_visible(False)
+    TT = np.linspace(60,sat_fcn.T_critical,100)
+    val = np.array([utils.entropy_eval(thermo, T) for T in TT])
+    ax.plot(TT, val,'-',label='Fit', lw=1)
+    ax.legend()
+    ax.grid(alpha=0.4)
+    ax.set_ylabel('Entropy (J/(mol K))')
+    ax.set_xlabel('Temperature (K)')
 
     plt.subplots_adjust(wspace=0.3,hspace=0.3)
     plt.savefig('figures/'+gas_g+'_thermo.pdf',bbox_inches='tight')

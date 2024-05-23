@@ -104,14 +104,14 @@ class SaturationPropertiesFitter():
         tmp['T-critical'] = float(self.T_critical)
         sol['parameters'] = tmp
         sol['vaporization'] = {}
-        sol['vaporization']['A'] = float(self.A_v)
-        sol['vaporization']['B'] = float(self.B_v)
+        sol['vaporization']['a'] = float(self.A_v)
+        sol['vaporization']['b'] = float(self.B_v)
         sol['sublimation'] = {}
-        sol['sublimation']['A'] = float(self.A_s)
-        sol['sublimation']['B'] = float(self.B_s)
+        sol['sublimation']['a'] = float(self.A_s)
+        sol['sublimation']['b'] = float(self.B_s)
         sol['super-critical'] = {}
-        sol['super-critical']['A'] = float(self.A_c)
-        sol['super-critical']['B'] = float(self.B_c)
+        sol['super-critical']['a'] = float(self.A_c)
+        sol['super-critical']['b'] = float(self.B_c)
         return sol
     
     def to_file(self, filename):
@@ -156,12 +156,12 @@ class SaturationProperties():
         if self.T_ref < self.T_triple:
             raise Exception("T_ref must be bigger than T_triple")
         self.P_ref = tmp1['P-ref']
-        self.A_v = tmp['vaporization']['A']
-        self.B_v = tmp['vaporization']['B']
-        self.A_s = tmp['sublimation']['A']
-        self.B_s = tmp['sublimation']['B']
-        self.A_c = tmp['super-critical']['A']
-        self.B_c = tmp['super-critical']['B']
+        self.A_v = tmp['vaporization']['a']
+        self.B_v = tmp['vaporization']['b']
+        self.A_s = tmp['sublimation']['a']
+        self.B_s = tmp['sublimation']['b']
+        self.A_c = tmp['super-critical']['a']
+        self.B_c = tmp['super-critical']['b']
     
     def _latent_heat(self, A, B, T):
         return A + B*T

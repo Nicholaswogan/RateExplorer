@@ -81,7 +81,7 @@ def main():
 
     h = utils.SaturationPropertiesFitter(mu, T_triple, T_critical, T_ref, P_ref)
 
-    T_data = np.linspace(220,675,20)
+    T_data = np.linspace(150,675,20)
     P_data = np.array([sat_S8(T) for T in T_data])
 
     guess = [4e9, 0, 6e9, 0]

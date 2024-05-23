@@ -1,9 +1,13 @@
 import numpy as np
 from matplotlib import pyplot as plt
 import utils
+from photochem.utils._format import yaml, flowmap, blockseqtrue, MyDumper
 
-SPECIES = ['H2O','CO2','NH3','C2H2','C2H4','C2H6','CH3CN',
-           'N2O','HCCCN','HCN','CH4','S8','H2SO4']
+SPECIES = [
+    'H2O', 'CO2', 'S8', 'H2SO4', # Saturates in rocky planet atmospheres
+    'NH3', 'N2O', # Saturates on Jupiter (not N2O?)
+    'C2H2', 'C2H4', 'C2H6', 'CH3CN', 'HCCCN', 'HCN', 'CH4' # Saturates on Titan
+]
 
 def plot_all():
     
@@ -34,7 +38,47 @@ def main():
     for sp in SPECIES:
         exec('import '+sp)
         exec(sp+'.main()')
+
+def collect_files():
+    out1 = []
+    tmp1 = []
+    for sp in SPECIES:
+        with open('results/'+sp+'_sat.yaml') as f:
+            sat = yaml.load(f,Loader=yaml.Loader)
+        with open('results/'+sp+'_thermo.yaml') as f:
+            thermo = yaml.load(f,Loader=yaml.Loader)[0]
+        out = {}
+        out['name'] = sp+'aer'
+        out['composition'] = flowmap(thermo['composition'])
+        out['density'] = 1.0
+        out['optical-properties'] = "none"
+        out['formation'] = 'saturation'
+        out['gas-phase'] = sp
+        sat['parameters'] = flowmap(sat['parameters'])
+        sat['vaporization'] = flowmap(sat['vaporization'])
+        sat['sublimation'] = flowmap(sat['sublimation'])
+        sat['super-critical'] = flowmap(sat['super-critical'])
+        out['saturation'] = sat
+
+        out1.append(out)
+
+        tmp = {}
+        tmp['name'] = sp+'aer'
+        tmp['composition'] = flowmap(thermo['composition'])
+        tmp['condensate'] = True
+        thermo['thermo']['temperature-ranges'] = blockseqtrue(thermo['thermo']['temperature-ranges'])
+        thermo['thermo']['data'] = [blockseqtrue(a) for a in blockseqtrue(thermo['thermo']['data'])]
+        tmp['thermo'] = thermo['thermo']
+        tmp1.append(tmp)
     
+    with open('results/all_sat.yaml','w') as f:
+        yaml.dump(out1,f,Dumper=utils.CustomDumper,sort_keys=False,width=70)
+
+    with open('results/all_thermo.yaml','w') as f:
+        yaml.dump(tmp1,f,Dumper=utils.CustomDumper,sort_keys=False,width=70)
+        
+            
 if __name__ == '__main__':
     main()
     plot_all()
+    collect_files()
