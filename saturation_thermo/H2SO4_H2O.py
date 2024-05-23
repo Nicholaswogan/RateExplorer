@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 from zeleznik import saturation_vapor_pressures
 
 def create_binary_saturation_pressure():
-    subprocess.call('gfortran sulfuric_acid.f90 -fPIC -O3 -o sulfuric_acid.so'.split())
+    subprocess.call('gfortran sulfuric_acid.f90 -shared -fPIC -O3 -o sulfuric_acid.so'.split())
     binary_saturation_pressure_c = ct.CDLL('sulfuric_acid.so').binary_saturation_pressure_c
     binary_saturation_pressure_c.argtypes = [ct.c_double, ct.c_double, ct.c_void_p, ct.c_void_p]
     binary_saturation_pressure_c.restype = None
