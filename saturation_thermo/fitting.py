@@ -59,7 +59,7 @@ def objective_1(x, r, gas_g, Psat_goal, A, G, T):
     F = x[0]
     coeffs_c = [A,0.0,0.0,0.0,0.0,F,G]
     Psat_ = Psat_coeffs(r, gas_g, coeffs_c, T)
-    return np.array([(Psat_ - Psat_goal)])
+    return np.array([(np.log10(Psat_) - np.log10(Psat_goal))])
 
 def fit_thermo(gas_g, T_low, T_high):
     r = utils.ReactionExplorer('thermodata121.yaml')
@@ -92,7 +92,7 @@ def fit_thermo(gas_g, T_low, T_high):
     x_init = [sol2.x[1]]
     coeffs_c = [float(sol1.x[0]),0.0,0.0,0.0,0.0,float(sol1.x[1]),float(sol1.x[2])]
     Psat_goal = Psat_coeffs(r, gas_g, coeffs_c, sat_fcn.T_triple)
-    sol22 = optimize.root(objective_1, x_init, method='lm', args=(r, gas_g, Psat_goal, sol2.x[0], sol2.x[2], sat_fcn.T_triple))
+    sol22 = optimize.root(objective_1, x_init, method='hybr', args=(r, gas_g, Psat_goal, sol2.x[0], sol2.x[2], sat_fcn.T_triple))
     if not sol22.success:
         raise Exception()
     sol2.x[1] = sol22.x[0]
@@ -111,7 +111,7 @@ def fit_thermo(gas_g, T_low, T_high):
     x_init = [sol3.x[1]]
     coeffs_c = [float(sol2.x[0]),0.0,0.0,0.0,0.0,float(sol2.x[1]),float(sol2.x[2])]
     Psat_goal = Psat_coeffs(r, gas_g, coeffs_c, sat_fcn.T_critical)
-    sol33 = optimize.root(objective_1, x_init, method='lm', args=(r, gas_g, Psat_goal, sol3.x[0], sol3.x[2], sat_fcn.T_critical))
+    sol33 = optimize.root(objective_1, x_init, method='hybr', args=(r, gas_g, Psat_goal, sol3.x[0], sol3.x[2], sat_fcn.T_critical))
     if not sol33.success:
         raise Exception()
     sol3.x[1] = sol33.x[0]
