@@ -2,6 +2,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import utils
 from scipy import optimize
+import pandas as pd
 
 def objective(x, T_data, k_data):
     A, b, Ea = x
@@ -38,6 +39,7 @@ def fit_rate_constant():
 
 def plot(A, b, Ea):
     r = utils.ReactionExplorer('thermodata121_test.yaml')
+    res = pd.read_excel('data/ktp_wogan.xlsx')
 
     plt.rcParams.update({'font.size': 13})
     fig,axs = plt.subplots(1,2,figsize=[10,4],sharey=True)
@@ -69,8 +71,20 @@ def plot(A, b, Ea):
     for i,T1 in enumerate(T):
         tmp  = r.evaluate_rates(T1, P)
         k1[i] = tmp['klippenstein1']['k_f']
-    ax.plot(T, k1, c='C1', ls='-', label='Klippenstein 1 bar')
+    ax.plot(T, k1, c='C1', ls='-', label='Klippenstein fit (1 bar)')
 
+    ms = 3
+    Tk = [res[a][44] for a in res][1:]
+    ratek = [res[a][52] for a in res][1:]
+    ax.plot(Tk, ratek, c='k', ls='-',marker='o', ms=ms, label='Klippenstein 0.1 bar')
+
+    ratek = [res[a][54] for a in res][1:]
+    ax.plot(Tk, ratek, c='k', ls='--',marker='o', ms=ms, label='Klippenstein 1 bar')
+
+    ratek = [res[a][56] for a in res][1:]
+    ax.plot(Tk, ratek, c='k', ls='-.',marker='o', ms=ms, label='Klippenstein 10 bar')
+
+    ax.set_xlim(150,400)
     ax.set_yscale('log')
     ax.set_xlabel('Temperature (K)')
     ax.set_ylabel('Rate constant (cm$^3$ molecules$^{-1}$ s$^{-1}$)')
@@ -106,6 +120,16 @@ def plot(A, b, Ea):
         tmp  = r.evaluate_rates(T1, P)
         k1[i] = tmp['klippenstein1']['k_f']
     ax.plot(T, k1, c='C1', ls='-', label='Klippenstein')
+
+    Tk = [res[a][44] for a in res][1:]
+    ratek = [res[a][52] for a in res][1:]
+    ax.plot(Tk, ratek, c='k', ls='-',marker='o', ms=ms, label='Klippenstein 0.1 bar')
+
+    ratek = [res[a][54] for a in res][1:]
+    ax.plot(Tk, ratek, c='k', ls='--',marker='o', ms=ms, label='Klippenstein 1 bar')
+
+    ratek = [res[a][56] for a in res][1:]
+    ax.plot(Tk, ratek, c='k', ls='-.',marker='o', ms=ms, label='Klippenstein 10 bar')
 
     ax.set_yscale('log')
     ax.set_xlabel('Temperature (K)')
