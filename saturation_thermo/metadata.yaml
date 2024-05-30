@@ -6,15 +6,33 @@ H2O:
   T_critical: NIST
 
 CO2:
-  notes: "Both sublimiation and vaporization are from the Atmos code: 
-          https://github.com/VirtualPlanetaryLaboratory/atmos"
+  sublimation: Atmos code, https://github.com/VirtualPlanetaryLaboratory/atmos
+  vaporization: Atmos code, https://github.com/VirtualPlanetaryLaboratory/atmos
   T_triple: NIST
   T_critical: NIST
+
+S8:
+  sublimation: Lyons (2008)
+  vaporization: Lyons (2008)
+  T_triple: Lyons (2008)
+  T_critical: Guess
+
+H2SO4:
+  sublimation: Dai et al. (2022)
+  vaporization: Dai et al. (2022)
+  T_triple: Dai et al. (2022)
+  T_critical: Dai et al. (2022)
 
 NH3: 
   sublimation: Lodders & Fegley (1998), Table 1.20
   vaporization: Lodders & Fegley (1998), Table 1.20, and NIST for saturation at critical temperature
   T_triple: Lodders & Fegley (1998), Table 1.20
+  T_critical: NIST
+
+N2O:
+  sublimation: Ferreira and Lobo (2009)
+  vaporization: Ferreira and Lobo (2009)
+  T_triple: Ferreira and Lobo (2009)
   T_critical: NIST
 
 C2H2:
@@ -23,8 +41,38 @@ C2H2:
   T_triple: NIST
   T_critical: NIST
 
+C2H4:
+  sublimation: Moses et al (1992)
+  vaporization: Moses et al (1992) and NIST
+  T_triple: NIST
+  T_critical: NIST
+
+C2H6:
+  sublimation: Moses et al (1992)
+  vaporization: NIST
+  T_triple: NIST
+  T_critical: NIST
+
+CH3CN:
+  sublimation: Yu et al. (2023)
+  vaporization: Yu et al. (2023)
+  T_triple: NIST
+  T_critical: NIST
+
+HCCCN:
+  sublimation: Yu et al. (2023)
+  vaporization: Yu et al. (2023)
+  T_triple: Yu et al. (2023)
+  T_critical: Yu et al. (2023)
+
 HCN:
   sublimation: Lodders & Fegley (1998), Table 1.20
   vaporization: Lodders & Fegley (1998), Table 1.20, and Matweb for saturation at critical temperature
   T_triple: Lodders & Fegley (1998), Table 1.20
   T_critical: Matweb
+
+CH4:
+  sublimation: Yu et al. (2023)
+  vaporization: Yu et al. (2023)
+  T_triple: Yu et al. (2023)
+  T_critical: Yu et al. (2023)

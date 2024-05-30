@@ -17,8 +17,8 @@ def sat_HCCCN_photochem(T):
 def main():
     gas_g = 'HCCCN'
     mu = 51.048
-    T_triple = 280.0 # 
-    T_critical = 527.0 # 
+    T_triple = 280.0 # Yu et al. (2023)
+    T_critical = 527.0 # Yu et al. (2023)
     T_ref = 300.0 # K
     P_ref = sat_HCCCN(T_ref) # dynes/cm^2
 

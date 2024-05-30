@@ -1,3 +1,3 @@
 # Saturation vapor pressures
 
-This directory 
+This directory creates fits for the saturation vapor pressure of many different species.
