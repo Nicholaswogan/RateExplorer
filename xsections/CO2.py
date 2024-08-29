@@ -33,6 +33,7 @@ def main():
     'photodissociation-qy': [
         {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Huebner2015']}
         ],
+    'notes': "I use a low resolution version of the 270 K Schmidt et al. (2013) data."
     }
     citation = {species: tmp}
     utils.save_citation(species, citation)
