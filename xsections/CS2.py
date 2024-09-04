@@ -10,7 +10,7 @@ def main():
 
     min_xs = np.min(out['wv'])
 
-    utils.prepend_xs_of_other(out, phid)
+    out = utils.prepend_xs_of_other(out, phid)
 
     # Make sure absorption does not exceed photolysis and ionization
     inds = np.where(out['xsa'] < out['xsp'] + out['xsi'])

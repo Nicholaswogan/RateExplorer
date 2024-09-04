@@ -10,7 +10,7 @@ def main():
 
     min_xs = np.min(out['wv'])
 
-    utils.prepend_xs_of_other(out, phid)
+    out = utils.prepend_xs_of_other(out, phid)
 
     # Make plots
     utils.make_xs_plot(species, out, (ld, phid,wogan), ('Leiden','Phidrates','Wogan'),xlim=(0,310))

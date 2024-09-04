@@ -325,6 +325,9 @@ def check_xs_and_qy(out):
     # To within a tolerance
     assert np.all(out['xsa']*(1+1e-3) >= out['xsp'] + out['xsi'])
 
+    # Must be sorted
+    assert np.all(out['wv'][:-1] <= out['wv'][1:])
+
 def make_h5_from_dict(species, out):
 
     check_xs_and_qy(out)

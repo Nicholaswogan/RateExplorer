@@ -7,9 +7,9 @@ def main():
     ld = utils.get_leiden(species)
     phid = utils.get_phidrates(species)
 
+    out = utils.change_xs_to_other(out, ld)
     min_xs = np.min(out['wv'])
-
-    utils.prepend_xs_of_other(out, phid)
+    out = utils.prepend_xs_of_other(out, phid)
 
     # Make plots
     utils.make_xs_plot(species, out, (ld, phid), ('Leiden','Phidrates'),xlim=(0,125))

@@ -10,7 +10,7 @@ def main():
     wogan = utils.get_wogan(species)
 
     # Change to Leiden data 
-    utils.change_xs_to_other(out,ld)
+    out = utils.change_xs_to_other(out,ld)
     # Use Schmidt for longer wavelengths
     wv, xs = np.loadtxt('data/Schmidt2013_CO2.txt').T
     min_xs = np.min(wv)

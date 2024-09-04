@@ -2,7 +2,7 @@ import utils
 import numpy as np
 
 def main():
-    species = 'C2H2'
+    species = 'NH3'
     out = utils.get_VULCAN(species)
     ld = utils.get_leiden(species)
     phid = utils.get_phidrates(species)
@@ -10,10 +10,11 @@ def main():
 
     min_xs = np.min(out['wv'])
 
+    out = utils.change_xs_to_other(out, ld)
     out = utils.prepend_xs_of_other(out, phid)
 
     # Make plots
-    utils.make_xs_plot(species, out, (ld, phid, wogan), ('Leiden','Phidrates','Wogan'),xlim=(0,310))
+    utils.make_xs_plot(species, out, (ld, phid, wogan), ('Leiden','Phidrates', 'Wogan'),xlim=(0,300))
     utils.make_qy_plot(species, out)
 
     # Save citation
@@ -23,7 +24,7 @@ def main():
         {'nm-range': [float(min_xs), float(np.max(out['wv']))], 'citations': ['Heays2017']}
         ],
     'photodissociation-qy': [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017','Okabe1983']}
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Huebner2015']}
         ],
     }
     citation = {species: tmp}
