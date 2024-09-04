@@ -3,16 +3,26 @@ import numpy as np
 
 def main():
     species = 'H2'
-    out = utils.get_VULCAN(species)
-    ld = utils.get_leiden(species)
+    out = utils.get_leiden(species)
+
+    vulcan = utils.get_VULCAN(species)
     phid = utils.get_phidrates(species)
 
-    out = utils.change_xs_to_other(out, ld)
+    # Prepent phidrates
     min_xs = np.min(out['wv'])
     out = utils.prepend_xs_of_other(out, phid)
 
+    # Quantum yields
+    ratios = {
+        'wv': utils.minmaxarray(out['wv']),
+        'H2 + hv => H + H':{'qy': np.array([1.0, 1.0])}
+    }
+    ratios = utils.rename_all_as_zahnle(ratios)
+    out['ratios'] = ratios
+    out['missing'] = utils.get_missing_zahnle(species, ratios)
+    
     # Make plots
-    utils.make_xs_plot(species, out, (ld, phid), ('Leiden','Phidrates'),xlim=(0,125))
+    utils.make_xs_plot(species, out, (vulcan, phid), ('VULCAN','Phidrates'),xlim=(0,125))
     utils.make_qy_plot(species, out)
 
     # Save citation

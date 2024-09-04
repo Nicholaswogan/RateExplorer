@@ -2,35 +2,35 @@ import utils
 import numpy as np
 
 def main():
-    species = 'SO'
+    species = 'S2'
     out = utils.get_leiden(species)
 
     vulcan = utils.get_VULCAN(species)
-    phid = utils.get_phidrates(species)
     wogan = utils.get_wogan(species)
 
-    # Prepend phidrates
-    min_xs = np.min(out['wv'])
-    out = utils.prepend_xs_of_other(out, phid)
+    # Some adjustments
+    for key in ['xsa','xsp','xsi']:
+        for i in range(len(out[key])):
+            if out[key][i] < 1e-45:
+                out[key][i] = 0.0
+    inds = np.where(out['xsa'] < out['xsp'] + out['xsi'])
+    out['xsa'][inds] = out['xsp'][inds] + out['xsi'][inds]
 
-    # Quantum yields
     ratios = {
-        'wv': utils.minmaxarray(out['wv']),
-        'SO + hv => S + O': {'qy': np.array([1.0, 1.0])}
+        'wv': np.array([np.min(out['wv']), np.max(out['wv'])]),
+        'S2 + hv => S + S': {'qy': np.array([1.0, 1.0]),'new': False},
     }
-    ratios = utils.rename_all_as_zahnle(ratios)
     out['ratios'] = ratios
     out['missing'] = utils.get_missing_zahnle(species, ratios)
 
     # Make plots
-    utils.make_xs_plot(species, out, (vulcan, phid,wogan), ('VULCAN','Phidrates','Wogan'),xlim=(0,310))
+    utils.make_xs_plot(species, out, (vulcan, wogan), ('VULCAN', 'Wogan'),xlim=(0,500))
     utils.make_qy_plot(species, out)
 
     # Save citation
     tmp = {
     "xsections": [
-        {'nm-range': [float(np.min(out['wv'])), float(min_xs)], 'citations': ['Huebner2015']},
-        {'nm-range': [float(min_xs), float(np.max(out['wv']))], 'citations': ['Heays2017']}
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017']}
         ],
     'photodissociation-qy': [
         {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017']}

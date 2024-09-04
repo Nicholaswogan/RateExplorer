@@ -3,15 +3,13 @@ import numpy as np
 
 def main():
     species = 'CO'
-    out = utils.get_VULCAN(species)
+    out = utils.get_leiden(species)
+
     vulcan = utils.get_VULCAN(species)
-    ld = utils.get_leiden(species)
     phid = utils.get_phidrates('sCO')
     wogan = utils.get_wogan(species)
 
-
     # Where photolysis xs beocmes non-zero, prepend Phidrates
-    out = utils.change_xs_to_other(out, ld)
     for i in range(len(out['wv'])):
         if out['xsp'][i] > 0:
             ind = i
@@ -24,9 +22,18 @@ def main():
     out['xsa'] = np.append(other['xsa'][inds],out['xsa'][ind:])
     out['xsi'] = np.append(other['xsi'][inds],out['xsi'][ind:])
     out['xsp'] = np.append(other['xsp'][inds],out['xsp'][ind:])
+
+    # Quantum yields
+    ratios = {
+        'wv': utils.minmaxarray(out['wv']),
+        'CO + hv => C + O': {'qy': np.array([1.0, 1.0])}
+    }
+    ratios = utils.rename_all_as_zahnle(ratios)
+    out['ratios'] = ratios
+    out['missing'] = utils.get_missing_zahnle(species, ratios)
     
     # Make plots
-    utils.make_xs_plot(species, out, (ld, phid, wogan,vulcan), ('Leiden','Phidrates', 'Wogan','VULCAN'),xlim=(0,200))
+    utils.make_xs_plot(species, out, (phid, wogan, vulcan), ('Phidrates', 'Wogan','VULCAN'),xlim=(0,200))
     utils.make_qy_plot(species, out)
 
     # Save citation

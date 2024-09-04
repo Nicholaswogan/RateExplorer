@@ -1,9 +1,20 @@
 import utils
 import numpy as np
 
+def get_xs():
+    wv, xsp = np.loadtxt('data/Billmers1991_S4.txt').T
+    out = {}
+    out['wv'] = wv
+    out['xsp'] = xsp
+    out['xsa'] = xsp
+    out['xsi'] = xsp*0
+    return out
+
 def main():
     species = 'S4'
-    out = utils.get_VULCAN(species)
+    out = get_xs()
+
+    vulcan = utils.get_VULCAN(species)
     wogan = utils.get_wogan(species)
 
     ratios = {
@@ -16,7 +27,7 @@ def main():
     out['missing'] = missing
 
     # Make plots
-    utils.make_xs_plot(species, out, (wogan,), ('Wogan',))
+    utils.make_xs_plot(species, out, (vulcan, wogan,), ('VULCAN','Wogan',))
     utils.make_qy_plot(species, out)
 
     # Save citation

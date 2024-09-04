@@ -3,14 +3,12 @@ import numpy as np
 
 def main():
     species = 'CO2'
-    out = utils.get_VULCAN(species)
+    out = utils.get_leiden(species)
+
     vulcan = utils.get_VULCAN(species)
-    ld = utils.get_leiden(species)
     phid = utils.get_phidrates(species)
     wogan = utils.get_wogan(species)
 
-    # Change to Leiden data 
-    out = utils.change_xs_to_other(out,ld)
     # Use Schmidt for longer wavelengths
     wv, xs = np.loadtxt('data/Schmidt2013_CO2.txt').T
     min_xs = np.min(wv)
@@ -20,8 +18,17 @@ def main():
     out['xsp'] = np.append(out['xsp'][inds],xs)
     out['xsi'] = np.append(out['xsi'][inds],xs*0.0)
 
+    # Quantum yields
+    ratios = {'wv': np.array([166.0, 168.0]),
+        'CO2 + hv => CO + O': {'qy': np.array([0.0, 1.0])},
+        'CO2 + hv => CO + O1D': {'qy': np.array([1.0, 0.0])}
+    }
+    ratios = utils.rename_all_as_zahnle(ratios)
+    out['ratios'] = ratios
+    out['missing'] = utils.get_missing_zahnle(species, ratios)
+
     # Make plots
-    utils.make_xs_plot(species, out, (ld, phid, wogan,vulcan), ('Leiden','Phidrates', 'Wogan','VULCAN'),xlim=(0,220))
+    utils.make_xs_plot(species, out, (phid, wogan,vulcan), ('Phidrates', 'Wogan','VULCAN'),xlim=(0,220))
     utils.make_qy_plot(species, out)
 
     # Save citation

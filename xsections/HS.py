@@ -3,19 +3,26 @@ import numpy as np
 
 def main():
     species = 'HS'
-    out = utils.get_VULCAN(species)
-    ld = utils.get_leiden('SH')
-    # phid = utils.get_phidrates('SH')
-    wogan = utils.get_wogan(species)
+    out = utils.get_leiden('SH')
 
-    out = utils.change_xs_to_other(out, ld)
+    vulcan = utils.get_VULCAN(species)
+    wogan = utils.get_wogan(species)
 
     # Make sure absorption does not exceed photolysis and ionization
     inds = np.where(out['xsa'] < out['xsp'] + out['xsi'])
     out['xsa'][inds] = out['xsp'][inds] + out['xsi'][inds]
 
+    # Quantum yields
+    ratios = {
+        'wv': utils.minmaxarray(out['wv']),
+        'HS + hv => S + H': {'qy': np.array([1.0, 1.0])}
+    }
+    ratios = utils.rename_all_as_zahnle(ratios)
+    out['ratios'] = ratios
+    out['missing'] = utils.get_missing_zahnle(species, ratios)
+
     # Make plots
-    utils.make_xs_plot(species, out, (ld,wogan,), ('Leiden','Wogan',))
+    utils.make_xs_plot(species, out, (vulcan,wogan,), ('VULCAN','Wogan',))
     utils.make_qy_plot(species, out)
 
     # Save citation

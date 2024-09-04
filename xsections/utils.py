@@ -94,6 +94,20 @@ def get_phidrates(species):
 
     return out
 
+def get_phidrates_yields(species):
+    phi = phidrates(species)
+    xsp = np.zeros(phi.neutral.data['wavelength'].shape)
+    for branch in phi.neutral.branches:
+        xsp += phi.neutral.data[branch]
+    xsp = phi.neutral.data['cross section']*xsp
+    inds = np.where(xsp > 0)
+    
+    qys = {'wv':phi.neutral.data['wavelength'][inds]}
+    for branch in phi.neutral.branches:
+        qys[branch] = (phi.neutral.data[branch][inds]*phi.neutral.data['cross section'][inds])/xsp[inds]
+
+    return qys
+
 def get_zahnle_data(species):
 
     with open('Zahnle_Kevin_data/SW_neutrals_for_stays.DAT','r') as f:
@@ -184,6 +198,8 @@ def get_wogan(species):
 
     return out
 
+def minmaxarray(arr):
+    return np.array([np.min(arr),np.max(arr)])
 
 def compare2reactions(rx1, rx2):
     rx1 = rx1.replace('<=>','=>').replace('(','').replace(')','')
@@ -198,6 +214,16 @@ def rename_as_zahnle(rx, data):
         if compare2reactions(rx1, rx):
             return True,rx1
     return False,rx
+
+def rename_all_as_zahnle(ratios):
+    ratios_new = {'wv': ratios['wv']}
+    for key in ratios:
+        if key != 'wv':
+            found, rx = rename_as_zahnle(key, ZAHNLE_DATA)
+            new = not found
+            ratios_new[rx] = ratios[key]
+            ratios_new[rx]['new'] = new
+    return ratios_new            
 
 def get_zahnle_branches(sp, data):
     zahnle_photos = [a['equation'] for a in data['reactions'] if 'hv' in a['equation']]
@@ -272,11 +298,7 @@ def get_VULCAN(species):
         ratio_data[branches[j][1]]['qy'] = ratios[name]
         ratio_data[branches[j][1]]['new'] = not branches[j][0]
 
-    zbranches = get_zahnle_branches(species, ZAHNLE_DATA)
-    zmissing = []
-    for zbranch in zbranches:
-        if zbranch not in ratio_data:
-            zmissing.append(zbranch)
+    zmissing = get_missing_zahnle(species, ratio_data)
     
     out = {
         'wv':wv,
@@ -287,6 +309,14 @@ def get_VULCAN(species):
         'missing':zmissing
     }
     return out
+
+def get_missing_zahnle(species, ratio_data):
+    zbranches = get_zahnle_branches(species, ZAHNLE_DATA)
+    zmissing = []
+    for zbranch in zbranches:
+        if zbranch not in ratio_data:
+            zmissing.append(zbranch)
+    return zmissing
 
 def change_xs_to_other(out, other):
     out['wv'] = other['wv']

@@ -43,13 +43,13 @@ def get_ratios():
 def main():
     species = 'H2CO'
     out = utils.get_leiden(species)
+
     ld = utils.get_leiden(species)
     phid = utils.get_phidrates(species)
     wogan = utils.get_wogan(species)
-
-    min_xs = np.min(out['wv'])
     
     # Prepend Phidrates assuming its all ionization
+    min_xs = np.min(out['wv'])
     other = phid
     inds = np.where(other['wv']<out['wv'][0])
     out['wv'] = np.append(other['wv'][inds],out['wv'])
@@ -59,7 +59,7 @@ def main():
 
     # Get ratios
     out['ratios'] = get_ratios()
-    out['missing'] = []
+    out['missing'] = utils.get_missing_zahnle(species, out['ratios'])
 
     # Make plots
     utils.make_xs_plot(species, out, (ld, phid), ('Leiden','Phidrates'),xlim=(0,400))
