@@ -4,6 +4,8 @@ import utils
 
 def runall():
     species = [a for a in os.listdir('.') if '.py' in a and a not in ['main.py','template.py','utils.py']]
+    species.sort()
+
     for sp in species:
         sp1 = sp.strip('.py')
         print(sp1)
@@ -13,6 +15,7 @@ def runall():
 
 def collect_citations():
     species = list(set([a.replace('.h5','').replace('.yaml','') for a in os.listdir('results') if a != '.gitignore' and a != 'metadata.yaml']))
+    species.sort()
 
     citations = {}
     for i,sp in enumerate(species):
@@ -23,6 +26,9 @@ def collect_citations():
     
     with open('results/metadata.yaml','w') as f:
         yaml.dump(citations, f, utils.MyDumper, sort_keys=False)
+
+    for i,sp in enumerate(species):
+        os.remove('results/'+sp+'.yaml')
 
 def main():
     runall()

@@ -18,9 +18,9 @@ def main():
     # Save citation
     tmp = {
     "xsections": [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['']},
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Bass1953']},
         ],
-    "notes": "For S8 rings."
+    "notes": "Extracted from Figure 2 of Bass (1953) by Kevin Zahnle. For S8 rings."
     }
     citation = {species: tmp}
     utils.save_citation(species, citation)
