@@ -2,33 +2,37 @@ import utils
 import numpy as np
 
 def main():
-    species = 'OCS'
-    out = utils.get_leiden(species)
-
-    vulcan = utils.get_VULCAN(species)
-    phid = utils.get_phidrates(species)
+    species = 'C4H4'
     wogan = utils.get_wogan(species)
-    
+
+    wv, xs = np.loadtxt('data/Fahr1996_C4H4.txt').T
+    out = {}
+    out['wv'] = wv
+    out['xsa'] = xs
+    out['xsp'] = xs
+    out['xsi'] = xs*0
+
     # Quantum yields
     ratios = {
         'wv': utils.minmaxarray(out['wv']),
-        'OCS + hv => CO + S': {'qy': np.array([1.0, 1.0])}
+        'C4H4 + hv => C4H2 + H2': {'qy': np.array([0.8, 0.8])},
+        'C4H4 + hv => C2H2 + C2H2': {'qy': np.array([0.2, 0.2])}
     }
     ratios = utils.rename_all_as_zahnle(ratios)
     out['ratios'] = ratios
     out['missing'] = utils.get_missing_zahnle(species, ratios)
 
     # Make plots
-    utils.make_xs_plot(species, out, (vulcan, phid, wogan), ('VULCAN','Phidrates', 'Wogan'),xlim=(0,400))
+    utils.make_xs_plot(species, out, (wogan,), ('Wogan',),xlim=(0,400))
     utils.make_qy_plot(species, out)
 
     # Save citation
     tmp = {
     "xsections": [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017']}
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Fahr1994']},
         ],
     'photodissociation-qy': [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017','Burkholder2020']}
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Lavvas2008']}
         ],
     }
     citation = {species: tmp}

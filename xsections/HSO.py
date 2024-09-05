@@ -2,34 +2,33 @@ import utils
 import numpy as np
 
 def main():
-    species = 'OCS'
-    out = utils.get_leiden(species)
+    species = 'HSO'
+    out = utils.get_leiden('HO2')
 
-    vulcan = utils.get_VULCAN(species)
-    phid = utils.get_phidrates(species)
     wogan = utils.get_wogan(species)
-    
+
     # Quantum yields
     ratios = {
         'wv': utils.minmaxarray(out['wv']),
-        'OCS + hv => CO + S': {'qy': np.array([1.0, 1.0])}
+        'HSO + hv => HS + O': {'qy': np.array([1.0, 1.0])}
     }
     ratios = utils.rename_all_as_zahnle(ratios)
     out['ratios'] = ratios
     out['missing'] = utils.get_missing_zahnle(species, ratios)
 
     # Make plots
-    utils.make_xs_plot(species, out, (vulcan, phid, wogan), ('VULCAN','Phidrates', 'Wogan'),xlim=(0,400))
+    utils.make_xs_plot(species, out, (wogan,), ('Wogan',),xlim=None)
     utils.make_qy_plot(species, out)
 
     # Save citation
     tmp = {
     "xsections": [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017']}
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Assumed']}
         ],
     'photodissociation-qy': [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Heays2017','Burkholder2020']}
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Assumed']}
         ],
+    'notes': "Assumed to be identical to HO2."
     }
     citation = {species: tmp}
     utils.save_citation(species, citation)

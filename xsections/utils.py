@@ -33,9 +33,9 @@ if not os.path.isdir('cross_sections'):
 
 # PhotoData, including phidrates
 if not os.path.isdir('PhotoData'):
-    download_and_unzip('https://github.com/Nicholaswogan/PhotoData/archive/fb6d8ae1196b61dc95633bde0f89a021ab30dcfc.zip')
-    os.rename('PhotoData-fb6d8ae1196b61dc95633bde0f89a021ab30dcfc','PhotoData')
-from PhotoData import phidrates, MPI_Mainz
+    download_and_unzip('https://github.com/Nicholaswogan/PhotoData/archive/5c259fae902072081ba2d90390d5cb6e02134264.zip')
+    os.rename('PhotoData-5c259fae902072081ba2d90390d5cb6e02134264','PhotoData')
+from PhotoData.PhotoData import phidrates, MPI_Mainz
 
 # VULCAN
 if not os.path.isdir('VULCAN'):
@@ -345,11 +345,12 @@ def check_xs_and_qy(out):
     assert minval > 1e-45
     
     # Check to make sure that QYs sum to 1
-    qyt = np.zeros(out['ratios']['wv'].shape[0])
-    for ratio in out['ratios']:
-        if ratio != 'wv': 
-            qyt += out['ratios'][ratio]['qy']
-    assert np.all(np.isclose(qyt ,1,rtol=1e-3))
+    if 'ratios' in out:
+        qyt = np.zeros(out['ratios']['wv'].shape[0])
+        for ratio in out['ratios']:
+            if ratio != 'wv': 
+                qyt += out['ratios'][ratio]['qy']
+        assert np.all(np.isclose(qyt ,1,rtol=1e-3))
 
     # Make sure absorption is never less than the sum of ionoization and photolysis
     # To within a tolerance
@@ -376,15 +377,16 @@ def make_h5_from_dict(species, out):
         dset = f.create_dataset("photoionisation", out['xsi'].shape, 'f')
         dset[:] = out['xsi']
 
-        grp = f.create_group("photodissociation-qy")
+        if 'ratios' in out:
+            grp = f.create_group("photodissociation-qy")
 
-        dset = grp.create_dataset("wavelengths", out['ratios']['wv'].shape, 'f')
-        dset[:] = out['ratios']['wv']
-        
-        for ratio in out['ratios']:
-            if ratio != 'wv':
-                dset = grp.create_dataset(ratio, out['ratios'][ratio]['qy'].shape, 'f')
-                dset[:] = out['ratios'][ratio]['qy']   
+            dset = grp.create_dataset("wavelengths", out['ratios']['wv'].shape, 'f')
+            dset[:] = out['ratios']['wv']
+            
+            for ratio in out['ratios']:
+                if ratio != 'wv':
+                    dset = grp.create_dataset(ratio, out['ratios'][ratio]['qy'].shape, 'f')
+                    dset[:] = out['ratios'][ratio]['qy']   
 
 def make_xs_plot(species, out, compare=(), compare_labels=(), xlim=None, ylim=(1e-30,1e-15), save=True):
     plt.rcParams.update({'font.size': 14})
@@ -472,10 +474,11 @@ def format_citation(species, citation):
         citation[species]['xsections'][i]['nm-range'] = blockseqtrue(citation[species]['xsections'][i]['nm-range'])
         citation[species]['xsections'][i]['citations'] = blockseqtrue(citation[species]['xsections'][i]['citations'])
         citation[species]['xsections'][i] = flowmap(citation[species]['xsections'][i])
-    for i in range(len(citation[species]['photodissociation-qy'])):
-        citation[species]['photodissociation-qy'][i]['nm-range'] = blockseqtrue(citation[species]['photodissociation-qy'][i]['nm-range'])
-        citation[species]['photodissociation-qy'][i]['citations'] = blockseqtrue(citation[species]['photodissociation-qy'][i]['citations'])
-        citation[species]['photodissociation-qy'][i] = flowmap(citation[species]['photodissociation-qy'][i])
+    if 'photodissociation-qy' in citation[species]:
+        for i in range(len(citation[species]['photodissociation-qy'])):
+            citation[species]['photodissociation-qy'][i]['nm-range'] = blockseqtrue(citation[species]['photodissociation-qy'][i]['nm-range'])
+            citation[species]['photodissociation-qy'][i]['citations'] = blockseqtrue(citation[species]['photodissociation-qy'][i]['citations'])
+            citation[species]['photodissociation-qy'][i] = flowmap(citation[species]['photodissociation-qy'][i])
     return citation
 
 def save_citation(species, citation):
