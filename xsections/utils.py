@@ -50,7 +50,21 @@ with open('photochem_clima_data/reaction_mechanisms/zahnle_earth.yaml','r') as f
     ZAHNLE_DATA = yaml.load(f,yaml.Loader)
 
 def get_leiden(species):
-    wv,xsa,xsp,xsi = np.loadtxt('cross_sections/'+species+'/'+species+'_0.1nm.txt',skiprows=3).T
+    filename = 'cross_sections/'+species+'/'+species+'_0.1nm.txt'
+    with open(filename,'r') as f:
+        lines = f.readlines()
+    line = lines[2]
+    labels = line.split()[1:]
+    if labels == ['wavelength', 'photoabsorption', 'photodissociation', 'photoionisation']:
+        wv,xsa,xsp,xsi = np.loadtxt(filename,skiprows=3).T
+    elif labels == ['wavelength', 'photoabsorption', 'photoionisation']:
+        wv,xsa,xsi = np.loadtxt(filename,skiprows=3).T
+        xsp = np.zeros(wv.shape[0])
+    elif labels == ['wavelength', 'photoabsorption', 'photodissociation']:
+        wv,xsa,xsp = np.loadtxt(filename,skiprows=3).T
+        xsi = np.zeros(wv.shape[0])
+    else:
+        raise Exception('Problem reading '+filename)
     out = {}
     out['wv'] = wv
     out['xsa'] = xsa
