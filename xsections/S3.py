@@ -28,7 +28,7 @@ def main():
     # Save citation
     tmp = {
     "xsections": [
-        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Bilmers1991']},
+        {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Billmers1991']},
         ],
     'photodissociation-qy': [
         {'nm-range': [float(np.min(out['wv'])), float(np.max(out['wv']))], 'citations': ['Assumed']}

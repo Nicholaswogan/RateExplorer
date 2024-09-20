@@ -14,7 +14,7 @@ def runall():
         print()
 
 def collect_citations():
-    species = list(set([a.replace('.h5','').replace('.yaml','') for a in os.listdir('results') if a != '.gitignore' and a != 'metadata.yaml']))
+    species = list(set([a.replace('.h5','') for a in os.listdir('results') if '.h5' in a]))
     species.sort()
 
     citations = {}
