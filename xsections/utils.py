@@ -371,7 +371,12 @@ def check_xs_and_qy(out):
     assert np.all(out['xsa']*(1+1e-3) >= out['xsp'] + out['xsi'])
 
     # Must be sorted
-    assert np.all(out['wv'][:-1] <= out['wv'][1:])
+    wv = out['wv'].astype(np.float32)
+    assert np.all(wv[:-1] < wv[1:])
+
+    if 'ratios' in out:
+        wv = out['ratios']['wv'].astype(np.float32)
+        assert np.all(wv[:-1] < wv[1:])
 
 def make_h5_from_dict(species, out):
 
