@@ -37,6 +37,13 @@ def get_ratios():
         'H2CO + hv => CO + H2': {'qy': phi_2, 'new': False},
         'H2CO + hv => CO + H + H': {'qy': phi_3, 'new': False}
     }
+    # Get unique entries
+    _, inds_unique = np.unique(ratios['wv'].astype(np.float32),return_index=True)
+    ratios['wv'] = ratios['wv'][inds_unique]
+    for key in ratios:
+        if key == 'wv':
+            continue
+        ratios[key]['qy'] = ratios[key]['qy'][inds_unique]
 
     return ratios
 

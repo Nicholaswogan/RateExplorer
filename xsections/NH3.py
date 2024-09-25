@@ -30,10 +30,12 @@ def main():
     }
     qys = utils.get_phidrates_yields('NH3')
     ratios = {'wv': qys['wv']}
+    _, inds_unique = np.unique(ratios['wv'].astype(np.float32),return_index=True) # Remove duplicate entries
+    ratios['wv'] = ratios['wv'][inds_unique]
     for key in qys:
         if key == 'wv':
             continue
-        ratios[new_names[key]] = {'qy': qys[key]}
+        ratios[new_names[key]] = {'qy': qys[key][inds_unique]}
     ratios = utils.rename_all_as_zahnle(ratios)
     out['ratios'] = ratios
     out['missing'] = utils.get_missing_zahnle(species, ratios)
