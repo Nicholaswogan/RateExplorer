@@ -1,4 +1,6 @@
 import os
+import numpy as np
+import h5py
 from utils import yaml
 import utils
 
@@ -30,9 +32,45 @@ def collect_citations():
     for i,sp in enumerate(species):
         os.remove('results/'+sp+'.yaml')
 
+def make_bins_file():
+    wavl = []
+
+    with open('Zahnle_Kevin_data/SW_neutrals_for_stays.DAT','r') as f:
+        lines = f.readlines()
+
+    for line in lines[2:]:
+        wv = float(line.split()[1])/10
+        if np.isclose(wv,175.4):
+            break
+        wavl.append(wv)
+        
+    with open('Zahnle_Kevin_data/photo_new_new.dat','r') as f:
+        lines = f.readlines()
+    for line in lines[2:]:
+        if len(line) < 5:
+            break
+        tmp = line.split()[1]
+        wavl.append(float(tmp.split('-')[0])/10)
+    wavl.append(8550.0/10)
+
+    wavl = wavl[5:]
+
+    while True:
+        if wavl[-1]+10.0 > 1100.0:
+            break
+        wavl.append(wavl[-1]+10.0)
+    wavl[-1] = 1100.0
+
+    wavl = np.array(wavl)
+
+    with h5py.File('results/bins.h5','w') as f:
+        dset = f.create_dataset("wavl", wavl.shape, 'f')
+        dset[:] = wavl
+
 def main():
     runall()
     collect_citations()
+    make_bins_file()
 
 if __name__ == '__main__':
     main()
