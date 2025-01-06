@@ -1243,7 +1243,7 @@ reactions:
   rate-constant: {A: 6.6e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R50
-  checked: false
+  checked: true
 - equation: CH + O2 <=> CO + OH
   rate-constant: {A: 8.3e-11, b: 0.0, Ea: 0.0}
   citation: Li84
@@ -1275,41 +1275,41 @@ reactions:
   checked: true
 - equation: CH2 + H <=> CH + H2
   rate-constant: {A: 4.0e-10, b: 0.0, Ea: 385.0}
-  citation: 800-1600 K reverse of Baulch et al
+  citation: rev-Ba92
   location: [csv L281]
-  checked: false
+  checked: true
 - equation: OH + CH2 <=> H2CO + H
   rate-constant: {A: 4.811648e-11, b: 0.12, Ea: -81.4}
   citation: Ja07
   location: latex R57
-  checked: false
+  checked: true
 - equation: OH + CH2 <=> H2O + CH
   rate-constant: {A: 1.407678e-18, b: 2.02, Ea: 3420.0}
   citation: Ja07
   location: latex R58
-  checked: false
+  checked: true
 - equation: CH2 + O <=> HCO + H
   rate-constant: {A: 1.2e-10, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R59
-  checked: false
+  checked: true
 - equation: O + CH2 <=> CO + H2
   rate-constant: {A: 8.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R60
-  checked: false
+  checked: true
 - equation: O2 + CH2 <=> H2CO + O
   rate-constant: {A: 4.1e-11, b: 0.0, Ea: 750.0}
   citation: Ba92
   location: latex R61
-  checked: false
+  checked: true
 - equation: CH + H2 (+ M) <=> CH3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.387566e-25, b: -2.3, Ea: 0.0}
   high-P-rate-constant: {A: 8.500839e-11, b: 0.15, Ea: 0.0}
   citation: {low-P: Be84, high-P: Fu97a}
   location: latex R62
-  checked: false
+  checked: true
 - equation: CH2 + H (+ M) <=> CH3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.8e-24, b: -2.0, Ea: 0.0}
@@ -1319,163 +1319,166 @@ reactions:
   checked: false
 - equation: H2 + CH2 <=> CH3 + H
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 5300.0}
-  citation: Assumed CSV
+  citation: Assumed
   location: [csv L329]
   checked: false
 - equation: CH3 + O <=> H2CO + H
   rate-constant: {A: 9.0e-11, b: 0.0, Ea: 0.0}
-  citation: Xu et al 2015; 2023
+  citation: Xu15
   location: [csv L338, equation-rate latex R65]
-  checked: false
+  checked: true
 - equation: CH3 + O <=> HCO + H2
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
-  citation: Xu et al 2015; 2023
+  citation: Xu15
   location: [csv L340]
-  checked: false
+  checked: true
 - equation: CH3 + OH <=> H2COH + H
   rate-constant: {A: 1.066667e-14, b: 1.0, Ea: 1610.0}
   citation: Ja07
   location: latex R85
-  checked: false
+  checked: true
 - equation: CH2 + HCO <=> CH3 + CO
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
-  citation: Ts86  UPDATE
+  citation: Ts86
   location: latex R67
-  checked: false
+  checked: true
 - equation: CH2 + CH2 <=> CH + CH3
   rate-constant: {A: 4.0e-10, b: 0.0, Ea: 5000.0}
   citation: Fr84
   location: latex R68
-  checked: false
+  checked: true
 - equation: CH3 + H (+ M) <=> CH4 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.55214e-23, b: -2.17, Ea: 0.0}
   high-P-rate-constant: {A: 3.5e-10, b: 0.0, Ea: 0.0}
   citation: {low-P: Go08, high-P: Go08}
   location: latex R70
-  checked: false
+  checked: true
 - equation: CH3 + H2 <=> CH4 + H
   rate-constant: {A: 1.140683e-20, b: 2.74, Ea: 4700.0}
-  citation: Baulch et al 1992
+  citation: Ba92
   location: [csv L380]
-  checked: false
+  checked: true
 - equation: CH3 + OH <=> CH4 + O
   rate-constant: {A: 1.078983e-21, b: 2.75, Ea: 1600.0}
-  citation: reverse of Baulch et al 1992
+  citation: rev-Ba92
   location: [csv L395]
-  checked: false
+  checked: true
 - equation: CH4 + OH <=> CH3 + H2O
   rate-constant: {A: 2.578403e-17, b: 1.83, Ea: 1396.0}
   citation: Ba92
   location: latex R73
-  checked: false
+  checked: true
 - equation: CH3 + HCO <=> CH4 + CO
   rate-constant: {A: 4.4e-11, b: 0.0, Ea: 0.0}
   citation: Mu87
   location: latex R74
-  checked: false
+  checked: true
 - equation: CH3 + H2CO <=> CH4 + HCO
   rate-constant: {A: 6.178208e-26, b: 4.4, Ea: 2450.0}
   citation: Li03
   location: latex R75
-  checked: false
+  checked: true
 - equation: CH2 + CH4 <=> CH3 + CH3
   rate-constant: {A: 7.1e-12, b: 0.0, Ea: 5052.0}
   citation: Bo85
   location: latex R76
-  checked: false
+  checked: true
 - equation: H + H2CO (+ M) <=> CH3O (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.22e-23, b: -3.0, Ea: 2900}
   high-P-rate-constant: {A: 6560.0, b: -5, Ea: 4000}
-  citation: {low-P: fits to Xu et al; 2023, high-P: fits to Xu et al; 2023}
+  citation: {low-P: Xu15, high-P: Xu15}
   location: [csv L436, equation-rate latex R78]
-  checked: false
+  checked: true
+  note: Custom fit based on \citet{Xu15}.
 - equation: H + CH3O <=> CH3 + OH
   rate-constant: {A: 7.7e-11, b: 0.0, Ea: 375.0}
-  citation: uses Moortgat, Baulch, Dobe
+  citation: Mo77, Ba92, Dob91
   location: [csv L454]
-  checked: false
+  checked: true
+  note: Custom fit based on \citet{Mo77}, \citet{Ba92}, and \citet{Dob91}.
 - equation: H + CH3O <=> H2CO + H2
   rate-constant: {A: 3.3e-11, b: 0.0, Ea: 375.0}
   citation: Mo77, Dob91
   location: latex R80
-  checked: false
+  checked: true
 - equation: CO + CH3O <=> CH3 + CO2
   rate-constant: {A: 1.33e-11, b: 0.0, Ea: 5940.0}
   citation: Hi00
   location: latex R81
-  checked: false
+  checked: true
 - equation: H + H2CO (+ M) <=> H2COH (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.82e-29, b: -1.2, Ea: 2900}
   high-P-rate-constant: {A: 3.0e-12, b: 0.0, Ea: 3500}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: Xu15, high-P: Xu15}
   location: [equation-rate latex R83, equation-rate csv L474]
-  checked: false
+  checked: true
+  note: Custom fit based on \citet{Xu15}.
 - equation: H + H2COH <=> H2CO + H2
   rate-constant: {A: 1.66e-11, b: 0.0, Ea: 0.0}
   citation: Cr92
   location: latex R84
-  checked: false
+  checked: true
 - equation: HCO + H2COH <=> H2CO + H2CO
   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 0.0}
   citation: Ts87
   location: latex R86
-  checked: false
+  checked: true
 - equation: H + CH3O (+ M) <=> CH3OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 4.070154e-30, b: 0.24, Ea: -26.5}
   high-P-rate-constant: {A: 4.070154e-11, b: 0.24, Ea: -26.5}
   citation: {low-P: Assumed, high-P: Ja07}
   location: latex R87
-  checked: false
+  checked: true
 - equation: H + H2COH (+ M) <=> CH3OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.308411e-29, b: 0.04, Ea: 0.0}
   high-P-rate-constant: {A: 2.308411e-10, b: 0.04, Ea: 0.0}
   citation: {low-P: Assumed, high-P: Ja07}
   location: latex R88
-  checked: false
+  checked: true
 - equation: O + H2COH <=> H2CO + OH
   rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
-  citation: null
+  citation: Ts87
   location: None
-  checked: false
+  checked: true
 - equation: OH + H2COH <=> H2CO + H2O
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
-  citation: null
+  citation: Ts87
   location: None
-  checked: false
+  checked: true
 - equation: O + CH3O <=> H2CO + OH
   rate-constant: {A: 2.5e-11, b: 0.0, Ea: 0.0}
-  citation: null
+  citation: Ts86
   location: None
-  checked: false
+  checked: true
 - equation: OH + CH3O <=> H2CO + H2O
   rate-constant: {A: 5.773503e-22, b: 2.5, Ea: 950.0}
-  citation: null
+  citation: Ja09
   location: None
-  checked: false
+  checked: true
 - equation: H2CO + H2 (+ M) <=> CH3OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.3e-30, b: 0.0, Ea: 35100.0}
   high-P-rate-constant: {A: 2.3e-11, b: 0.0, Ea: 35000.0}
   citation: {low-P: Assumed, high-P: Ja07}
   location: latex R89
-  checked: false
+  checked: true
 - equation: CH3 + OH (+ M) <=> CH3OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 0.0004619307, b: -8.2, Ea: 0.0}
   high-P-rate-constant: {A: 1.0e-10, b: 0.0, Ea: 0.0}
   citation: {low-P: Ba94, high-P: Ba94}
   location: latex R90
-  checked: false
+  checked: true
 - equation: H + CH3OH <=> CH3O + H2
   rate-constant: {A: 8.973108e-18, b: 2.15, Ea: 5650.0}
-  citation: null
+  citation: Mea11
   location: [equation-rate latex R92, equation-rate csv L583]
-  checked: false
+  checked: true
 - equation: H + CH3OH <=> H2COH + H2
   rate-constant: {A: 8.4e-11, b: 0.0, Ea: 3600.0}
   citation: null
@@ -1485,332 +1488,332 @@ reactions:
   rate-constant: {A: 5.144444e-18, b: 2.0, Ea: 757.0}
   citation: Li96
   location: latex R94
-  checked: false
+  checked: true
 - equation: CH3OH + OH <=> H2O + H2COH
   rate-constant: {A: 2.366667e-18, b: 2.0, Ea: -423.0}
   citation: Li96
   location: latex R95
-  checked: false
+  checked: true
 - equation: CH3OH + CH3 <=> CH4 + CH3O
   rate-constant: {A: 5.968035e-28, b: 4.7, Ea: 2910.0}
   citation: Jo99
   location: latex R96
-  checked: false
+  checked: true
 - equation: CH3 + CH3OH <=> H2COH + CH4
   rate-constant: {A: 9.827422e-28, b: 4.9, Ea: 3380.0}
   citation: Jo99
   location: latex R97
-  checked: false
+  checked: true
 - equation: CH3O + HCO <=> CH3OH + CO
   rate-constant: {A: 1.5e-10, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R98
-  checked: false
+  checked: true
 - equation: HCO + H2COH <=> CH3OH + CO
   rate-constant: {A: 6.67e-11, b: 0.0, Ea: 0.0}
   citation: Ts87
   location: latex R99
-  checked: false
+  checked: true
 - equation: CH3O + CH3O <=> CH3OH + H2CO
   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R100
-  checked: false
+  checked: true
 - equation: O + C2 <=> CO + C
   rate-constant: {A: 2.886751e-12, b: 0.5, Ea: 0.0}
   citation: Mi97
   location: latex R108
-  checked: false
+  checked: true
 - equation: CH + C <=> C2 + H
   rate-constant: {A: 9.641749e-13, b: 0.5, Ea: 0.0}
-  citation: Millar 1992
+  citation: Mi92
   location: [csv L638, equation-rate latex R109]
-  checked: false
+  checked: true
 - equation: C2 + H2 <=> C2H + H
   rate-constant: {A: 1.1e-10, b: 0.0, Ea: 4000.0}
   citation: Kr97
   location: latex R110
-  checked: false
+  checked: true
 - equation: C2 + CH4 <=> C2H + CH3
   rate-constant: {A: 5.05e-11, b: 0.0, Ea: 4000.0}
   citation: Mo95
   location: latex R111
-  checked: false
+  checked: true
 - equation: O + C2H <=> CO + CH
   rate-constant: {A: 1.67e-11, b: 0.0, Ea: 0.0}
   citation: Wa84
   location: latex R112
-  checked: false
+  checked: true
 - equation: C2H + O2 <=> HCO + CO
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R113
-  checked: false
+  checked: true
 - equation: C2H + H (+ M) <=> C2H2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.725717e-24, b: -1.8, Ea: 0.0}
   high-P-rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
   citation: {low-P: Assumed, high-P: Ts86}
   location: latex R115
-  checked: false
+  checked: true
 - equation: CH2 + CH2 <=> C2H2 + H2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 400.0}
   citation: Ba92
   location: latex R116
-  checked: false
+  checked: true
 - equation: C2H + H2 <=> C2H2 + H
   rate-constant: {A: 7.286495e-18, b: 2.22, Ea: 461.0}
   citation: Ei03
   location: latex R117
-  checked: false
+  checked: true
 - equation: C2H + CH4 <=> C2H2 + CH3
   rate-constant: {A: 1.278281e-18, b: 2.34, Ea: -380.0}
-  citation: 270-750  Ceursters, B.; Nguyen, H.M.T.; Peeters, J.; Nguyen,
-    M.T. Experimental and Theoretical Study of the Gas Phase Reaction of
-    Ethynyl Radical with Methane (HCC+CH4) Chem. Phys. Lett. 329, 412 -
-    420 2000
+  citation: Ce00
   location: [csv L701, equation-rate latex R118]
-  checked: false
+  checked: true
 - equation: C2H2 + O <=> CH2 + CO
   rate-constant: {A: 2.0e-17, b: 2.0, Ea: 956.0}
   citation: Ei03
   location: latex R119
-  checked: false
+  checked: true
 - equation: C2H + OH <=> CH2 + CO
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R120
-  checked: false
+  checked: true
 - equation: C2H + H2O <=> OH + C2H2
   rate-constant: {A: 2.050089e-19, b: 2.7, Ea: 1120.0}
-  citation: reverse of Eiteneer 1000-2000 K
+  citation: rev-Ei03
   location: [csv L737]
-  checked: false
+  checked: true
+  note: Reverse of \citet{Ei03} for temperatures between 1000 and 2000 K.
 - equation: OH + C2H2 <=> CH3 + CO
   rate-constant: {A: 7.777778e-28, b: 4.0, Ea: 10100.0}
   citation: Mi88
   location: latex R122
-  checked: false
+  checked: true
 - equation: H + C2H2 (+ M) <=> C2H3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.3e-30, b: 0.0, Ea: 740.0}
   high-P-rate-constant: {A: 9.0e-12, b: 0.0, Ea: 1220.0}
   citation: {low-P: Ba92, high-P: Wa84}
   location: latex R124
-  checked: false
+  checked: true
 - equation: CH2 + CH2 <=> C2H3 + H
   rate-constant: {A: 2.0e-10, b: 0.0, Ea: 400.0}
-  citation: 'real products are C2H2 + H + H '
+  citation: Ba92
   location: [csv L754]
-  checked: false
+  checked: true
+  note: The products are assumed.
 - equation: H + C2H3 <=> H2 + C2H2
   rate-constant: {A: 1.6e-10, b: 0.0, Ea: 0.0}
-  citation: Tsang Hampson 1986; the high rate is observed; what the products
-    are is not known
+  citation: Ts86
   location: [csv L760, equation-rate latex R125]
-  checked: false
+  checked: true
+  note: The products are assumed.
 - equation: C2H3 + OH <=> C2H2 + H2O
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R126
-  checked: false
+  checked: true
 - equation: O + C2H3 <=> OH + C2H2
   rate-constant: {A: 1.597886e-12, b: 0.2, Ea: -215.0}
   citation: Ha05
   location: latex R127
-  checked: false
+  checked: true
 - equation: O + C2H3 <=> CH3 + CO
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: La04
   location: latex R128
-  checked: false
+  checked: true
 - equation: O2 + C2H3 <=> H2CO + HCO
   rate-constant: {A: 9.0e-12, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R129
-  checked: false
+  checked: true
 - equation: CH3 + C2H3 <=> C2H2 + CH4
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: La04
   location: latex R130
-  checked: false
+  checked: true
 - equation: CH2 + C2H3 <=> C2H2 + CH3
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R131
-  checked: false
+  checked: true
 - equation: C2H + C2H3 <=> C2H2 + C2H2
   rate-constant: {A: 1.6e-12, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R132
-  checked: false
+  checked: true
 - equation: C2H3 + H (+ M) <=> C2H4 (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.52533e-16, b: -4.5, Ea: 0.0}
   high-P-rate-constant: {A: 1.0e-10, b: 0.0, Ea: 0.0}
   citation: {low-P: rev-Ba94, high-P: Assumed}
   location: latex R134
-  checked: false
+  checked: true
 - equation: C2H2 + H2 (+ M) <=> C2H4 (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.5e-33, b: 0.0, Ea: 14900.0}
   high-P-rate-constant: {A: 5.0e-13, b: 0.0, Ea: 19600.0}
   citation: {low-P: Assumed, high-P: Ts86}
   location: latex R135
-  checked: false
+  checked: true
 - equation: CH2 + CH3 <=> C2H4 + H
   rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R136
-  checked: false
+  checked: true
 - equation: CH + CH4 <=> C2H4 + H
   rate-constant: {A: 7.6e-11, b: 0.0, Ea: 0.0}
   citation: Fl02
   location: latex R137
-  checked: false
+  checked: true
 - equation: C2H3 + H2 <=> C2H4 + H
   rate-constant: {A: 5.79355e-14, b: 0.7, Ea: 3630.0}
-  citation: my reverse of Knyazev (its just for consistency)
+  citation: rev-Kn96
   location: [csv L828]
-  checked: false
+  checked: true
 - equation: O + C2H4 <=> HCO + CH3
   rate-constant: {A: 5.773001e-18, b: 2.08, Ea: 0.0}
   citation: Ba92
   location: latex R139
-  checked: false
+  checked: true
 - equation: OH + C2H4 <=> C2H3 + H2O
   rate-constant: {A: 2.138405e-25, b: 4.2, Ea: -433.0}
   citation: Se06b
   location: latex R140
-  checked: false
+  checked: true
 - equation: OH + C2H4 <=> H2CO + CH3
   rate-constant: {A: 2.593845e-25, b: 3.34, Ea: -1400.0}
   citation: Se06b
   location: latex R141
-  checked: false
+  checked: true
 - equation: C2H3 + CH4 <=> CH3 + C2H4
   rate-constant: {A: 2.086768e-17, b: 1.92, Ea: 2980.0}
-  citation: 600-2000 K reverse Tsang
+  citation: rev-Ts86
   location: [csv L849]
-  checked: false
+  checked: true
+  note: Reverse of \citet{Ts86} for temperatures between 600 and 2000 K. 
 - equation: C2H3 + C2H3 <=> C2H2 + C2H4
   rate-constant: {A: 2.4e-11, b: 0.0, Ea: 0.0}
   citation: La04
   location: latex R143
-  checked: false
+  checked: true
 - equation: H + C2H4 (+ M) <=> C2H5 (+ M)
   type: falloff
   low-P-rate-constant: {A: 7.7e-30, b: 0.0, Ea: 381.0}
   high-P-rate-constant: {A: 4.161791e-16, b: 1.75, Ea: 605.0}
   citation: {low-P: Ba94, high-P: Mi05}
   location: latex R144
-  checked: false
+  checked: true
 - equation: H + C2H5 <=> CH3 + CH3
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R145
-  checked: false
+  checked: true
 - equation: H + C2H5 <=> C2H4 + H2
   rate-constant: {A: 3.0e-12, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R146
-  checked: false
+  checked: true
 - equation: O + C2H5 <=> H2CO + CH3
   rate-constant: {A: 1.1e-10, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R147
-  checked: false
+  checked: true
 - equation: C2H5 + OH <=> C2H4 + H2O
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R148
-  checked: false
+  checked: true
 - equation: CH2 + C2H5 <=> C2H4 + CH3
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R149
-  checked: false
+  checked: true
 - equation: CH3 + C2H5 <=> C2H4 + CH4
   rate-constant: {A: 1.9e-12, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R150
-  checked: false
+  checked: true
 - equation: CH3 + CH3 (+ M) <=> C2H6 (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.4992e-07, b: -7.0, Ea: 1390.0}
   high-P-rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: Ba94, high-P: Ba94}
   location: latex R151
-  checked: false
+  checked: true
 - equation: O + C2H6 <=> C2H5 + OH
   rate-constant: {A: 1.655071e-15, b: 1.5, Ea: 2920.0}
   citation: Ba92
   location: latex R152
-  checked: false
+  checked: true
 - equation: OH + C2H6 <=> C2H5 + H2O
   rate-constant: {A: 1.222222e-17, b: 2.0, Ea: 435.0}
   citation: Ba92
   location: latex R153
-  checked: false
+  checked: true
 - equation: H + C2H6 <=> H2 + C2H5
   rate-constant: {A: 8.981004e-22, b: 3.5, Ea: 2600.0}
   citation: Ts86
   location: latex R154
-  checked: false
+  checked: true
 - equation: CH3 + C2H6 <=> C2H5 + CH4
   rate-constant: {A: 8.888889e-25, b: 4.0, Ea: 4170.0}
   citation: Ts86
   location: latex R155
-  checked: false
+  checked: true
 - equation: C2H + C2H6 <=> C2H2 + C2H5
   rate-constant: {A: 3.6e-11, b: 0.0, Ea: 0.0}
   citation: La90
   location: latex R156
-  checked: false
+  checked: true
 - equation: C2H5 + C2H5 <=> C2H4 + C2H6
   rate-constant: {A: 2.4e-12, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R157
-  checked: false
+  checked: true
 - equation: C2H6 + C2H3 <=> C2H4 + C2H5
   rate-constant: {A: 1.00367e-21, b: 3.3, Ea: 5280.0}
   citation: Ts86
   location: latex R158
-  checked: false
+  checked: true
 - equation: H + C4H (+ M) <=> C4H2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.506884e-24, b: -1.5, Ea: 0.0}
   high-P-rate-constant: {A: 5.715768e-07, b: -1.5, Ea: 0.0}
   citation: {low-P: Assumed, high-P: Assumed}
   location: latex R159
-  checked: false
+  checked: true
 - equation: C2H + C2H2 <=> C4H2 + H
   rate-constant: {A: 3.179808e-11, b: 0.24, Ea: -37.3}
   citation: Ei03
   location: latex R160
-  checked: false
+  checked: true
 - equation: H2 + C4H <=> C4H2 + H
   rate-constant: {A: 7.5e-11, b: 0.0, Ea: 1560.0}
   citation: Assumed
   location: latex R161
-  checked: false
+  checked: true
 - equation: C4H2 + C2H <=> C4H + C2H2
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 5000.0}
   citation: Assumed
   location: latex R162
-  checked: false
+  checked: true
 - equation: C2 + C2H2 <=> C4H + H
   rate-constant: {A: 3.5e-10, b: 0.0, Ea: 0.0}
   citation: Pa08
   location: latex R163
-  checked: false
+  checked: true
 - equation: C2H2 + OH (+ M) <=> C2H2OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 5.04e-25, b: -2.0, Ea: 0.0}
   high-P-rate-constant: {A: 2.3e-12, b: 0.0, Ea: 230.0}
   citation: {low-P: Ba92, high-P: Ba92}
   location: latex R164
-  checked: false
+  checked: true
 - equation: C2H2OH + H <=> CH2CO + H2
   rate-constant: {A: 2.0e-10, b: 0.0, Ea: 1500.0}
   citation: null
@@ -1859,52 +1862,46 @@ reactions:
   rate-constant: {A: 3.563891e-28, b: 4.5, Ea: -500.0}
   citation: Mi89, Wo94
   location: latex R169
-  checked: false
+  checked: true
 - equation: CH2CO + O <=> CH2 + CO2
   rate-constant: {A: 3.8e-12, b: 0.0, Ea: 680.0}
   citation: Ba92
   location: latex R170
-  checked: false
+  checked: true
 - equation: CH2CO + OH <=> H2COH + CO
   rate-constant: {A: 7.2e-12, b: 0.0, Ea: 0.0}
   citation: Gr94, Oe92
   location: latex R171
-  checked: false
+  checked: true
 - equation: CH2CO + OH <=> CH3 + CO2
   rate-constant: {A: 5.0e-12, b: 0.0, Ea: 0.0}
   citation: Fa00, Oe92
   location: latex R172
-  checked: false
+  checked: true
 - equation: CH2CO + H <=> CH3 + CO
   rate-constant: {A: 1.279806e-15, b: 1.45, Ea: 1400.0}
   citation: Se06a
   location: latex R173
-  checked: false
+  checked: true
 - equation: CH2CO + H (+ M) <=> CH2CHO (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.868908e-35, b: 1.43, Ea: 3050.0}
   high-P-rate-constant: {A: 3.270555e-15, b: 1.43, Ea: 3050.0}
   citation: {low-P: Assumed, high-P: Se06a}
   location: latex R168
-  checked: false
+  checked: true
 - equation: CH2CO + H (+ M) <=> CH3CO (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.38e-30, b: 0.0, Ea: 1320.0}
   high-P-rate-constant: {A: 2.7e-11, b: 0.0, Ea: 755.0}
-  citation: {low-P: '1000-1700 K Yas 2008; Yasunaga, K.; Kubo, S.; Hoshikawa,
-      H.; Kamesawa, T.; Hidaka, Y. 2008.   Shock-tube and modeling study
-      of acetaldehyde pyrolysis and oxidation. Int. J. Chem. 40, 73 - 102.',
-    high-P: '800 - 1200 K; Faravelli, T.; Goldaniga, A.; Zappella, L.; Ranzi,
-      E.; Dagaut, P.; Cathonnet, M. 2000   An experimental and kinetic modeling
-      study of propyne and allene oxidation  Proc. Combust. Inst.  28, 2601
-      - 2608.'}
+  citation: {low-P: Ya08, high-P: Fa00}
   location: [csv L1071]
-  checked: false
+  checked: true
 - equation: CH2CO + CH2 <=> CO + C2H4
   rate-constant: {A: 2.549665e-20, b: 2.8, Ea: 3124.0}
-  citation: null
+  citation: Lu10
   location: None
-  checked: false
+  checked: true
 - equation: 1CH2 + CH2CO <=> CO + C2H4
   rate-constant: {A: 2.0e-10, b: 0.0, Ea: 0.0}
   citation: null
@@ -1921,53 +1918,53 @@ reactions:
   high-P-rate-constant: {A: 5.0e-12, b: 0.0, Ea: -148.0}
   citation: {low-P: Cl06, high-P: Cl06}
   location: latex R174
-  checked: false
+  checked: true
 - equation: CH3 + H2CO (+ M) <=> C2H4OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.383749e-48, b: 4.98, Ea: 1890.0}
   high-P-rate-constant: {A: 1.383749e-29, b: 4.98, Ea: 1890.0}
   citation: {low-P: Assumed, high-P: 'Ch03, Se06b'}
   location: latex R175
-  checked: false
+  checked: true
 - equation: C2H4OH + H <=> C2H3OH + H2
   rate-constant: {A: 8.3e-11, b: 0.0, Ea: 0.0}
   citation: Ba82
   location: latex R176
-  checked: false
+  checked: true
 - equation: C2H3OH + H <=> CH2CHO + H2
   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 2000.0}
   citation: Assumed
   location: latex R177
-  checked: false
+  checked: true
 - equation: N + N (+ M) <=> N2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.25e-32, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: Kn88, high-P: Assumed}
   location: latex R178
-  checked: false
+  checked: true
 - equation: N + O2 <=> NO + O
   rate-constant: {A: 1.49e-14, b: 1.0, Ea: 3270.0}
   citation: Ba94
   location: latex R179
-  checked: false
+  checked: true
 - equation: N + NO <=> N2 + O
   rate-constant: {A: 3.1e-11, b: 0.0, Ea: 0.0}
   citation: At89
   location: latex R180
-  checked: false
+  checked: true
 - equation: N + OH <=> NO + H
   rate-constant: {A: 3.8e-11, b: 0.0, Ea: 85.0}
   citation: At89
   location: latex R181
-  checked: false
+  checked: true
 - equation: N + CO2 (+ M) <=> NO + CO (+ M)
   type: falloff
   low-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: Assumed, high-P: Assumed}
   location: None
-  checked: false
+  checked: true
 - equation: N + O (+ M) <=> NO (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.858312e-35, b: 0.26, Ea: 0.0}
