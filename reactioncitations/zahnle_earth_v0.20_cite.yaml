@@ -2487,37 +2487,37 @@ reactions:
   type: falloff
   low-P-rate-constant: {A: 2.446097e-25, b: -2.52, Ea: -488.0}
   high-P-rate-constant: {A: 1.0e-10, b: 0.0, Ea: 0.0}
-  citation: {low-P: a saner reverse 1000-2200, high-P: kinfty assumed same
-      as R50}
+  citation: {low-P: "rev-Te90, rev-Woi94, rev-Sh96", high-P: Assumed}
   location: [csv L1872, equation-rate latex R285]
   checked: false
+  note: Reverse for temperatures between 1000 and 2200 K.
 - equation: S + H2 (+ M) <=> H2S (+ M)
   type: falloff
   low-P-rate-constant: {A: 7.122926e-27, b: -1.9, Ea: 8140.0}
   high-P-rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: {low-P: null, high-P: Assumed CSV}
+  citation: {low-P: "rev-Te90, rev-Woi94, rev-Sh96, rev-Ka99", high-P: Assumed}
   location: [csv L1881, equation-rate latex R286]
   checked: false
 - equation: H + H2S <=> HS + H2
   rate-constant: {A: 5.726191e-17, b: 1.94, Ea: 455.0}
   citation: Pe99
   location: latex R287
-  checked: false
+  checked: true
 - equation: HS + HS <=> H2S + S
   rate-constant: {A: 2.716406e-12, b: 0.2, Ea: 0.0}
-  citation: reverse of Shiina et al 1996
+  citation: rev-Sh96
   location: [csv L1919]
-  checked: false
+  checked: true
 - equation: O + H2S <=> HS + OH
   rate-constant: {A: 9.2e-12, b: 0.0, Ea: 1800.0}
   citation: De97
   location: latex R289
-  checked: false
+  checked: true
 - equation: OH + H2S <=> H2O + HS
   rate-constant: {A: 6.1e-12, b: 0.0, Ea: 80.6}
   citation: At04
   location: latex R290
-  checked: false
+  checked: true
 - equation: HS + HCO <=> H2S + CO
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -2527,27 +2527,27 @@ reactions:
   rate-constant: {A: 2.5e-11, b: 0.0, Ea: 746.0}
   citation: Da95
   location: latex R292
-  checked: false
+  checked: true
 - equation: HS + CH4 <=> CH3 + H2S
   rate-constant: {A: 3.06e-12, b: 0.0, Ea: 8260.0}
-  citation: corrected reverse of Perrin
+  citation: Pe88
   location: [csv L1956]
-  checked: false
+  checked: true
 - equation: O + HS <=> SO + H
   rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
   citation: Sa03
   location: latex R295
-  checked: false
+  checked: true
 - equation: S + OH <=> H + SO
   rate-constant: {A: 6.6e-11, b: 0.0, Ea: 0.0}
   citation: De97
   location: latex R296
-  checked: false
+  checked: true
 - equation: O + S2 <=> SO + S
   rate-constant: {A: 1.1e-11, b: 0.0, Ea: 0.0}
   citation: Hi87
   location: latex R297
-  checked: false
+  checked: true
 - equation: S + O2 <=> SO + O
   rate-constant: {A: 3.21e-16, b: 1.35, Ea: -285.8}
   citation: null
@@ -2557,46 +2557,46 @@ reactions:
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 500.0}
   citation: Mo95
   location: latex R299
-  checked: false
+  checked: true
 - equation: S4 + O <=> S3 + SO
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 500.0}
   citation: Mo95
   location: latex R300
-  checked: false
+  checked: true
 - equation: N + SO <=> NO + S
   rate-constant: {A: 1.49e-14, b: 1.0, Ea: 3270.0}
   citation: Assumed
   location: latex R301
-  checked: false
+  checked: true
 - equation: SO + O (+ M) <=> SO2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.139185e-25, b: -2.17, Ea: 0.0}
   high-P-rate-constant: {A: 5.3e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: Lu03, high-P: Si88}
   location: latex R302
-  checked: false
+  checked: true
 - equation: SO + SO <=> S + SO2
   rate-constant: {A: 5.0e-13, b: 0.0, Ea: 1500.0}
-  citation: note
+  citation: Assumed
   location: latex R303
-  checked: false
+  checked: true
 - equation: O2 + SO <=> SO2 + O
   rate-constant: {A: 3.8e-12, b: 0.0, Ea: 3710.0}
   citation: Ga98
   location: latex R304
-  checked: false
+  checked: true
 - equation: OH + SO <=> SO2 + H
   rate-constant: {A: 1.899381e-07, b: -1.35, Ea: 0.0}
-  citation: Bl00,Bl06,Ba07
+  citation: Bl00, Bl06, Ba07
   location: latex R305
-  checked: false
+  checked: true
 - equation: H + SO (+ M) <=> HSO (+ M)
   type: falloff
   low-P-rate-constant: {A: 7.431425e-34, b: 0.28, Ea: 0.0}
   high-P-rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: Assumed, high-P: Assumed}
   location: latex R309
-  checked: false
+  checked: true
 - equation: H + HSO <=> HS + OH
   rate-constant: {A: 7.0e-11, b: 0.0, Ea: 500.0}
   citation: 7e-11 is  H+HO2 > OH+OH
@@ -2611,42 +2611,42 @@ reactions:
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 3870.0}
   citation: Assumed
   location: latex R312
-  checked: false
+  checked: true
 - equation: H2S + O <=> H + HSO
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 3850.0}
   citation: Assumed
   location: latex R313
-  checked: false
+  checked: true
 - equation: OH + HSO <=> H2O + SO
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 300.0}
   citation: Assumed
   location: latex R314
-  checked: false
+  checked: true
 - equation: HS + HSO <=> H2S + SO
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 500.0}
   citation: Assumed
   location: latex R315
-  checked: false
+  checked: true
 - equation: O + HSO <=> OH + SO
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 500.0}
   citation: Assumed
   location: latex R316
-  checked: false
+  checked: true
 - equation: O + HSO <=> HS + O2
   rate-constant: {A: 1.2e-10, b: 0.0, Ea: 500.0}
   citation: Assumed
   location: latex R317
-  checked: false
+  checked: true
 - equation: S + HSO <=> HS + SO
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 500.0}
   citation: Assumed
   location: latex R318
-  checked: false
+  checked: true
 - equation: SO + HCO <=> HSO + CO
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
   location: latex R319
-  checked: false
+  checked: true
 - equation: S + CO (+ M) <=> OCS (+ M)
   type: falloff
   low-P-rate-constant: {A: 9.295262e-33, b: -0.57, Ea: 0.0}
@@ -2658,32 +2658,32 @@ reactions:
   rate-constant: {A: 7.83e-11, b: 0.0, Ea: 2620.0}
   citation: Si88
   location: latex R324
-  checked: false
+  checked: true
 - equation: HS + CO <=> OCS + H
   rate-constant: {A: 4.15e-14, b: 0.0, Ea: 7661.0}
   citation: Ku95
   location: latex R325
-  checked: false
+  checked: true
 - equation: OCS + S <=> CO + S2
   rate-constant: {A: 6.497934e-20, b: 2.57, Ea: 1180.0}
   citation: Lu06
   location: latex R326
-  checked: false
+  checked: true
 - equation: O + OCS <=> S + CO2
   rate-constant: {A: 8.33e-11, b: 0.0, Ea: 5530.0}
   citation: Si88
   location: latex R327
-  checked: false
+  checked: true
 - equation: OCS + OH <=> CO2 + HS
   rate-constant: {A: 1.1e-13, b: 0.0, Ea: 1200.0}
   citation: At04
   location: latex R328
-  checked: false
+  checked: true
 - equation: S + HCO <=> OCS + H
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
   citation: Mo95
   location: latex R329
-  checked: false
+  checked: true
 - equation: CO + S3 <=> S2 + OCS
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 10000.0}
   citation: Assumed
@@ -2703,12 +2703,12 @@ reactions:
   rate-constant: {A: 2.193931e-12, b: 0.5, Ea: 1160.0}
   citation: Mi97
   location: latex R333
-  checked: false
+  checked: true
 - equation: O + CS <=> CO + S
   rate-constant: {A: 2.7e-10, b: 0.0, Ea: 760.0}
   citation: At04
   location: latex R334
-  checked: false
+  checked: true
 - equation: C + SO <=> CS + O
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -2718,7 +2718,7 @@ reactions:
   rate-constant: {A: 2.0e-13, b: 0.0, Ea: 0.0}
   citation: Assumed
   location: latex R336
-  checked: false
+  checked: true
 - equation: CH2 + S <=> CS + H2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -2730,89 +2730,89 @@ reactions:
   high-P-rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: rev-Sa80, high-P: Assumed}
   location: latex R339
-  checked: false
+  checked: true
 - equation: CS2 + S <=> CS + S2
   rate-constant: {A: 2.8e-10, b: 0.0, Ea: 5920.0}
   citation: Woi95a
   location: latex R340
-  checked: false
+  checked: true
 - equation: CS + HS <=> CS2 + H
   rate-constant: {A: 1.924501e-17, b: 1.5, Ea: -250.0}
   citation: Assumed
   location: latex R341
-  checked: false
+  checked: true
 - equation: CS2 + O <=> CS + SO
   rate-constant: {A: 5.27e-11, b: 0.0, Ea: 822.0}
   citation: Si88, Co92
   location: latex R342
-  checked: false
+  checked: true
 - equation: CS2 + O <=> OCS + S
   rate-constant: {A: 4.73e-12, b: 0.0, Ea: 822.0}
   citation: Si88, Co92
   location: latex R343
-  checked: false
+  checked: true
 - equation: CS2 + O <=> CO + S2
   rate-constant: {A: 1.78e-12, b: 0.0, Ea: 822.0}
   citation: Si88, Co92
   location: latex R344
-  checked: false
+  checked: true
 - equation: H + CS (+ M) <=> HCS (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.5e-30, b: -1.0, Ea: 0.0}
   high-P-rate-constant: {A: 1.5e-09, b: -1.0, Ea: 0.0}
   citation: {low-P: Assumed, high-P: Assumed}
   location: latex R346
-  checked: false
+  checked: true
 - equation: S + CH2 <=> HCS + H
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R347
-  checked: false
+  checked: true
 - equation: S + HCS <=> CS2 + H
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R348
-  checked: false
+  checked: true
 - equation: S + HCS <=> CS + HS
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: Moses-95
+  citation: Mo95a
   location: [csv L2413, equation-rate latex R349]
-  checked: false
+  checked: true
 - equation: S2 + CH <=> HCS + S
   rate-constant: {A: 4.0e-12, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R350
-  checked: false
+  checked: true
 - equation: HCS + H <=> CS + H2
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
   location: latex R351
-  checked: false
+  checked: true
 - equation: HCS + CH3 <=> CS + CH4
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R352
-  checked: false
+  checked: true
 - equation: HCS + C2H <=> CS + C2H2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R353
-  checked: false
+  checked: true
 - equation: HCS + OH <=> CS + H2O
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R354
-  checked: false
+  checked: true
 - equation: 1CH2 + H2 <=> CH3 + H
   rate-constant: {A: 1.05e-10, b: 0.0, Ea: 0.0}
   citation: Ga08
   location: latex R355
-  checked: false
+  checked: true
 - equation: OH + CH3 <=> 1CH2 + H2O
   rate-constant: {A: 1.2e-10, b: 0.0, Ea: 1400.0}
   citation: Ba92
   location: latex R356
-  checked: false
+  checked: true
 - equation: 1CH2 + H2 <=> CH2 + H2
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -2820,7 +2820,7 @@ reactions:
   checked: false
 - equation: 1CH2 + CO <=> CH2 + CO
   rate-constant: {A: 4.7e-11, b: 0.0, Ea: -60.0}
-  citation: Assumed CSV
+  citation: Assumed
   location: [csv L2558]
   checked: false
 - equation: 1CH2 + CO (+ M) <=> CH2CO (+ M)
@@ -2844,7 +2844,7 @@ reactions:
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R360
-  checked: false
+  checked: true
 - equation: 1CH2 + H <=> CH2 + H
   rate-constant: {A: 8.0e-12, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -2852,25 +2852,27 @@ reactions:
   checked: false
 - equation: 1CH2 + N2 <=> CH2 + N2
   rate-constant: {A: 1.8e-11, b: 0.0, Ea: -110.0}
-  citation: assume same as for O1D
+  citation: Assumed
   location: [csv L2564]
-  checked: false
+  checked: true
+  note: Assumed to be the same as \ref{O1D + N2 <=> O + N2}.
 - equation: 1CH2 + CO2 <=> CH2 + CO2
   rate-constant: {A: 7.4e-11, b: 0.0, Ea: -120.0}
-  citation: assume same as for O1D
+  citation: Assumed
   location: [csv L2559]
-  checked: false
+  checked: true
+  note: Assumed to be the same as \ref{O1D + CO2 <=> CO2 + O}.
 - equation: 1CH2 + CO2 <=> H2CO + CO
   rate-constant: {A: 3.9e-14, b: 0.0, Ea: 0.0}
-  citation: probably not zero.  I'll use the long-ago reported rate for
-    CH2+CO2
+  citation: Assumed
   location: [csv L2560]
-  checked: false
+  checked: true
+  note: Assumed to be the same as $\mathrm{CH_2} + \mathrm{CO_2}$ as reported by \citet{Ts86}.
 - equation: O1D + H2 <=> OH + H
   rate-constant: {A: 1.5e-10, b: 0.0, Ea: 0.0}
   citation: Ba92
   location: latex R362
-  checked: false
+  checked: true
 - equation: O1D + CH4 <=> CH3 + OH
   rate-constant: {A: 1.2e-10, b: 0.0, Ea: 0.0}
   citation: Sa03
