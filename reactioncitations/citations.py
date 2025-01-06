@@ -485,14 +485,20 @@ def add_citations_to_zahnle():
             continue
 
         # Search CSV
+        rx['location'] = []
         found = False
         for j,rx_c in enumerate(rxns_csv):
             if compare2reactions(rx['equation'],rx_c['equation']) and comparerates(rx, rx_c):
                 rx['citation'] = rx_c['citation']
-                rx['location'] = 'csv L'+str(rx_c['line'])
+                rx['location'].append('csv L'+str(rx_c['line']))
                 found = True
                 break
         if found:
+            # If found, search for an equation match with latex doc
+            for j,rx_l in enumerate(rxns_latex):
+                if compare2reactions(rx['equation'],rx_l['equation']):
+                    rx['location'].append('equation-rate latex R'+str(j+1))
+                    break
             rxns_new.append(rx)
             continue
 
@@ -563,7 +569,7 @@ def add_citations_to_zahnle():
     print(kk1, kk2)
 
     sol = FormatReactions_main(sol)
-    with open('zahnle_earth_v0.20_cite.yaml','w') as f:
+    with open('zahnle_earth_v0.20_cite1.yaml','w') as f:
         yaml.dump(sol, f, MyDumper,sort_keys=False,width=70)
 
 if __name__ == '__main__':
