@@ -1,0 +1,1890 @@
+\documentclass[12pt,landscape]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{natbib}
+%\usepackage{booktabs}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcounter{reaction}
+\newcounter{photo}
+
+\begin{document}
+
+%\landscape
+%\end{document}
+\setlongtables % keeps the width uniform across both pages
+% \footnotesize{
+\begin{longtable}{l lcl l p{3.5cm} } 
+%\caption{All Reactions}\\
+ & {\large\bf Table 2.}  & & {\large\bf Reactions} & & \\
+\hline
+ & {\large\strut Reactants$^a$}  &  & {\large Products} & {\large Rate$^b$} & {\large Reference} \\
+\hline \hline 
+\endfirsthead
+\hline
+ & {\large\strut Reactants$^a$}  &  & {\large Products} & {\large Rate$^b$} & {\large Reference} \\
+\hline %\hline 
+\endhead 
+\multicolumn{6}{l}{\bf H, O}\\
+\refstepcounter{reaction}\label{R1} R\arabic{reaction}  & H            + H            + M & $\!\!\!\rightarrow$ &  H$_2$        + M &$  8.8\!\times\! 10^{-33} \left(T/298 \right)^{-0.6}$ & Ba92\\
+        & H            + H           &$\!\!\!\rightarrow$&  H$_2$         &$  1.0\!\times\! 10^{-12}$ &  \\
+\refstepcounter{reaction}\label{R2} R\arabic{reaction}   & O            + H            + M & $\!\!\!\rightarrow$ &  OH           + M &$  4.3\!\times\! 10^{-32} \left(T/298 \right)^{-1.0}$ & Ts86\\
+         & O            + H           &$\!\!\!\rightarrow$&  OH            &$  1.0\!\times\! 10^{-12}$ &  \\
+\refstepcounter{reaction}R\arabic{reaction}   & H$_2$        + O           & $\!\!\!\rightarrow$ &  OH           + H      & $  3.5\!\times\! 10^{-13} \left(T/298\right)^{ 2.67}e^{ -3160/T}$ & Ba92\\
+\refstepcounter{reaction}R\arabic{reaction}   & H            + OH           + M & $\!\!\!\rightarrow$ &  H$_2$O       + M &$  6.6\!\times\! 10^{-32} \left(T/298 \right)^{-2.1}$ & Ja03\\
+             & H            + OH           & $\!\!\!\rightarrow$ &  H$_2$O       &$  2.7\!\times\! 10^{-10} e^{   -75/T}$ & Co85\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$        + OH          & $\!\!\!\rightarrow$ &  H$_2$O       + H       & $  1.6\!\times\! 10^{-12} \left(T/298\right)^{ 1.6}e^{ -1660/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH           + OH          & $\!\!\!\rightarrow$ &  H$_2$O       + O   & $  1.7\!\times\! 10^{-12} \left(T/298\right)^{ 1.14}e^{   -50/T}$ & Ba92, Li91\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH           + OH          & $\!\!\!\rightarrow$ &  O$_2$        + H$_2$   & $  3.3\!\times\! 10^{-12} \left(T/298\right)^{ 0.51}e^{-25400/T}$ & Ka05\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + O            + M & $\!\!\!\rightarrow$ &  O$_2$        + M &$  5.2\!\times\! 10^{-35} e^{+900/T}$ & Ts86\\
+           & O            + O           &$\!\!\!\rightarrow$&  O$_2$        &$  1.0\!\times\! 10^{-12}$ &   \\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + OH          &$\!\!\!\rightarrow$ &  O$_2$        + H                                       & $  2.4\!\times\! 10^{-11} e^{  -353/T}$ & Ba92\\
+
+
+ \multicolumn{6}{l}{\bf HO$_2$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  H  +     O$_2$ + M &$\!\!\!\rightarrow$ &      HO$_2$ + M & $ 5.5\!\times\! 10^{-32} \left(T/298 \right)^{-1.8}  $   &  At97 \\     
+          & H  +     O$_2$ &$\!\!\!\rightarrow$ &    HO$_2$  & $ 7.5\!\times\! 10^{-11}  $    & At97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H  +   HO$_2$  &$\!\!\!\rightarrow$ &   H$_2$  +   O$_2$   & $ 5.6\!\times\! 10^{-12}  $  & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H  +   HO$_2$  &$\!\!\!\rightarrow$ &   H$_2$O  +   O   & $ 2.4\!\times\! 10^{-12}  $  & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H  +   HO$_2$  &$\!\!\!\rightarrow$ &   OH  +   OH   & $ 7.2\!\times\! 10^{-11}  $  & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & OH  + HO$_2$   &$\!\!\!\rightarrow$ &   H$_2$O  +   O$_2$   & $ 4.8\!\times\! 10^{-11} e^{+250/T} $  & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O  + HO$_2$   &$\!\!\!\rightarrow$ &  OH  +   O$_2$   & $ 2.7\!\times\! 10^{-11} e^{+240/T} $  & At04 \\  
+
+ \multicolumn{6}{l}{\bf O$_3$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  O  +     O$_2$ + M &$\!\!\!\rightarrow$ &   O$_3$ + M & $ 6.0\!\times\! 10^{-34} \left(T/298 \right)^{-2.3}  $   &  De97 \\     
+          & O  +     O$_2$ &$\!\!\!\rightarrow$ &   O$_3$  & $ 2.8\!\times\! 10^{-11}  $    &  De97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O  +  O$_3$  &$\!\!\!\rightarrow$ &  O$_2$   +  O$_2$   & $ 8.0\!\times\! 10^{-12} e^{-2060/T} $  & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H  +  O$_3$  &$\!\!\!\rightarrow$ &  OH   +  O$_2$   & $ 1.4\!\times\! 10^{-10} e^{-470/T} $  & De97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & OH  +  O$_3$  &$\!\!\!\rightarrow$ &  HO$_2$   +  O$_2$   & $ 1.6\!\times\! 10^{-12} e^{-940/T} $  & De97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O$_3$  +  O($^1$D)  &$\!\!\!\rightarrow$ &  O$_2$   +  O$_2$   & $ 1.2\!\times\! 10^{-10} $   & De97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O$_3$  +  O($^1$D)  &$\!\!\!\rightarrow$ &  O$_2$   +  O + O & $ 1.2\!\times\! 10^{-10} $   & De97 \\  
+
+ \multicolumn{6}{l}{\bf H$_2$O$_2$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  OH  +     OH + M &$\!\!\!\rightarrow$ &      H$_2$O$_2$ + M & $ 6.9\!\times\! 10^{-31} \left(T/298 \right)^{-0.8}  $   &  At97 \\     
+          & OH  +     OH &$\!\!\!\rightarrow$ &   H$_2$O$_2$  & $ 2.6\!\times\! 10^{-11}  $    &  At97 \\  
+  \refstepcounter{reaction}R\arabic{reaction} &  HO$_2$  + HO$_2$ + M &$\!\!\!\rightarrow$ &      H$_2$O$_2$ + HO$_2$  + HO$_2$ +  M & $ 1.9\!\times\! 10^{-33} e^{+980/T}  $   & At97  \\     
+          & HO$_2$  + HO$_2$ &$\!\!\!\rightarrow$ &   H$_2$O$_2$ +   O$_2$  & $ 2.2\!\times\! 10^{-14} e^{+60/T} $    & At97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$O$_2$  + H &$\!\!\!\rightarrow$ &  H$_2$ + HO$_2$   & $ 2.8\!\times\! 10^{-12} e^{-1890/T} $  & Ba92 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$O$_2$  + H &$\!\!\!\rightarrow$ &  H$_2$O + OH   & $ 1.7\!\times\! 10^{-11} e^{-1890/T} $  & Ba92 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$O$_2$  + OH &$\!\!\!\rightarrow$ &  H$_2$O + HO$_2$   & $ 2.9\!\times\! 10^{-12} e^{-160/T} $  &  At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$O$_2$  + O &$\!\!\!\rightarrow$ &  OH  + HO$_2$   & $ 1.4\!\times\! 10^{-12} e^{-2000/T} $  & At04 \\  
+
+\multicolumn{6}{l}{\bf CO, CO$_2$}\\
+ \refstepcounter{reaction}\label{RCO} R\arabic{reaction}   & C            + O      +M     &$\!\!\!\rightarrow$&  CO           + M           &$  5.8\!\times\! 10^{-29}\left(T/298 \right)^{-3.34}$   &  rev-Ba92 \\
+           & C            + O           &$\!\!\!\rightarrow$&  CO            &$  1.0\!\times\! 10^{-12}$ &   \\
+ \refstepcounter{reaction}R\arabic{reaction}  & C            + O$_2$       &$\!\!\!\rightarrow$ &  CO           + O       & $  1.6\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CO           + O            + M & $\!\!\!\rightarrow$ &  CO$_2$       + M &$  1.7\!\times\! 10^{-33} e^{ -1510/T}$ & Ts86\\
+           & CO           + O             & $\!\!\!\rightarrow$ &  CO$_2$        &$  1.0\!\times\! 10^{-14} e^{ -1630/T}$ & To84\\  %Toby et al 1984
+ \refstepcounter{reaction}R\arabic{reaction}   & CO           + OH          & $\!\!\!\rightarrow$ &  CO$_2$       + H        & $  1.8\!\times\! 10^{-14} \left(T/298\right)^{ 1.89}e^{  583/T}$ & Li07\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + CO$_2$      &$\!\!\!\rightarrow$ &  CO           + O$_2$       & $  2.8\!\times\! 10^{-11} e^{-26500/T}$ & Ts86\\
+  \refstepcounter{reaction}R\arabic{reaction}   & C            + OH          & $\!\!\!\rightarrow$ &  CO           + H           & $  1.1\!\times\! 10^{-10} \left(T/298 \right)^{ 0.50}$ & Mi97\\
+\refstepcounter{reaction}R\arabic{reaction} & HO$_2$  + CO &$\!\!\!\rightarrow$ &  OH  +   CO$_2$   & $ 2.5\!\times\! 10^{-10} e^{-11900/T} $  & \\  
+
+\multicolumn{6}{l}{\bf HCO, H$_2$CO}\\
+ \refstepcounter{reaction}\label{RHCO} R\arabic{reaction}   & H   + CO     + M & $\!\!\!\rightarrow$ &  HCO    + M &$  5.2\!\times\! 10^{-33} \left(T/298 \right)^{-0.66} e^{  -825/T}$ & rev-Fr02\\
+           & H            + CO          &$\!\!\!\rightarrow$&  HCO     &$  2.0\!\times\! 10^{-13} e^{  -1370/T}$ &  Ar81\\
+
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO          + O           &$\!\!\!\rightarrow$ &  H            + CO$_2$   & $  5.0\!\times\! 10^{-11}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO          + O           &$\!\!\!\rightarrow$ &  OH           + CO          & $  5.0\!\times\! 10^{-11}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & OH           + HCO         &$\!\!\!\rightarrow$ &  CO           + H$_2$O     & $  1.7\!\times\! 10^{-10}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO          + H           &$\!\!\!\rightarrow$ &  CO           + H$_2$          & $  1.8\!\times\! 10^{-10}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO          + O$_2$           &$\!\!\!\rightarrow$ &  CO           + HO$_2$      & $  5.2\!\times\! 10^{-12}$ & At01 \\
+\refstepcounter{reaction}\label{RH2CO} R\arabic{reaction}  & H            + HCO          + M&$\!\!\!\rightarrow$& H$_2$CO      + M &$  3.2\!\times\! 10^{-30} \left(T/298 \right)^{-2.57}e^{ -215/T}$ & Ei98\\
+           & H            + HCO         &$\!\!\!\rightarrow$&  H$_2$CO       &$  3.0\!\times\! 10^{-10}$ & rev-Tr05\\
+
+ \refstepcounter{reaction}\label{RHCHO} R\arabic{reaction}   &  H$_2$        + CO     +M   &$\!\!\!\rightarrow$ &   H$_2$CO      + M    & $  1.4\!\times\! 10^{-33} e^{-32900/T}$ & rev-Tr05\\
+          &  H$_2$        + CO         &$\!\!\!\rightarrow$ &   H$_2$CO          & $  5.5\!\times\! 10^{-12} e^{-35900/T}$ & rev-Tr05\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO          + HCO         &$\!\!\!\rightarrow$ &  H$_2$CO      + CO   & $  4.5\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$CO      + H        & $\!\!\!\rightarrow$ &  HCO      + H$_2$   & $  1.5\!\times\! 10^{-11} \left(T/298\right)^{ 1.05}e^{ -1650/T}$ & Ba92 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$CO      + OH   & $\!\!\!\rightarrow$ &  HCO     + H$_2$O  & $  4.8\!\times\! 10^{-12} \left(T/298\right)^{ 1.18}e^{   225/T}$ & Ba92 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$CO      + O    &$\!\!\!\rightarrow$ &  OH      + HCO     & $  1.8\!\times\! 10^{-11} \left(T/298\right)^{ 0.57}e^{ -1390/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$CO  + HO$_2$ &$\!\!\!\rightarrow$ &  H$_2$O$_2$  +   HCO  & $ 1.05\!\times\! 10^{-13} \left(T/298 \right)^{2.5} e^{-5100/T} $  & Ei98 \\  
+
+\multicolumn{6}{l}{\bf CH}\\
+ \refstepcounter{reaction}\label{RCH} R\arabic{reaction}  & H      + C    + M        &$\!\!\!\rightarrow$ &  CH           + M        & $  5.0\!\times\! 10^{-34}$ &  rev De92\\
+         & H      + C            &$\!\!\!\rightarrow$ &  CH          & $  1.0\!\times\! 10^{-11}$ & rev De92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + CH          & $\!\!\!\rightarrow$ &  OH           + C     & $  1.7\!\times\! 10^{-11} \left(T/298\right)^{ 0.50}e^{ -4000/T}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + CH          &$\!\!\!\rightarrow$ &  CO           + H     & $  6.6\!\times\! 10^{-11}$ & Ba92 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH           + O$_2$       &$\!\!\!\rightarrow$ &  CO           + OH     & $  8.3\!\times\! 10^{-11}$ & Li84 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH           + CO$_2$      &$\!\!\!\rightarrow$ &  CO           + HCO     & $  5.9\!\times\! 10^{-12} e^{  -350/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH           + H           &$\!\!\!\rightarrow$ &  H$_2$        + C              & $  1.3\!\times\! 10^{-10} e^{  -806/T}$ & Ha93 \\
+
+\multicolumn{6}{l}{\bf CH$_2$}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$        + C    + M  &$\!\!\!\rightarrow$&  CH$_2$       + M &$  7.0\!\times\! 10^{-32}$ & Hu75 \\
+           & H$_2$        + C       &$\!\!\!\rightarrow$&  CH$_2$         &$  2.1\!\times\! 10^{-11}$ & Ha93 \\
+ \refstepcounter{reaction}\label{RCH2} R\arabic{reaction}   & H        + CH + M          &$\!\!\!\rightarrow$&  CH$_2$       + M &$  1.44\!\times\! 10^{-33} \left(T/298\right)^{ 0.22} e^{ 6000/T}$ &  rev-Ba95 \\
+           & H        + CH          &$\!\!\!\rightarrow$&  CH$_2$         &$  1.0\!\times\! 10^{-10}$ &   \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH  + H$_2$  & $\!\!\!\rightarrow$ &   CH$_2$  + H  & $ 2.4\!\times\! 10^{-10} e^{ -1760/T}$ & Ba92 \\ 
+ \refstepcounter{reaction}R\arabic{reaction}   & OH           + CH$_2$      & $\!\!\!\rightarrow$ &  H$_2$CO      + H     & $  9.5\!\times\! 10^{-11} \left(T/298\right)^{ 0.12}e^{    81/T}$ & Ja07\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH           + CH$_2$      & $\!\!\!\rightarrow$ &  H$_2$O       + CH   & $  1.4\!\times\! 10^{-13} \left(T/298\right)^{ 2.02}e^{ -3420/T}$ & Ja07\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_2$       + O           &$\!\!\!\rightarrow$ &  HCO           + H              & $  1.2\!\times\! 10^{-10}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + CH$_2$      &$\!\!\!\rightarrow$ &  CO           + H$_2$        & $  8.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}\label{R61} R\arabic{reaction}   & O$_2$        + CH$_2$      &$\!\!\!\rightarrow$ &  H$_2$CO  + O                  & $  4.1\!\times\! 10^{-11} e^{  -750/T}$ & Ba92\\
+
+\multicolumn{6}{l}{\bf CH$_3$}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH           + H$_2$        + M & $\!\!\!\rightarrow$ &  CH$_3$       + M &$  6.8\!\times\! 10^{-31} \left(T/298 \right)^{-2.30}$ & Be84 \\  % 3-body
+           & CH           + H$_2$          & $\!\!\!\rightarrow$ &  CH$_3$         &$  2.0\!\times\! 10^{-10} \left(T/298 \right)^{0.15}$ & Fu97a\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H           + CH$_2$        + M & $\!\!\!\rightarrow$ &  CH$_3$       + M &$  2.0\!\times\! 10^{-29} \left(T/298 \right)^{-2.0}$ & \\  % 3-body
+           & H           + CH$_2$          & $\!\!\!\rightarrow$ &  CH$_3$         &$  2.0\!\times\! 10^{-10} \left(T/298 \right)^{-2.0}$ &  \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$       + H           &$\!\!\!\rightarrow$ &  CH$_2$       + H$_2$                     & $  1.0\!\times\! 10^{-10} e^{ -7600/T}$ & Ba92\\
+%R43   & H$_2$        + CH$_2$      &$\!\!\!\rightarrow$ &  CH$_3$       + H    & $  1.0\!\times\! 10^{-11} e^{ -5300/T}$ & rev43\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_3$       + O           &$\!\!\!\rightarrow$ &  H$_2$CO      + H                                       & $  1.4\!\times\! 10^{-10}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH   + CH$_3$      & $\!\!\!\rightarrow$ &  H$_2$CO     + H$_2$     & $  3.2\!\times\! 10^{-12} \left(T/298\right)^{ 1.00}e^{ -1612/T}$ & Ja07\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_2$       + HCO         &$\!\!\!\rightarrow$ &  CH$_3$       + CO  & $  3.0\!\times\! 10^{-11}$ & Ts86  UPDATE\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_2$       + CH$_2$      &$\!\!\!\rightarrow$ &  CH           + CH$_3$          & $  4.0\!\times\! 10^{-10} e^{ -5000/T}$ & Fr84\\
+ \refstepcounter{reaction}R\arabic{reaction} & O$_3$  +  CH$_3$   &$\!\!\!\rightarrow$ &  H$_2$CO   +  HO$_2$   & $ 5.1\!\times\! 10^{-12} e^{-210/T} $  & At01 \\  
+
+\multicolumn{6}{l}{\bf CH$_4$}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$     + H            + M & $\!\!\!\rightarrow$ &  CH$_4$       + M &$  6.5\!\times\! 10^{-29} \left(T/298 \right)^{-2.17}$ & Go08\\
+           & CH$_3$     + H           &$\!\!\!\rightarrow$&  CH$_4$       + M &$  3.5\!\times\! 10^{-10}$ & Go08\\
+
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_4$     + H   & $\!\!\!\rightarrow$ &  CH$_3$    + H$_2$   & $  4.36\!\times\! 10^{-13} \left(T/298\right)^{ 3.16}e^{ -4410/T}$ &  Sut02 \\
+
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_4$     + O        & $\!\!\!\rightarrow$ &  CH$_3$    + OH  & $  8.41\!\times\! 10^{-12} \left(T/298\right)^{ 1.56}e^{ -4270/T}$ & Ba92 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_4$       + OH  & $\!\!\!\rightarrow$ &  CH$_3$       + H$_2$O & $  8.8\!\times\! 10^{-13} \left(T/298\right)^{ 1.83}e^{ -1400/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$    + HCO  & $\!\!\!\rightarrow$ &  CH$_4$       + CO & $  4.4\!\times\! 10^{-11} $ & Mu87\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$    + H$_2$CO  &    $\!\!\!\rightarrow$ &  CH$_4$       + HCO & $  4.9\!\times\! 10^{-15} \left(T/298\right)^{4.4}e^{ -2450/T}$ &  Li03\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_2$    + CH$_4$  & $\!\!\!\rightarrow$ &  CH$_3$   + CH$_3$ & $  7.1\!\times\! 10^{-12}  e^{ -5050/T}$ & Bo85 \\
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$O$_2$  + CH$_3$ &$\!\!\!\rightarrow$ &  HO$_2$  + CH$_4$   & $ 2.0\!\times\! 10^{-14} e^{+300/T} $  & Ts86 \\  
+
+\multicolumn{6}{l}{\bf CH$_3$O}\\
+ \refstepcounter{reaction}\label{RCH3O} R\arabic{reaction}  & H      + H$_2$CO      + M&$\!\!\!\rightarrow$& CH$_3$O      + M &$  1.9\!\times\! 10^{-29} \left(T/298 \right)^{-3.00}e^{ -3360/T}$ & rev-Hi01\\
+          & H      + H$_2$CO       & $\!\!\!\rightarrow$ &  CH$_3$O       &$  8.0\!\times\! 10^{-10} e^{ -3160/T}$ &  rev-Ra03 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$  + OH   & $\!\!\!\rightarrow$ &  CH$_3$O  + H   & $  4.5\!\times\! 10^{-14} \left(T/298\right)^{ 1.00}e^{ -6010/T}$ & Ja07\\
+% R55   & H            + CH$_3$O     &$\!\!\!\rightarrow$ &  CH$_3$       + OH     & $  7.7\!\times\! 10^{-11} e^{  -375/T}$ & note\\
+ \refstepcounter{reaction}\label{R80} R\arabic{reaction}   & CH$_3$O   + H  &$\!\!\!\rightarrow$ &  H$_2$CO      + H$_2$     & $  3.3\!\times\! 10^{-11} e^{  -375/T}$ & Mo77, Dob91\\
+ \refstepcounter{reaction}R\arabic{reaction}   &  CH$_3$O  + CO   &$\!\!\!\rightarrow$ &  CH$_3$ + CO$_2$     & $  1.33\!\times\! 10^{-11} e^{  -5940/T}$ & Hi00\\
+ \refstepcounter{reaction}R\arabic{reaction}   &  CH$_3$O  + O$_2$   &$\!\!\!\rightarrow$ & H$_2$CO + HO$_2$     & $  7.2\!\times\! 10^{-14} e^{  -1080/T}$ &  At01  \\
+
+\multicolumn{6}{l}{\bf H$_2$COH}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H         + H$_2$CO      + M & $\!\!\!\rightarrow$ &  H$_2$COH     + M &$  3.0\!\times\! 10^{-33} e^{  -600/T}$ &  rev-Hi89  \\
+             & H       + H$_2$CO         & $\!\!\!\rightarrow$ &  H$_2$COH        &$  3.0\!\times\! 10^{-14} e^{  -600/T}$ & rev-Tsu81\\
+ \refstepcounter{reaction}R\arabic{reaction}  & H          + H$_2$COH    &$\!\!\!\rightarrow$ &  H$_2$CO      + H$_2$    & $  1.7\!\times\! 10^{-11}$ & Cr92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_3$   + OH    & $\!\!\!\rightarrow$ &  H$_2$COH     + H & $  3.2\!\times\! 10^{-12} \left(T/298\right)^{ 1.00}e^{ -1600/T}$ & Ja07\\
+% R60  & H          + H$_2$COH    &$\!\!\!\rightarrow$ &  CH$_3$       + OH         & $  5.0\!\times\! 10^{-11}$ & Ts87\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO     + H$_2$COH    &$\!\!\!\rightarrow$ &  H$_2$CO      + H$_2$CO    & $  1.0\!\times\! 10^{-10}$ & Ts87\\
+
+
+\multicolumn{6}{l}{\bf CH$_3$OH}\\
+ \refstepcounter{reaction}\label{R87} R\arabic{reaction}   & H       + CH$_3$O   +M  &$\!\!\!\rightarrow$ &  CH$_3$OH + M    & $  1.6\!\times\! 10^{-29}\left(T/298 \right)^{0.24} e^{  26.5/T}$ &  \\
+          & H       + CH$_3$O       &$\!\!\!\rightarrow$ &  CH$_3$OH       & $  1.6\!\times\! 10^{-10}\left(T/298 \right)^{0.24} e^{  26.5/T}$ & Ja07 \\
+
+ \refstepcounter{reaction}\label{R88} R\arabic{reaction}   & H            + H$_2$COH   +M  &$\!\!\!\rightarrow$ &  CH$_3$OH + M    & $ 2.9\!\times\! 10^{-29}\left(T/298 \right)^{0.04} $ &   \\
+          & H            + H$_2$COH      &$\!\!\!\rightarrow$ &  CH$_3$OH   & $ 2.9\!\times\! 10^{-10}\left(T/298 \right)^{0.04} $ & Ja07 \\
+
+\refstepcounter{reaction}\label{R89} R\arabic{reaction}   & H$_2$     + H$_2$CO   +M  &$\!\!\!\rightarrow$ &  CH$_3$OH + M    & $ 2.3\!\times\! 10^{-30} e^{ -35100/T} $ &    \\
+          & H$_2$     + H$_2$CO      &$\!\!\!\rightarrow$ &  CH$_3$OH    & $ 2.3\!\times\! 10^{-11} e^{ -35100/T} $ &  Ja07  \\
+
+\refstepcounter{reaction}R\arabic{reaction}   & OH      + CH$_3$    +M  &$\!\!\!\rightarrow$ &  CH$_3$OH + M    & $  2.25\!\times\! 10^{-24}\left(T/298 \right)^{-8.2} $ &  Ba94\\
+           & OH     + CH$_3$     &$\!\!\!\rightarrow$ &  CH$_3$OH      & $  1.0\!\times\! 10^{-10} $ &  Ba94 \\
+           
+ \refstepcounter{reaction}R\arabic{reaction}   & H + CH$_3$OH & $\!\!\!\rightarrow$ &  CH$_3$       + H$_2$O  & $  5.3\!\times\! 10^{-15} \left(T/298\right)^{ 3.26}e^{ -1836/T}$ & Jo99, Ca08\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H  + CH$_3$OH    & $\!\!\!\rightarrow$ &  CH$_3$O      + H$_2$  & $  1.3\!\times\! 10^{-14} \left(T/298\right)^{ 3.26}e^{ -1836/T}$ & Jo99, Ca08\\
+\refstepcounter{reaction}R\arabic{reaction}   & H   + CH$_3$OH    & $\!\!\!\rightarrow$ &  H$_2$COH     + H$_2$  & $  2.5\!\times\! 10^{-13} \left(T/298\right)^{ 3.26}e^{ -1836/T}$ & Jo99, Ca08\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$OH    + OH   & $\!\!\!\rightarrow$ &  H$_2$O   + CH$_3$O   & $  4.6\!\times\! 10^{-13} \left(T/298\right)^{ 2.00}e^{  -757/T}$ & Li96\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$OH  + OH   & $\!\!\!\rightarrow$ &  H$_2$O   + H$_2$COH  & $  2.1\!\times\! 10^{-13} \left(T/298\right)^{ 2.00}e^{   423/T}$ & Li96\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$   + CH$_3$OH    & $\!\!\!\rightarrow$ &  CH$_4$   + CH$_3$O  & $  2.6\!\times\! 10^{-16} \left(T/298\right)^{ 4.70}e^{ -2910/T}$ & Jo99\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$  + CH$_3$OH    & $\!\!\!\rightarrow$ &  CH$_4$   +H$_2$COH &  $  1.4\!\times\! 10^{-15} \left(T/298\right)^{ 4.90}e^{ -3380/T}$ &Jo99 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO   + CH$_3$O   &$\!\!\!\rightarrow$ &  CH$_3$OH     + CO      & $  1.5\!\times\! 10^{-10}$ & Ts86 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCO   + H$_2$COH    &$\!\!\!\rightarrow$ &  CH$_3$OH     + CO      & $  6.7\!\times\! 10^{-11}$ & Ts87\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$O  + CH$_3$O    & $\!\!\!\rightarrow$ &  CH$_3$OH   +H$_2$CO &  $  1.0\!\times\! 10^{-10} $ &  Ts86\\
+
+ \multicolumn{6}{l}{\bf CH$_3$O$_2$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  CH$_3$  +   O$_2$   + M &$\!\!\!\rightarrow$ &   CH$_3$O$_2$ + M & $ 1.0\!\times\! 10^{-33}   \left(T/298 \right)^{-3.3}  $   & At97  \\     
+          & CH$_3$  +   O$_2$  &$\!\!\!\rightarrow$ &    CH$_3$O$_2$   & $ 1.8\!\times\! 10^{-11}  $    &  At97 - UPDATE\\  
+\refstepcounter{reaction}R\arabic{reaction} & CH$_3$O$_2$  + H   &$\!\!\!\rightarrow$ & CH$_3$O + OH  & $ 1.6\!\times\! 10^{-10}  $ & Ts86 \\  
+\refstepcounter{reaction}R\arabic{reaction} & CH$_3$O$_2$  + H   &$\!\!\!\rightarrow$ & CH$_4$ + O$_2$  & $ 1.2\!\times\! 10^{-11} \left(T/298 \right)^{1.0}  e^{-8350/T} $ &  Bo04\\  
+\refstepcounter{reaction}R\arabic{reaction} & CH$_3$O$_2$  + O   &$\!\!\!\rightarrow$ & CH$_3$O + O$_2$  & $ 6.0\!\times\! 10^{-11} $ & Ts86 \\  
+\refstepcounter{reaction}R\arabic{reaction} & CH$_3$O$_2$  + OH   &$\!\!\!\rightarrow$ & CH$_3$OH + O$_2$  & $ 1.0\!\times\! 10^{-10} $ &  Ts86 \\  
+\refstepcounter{reaction}R\arabic{reaction} & CH$_3$O$_2$  + CH$_3$   &$\!\!\!\rightarrow$ & CH$_3$O + CH$_3$O  & $ 4.0\!\times\! 10^{-11} $ &  Ts86 \\  
+\refstepcounter{reaction}R\arabic{reaction} & CH$_3$O$_2$  + NO   &$\!\!\!\rightarrow$ & CH$_3$O + NO$_2$  & $ 2.8\!\times\! 10^{-12} e^{+285/T} $ & At01 \\  
+
+
+\multicolumn{6}{l}{\bf C$_2$H}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O  + C$_2$   & $\!\!\!\rightarrow$ &  CO   + C  & $  5.0\!\times\! 10^{-11} \left(T/298 \right)^{ 0.50}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH   + C  & $\!\!\!\rightarrow$ &  C$_2$    + H  & $  1.7\!\times\! 10^{-10} \left(T/298 \right)^{ 0.50}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$  + H$_2$   &$\!\!\!\rightarrow$ &  C$_2$H   + H   & $  1.1\!\times\! 10^{-10} e^{ -4000/T}$ & Kr97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$  + CH$_4$   &$\!\!\!\rightarrow$ &  C$_2$H   + CH$_3$   & $  5.0\!\times\! 10^{-11} e^{ -4000/T}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O       + C$_2$H      &$\!\!\!\rightarrow$ &  CO    + CH     & $  1.7\!\times\! 10^{-11}$ & Wa84\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H       + O$_2$       &$\!\!\!\rightarrow$ &  HCO   + CO   & $  3.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_2$  + C   & $\!\!\!\rightarrow$ &  C$_2$H   + H   & $  5.0\!\times\! 10^{-11} \left(T/298 \right)^{ 0.50}$ & Mi97\\
+% \refstepcounter{reaction}R\arabic{reaction}  & CH$_3$   + C  &$\!\!\!\rightarrow$ &  C$_2$H    + H$_2$   & $  5.0\!\times\! 10^{-11}$ & \\
+
+
+\multicolumn{6}{l}{\bf C$_2$H$_2$}\\
+ \refstepcounter{reaction}\label{RC2H2}R\arabic{reaction}   & C$_2$H       + H            + M & $\!\!\!\rightarrow$ &  C$_2$H$_2$   + M &$  6.0\!\times\! 10^{-29} \left(T/298 \right)^{-1.80}$ & \\
+            & C$_2$H       + H           &$\!\!\!\rightarrow$&  C$_2$H$_2$   + M &$  3.0\!\times\! 10^{-10}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_2$       + CH$_2$      &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + H$_2$          & $  2.0\!\times\! 10^{-11} e^{  -400/T}$ & Ba92\\
+ 
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H    + H$_2$     & $\!\!\!\rightarrow$ &  C$_2$H$_2$   + H    & $  2.3\!\times\! 10^{-12} \left(T/298\right)^{ 2.22}e^{  -461/T}$ & Ei03\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H  + CH$_4$  &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + CH$_3$  & $  8.0\!\times\! 10^{-13} \left(T/298\right)^{ 2.34}e^{  -380/T}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_2$   + O       & $\!\!\!\rightarrow$ &  CH$_2$       + CO      & $  1.8\!\times\! 10^{-12} \left(T/298\right)^{ 2.00}e^{  -956/T}$ & Ei03\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H       + OH          &$\!\!\!\rightarrow$ &  CH$_2$       + CO        & $  3.0\!\times\! 10^{-11}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH  + C$_2$H$_2$  & $\!\!\!\rightarrow$ &  C$_2$H  + H$_2$O   & $  7.5\!\times\! 10^{-12} \left(T/298\right)^{2.0}e^{ -7050/T}$ & Ei03\\
+% R88   & C$_2$H  + H$_2$O  & $\!\!\!\rightarrow$ &  OH  + C$_2$H$_2$  & $  1.0\!\times\! 10^{-12} \left(T/298\right)^{2.7}e^{ -1120/T}$ & rev Ei03\\
+  \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_2$   + OH     &$\!\!\!\rightarrow$ &  CH$_3$       + CO      & $  6.3\!\times\! 10^{-18}  \left(T/298\right)^{4.0} e^{ -10100/T}$ & Mi88\\
+ \refstepcounter{reaction}R\arabic{reaction} & HO$_2$ + C$_2$H  &$\!\!\!\rightarrow$ &  C$_2$H$_2$  +   O$_2$   & $ 3.0\!\times\! 10^{-11} $  & \\  
+
+
+\multicolumn{6}{l}{\bf C$_2$H$_3$}\\
+ \refstepcounter{reaction}\label{RC2H3}R\arabic{reaction} & H     + C$_2$H$_2$   + M&$\!\!\!\rightarrow$& C$_2$H$_3$   + M &$ 3.3\!\times\! 10^{-30} e^{ -740/T}$ & Ba92\\
+    & H   + C$_2$H$_2$    & $\!\!\!\rightarrow$ &  C$_2$H$_3$    &$  9.0\!\times\! 10^{-12} e^{ -1220/T}$ & Wa84\\
+ \refstepcounter{reaction}R\arabic{reaction}  & H    + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  H$_2$        + C$_2$H$_2$             & $  1.6\!\times\! 10^{-11}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H$_3$   + OH          &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + H$_2$O         & $  5.0\!\times\! 10^{-11}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  OH   + C$_2$H$_2$    & $  5.0\!\times\! 10^{-12}\left(T/298\right)^{0.2}e^{+215/T}$ & Ha05\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  CH$_3$       + CO        & $  5.0\!\times\! 10^{-11}$ & La04\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O$_2$        + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  H$_2$CO      + HCO          & $  9.0\!\times\! 10^{-12}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_3$       + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + CH$_4$          & $  3.0\!\times\! 10^{-11}$ & La04\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_2$       + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + CH$_3$             & $  3.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H       + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + C$_2$H$_2$       & $  1.6\!\times\! 10^{-12}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O$_2$            + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  HO$_2$   + C$_2$H$_2$    & $  6.6\!\times\! 10^{-12}\left(T/298\right)^{-1.26}e^{-1660/T}$ & Ma98 \\
+
+\multicolumn{6}{l}{\bf C$_2$H$_4$}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H        + C$_2$H$_3$   + M & $\!\!\!\rightarrow$ &  C$_2$H$_4$   + M &$  1.8\!\times\! 10^{-27} \left(T/298\right)^{ -4.5} $ &  rev-Ba94\\
+          & H     + C$_2$H$_3$    & $\!\!\!\rightarrow$ &  C$_2$H$_4$   &$  1.0\!\times\! 10^{-10}$ & \\
+ \refstepcounter{reaction}\label{RC2H4}R\arabic{reaction}   & C$_2$H$_2$   + H$_2$        + M & $\!\!\!\rightarrow$ &  C$_2$H$_4$   + M &$  2.5\!\times\! 10^{-33} e^{-14900/T}$ & \\
+             & C$_2$H$_2$   + H$_2$      & $\!\!\!\rightarrow$ &  C$_2$H$_4$     &$  5.0\!\times\! 10^{-13} e^{-19600/T}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_2$       + CH$_3$      &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + H   & $  7.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}\label{R137}R\arabic{reaction}  & CH           + CH$_4$      &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + H              & $  7.6\!\times\! 10^{-11}$ & Fl02\\
+
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_4$  + H & $\!\!\!\rightarrow$ &  C$_2$H$_3$   + H$_2$ & $ 5.0\!\times\! 10^{-12} \left(T/298\right)^{ 1.93}e^{-6520/T}$ & Kn96\\
+% R103   & C$_2$H$_3$   + H$_2$ & $\!\!\!\rightarrow$ &  C$_2$H$_4$  + H & $ 3.1\!\times\! 10^{-12} \left(T/298\right)^{ 0.7}e^{-3630/T}$ & Kn96\\
+
+ \refstepcounter{reaction}R\arabic{reaction}   & O    + C$_2$H$_4$  & $\!\!\!\rightarrow$ &  HCO     + CH$_3$    & $  8.2\!\times\! 10^{-13} \left(T/298 \right)^{ 2.08}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & OH  + C$_2$H$_4$  & $\!\!\!\rightarrow$ &  C$_2$H$_3$ + H$_2$O  & $5.42\!\times\! 10^{-15} \left(T/298\right)^{ 4.2}e^{ +433/T}$ & Se06b\\
+ \refstepcounter{reaction}R\arabic{reaction}  & OH  + C$_2$H$_4$  & $\!\!\!\rightarrow$ &  H$_2$CO + CH$_3$  & $4.87\!\times\! 10^{-17} \left(T/298\right)^{3.34}e^{ +1400/T}$ & Se06b\\  % low pressure limit
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_4$   + CH$_3$      & $\!\!\!\rightarrow$ &  CH$_4$       + C$_2$H$_3$   & $  1.57\!\times\! 10^{-14} \left(T/298\right)^{ 3.7}e^{ -4780/T}$ & Ts86 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H$_3$   + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + C$_2$H$_4$      & $  2.4\!\times\! 10^{-11}$ & La04\\
+
+
+\multicolumn{6}{l}{\bf C$_2$H$_5$}\\
+ \refstepcounter{reaction}\label{RC2H5}R\arabic{reaction}   & H        + C$_2$H$_4$   + M & $\!\!\!\rightarrow$ &  C$_2$H$_5$   + M &$  7.7\!\times\! 10^{-30} e^{ -380/T}$ & Ba94\\
+          & H     + C$_2$H$_4$      & $\!\!\!\rightarrow$ &  C$_2$H$_5$      &$  9.0\!\times\! 10^{-12} \left(T/298 \right)^{1.75} e^{ -605/T}$ & Mi05\\
+ \refstepcounter{reaction}R\arabic{reaction}  & H            + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  CH$_3$       + CH$_3$      & $  6.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & H     + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + H$_2$          & $  3.0\!\times\! 10^{-12}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  H$_2$CO      + CH$_3$      & $  1.1\!\times\! 10^{-10}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H$_5$   + OH          &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + H$_2$O            & $  4.0\!\times\! 10^{-11}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_2$       + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + CH$_3$      & $  3.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_3$       + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + CH$_4$        & $  1.9\!\times\! 10^{-12}$ & Ba92\\
+
+
+\multicolumn{6}{l}{\bf C$_2$H$_6$}\\
+ \refstepcounter{reaction}R\arabic{reaction} & CH$_3$  + CH$_3$   + M&$\!\!\!\rightarrow$& C$_2$H$_6$   + M &$  1.6\!\times\! 10^{-24} \left(T/298 \right)^{-7.0}e^{  -1390/T}$ & Ba94\\
+            & CH$_3$       + CH$_3$      &$\!\!\!\rightarrow$&  C$_2$H$_6$     &$  6.0\!\times\! 10^{-11}$ & Ba94\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O       + C$_2$H$_6$  & $\!\!\!\rightarrow$ &  C$_2$H$_5$   + OH    & $  8.6\!\times\! 10^{-12} \left(T/298\right)^{ 1.50}e^{ -2920/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH     + C$_2$H$_6$  & $\!\!\!\rightarrow$ &  C$_2$H$_5$   + H$_2$O    & $  1.1\!\times\! 10^{-12} \left(T/298\right)^{ 2.00}e^{  -435/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H      + C$_2$H$_6$  & $\!\!\!\rightarrow$ &  H$_2$  + C$_2$H$_5$  & $  4.2\!\times\! 10^{-13} \left(T/298\right)^{ 3.50}e^{ -2600/T}$ & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_3$       + C$_2$H$_6$  & $\!\!\!\rightarrow$ &  C$_2$H$_5$   + CH$_4$      & $  7.2\!\times\! 10^{-15} \left(T/298\right)^{ 4.00}e^{ -4170/T}$ & Ts86\\
+  \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H       + C$_2$H$_6$  &$\!\!\!\rightarrow$ &  C$_2$H$_2$   + C$_2$H$_5$           & $  3.6\!\times\! 10^{-11}$ & La90\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C$_2$H$_5$   + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  C$_2$H$_4$   + C$_2$H$_6$          & $  2.4\!\times\! 10^{-12}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_6$   + C$_2$H$_3$  & $\!\!\!\rightarrow$ &  C$_2$H$_4$   + C$_2$H$_5$                              & $  1.5\!\times\! 10^{-13} \left(T/298\right)^{ 3.30}e^{ -5280/T}$ & Ts86\\
+
+
+\multicolumn{6}{l}{\bf C$_4$H$_n$}\\
+ \refstepcounter{reaction}\label{RC4H2}R\arabic{reaction}   & H   + C$_4$H   + M & $\!\!\!\rightarrow$ &  C$_4$H$_2$   + M &$  2.9\!\times\! 10^{-28}\left(T/298 \right)^{-1.5}$ &\\
+          & H     + C$_4$H  & $\!\!\!\rightarrow$ &  C$_4$H$_2$   &$  1.1\!\times\! 10^{-10} \left(T/298 \right)^{-1.5}$ &\\
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H  + C$_2$H$_2$  & $\!\!\!\rightarrow$ &  C$_4$H$_2$   + H   & $1.3\!\times\! 10^{-10} \left(T/298\right)^{ 0.24}e^{+37/T}$ & Ei03\\
+ \refstepcounter{reaction}\label{R161}R\arabic{reaction}   & H$_2$        + C$_4$H      &$\!\!\!\rightarrow$ &  C$_4$H$_2$   + H     & $  7.5\!\times\! 10^{-11} e^{ -1560/T}$ & \\
+ \refstepcounter{reaction}\label{R162}R\arabic{reaction}   & C$_4$H$_2$   + C$_2$H      &$\!\!\!\rightarrow$ &  C$_4$H       + C$_2$H$_2$  & $  3.0\!\times\! 10^{-11} e^{ -5000/T}$ & \\
+ \refstepcounter{reaction}\label{R163}R\arabic{reaction}   & C$_2$        + C$_2$H$_2$   &$\!\!\!\rightarrow$ &  C$_4$H  + H & $  3.5\!\times\! 10^{-10} $ &Pa08 \\
+
+
+\multicolumn{6}{l}{\bf C$_2$H$_2$OH}\\
+ \refstepcounter{reaction}\label{RC2H2OH}R\arabic{reaction}   & C$_2$H$_2$   + OH + M & $\!\!\!\rightarrow$ &  C$_2$H$_2$OH + M &$  5.6\!\times\! 10^{-30} \left(T/298 \right)^{-2.00}$ & Ba92\\  %stabilized C2H2OH will be important only at high pressures, but OH is important only at low pressures. In either case the chief radical is atomic hydrogen.  
+    & C$_2$H$_2$   + OH   & $\!\!\!\rightarrow$ &  C$_2$H$_2$OH   &$  2.3\!\times\! 10^{-12} e^{  -230/T}$ & Ba92\\ % estimated heat of formation for C$_2$H$_2$OH for reverse reaction from Lai92. 
+
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_2$OH + M & $\!\!\!\rightarrow$ &  CH$_2$CHO + M &$  1.0\!\times\! 10^{-11} e^{ -12000/T}$ &  \\ %The activation barrier against rearrangement to CH2CHO may be considerable.   We assume a rate with a barrier of order 100 kJ/mol, which is consistent with analogous barriers such as that between CH2CHO and CH3CO or in the re-arrangement of HCN adducts (Dean Bozelli).
+
+ \multicolumn{6}{l}{\bf CH$_2$CO}\\
+\refstepcounter{reaction}R\arabic{reaction}   & H + C$_2$H$_2$OH & $\!\!\!\rightarrow$ & H$_2$ +  CH$_2$CO &$  2.0\!\times\! 10^{-10} e^{  -3500/T}$ &  \\  % under conditions where C2H2OH forms, it is likely to react with H.  We therefore assume a reaction analogous to that of CH2CHO.    
+
+ \refstepcounter{reaction}R\arabic{reaction}   & H + CH$_2$CHO   & $\!\!\!\rightarrow$ & H$_2$ + CH$_2$CO &$  2.0\!\times\! 10^{-10} e^{  -3500/T}$ &   \\   % abstraction is assumed similar to CH3CHO + H > CH3CO + H2, Ya08, Wa84.
+ 
+ \refstepcounter{reaction}R\arabic{reaction}   & CH$_2$CO   + H       + M & $\!\!\!\rightarrow$ &  CH$_2$CHO + M &$  1.0\!\times\! 10^{-31} \left(T/298 \right)^{1.43} e^{  -3050/T}$ &    \\   % assumed.  The abstraction branch is RXXX.
+            & CH$_2$CO   + H     & $\!\!\!\rightarrow$ &  CH$_2$CHO   &$  1.14\!\times\! 10^{-11} \left(T/298 \right)^{1.43} e^{  -3050/T}$ & Se06a\\
+
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_2$   + OH & $\!\!\!\rightarrow$ &  CH$_2$CO   + H &$  5.0\!\times\! 10^{-17} \left(T/298 \right)^{4.5}e^{ +500/T}$ & Mi89, Wo94\\
+ 
+\refstepcounter{reaction}R\arabic{reaction}   & CH$_2$CO   + O      & $\!\!\!\rightarrow$ &  CH$_2$ + CO$_2$ &$  3.8\!\times\! 10^{-12} e^{  -680/T}$ & Ba92 \\ % products assumed
+\refstepcounter{reaction}R\arabic{reaction}   & CH$_2$CO   + OH    & $\!\!\!\rightarrow$ &  H$_2$COH + CO & $  7.2\!\times\! 10^{-12}  $ & Gr94, Oe92 \\ % Fraction from Gr94, rate from Oe92. 
+\refstepcounter{reaction}R\arabic{reaction}   & CH$_2$CO   + OH    & $\!\!\!\rightarrow$ &  CH$_3$ + CO$_2$ &$  5.0\!\times\! 10^{-12}  $ & Fa00, Oe92 \\
+\refstepcounter{reaction}R\arabic{reaction}   & CH$_2$CO   + H      & $\!\!\!\rightarrow$ &  CH$_3$ + CO  &$  5.0\!\times\! 10^{-12}  \left(T/298 \right)^{1.45} e^{  -1400/T}$ & Se06a \\
+
+
+\multicolumn{6}{l}{\bf C$_2$H$_4$OH}\\
+\refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_4$   + OH   + M & $\!\!\!\rightarrow$ &  C$_2$H$_4$OH + M &$  2.1\!\times\! 10^{-29} \left(T/298 \right)^{-4.45}$ & Cl06\\
+            & C$_2$H$_4$   + OH     & $\!\!\!\rightarrow$ &  C$_2$H$_4$OH   &$  5.0\!\times\! 10^{-12} e^{  148/T}$ & Cl06\\
+\refstepcounter{reaction}R\arabic{reaction}   & CH$_3$ + H$_2$CO  + M & $\!\!\!\rightarrow$ &  C$_2$H$_4$OH + M &$  3.0\!\times\! 10^{-36} \left(T/298 \right)^{4.98}e^{ -1890/T}$ & \\ % assumed 
+      & CH$_3$ + H$_2$CO  & $\!\!\!\rightarrow$ &  C$_2$H$_4$OH   &$  3.0\!\times\! 10^{-17}\left(T/298 \right)^{4.98} e^{ -1890/T}$ & Ch03, Se06b\\% uses Ch03 rate for ethoxy formation, inserts an 11 kJ/mol activation barrier (Se06b) between ethoxy and C2H4OH
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_4$OH + H    &$\!\!\!\rightarrow$ &  C$_2$H$_3$OH   + H$_2$   & $  8.3\!\times\! 10^{-11}$ & Ba82 \\ % products assumed
+ \refstepcounter{reaction}R\arabic{reaction}   & C$_2$H$_3$OH + H    &$\!\!\!\rightarrow$ &  CH$_2$CHO   + H$_2$   & $  1.0\!\times\! 10^{-10}e^{ -2000/T}$ &   \\ % assumed
+
+
+\multicolumn{6}{l}{\bf N$_2$,NO}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + N  + M       &$\!\!\!\rightarrow$&  N$_2$        + M &$  1.3\!\times\! 10^{-32}$ & Kn88\\
+          & N            + N           &$\!\!\!\rightarrow$&  N$_2$         &$  1.0\!\times\! 10^{-11}$ &  \\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + O$_2$       & $\!\!\!\rightarrow$ &  NO           + O     & $  4.5\!\times\! 10^{-12} \left(T/298\right)^{ 1.00}e^{ -3270/T}$ & Ba94\\
+ \refstepcounter{reaction}R\arabic{reaction}  & N      + NO &$\!\!\!\rightarrow$ &  N$_2$  + O & $  3.1\!\times\! 10^{-11}$ & At89\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N    + OH     &$\!\!\!\rightarrow$ &  NO    + H  & $  3.8\!\times\! 10^{-11} e^{   -85/T}$ & At89\\
+ \refstepcounter{reaction}R\arabic{reaction}  & N     + CO$_2$      &$\!\!\!\rightarrow$ &  NO           + CO   & $  0 $ & Fe98\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N   + O + M   &$\!\!\!\rightarrow$&  NO  + M &$  1.7\!\times\! 10^{-34}\left(T/298\right)^{ 0.26}$ &  \\
+          & N     + O        &$\!\!\!\rightarrow$&  NO      &$  1.7\!\times\! 10^{-12}\left(T/298\right)^{ 0.26}$ &   \\
+ \refstepcounter{reaction}R\arabic{reaction}   & C            + NO          & $\!\!\!\rightarrow$ &  CO           + N  & $  4.7\!\times\! 10^{-11}$ & De91\\
+\multicolumn{6}{l}{\bf NH}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + H + M           &$\!\!\!\rightarrow$&  NH  + M &$  6.0\!\times\! 10^{-33} $ &  \\
+          & N            + H        &$\!\!\!\rightarrow$&  NH      &$  6.0\!\times\! 10^{-13} $ &  ass\\
+ \refstepcounter{reaction}R\arabic{reaction} & O            + NH          &$\!\!\!\rightarrow$ &  NO           + H                & $  1.2\!\times\! 10^{-10}$ & Co91 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + NH          &$\!\!\!\rightarrow$ &  OH           + N               & $  1.2\!\times\! 10^{-11}$ & Co91\\
+ \refstepcounter{reaction}R\arabic{reaction}  & H            + NH          &$\!\!\!\rightarrow$ &  N            + H$_2$         & $  3.2\!\times\! 10^{-12}$ & Ad05\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + NH          & $\!\!\!\rightarrow$ &  N$_2$        + H           & $  2.0\!\times\! 10^{-11} \left(T/298\right)^{ 0.51}e^{    -10/T}$ & Cd05\\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH           + OH          & $\!\!\!\rightarrow$ &  H$_2$O       + N        & $  3.1\!\times\! 10^{-12} \left(T/298 \right)^{ 1.20}$ & Co91\\
+ \refstepcounter{reaction}\label{R191}R\arabic{reaction}  & NH           + OH          &$\!\!\!\rightarrow$ &  NO           + H$_2$      & $  3.3\!\times\! 10^{-11}$ & Co91\\
+ \refstepcounter{reaction}R\arabic{reaction}  & NH           + NO          &$\!\!\!\rightarrow$ &  N$_2$        + OH                                      & $  1.0\!\times\! 10^{-11}$ & Ba94 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH    + O$_2$    &$\!\!\!\rightarrow$ &  NO    + OH  & $  6.7\!\times\! 10^{-14} \left(T/298 \right)^{0.79} e^{  -600/T}$ & Rom96\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH           + NO          &$\!\!\!\rightarrow$ &  NH           + CO                                      & $  2.5\!\times\! 10^{-10} e^{  -500/T}$ & Li84\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + CH$_2$      &$\!\!\!\rightarrow$ &  NH           + CH                                      & $  1.0\!\times\! 10^{-12} e^{-20400/T}$ & Mi97\\
+ \refstepcounter{reaction}\label{R196}R\arabic{reaction}  & NH           + CH$_2$      &$\!\!\!\rightarrow$ &  N            + CH$_3$                                  & $  3.0\!\times\! 10^{-11}$ & Mo95\\
+ \refstepcounter{reaction}\label{R197}R\arabic{reaction}  & NH           + CH$_3$      &$\!\!\!\rightarrow$ &  N            + CH$_4$                                  & $  1.0\!\times\! 10^{-11}$ & Mo95\\
+% R325  & N            + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  CH$_3$CN          + H                                  & $  0$ & note\\
+ \refstepcounter{reaction}R\arabic{reaction}  & N            + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  NH           + C$_2$H$_2$                              & $  1.2\!\times\! 10^{-11}$ & Pa96\\
+ \refstepcounter{reaction}\label{R199}R\arabic{reaction}  & N            + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  NH           + C$_2$H$_4$                              & $  5.5\!\times\! 10^{-11}$ &  St95, Ya05\\
+ \refstepcounter{reaction}\label{R200}R\arabic{reaction}  & NH           + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  N            + C$_2$H$_4$                              & $  1.0\!\times\! 10^{-11}$ & Mo95\\
+ \refstepcounter{reaction}\label{R201}R\arabic{reaction}  & NH           + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  N            + C$_2$H$_6$                              & $  1.0\!\times\! 10^{-11}$ & Mo95\\
+
+
+\multicolumn{6}{l}{\bf NH$_2$}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH        + H + M           &$\!\!\!\rightarrow$&  NH$_2$  + M &$  1.4\!\times\! 10^{-32} e^{  3370/T}$ &  \\
+          & NH      + H        &$\!\!\!\rightarrow$&  NH$_2$      &$  1.4\!\times\! 10^{-12} e^{  3370/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH           + NH          & $\!\!\!\rightarrow$ &  NH$_2$       + N      & $  1.4\!\times\! 10^{-14} \left(T/298\right)^{ 2.89}e^{  1020/T}$ & Zu97\\
+  \refstepcounter{reaction}R\arabic{reaction}   & H            + NH$_2$      &$\!\!\!\rightarrow$ &  NH           + H$_2$     & $  1.0\!\times\! 10^{-10} e^{ -4450/T}$ & Ro94\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + NH$_2$      &$\!\!\!\rightarrow$ &  NH           + OH           & $  1.2\!\times\! 10^{-11}$ & Co91\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + NH$_2$      &$\!\!\!\rightarrow$ &  NO           + H$_2$      & $  8.2\!\times\! 10^{-11}$ & Co91\\
+  \refstepcounter{reaction}R\arabic{reaction}   & OH     + NH$_2$      & $\!\!\!\rightarrow$ &  NH    + H$_2$O   & $  7.8\!\times\! 10^{-13} \left(T/298\right)^{ 1.50}e^{   230/T}$ & Co91\\
+\refstepcounter{reaction}R\arabic{reaction}   & NH$_2$   + NO    & $\!\!\!\rightarrow$ &  N$_2$    + H$_2$O     & $ 6.0\!\times\! 10^{-11} \left(T/298 \right)^{-2.37}e^{ -437/T}$ & So01\\
+  \refstepcounter{reaction}\label{R209}R\arabic{reaction}  & NH$_2$   + C$_2$H   &$\!\!\!\rightarrow$ &  NH   + C$_2$H$_2$     & $  4.0\!\times\! 10^{-11}$ & Mo95\\
+  \refstepcounter{reaction}\label{R210}R\arabic{reaction}  & NH  + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  NH$_2$   + C$_2$H$_2$  & $  3.0\!\times\! 10^{-11}$ & Mo95\\
+  \refstepcounter{reaction}\label{R211}R\arabic{reaction}  & NH + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  NH$_2$   + C$_2$H$_4$    & $  3.0\!\times\! 10^{-11}$ & Mo95\\
+  \refstepcounter{reaction}\label{R212}R\arabic{reaction}  & NH  + C$_2$H$_6$  &$\!\!\!\rightarrow$ &  NH$_2$   + C$_2$H$_5$     & $  1.16\!\times\! 10^{-10}e^{ -8420/T}$ & RH94, rev-Xu99\\
+
+
+\multicolumn{6}{l}{\bf NH$_3$}\\
+\refstepcounter{reaction}R\arabic{reaction}   & NH$_2$       + H    + M &$\!\!\!\rightarrow$&  NH$_3$       + M &$  3.0\!\times\! 10^{-30}$ & Sc73\\
+             & NH$_2$       + H           &$\!\!\!\rightarrow$&  NH$_3$   &$  2.7\!\times\! 10^{-11}$ & Pa79\\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH    + H$_2$ +M   &$\!\!\!\rightarrow$&  NH$_3$       + M &$  1.2\!\times\! 10^{-34}e^{ 720/T}$ &  \\
+             & NH      + H$_2$          &$\!\!\!\rightarrow$&  NH$_3$   &$  1.0\!\times\! 10^{-12}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$    + NH$_2$      & $\!\!\!\rightarrow$ &  NH$_3$       + H    & $  2.7\!\times\! 10^{-14} \left(T/298\right)^{ 2.83}e^{ -3640/T}$ & Co97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH    + NH$_2$      & $\!\!\!\rightarrow$ &  NH$_3$       + O      & $  3.3\!\times\! 10^{-13} \left(T/298\right)^{ 0.41}e^{  -250/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH   + NH$_3$      & $\!\!\!\rightarrow$ &  NH$_2$    + H$_2$O   & $  7.6\!\times\! 10^{-12} \left(T/298\right)^{ 1.60}e^{  -480/T}$ & Co91\\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH$_2$  + HCO  & $\!\!\!\rightarrow$ &  NH$_3$     + CO & $  5.0\!\times\! 10^{-11}$  &\\
+ \refstepcounter{reaction}R\arabic{reaction}   & NH$_2$  + CH$_4$  & $\!\!\!\rightarrow$ &  NH$_3$   + CH$_3$ & $  6.8\!\times\! 10^{-14} \left(T/298\right)^{ 3.01}e^{ -5000/T}$ & So03\\
+  \refstepcounter{reaction}\label{R220}R\arabic{reaction}   & NH$_3$     + C$_2$H    & $\!\!\!\rightarrow$ &  NH$_2$   + C$_2$H$_2$   & $  4.0\!\times\! 10^{-11} \left(T/298 \right)^{-0.80}$ & Car04\\
+\refstepcounter{reaction}\label{R221}R\arabic{reaction}  & NH$_2$       + C$_2$H$_3$  &$\!\!\!\rightarrow$ &  NH$_3$       + C$_2$H$_2$     & $  4.0\!\times\! 10^{-11}$ & Mo95\\
+ \refstepcounter{reaction}\label{R222}R\arabic{reaction}   & NH$_2$       + C$_2$H$_4$  &$\!\!\!\rightarrow$ &  NH$_3$       + C$_2$H$_3$  & $  8.8\!\times\! 10^{-12} e^{ -5170/T}$ & He95\\
+ \refstepcounter{reaction}\label{R223}R\arabic{reaction}  & NH$_2$       + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  NH$_3$       + C$_2$H$_4$     & $  4.1\!\times\! 10^{-11}$ & De82\\
+ \refstepcounter{reaction}\label{R224}R\arabic{reaction}   & NH$_2$       + C$_2$H$_6$  &$\!\!\!\rightarrow$ &  NH$_3$       + C$_2$H$_5$    & $  1.6\!\times\! 10^{-11} e^{ -5560/T}$ & He95\\
+
+
+\multicolumn{6}{l}{\bf CN}\\
+ \refstepcounter{reaction}R\arabic{reaction}  & N            + CH          &$\!\!\!\rightarrow$ &  CN           + H                                       & $  2.1\!\times\! 10^{-11}$ & Me81\\
+ \refstepcounter{reaction}R\arabic{reaction} & C            + NH          &$\!\!\!\rightarrow$ &  CN           + H                                       & $  7.0\!\times\! 10^{-11}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}  & CN           + NO          &$\!\!\!\rightarrow$ &  N$_2$        + CO     & $  1.8\!\times\! 10^{-10}e^{ -4040/T}$ & Mu75\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CN     + O$_2$       &$\!\!\!\rightarrow$ &  CO           + NO       & $  3.6\!\times\! 10^{-12} e^{   210/T}$ & Ba94,Ri99\\
+ \refstepcounter{reaction}R\arabic{reaction}  & N            + CN          &$\!\!\!\rightarrow$ &  N$_2$        + C                                       & $  1.0\!\times\! 10^{-10}$ & Wh83\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C            + NO          &$\!\!\!\rightarrow$ &  CN           + O                                       & $  3.3\!\times\! 10^{-11}$ & De91\\
+  \refstepcounter{reaction}R\arabic{reaction}  & O            + CN          &$\!\!\!\rightarrow$ &  CO           + N                                       & $  1.7\!\times\! 10^{-11}$ & Ba92\\
+
+
+\multicolumn{6}{l}{\bf HCN}\\
+% \refstepcounter{reaction}R\arabic{reaction}   & H    + CN +M   &$\!\!\!\rightarrow$&  HCN   + M &$  3.2\!\times\! 10^{-30}\left(T/298\right)^{ -1.79}$ & \\
+%             & H      + CN   &$\!\!\!\rightarrow$&  HCN   &$  1.0\!\times\! 10^{-10}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & H    + CN +M   &$\!\!\!\rightarrow$&  HCN   + M &$  8.8\!\times\! 10^{-30}\left(T/298\right)^{ -2.2} e^{ -567/T} $ & Ts92 UPDATE \\
+             & H      + CN   &$\!\!\!\rightarrow$&  HCN   & $  1.7\!\times\! 10^{-10} \left(T/298\right)^{ -0.5}$ & Ts92 UPDATE \\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$    + CN   & $\!\!\!\rightarrow$ &  HCN       + H        & $  5.7\!\times\! 10^{-13} \left(T/298\right)^{ 2.45}e^{ -1130/T}$ & Wo96b\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CH + N$_2$  & $\!\!\!\rightarrow$ &  N    + HCN  & $  5.6\!\times\! 10^{-13} \left(T/298\right)^{ 0.88}e^{-10100/T}$ & Ro96\\
+% R192   & N     + HCN         & $\!\!\!\rightarrow$ &  N$_2$      + CH  & $  1.5\!\times\! 10^{-11} \left(T/298\right)^{ 0.23}e^{-8770/T}$ & rev137\\
+ 
+ \refstepcounter{reaction}R\arabic{reaction}  & N     + CH$_2$      &$\!\!\!\rightarrow$ &  HCN        + H      & $  1.7\!\times\! 10^{-11}$ & Ts90\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N    + CH$_3$      &$\!\!\!\rightarrow$ &  HCN        + H$_2$       & $  4.3\!\times\! 10^{-11} e^{  -420/T}$ & St88, Ma89\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O    + HCN         & $\!\!\!\rightarrow$ &  NH           + CO    & $  8.8\!\times\! 10^{-13} \left(T/298\right)^{ 1.21}e^{ -3850/T}$ & Ts91\\
+
+% R196   & OH    + CN      & $\!\!\!\rightarrow$ &  HCN          + O    & $  4.2\!\times\! 10^{-13} \left(T/298\right)^{ 2.57}e^{ -2000/T}$ & revPe85\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O + HCN  & $\!\!\!\rightarrow$ &  OH    + CN  & $  3.6\!\times\! 10^{-11} \left(T/298\right)^{ 1.58}e^{ -13400/T}$ & Pe85\\
+
+% R197   & H$_2$O  + CN  &$\!\!\!\rightarrow$ &  HCN  + OH & $  5.1\!\times\! 10^{-14}\left(T/298\right)^{ 2.54} e^{ -2660/T}$ & revWo95\\
+ \refstepcounter{reaction}R\arabic{reaction}   & HCN  + OH &$\!\!\!\rightarrow$ &  H$_2$O  + CN   & $  2.2\!\times\! 10^{-13}\left(T/298\right)^{ 1.83} e^{ -5180/T}$ & Wo95\\
+\refstepcounter{reaction}R\arabic{reaction}   & HCN      + OH       &$\!\!\!\rightarrow$ &  CO   + NH$_2$      & $  1.1\!\times\! 10^{-13} e^{ -5890/T}$ & Mi88\\
+  \refstepcounter{reaction}R\arabic{reaction}   & CN           + CH$_2$      &$\!\!\!\rightarrow$ &  CH        + HCN     & $  1.0\!\times\! 10^{-11} e^{ -1500/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CN           + CH$_3$      &$\!\!\!\rightarrow$ &  HCN     + CH$_2$   & $  1.0\!\times\! 10^{-11} e^{ -1500/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & CN      + CH$_4$      & $\!\!\!\rightarrow$ &  HCN     + CH$_3$     & $  3.4\!\times\! 10^{-13} \left(T/298\right)^{ 2.64}e^{   220/T}$ & Ba91\\
+ \refstepcounter{reaction}R\arabic{reaction} & CH  +   NO & $\!\!\!\rightarrow$ & O    +  HCN   &$ 3.3\!\times\! 10^{-12} $ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + C$_2$H$_4$  &$\!\!\!\rightarrow$ &  HCN          + CH$_3$      & $  3.3\!\times\! 10^{-14} e^{  -352/T}$ & Ke72\\
+  \refstepcounter{reaction}\label{R246}R\arabic{reaction}  & CN           + C$_2$H$_4$  &$\!\!\!\rightarrow$ &  HCN          + C$_2$H$_3$     & $  2.1\!\times\! 10^{-10}$ & Ga07\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CN    + C$_2$H$_6$  & $\!\!\!\rightarrow$ &  HCN  + C$_2$H$_5$ & $  1.4\!\times\! 10^{-12} \left(T/298\right)^{ 2.77}e^{ 900/T}$ & Ba91\\
+\refstepcounter{reaction}R\arabic{reaction}  & NH$_3$   + CN   &$\!\!\!\rightarrow$ &  NH$_2$    + HCN   & $  2.9\!\times\! 10^{-11}$ & Me93 \\
+
+
+\multicolumn{6}{l}{\bf HCN adducts}\\
+ \refstepcounter{reaction}\label{RHCNOH}R\arabic{reaction}   & HCN          + OH  + M & $\!\!\!\rightarrow$ &  HCNOH        + M &$  4.0\!\times\! 10^{-31} \left(T/298 \right)^{-2.00}e^{  -400/T}$ & De00\\
+             & HCN          + OH       & $\!\!\!\rightarrow$ &  HCNOH      &$  1.2\!\times\! 10^{-13} e^{  -400/T}$ & De97\\
+ \refstepcounter{reaction}\label{RHCNOHa}R\arabic{reaction}  & HCNOH        + H         &$\!\!\!\rightarrow$ &  NH$_3$       +  CO      & $  1.5\!\times\! 10^{-10}e^{ -14400/T}$ & \\ % activation barrier De00
+
+
+ \refstepcounter{reaction}\label{RH2CN}R\arabic{reaction}   & HCN          + H    + M & $\!\!\!\rightarrow$ &  H$_2$CN        + M &$  7.8\!\times\! 10^{-31} \left(T/298 \right)^{-2.73}e^{ -3860/T}$ &Ts91\\
+             & HCN          + H    & $\!\!\!\rightarrow$ &  H$_2$CN     &$  5.5\!\times\! 10^{-11} e^{ -2440/T}$ & Ts91\\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + CH$_3$      &$\!\!\!\rightarrow$ &  H$_2$CN          + H       & $  3.9\!\times\! 10^{-10} e^{  -420/T}$ &  Ma89\\
+ \refstepcounter{reaction}\label{R254}R\arabic{reaction}  & N            + C$_2$H$_5$  &$\!\!\!\rightarrow$ &  H$_2$CN    + CH$_3$       & $  5.5\!\times\! 10^{-11}$ & St95,Ya05\\
+ \refstepcounter{reaction}R\arabic{reaction}  & H          + H$_2$CN    &$\!\!\!\rightarrow$ &  HCN    +  H$_2$               & $ 8.3\!\times\! 10^{-11} $ & Ni03\\
+ \refstepcounter{reaction}\label{R256}R\arabic{reaction}  & N          + H$_2$CN    &$\!\!\!\rightarrow$ &  CH$_2$    +  N$_2$          & $ 7.7\!\times\! 10^{-12} $ & Ne90, To03\\
+ \refstepcounter{reaction}R\arabic{reaction}  & OH          + H$_2$CN    &$\!\!\!\rightarrow$ &  HCN    +  H$_2$O         & $ 7.7\!\times\! 10^{-12} $ & To03\\
+ \refstepcounter{reaction}\label{R258}R\arabic{reaction}  & CN          + H$_2$CN    &$\!\!\!\rightarrow$ &  HCN    +  HCN               & $ 7.7\!\times\! 10^{-12} $ &  \\
+ \refstepcounter{reaction}R\arabic{reaction}  & NH$_2$          + H$_2$CN    &$\!\!\!\rightarrow$ &  HCN    +  NH$_3$         & $ 7.7\!\times\! 10^{-12} $ &  \\
+ \refstepcounter{reaction}R\arabic{reaction}  & CH$_3$          + H$_2$CN    &$\!\!\!\rightarrow$ &  HCN    +  CH$_4$            & $ 7.7\!\times\! 10^{-12} $ &  \\
+ \refstepcounter{reaction}\label{R261}R\arabic{reaction}  & C$_2$H          + H$_2$CN    &$\!\!\!\rightarrow$ &  HCN    +  C$_2$H$_2$       & $ 7.7\!\times\! 10^{-12} $ &  \\
+
+
+\multicolumn{6}{l}{\bf Sulfur}\\
+ \refstepcounter{reaction}\label{RS2}R\arabic{reaction}   & S            + S            + M & $\!\!\!\rightarrow$ &  S$_2$        + M &$  2.0\!\times\! 10^{-33} e^{ 206/T}$ & Du08\\
+             & S            + S           &$\!\!\!\rightarrow$&  S$_2$         &$  2.3\!\times\! 10^{-14} e^{ 415/T}$ &  Du08\\
+ \refstepcounter{reaction}\label{RS3}R\arabic{reaction}   & S            + S$_2$        + M & $\!\!\!\rightarrow$ &  S$_3$        + M &$  1.1\!\times\! 10^{-30} \left(T/298 \right)^{-2.00}$ & \\
+             & S            + S$_2$       &$\!\!\!\rightarrow$&  S$_3$      &$  5.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}R\arabic{reaction}  & S            + S$_3$       &$\!\!\!\rightarrow$ &  S$_2$        + S$_2$      & $  4.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & S     + S$_3$  + M & $\!\!\!\rightarrow$ &  S$_4$  + M &$  1.0\!\times\! 10^{-30} \left(T/298 \right)^{-2.00}$ & \\
+           & S    + S$_3$       &$\!\!\!\rightarrow$&  S$_4$   &$  5.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}R\arabic{reaction}  & S$_2$        + S$_2$        + M & $\!\!\!\rightarrow$ &  S$_4$        + M &$  1.0\!\times\! 10^{-30} \left(T/298 \right)^{-2.00}$ & \\
+            & S$_2$        + S$_2$       &$\!\!\!\rightarrow$&  S$_4$     &$  3.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & S$_4$        + S           &$\!\!\!\rightarrow$ &  S$_3$        + S$_2$                                   & $  4.0\!\times\! 10^{-11} e^{  -500/T}$ & Mo95\\
+\refstepcounter{reaction}\label{RS8}R\arabic{reaction}  & S$_4$        + S$_4$        + M & $\!\!\!\rightarrow$ &  S$_8$        + M &$  1.0\!\times\! 10^{-29} \left(T/298 \right)^{-2.00}$ & \\
+            & S$_4$        + S$_4$       &$\!\!\!\rightarrow$&  S$_8$   &$  3.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}\label{RS8star}R\arabic{reaction}  & S$_4$        + S$_4$        + M & $\!\!\!\rightarrow$ &  S$_8^{\ast}$        + M &$  7.0\!\times\! 10^{-30} $ & \\
+            & S$_4$        + S$_4$       &$\!\!\!\rightarrow$&  S$_8^{\ast}$   &$  7.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}R\arabic{reaction}  & S$_8^{\ast}$        + M & $\!\!\!\rightarrow$ &  S$_8$        + M &$  7.0\!\times\! 10^{-11} $ & \\
+            & S$_8^{\ast}$        + M       &$\!\!\!\rightarrow$&  S$_8$  + M &$  7.0\!\times\! 10^{08}$ & \\
+
+\multicolumn{6}{l}{\bf HS}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & S            + H            + M & $\!\!\!\rightarrow$ &  HS        + M & $  1.0\!\times\! 10^{-32} $  &  \\
+             & S            + H           &$\!\!\!\rightarrow$&  HS         &$  1.0\!\times\! 10^{-11}$   &   \\
+ \refstepcounter{reaction}\label{R272}R\arabic{reaction}  & S            + HS          &$\!\!\!\rightarrow$ &  S$_2$        + H         & $  1.0\!\times\! 10^{-11}$ &  \\
+ \refstepcounter{reaction}\label{R273}R\arabic{reaction}  & S            + H$_2$      &$\!\!\!\rightarrow$ &  H        + HS      & $  5.3\!\times\! 10^{-10}\left(T/298 \right)^{0.95} e^{-9920/T}$ & Woi95, Sh98\\
+ \refstepcounter{reaction}\label{R274}R\arabic{reaction}   & HS  + HS    &$\!\!\!\rightarrow$ &  S$_2$        + H$_2$       & $  1.3\!\times\! 10^{-11} e^{-20600/T}$ & note\\
+ \refstepcounter{reaction}\label{R275}R\arabic{reaction}   & H            + S$_3$       &$\!\!\!\rightarrow$ &  HS           + S$_2$         & $  5.0\!\times\! 10^{-11} e^{  -500/T}$ & \\
+ \refstepcounter{reaction}\label{R276}R\arabic{reaction}    & H  + S$_4$   &$\!\!\!\rightarrow$ &  HS   + S$_3$  & $  5.0\!\times\! 10^{-11} e^{  -500/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + HS          & $\!\!\!\rightarrow$ &  OH           + S            & $  1.7\!\times\! 10^{-11} \left(T/298\right)^{ 0.67}e^{  -956/T}$ & Sc73\\
+ \refstepcounter{reaction}R\arabic{reaction}   & HS          + OH          &$\!\!\!\rightarrow$ &  H$_2$O       + S           & $  4.0\!\times\! 10^{-12} e^{  -240/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & S            + CH          & $\!\!\!\rightarrow$ &  HS           + C         & $  1.7\!\times\! 10^{-11} \left(T/298\right)^{ 0.50}e^{ -4000/T}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & S            + NH          & $\!\!\!\rightarrow$ &  HS           + N         & $  1.7\!\times\! 10^{-11} \left(T/298\right)^{ 0.50}e^{ -4000/T}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}  & NH$_2$       + HS          &$\!\!\!\rightarrow$ &  NH$_3$       + S          & $  5.0\!\times\! 10^{-12}e^{  -500/T}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HS           + CH$_2$      &$\!\!\!\rightarrow$ &  S            + CH$_3$           & $  4.0\!\times\! 10^{-12}e^{  -500/T}$ & Mo95\\ % divided by five
+ \refstepcounter{reaction}\label{RCH3SH}R\arabic{reaction}  & HS           + CH$_3$      &$\!\!\!\rightarrow$ &  S            + CH$_4$       & $  4.0\!\times\! 10^{-11}e^{  -500/T}$ & Sh85\\ % divided by five
+ \refstepcounter{reaction}R\arabic{reaction}  & S            + HCO         &$\!\!\!\rightarrow$ &  HS           + CO              & $  6.0\!\times\! 10^{-11}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction} & S + HO$_2$   &$\!\!\!\rightarrow$ &  HS  +   O$_2$   & $ 5.0\!\times\! 10^{-12} $  & \\  
+
+
+\multicolumn{6}{l}{\bf H$_2$S}\\
+\refstepcounter{reaction}\label{RH2S}R\arabic{reaction}   & H            + HS           + M & $\!\!\!\rightarrow$ &  H$_2$S       + M &$  4.3\!\times\! 10^{-35} \left(T/298 \right)^{0.48}e^{ +4988/T}$ &  reverse\\
+             & H            + HS          &$\!\!\!\rightarrow$&  H$_2$S       &$  1.0\!\times\! 10^{-10}$ &  \\
+ \refstepcounter{reaction}\label{RHSH}R\arabic{reaction}   & S            + H$_2$    + M & $\!\!\!\rightarrow$ &  H$_2$S       + M &$  2.9\!\times\! 10^{-30} \left(T/298 \right)^{-3.3}e^{ +580/T}$ &  reverse\\
+             & S            + H$_2$          &$\!\!\!\rightarrow$&  H$_2$S       &$  1.0\!\times\! 10^{-11}$ & reverse\\
+ \refstepcounter{reaction}\label{R288}R\arabic{reaction}   & H     + H$_2$S      & $\!\!\!\rightarrow$ &  HS           + H$_2$        & $  3.7\!\times\! 10^{-12} \left(T/298\right)^{ 1.94}e^{  -455/T}$ & Pe99\\
+ 
+ %R240   & HS           + HS          & $\!\!\!\rightarrow$ &  H$_2$S       + S        & $  8.5\!\times\! 10^{-12} \left(T/298\right)^{ 0.20}$ & rev Sh96\\
+ \refstepcounter{reaction}\label{R289}R\arabic{reaction}   & H$_2$S       + S & $\!\!\!\rightarrow$ &  HS + HS  & $  1.4\!\times\! 10^{-10}e^{ -3720/T}$ & Sh96\\
+
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + H$_2$S      &$\!\!\!\rightarrow$ &  HS           + OH       & $  9.2\!\times\! 10^{-12} e^{ -1800/T}$ & De97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OH     + H$_2$S      &$\!\!\!\rightarrow$ &  H$_2$O       + HS      & $  6.1\!\times\! 10^{-12} e^{  -81/T}$ & At04 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HS           + HCO         &$\!\!\!\rightarrow$ &  H$_2$S       + CO       & $  5.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}\label{R293}R\arabic{reaction}   & CH$_2$      + H$_2$S      &$\!\!\!\rightarrow$ &  CH$_3$       + HS                                      & $  2.5\!\times\! 10^{-11} e^{  -750/T}$ & Da95\\
+
+% R245   & HS           + CH$_4$      &$\!\!\!\rightarrow$ &  CH$_3$       + H$_2$S   & $  3.0\!\times\! 10^{-12} e^{ -9120/T}$ & rev Pe88\\
+ \refstepcounter{reaction}R\arabic{reaction}   & H$_2$S   + CH$_3$      &$\!\!\!\rightarrow$ &  HS + CH$_4$   & $  2.1\!\times\! 10^{-13} e^{ -1160/T}$ & Pe88\\
+ \refstepcounter{reaction}R\arabic{reaction} & HS + HO$_2$   &$\!\!\!\rightarrow$ &  H$_2$S  +   O$_2$   & $ 1.0\!\times\! 10^{-11} $  & \\  
+
+\multicolumn{6}{l}{\bf SO, SO$_2$}\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + HS          &$\!\!\!\rightarrow$ &  SO           + H             & $  7.0\!\times\! 10^{-11}$ & Sa03\\
+ \refstepcounter{reaction}R\arabic{reaction}  & S            + OH          &$\!\!\!\rightarrow$ &  H            + SO            & $  6.6\!\times\! 10^{-11}$ & De97\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O            + S$_2$       &$\!\!\!\rightarrow$ &  SO           + S          & $  1.1\!\times\! 10^{-11}$ & Hi87\\
+ \refstepcounter{reaction}R\arabic{reaction}   & S            + O$_2$       & $\!\!\!\rightarrow$ &  SO           + O         & $  1.5\!\times\! 10^{-13} \left(T/298\right)^{ 2.11}e^{  -730/T}$ & Lu04\\
+ \refstepcounter{reaction}R\arabic{reaction}  & S$_3$        + O           &$\!\!\!\rightarrow$ &  S$_2$        + SO         & $  2.0\!\times\! 10^{-11}e^{  -500/T}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction}   & S$_4$        + O           &$\!\!\!\rightarrow$ &  S$_3$        + SO   & $  2.0\!\times\! 10^{-11} e^{  -500/T}$ & Mo95\\
+  \refstepcounter{reaction}\label{R302}R\arabic{reaction}   & N         + SO          & $\!\!\!\rightarrow$ &  NO           + S         & $  4.5\!\times\! 10^{-12} \left(T/298\right)^{ 1.00}e^{ -3270/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & SO + O + M & $\!\!\!\rightarrow$ &  SO$_2$ + M  & $  4.8\!\times\! 10^{-31} \left(T/298\right)^{-2.17}$ & Lu03\\
+          & SO + O   & $\!\!\!\rightarrow$ &  SO$_2$    & $  5.3\!\times\! 10^{-11}$ & Si88\\
+ \refstepcounter{reaction}\label{R304}R\arabic{reaction}   & SO           + SO          &$\!\!\!\rightarrow$ &  S            + SO$_2$       & $  5.0\!\times\! 10^{-13} e^{ -1500/T}$ & note\\ % Ma83 fit with assumed 1500 K activation barrier
+ \refstepcounter{reaction}R\arabic{reaction}   & O$_2$        + SO          &$\!\!\!\rightarrow$ &  SO$_2$       + O     & $  3.8\!\times\! 10^{-12} e^{ -3710/T}$ & Ga98\\
+ \refstepcounter{reaction}\label{R306}R\arabic{reaction}   & OH           + SO          & $\!\!\!\rightarrow$ &  SO$_2$       + H      & $  8.6\!\times\! 10^{-11} \left(T/298 \right)^{-1.35}$ & Bl00,Bl06,Ba07\\
+ \refstepcounter{reaction}R\arabic{reaction} & S + HO$_2$   &$\!\!\!\rightarrow$ &  SO  +   OH   & $ 5.0\!\times\! 10^{-12} $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & S  +  O$_3$  &$\!\!\!\rightarrow$ &  SO   +  O$_2$   & $ 1.2\!\times\! 10^{-10}  $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & SO  +  O$_3$  &$\!\!\!\rightarrow$ &  SO$_2$   +  O$_2$   & $ 1.2\!\times\! 10^{-11}  $  & \\  
+
+
+\multicolumn{6}{l}{\bf HSO}\\
+ \refstepcounter{reaction}\label{RHSO}R\arabic{reaction}   & H            + SO +M        &$\!\!\!\rightarrow$&  HSO          + M &$  3.67\!\times\! 10^{-33}\left(T/298 \right)^{0.28}$ & \\
+           & H            + SO          &$\!\!\!\rightarrow$&  HSO        &$  1.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HSO          + H           &$\!\!\!\rightarrow$ &  HS           + OH               & $  7.0\!\times\! 10^{-11}$ & \\% assumed same as H + HO2 Ba92
+ \refstepcounter{reaction}R\arabic{reaction}   & HSO          + H           &$\!\!\!\rightarrow$ &  H$_2$        + SO             & $  6.0\!\times\! 10^{-11} e^{  -710/T}$ & \\ % assumed same as H + HO2 Ba92
+ \refstepcounter{reaction}R\arabic{reaction}   & HSO          + H           &$\!\!\!\rightarrow$ &  H$_2$O      + S            & $  6.0\!\times\! 10^{-11} e^{  -3870/T}$ & \\% assumed same as H + HO2 Ba92
+ \refstepcounter{reaction}R\arabic{reaction}  & H$_2$S      + O          &$\!\!\!\rightarrow$ &  H + HSO                        & $  5.0\!\times\! 10^{-11}e^{  -3850/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HSO          + OH          &$\!\!\!\rightarrow$ &  H$_2$O       + SO          & $  3.0\!\times\! 10^{-11}e^{  -300/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HSO          + HS          &$\!\!\!\rightarrow$ &  H$_2$S       + SO           & $  1.0\!\times\! 10^{-11}e^{  -500/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HSO          + O           &$\!\!\!\rightarrow$ &  OH           + SO                & $  1.0\!\times\! 10^{-11}e^{  -500/T}$ & \\
+ 
+ \refstepcounter{reaction}R\arabic{reaction}  & HSO          + O           &$\!\!\!\rightarrow$ &  O$_2$        + HS              & $  1.2\!\times\! 10^{-10}e^{  -500/T}$ & \\
+ 
+ \refstepcounter{reaction}R\arabic{reaction}  & HSO          + S           &$\!\!\!\rightarrow$ &  HS           + SO                 & $  2.0\!\times\! 10^{-11}e^{  -500/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & SO           + HCO         &$\!\!\!\rightarrow$ &  HSO          + CO          & $  3.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}R\arabic{reaction} & SO + HO$_2$   &$\!\!\!\rightarrow$ &  HSO +   O$_2$   & $ 0.0 $  & \\  
+\refstepcounter{reaction}R\arabic{reaction} & H$_2$S + HO$_2$   &$\!\!\!\rightarrow$ &  H$_2$O +   HSO   & $ 0.0 $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & HS  +  O$_3$  &$\!\!\!\rightarrow$ &  HSO   +  O$_2$   & $ 9.5\!\times\! 10^{-12}  e^{-280/T} $  & \\  
+
+\multicolumn{6}{l}{\bf OCS}\\
+ \refstepcounter{reaction}R\arabic{reaction}   & S            + CO +M        &$\!\!\!\rightarrow$&  OCS          + M &$  3.6\!\times\! 10^{-34}\left(T/298 \right)^{-0.57}$ & \\ % reverse of our own fit to Woi95 and Oy94
+           & S            + CO          &$\!\!\!\rightarrow$&  OCS        &$  3.0\!\times\! 10^{-14}$ & \\ % a flat reverse of Sc69
+% R267   & OCS          + M           &$\!\!\!\rightarrow$ &  CO     + S    +M           & $  4.1\!\times\! 10^{-10} e^{-30900/T}$ & Oy94\\
+  \refstepcounter{reaction}R\arabic{reaction}   & O   + OCS         &$\!\!\!\rightarrow$ &  CO           + SO         & $  7.8\!\times\! 10^{-11} e^{ -2620/T}$ & Si88\\
+% R203   & H            + OCS         & $\!\!\!\rightarrow$ &  CO           + HS          & $  9.1\!\times\! 10^{-12} e^{ -1940/T}$ & Le77 \\
+ \refstepcounter{reaction}R\arabic{reaction}   & HS           + CO          &$\!\!\!\rightarrow$ &  OCS          + H            & $  4.2\!\times\! 10^{-14} e^{ -7660/T}$ & Ku95\\
+ \refstepcounter{reaction}R\arabic{reaction}   & OCS  + S           & $\!\!\!\rightarrow$ &  CO           + S$_2$       & $  1.5\!\times\! 10^{-13} \left(T/298\right)^{ 2.57}e^{ -1180/T}$ & Lu06\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + OCS         &$\!\!\!\rightarrow$ &  S            + CO$_2$             & $  8.3\!\times\! 10^{-11} e^{ -5530/T}$ & Si88\\
+  \refstepcounter{reaction}R\arabic{reaction}   & OCS          + OH          &$\!\!\!\rightarrow$ &  CO$_2$       + HS          & $  1.1\!\times\! 10^{-13} e^{ -1200/T}$ & At04\\
+ \refstepcounter{reaction}R\arabic{reaction}  & S            + HCO         &$\!\!\!\rightarrow$ &  OCS          + H            & $  6.0\!\times\! 10^{-11}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CO           + S$_3$       &$\!\!\!\rightarrow$ &  S$_2$        + OCS                                     & $  1.0\!\times\! 10^{-11} e^{-10000/T}$ & \\
+\multicolumn{6}{l}{\bf CS}\\
+ % R396   & CS           + M           & $\!\!\!\rightarrow$ &  C            + S +M        & $  2.7\!\times\! 10^{-03} \left(T/298\right)^{-3.52}e^{-85700/T}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & S            + CH          &$\!\!\!\rightarrow$ &  CS           + H                                       & $  2.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}R\arabic{reaction}  & C            + HS          &$\!\!\!\rightarrow$ &  CS           + H                                       & $  2.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}   & N            + CS          & $\!\!\!\rightarrow$ &  CN           + S      & $  3.8\!\times\! 10^{-11} \left(T/298\right)^{ 0.50}e^{ -1160/T}$ & Mi97\\
+ \refstepcounter{reaction}R\arabic{reaction}   & O            + CS          &$\!\!\!\rightarrow$ &  CO           + S             & $  2.7\!\times\! 10^{-10} e^{  -760/T}$ & At04\\
+ \refstepcounter{reaction}R\arabic{reaction}  & C            + SO          &$\!\!\!\rightarrow$ &  CS           + O             & $  5.0\!\times\! 10^{-11}$ & \\
+\refstepcounter{reaction}\label{R337}R\arabic{reaction}  & OH           + CS          &$\!\!\!\rightarrow$ &  OCS          + H                                       & $  2.0\!\times\! 10^{-13}$ & \\
+\refstepcounter{reaction}R\arabic{reaction} & CH$_2$   +  S &$\!\!\!\rightarrow$& CS   +  H$_2$    &$ 2.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction} & CS  +  O$_3$  &$\!\!\!\rightarrow$ &  OCS   +  O$_2$   & $ 3.0\!\times\! 10^{-16}  $  & \\  
+
+
+\multicolumn{6}{l}{\bf CS$_2$}\\
+\refstepcounter{reaction}R\arabic{reaction}   & CS      + S +M        &$\!\!\!\rightarrow$&  CS$_2$   + M &$  5.2\!\times\! 10^{-29}\left(T/298 \right)^{-4.5}$ & rev-Sa80 \\
+           & CS      + S          &$\!\!\!\rightarrow$&  CS$_2$        &$  5.0\!\times\! 10^{-11}$ & \\
+% R282   & CS$_2$       + M           &$\!\!\!\rightarrow$ &  CS           + S          +M           & $  4.2\!\times\! 10^{-10} e^{-37400/T}$ & Sa80\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CS$_2$       + S           &$\!\!\!\rightarrow$ &  CS           + S$_2$     & $  2.8\!\times\! 10^{-10} e^{ -5920/T}$ & Woi95a\\
+ \refstepcounter{reaction}\label{R342}R\arabic{reaction}   & CS           + HS          & $\!\!\!\rightarrow$ &  CS$_2$       + H         & $  1.0\!\times\! 10^{-13} \left(T/298\right)^{ 1.50}e^{   250/T}$ & \\
+ \refstepcounter{reaction}\label{R343}R\arabic{reaction}   & CS$_2$       + O           &$\!\!\!\rightarrow$ &  CS           + SO        & $  5.3\!\times\! 10^{-11} e^{  -822/T}$ & Si88, Co92\\
+ \refstepcounter{reaction}R\arabic{reaction}   & CS$_2$       + O           &$\!\!\!\rightarrow$ &  OCS          + S               & $  4.7\!\times\! 10^{-12} e^{  -822/T}$ & Si88, Co92\\
+ \refstepcounter{reaction}\label{R345}R\arabic{reaction}   & CS$_2$       + O           &$\!\!\!\rightarrow$ &  CO           + S$_2$          & $  1.8\!\times\! 10^{-12} e^{  -822/T}$ & Si88, Co92\\
+% R288   & CS$_2$       + OH   &$\!\!\!\rightarrow$ &  OCS + HS& $  0.02\!\times\!1.1\!\times\! 10^{-13} e^{ -1200/T}$ & At04, Cox\\
+ \refstepcounter{reaction}\label{R346}R\arabic{reaction}   & CS$_2$       + OH    &$\!\!\!\rightarrow$ &  OCS   + HS     & $  0.0 $ & At04\\
+
+
+\multicolumn{6}{l}{\bf HCS}\\
+ \refstepcounter{reaction}\label{RHCS}R\arabic{reaction}   & CS      + H +M        &$\!\!\!\rightarrow$&  HCS   + M &$  5.0\!\times\! 10^{-33}\left(T/298 \right)^{-1.0}$ & \\  % assumed 10X faster than H+CO
+           & CS      +  H          &$\!\!\!\rightarrow$&  HCS        &$  5.0\!\times\! 10^{-12} \left(T/298 \right)^{-1.0}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & S            + CH$_2$      &$\!\!\!\rightarrow$ &  HCS          + H                       & $  5.0\!\times\! 10^{-11}$ & Mo95\\
+  \refstepcounter{reaction}R\arabic{reaction}  & S            + HCS         &$\!\!\!\rightarrow$ &  CS$_2$       + H                & $  2.0\!\times\! 10^{-11}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction}  & S            + HCS         &$\!\!\!\rightarrow$ &  CS           + HS                       & $  2.0\!\times\! 10^{-11}$ &Mo95 \\
+ \refstepcounter{reaction}R\arabic{reaction}  & S$_2$        + CH          &$\!\!\!\rightarrow$ &  HCS          + S              & $  4.0\!\times\! 10^{-12}$ & Mo95\\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCS          + H           &$\!\!\!\rightarrow$ &  CS           + H$_2$          & $  5.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & HCS          + CH$_3$      &$\!\!\!\rightarrow$ &  CS           + CH$_4$           & $  2.0\!\times\! 10^{-11}$ & Mo95\\ % divided by five
+ \refstepcounter{reaction}R\arabic{reaction}  & HCS          + C$_2$H      &$\!\!\!\rightarrow$ &  CS           + C$_2$H$_2$      & $  2.0\!\times\! 10^{-11}$ & Mo95\\ % divided by five
+ \refstepcounter{reaction}R\arabic{reaction}  & HCS          + OH          &$\!\!\!\rightarrow$ &  CS           + H$_2$O    & $  2.0\!\times\! 10^{-11}$ & Mo95\\ % divided by five
+ 
+\multicolumn{6}{l}{\bf $^1$CH$_2$}\\
+ \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + H$_2$       &$\!\!\!\rightarrow$ &  CH$_3$       + H           & $  1.0\!\times\! 10^{-10}$ & Ga08\\
+ \refstepcounter{reaction}R\arabic{reaction}  &   CH$_3$     + OH      &$\!\!\!\rightarrow$ &  $^1$CH$_2$   + H$_2$O   & $  1.2\!\times\! 10^{-10}e^{-1400/T}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + H$_2$       &$\!\!\!\rightarrow$ &  CH$_2$       + H$_2$                                   & $  3.0\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + CH$_4$      &$\!\!\!\rightarrow$ &  CH$_3$       + CH$_3$                                  & $  3.6\!\times\! 10^{-11}$ & \\
+% \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + C$_2$H$_2$      &$\!\!\!\rightarrow$ &  C$_3$H$_4$       + H                                  & $  3.3\!\times\! 10^{+10}$ & high pressure limit \\
+% \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + C$_2$H$_2$      &$\!\!\!\rightarrow$ &  C$_3$H$_4$       + H                                  & $  1.8\!\times\! 10^{-12} \left(T/298 \right)^{-0.9}$ & products  \\
+ \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + NH$_3$      &$\!\!\!\rightarrow$ &  CH$_3$       + NH$_2$                                  & $  3.6\!\times\! 10^{-11}$ & \\
+ \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + H       &$\!\!\!\rightarrow$ &  CH       + H$_2$            & $  5.0\!\times\! 10^{-11}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & $^1$CH$_2$   + H       &$\!\!\!\rightarrow$ &  CH$_2$       + H                 & $  8.0\!\times\! 10^{-12}$ & \\
+ 
+\multicolumn{6}{l}{\bf O($^1$D)}\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O($^1$D)       + H$_2$       &$\!\!\!\rightarrow$ &  OH           + H              & $  1.5\!\times\! 10^{-10}$ & Ba92\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O($^1$D)       + CH$_4$      &$\!\!\!\rightarrow$ &  CH$_3$       + OH   & $  1.2\!\times\! 10^{-10}$ & Sa03\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O($^1$D)       + CH$_4$      &$\!\!\!\rightarrow$ &  H$_2$COH      + H        & $  3.0\!\times\! 10^{-11}$ & Sa03\\
+ \refstepcounter{reaction}R\arabic{reaction}  & O($^1$D)       + CO          &$\!\!\!\rightarrow$ &  O            + CO               & $  7.0\!\times\! 10^{-11}$ & note \\
+ \refstepcounter{reaction}R\arabic{reaction}  & O$^1$D       + H$_2$O      &$\!\!\!\rightarrow$ &  OH           + OH               & $  2.2\!\times\! 10^{-10}$ & Sa03\\
+
+
+\multicolumn{6}{l}{\bf HCCO}\\
+ \refstepcounter{reaction}R\arabic{reaction} & CO  +  CH  + M &$\!\!\!\rightarrow$ &   HCCO  + M   & $ 4.2\!\times\! 10^{-30} \left(T/298 \right)^{-1.9}$  & Fu98\\   
+          & CO  +  CH   &$\!\!\!\rightarrow$ &  HCCO      & $ 1.7\!\times\! 10^{-10} \left(T/298 \right)^{-0.4}$  & Fu98\\ 
+ \refstepcounter{reaction}R\arabic{reaction} & C$_2$H$_2$  + O   &$\!\!\!\rightarrow$ &    H    +  HCCO    & $ 1.2\!\times\! 10^{-12} \left(T/298 \right)^{2.0}e^{-956/T}$  & Ei03\\  
+ \refstepcounter{reaction}R\arabic{reaction} & H   +   HCCO  &$\!\!\!\rightarrow$ &  CH$_2$  +  CO      & $ 1.7\!\times\! 10^{-10} $  & Gl00\\
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$  +  HCCO  &$\!\!\!\rightarrow$ &  CH$_2$CO  + H    & $ 2.2\!\times\! 10^{-11} e^{-2000/T}$  & Ca03\\  
+ %  products assumed.  This is slightly exothermic
+ \refstepcounter{reaction}R\arabic{reaction} & O  +   HCCO  &$\!\!\!\rightarrow$ &  CH  +  CO$_2$     & $ 4.9\!\times\! 10^{-11} e^{-561/T}$  & Pe95\\  
+ \refstepcounter{reaction}R\arabic{reaction} & O  +  HCCO  &$\!\!\!\rightarrow$ &  HCO +   CO           & $ 1.1\!\times\! 10^{-10} $  & Ba92\\ % products are substituted for CO + CO + H
+ \refstepcounter{reaction}R\arabic{reaction} & CH$_3$  +  HCCO  &$\!\!\!\rightarrow$ &  C$_2$H$_4$ +   CO    & $ 3.3\!\times\! 10^{-12} $  & Hi96\\
+ \refstepcounter{reaction}R\arabic{reaction} & C$_2$H +  O$_2$   &$\!\!\!\rightarrow$ &   O  +   HCCO      & $ 1.0\!\times\! 10^{-12} $  & Ts86\\
+ \refstepcounter{reaction}R\arabic{reaction} & NO  +  HCCO  &$\!\!\!\rightarrow$ &  HCN  +  CO$_2$     & $ 8.6\!\times\! 10^{-12} \left(T/298 \right)^{-0.75}e^{90.2/T}$  & Mi03 \\ 
+
+
+\multicolumn{6}{l}{\bf NCO}\\
+ \refstepcounter{reaction}R\arabic{reaction} & O  +  HCN  &$\!\!\!\rightarrow$ &   H  +   NCO  & $ 3.65\!\times\! 10^{-13} \left(T/298 \right)^{2.1}e^{-3075/T}$  & Ba92\\   
+ \refstepcounter{reaction}R\arabic{reaction} & O   +  NCO  &$\!\!\!\rightarrow$ &  CO  +    NO     & $ 7.5\!\times\! 10^{-11} $  & Ts92\\   
+ \refstepcounter{reaction}R\arabic{reaction} & CN  +   OH  &$\!\!\!\rightarrow$ &   H    +   NCO    & $ 7.0\!\times\! 10^{-11} $  & Ts92\\   
+ \refstepcounter{reaction}R\arabic{reaction} & CN   +   O$_2$  &$\!\!\!\rightarrow$ &   O    +   NCO   & $ 1.2\!\times\! 10^{-11}  e^{210/T}$  & Ba94\\  
+ \refstepcounter{reaction}R\arabic{reaction} & H   +    NCO  &$\!\!\!\rightarrow$ &  CO  +    NH  & $ 2.2\!\times\! 10^{-11} \left(T/298 \right)^{0.9}$  & Be00, Ts92\\  % fit to measured rates at 300, 550, and 1500 K.
+ \refstepcounter{reaction}R\arabic{reaction} & N   +    NCO  &$\!\!\!\rightarrow$ &  N$_2$   +   CO    & $ 3.3\!\times\! 10^{-11} $  & Ba92 \\    
+ \refstepcounter{reaction}R\arabic{reaction} & OH  +    NCO  &$\!\!\!\rightarrow$ &  NO   +   HCO   & $ 1.8\!\times\! 10^{-11}  e^{-5700/T}$  & Ca01\\  
+ \refstepcounter{reaction}R\arabic{reaction} & CH   +   NO  &$\!\!\!\rightarrow$ &   H    +   NCO        & $ 4.4\!\times\! 10^{-11} $  & Ge99\\  
+
+
+ \multicolumn{6}{l}{\bf HNCO}\\
+ \refstepcounter{reaction}\label{RHNCO}R\arabic{reaction} &  NH   +   CO  + M &$\!\!\!\rightarrow$ &   HNCO  + M  & $ 3.0\!\times\! 10^{-33}  e^{-3500/T}$  & rev-Ts92\\ 
+         &  NH   +   CO  &$\!\!\!\rightarrow$ &   HNCO    & $ 3.0\!\times\! 10^{-14}  e^{-3500/T}$  & \\   
+ \refstepcounter{reaction}R\arabic{reaction} & OH   +   HCN  &$\!\!\!\rightarrow$ &  H    +   HNCO   & $ 4.18\!\times\! 10^{-18} \left(T/298 \right)^{4.71}e^{248/T}$  & Ts91\\   
+ \refstepcounter{reaction}R\arabic{reaction} & H   +   HNCO  &$\!\!\!\rightarrow$ &  H$_2$    +   NCO   & $ 1.9\!\times\! 10^{-12} \left(T/298 \right)^{1.66}e^{-7000/T}$  & Mer96\\  
+ \refstepcounter{reaction}R\arabic{reaction} & OH   +   NCO  &$\!\!\!\rightarrow$ &  O   +    HNCO    & $ 6.22\!\times\! 10^{-14} \left(T/298 \right)^{2.51}e^{-2975/T}$    & Ts92\\
+ \refstepcounter{reaction}R\arabic{reaction} & OH   +  HNCO  &$\!\!\!\rightarrow$ &   H$_2$O  +   NCO   & $ 9.43\!\times\! 10^{-14} \left(T/298 \right)^{2.0}e^{-1290/T}$    & Ts92\\  
+   \refstepcounter{reaction}R\arabic{reaction} & H   +    HNCO &$\!\!\!\rightarrow$ &    NH$_2$  +   CO     & $ 6.0\!\times\! 10^{-13} \left(T/298 \right)^{1.7}e^{-1950/T}$    & Mi92\\  
+% \refstepcounter{reaction}R\arabic{reaction} & H   +    HNCO &$\!\!\!\rightarrow$ &    NH$_2$  +   CO     & $ 3.5\!\times\! 10^{-10} e^{-8500/T}$    & Me91\\  % this is 2300-3500 K
+ %   \refstepcounter{reaction}R\arabic{reaction} & H   +    HNCO  + M &$\!\!\!\rightarrow$ &   HCNOH  + M   & $ 1.0\!\times\! 10^{-31} \left(T/298 \right)^{-2.0}e^{-4810/T}$    & \\     
+%              & H   +    HNCO  &$\!\!\!\rightarrow$ &   HCNOH    & $ 1.0\!\times\! 10^{-12}  e^{-4810/T}$    & \\   
+ \refstepcounter{reaction}R\arabic{reaction} & H  +     HCNOH &$\!\!\!\rightarrow$ &   H$_2$   +   HNCO   & $ 1.5\!\times\! 10^{-10}  e^{-10800/T}$    & \\  
+% HCNOH is fictitious bridge between HNCO and HCN.  What follows is better
+
+ \multicolumn{6}{l}{\bf NH$_2$CO}\\
+   \refstepcounter{reaction}\label{RNH2CO}R\arabic{reaction} & H   +    HNCO  + M &$\!\!\!\rightarrow$ &   NH$_2$CO  + M   & $ 1.36\!\times\! 10^{-28} \left(T/298 \right)^{-1.9} e^{-1400/T}$    & UPDATE\\     
+              & H   +    HNCO  &$\!\!\!\rightarrow$ &   NH$_2$CO    & $ 1.36\!\times\! 10^{-08} \left(T/298 \right)^{-1.9} e^{-1400/T}$    & Ng96  UPDATE\\   
+  \refstepcounter{reaction}R\arabic{reaction}   & NH$_2$     + CO  + M & $\!\!\!\rightarrow$ &  NH$_2$CO         + M &$  1.0\!\times\! 10^{-31} \left(T/298 \right)^{-2.00}$ & CHANGE \\  % activation barrier De00
+             & NH$_2$     + CO       & $\!\!\!\rightarrow$ &  NH$_2$CO       &$  1.0\!\times\! 10^{-12} $ & UPDATE\\ % activation barrier De00
+ \refstepcounter{reaction}\label{RHCNOHb}R\arabic{reaction}   & NH$_2$CO  + M & $\!\!\!\rightarrow$ &  HCNOH    + M &$  1.0\!\times\! 10^{-11} e^{  -14400/T}$ & UPDATE \\  % activation barrier De00
+ \refstepcounter{reaction}\label{RNH2COff}R\arabic{reaction} & H  +     NH$_2$CO &$\!\!\!\rightarrow$ &   H$_2$   +   HNCO   & $ 2.0\!\times\! 10^{-11} $     & UPDATE\\  
+ \refstepcounter{reaction}R\arabic{reaction} & H  +     NH$_2$CO &$\!\!\!\rightarrow$ &   NH$_2$   +   HCO   & $ 3.0\!\times\! 10^{-11} $     & UPDATE\\  
+ \refstepcounter{reaction}R\arabic{reaction} & O  +     NH$_2$CO &$\!\!\!\rightarrow$ &   OH   +   HNCO   & $ 3.0\!\times\! 10^{-11}  $   & UPDATE\\  
+ \refstepcounter{reaction}R\arabic{reaction} & O  +     NH$_2$CO &$\!\!\!\rightarrow$ &   NH$_2$   +   CO$_2$   & $ 1.0\!\times\! 10^{-10} $     & UPDATE\\  
+% actual adduct is NH2CO.  I should do this right, yes?
+% CH3CO + H > is about 65:35 goes about HCO:CH2CO.   rate is fast, 5e-11
+% CH3CO + O > is about 75:25 goes about CO2:CH2CO.  total rate is very fast.  take 1.0e-10
+
+ \multicolumn{6}{l}{\bf NNH}\\
+ \refstepcounter{reaction}\label{RNNH}R\arabic{reaction} & H  +     N$_2$ + M &$\!\!\!\rightarrow$ &      NNH + M & $ 3.0\!\times\! 10^{-33} \left(T/298 \right)^{-0.6} e^{-7820/T}$    &  \\     
+          & H  +     N$_2$ &$\!\!\!\rightarrow$ &      NNH  & $ 3.0\!\times\! 10^{-10} \left(T/298 \right)^{-0.6}  e^{-7820/T}$    & Ca05b\\  
+  \refstepcounter{reaction}R\arabic{reaction} & NNH  +   H    &$\!\!\!\rightarrow$ &    N$_2$   +   H$_2$     & $ 1.67\!\times\! 10^{-10} $  & Gl08 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH$_2$  +   N   &$\!\!\!\rightarrow$ &     NNH  +   H      & $ 1.2\!\times\! 10^{-10} $  & Wh84\\  
+% R119  & NH$_2$   + N   &$\!\!\!\rightarrow$ &  N$_2$   + H  + H    & $  1.2\!\times\! 10^{-10}$ & Wh84\\
+ \refstepcounter{reaction}R\arabic{reaction} & NNH  +   O   &$\!\!\!\rightarrow$ &     NH   +   NO      & $ 5.0\!\times\! 10^{-12} \left(T/298 \right)^{0.64} e^{+921/T}$  & Ha03\\   
+ \refstepcounter{reaction}R\arabic{reaction} & NNH  +   O   &$\!\!\!\rightarrow$ &     N$_2$   +   OH    & $ 2.3\!\times\! 10^{-12} \left(T/298 \right)^{0.70} e^{+1170/T}$  & Ha03\\   
+ 
+ 
+ \multicolumn{6}{l}{\bf N$_2$H$_2$}\\
+ \refstepcounter{reaction}\label{RN2H2}R\arabic{reaction} & NNH  +   H +M  &$\!\!\!\rightarrow$ &   N$_2$H$_2$   +M   & $ 1.0\!\times\! 10^{-30}  \left(T/298 \right)^{-2.5} $  & UPDATE \\   
+          & NNH  +   H   &$\!\!\!\rightarrow$ &     N$_2$H$_2$      & $ 1.0\!\times\! 10^{-10} $    & UPDATE \\   
+  \refstepcounter{reaction}R\arabic{reaction} & H   +    N$_2$H$_2$ &$\!\!\!\rightarrow$ &    NNH  +   H$_2$  & $ 4.53\!\times\! 10^{-13} \left(T/298 \right)^{2.63} e^{+115/T}$    & Li96b\\  
+ \refstepcounter{reaction}R\arabic{reaction} & OH   +    N$_2$H$_2$ &$\!\!\!\rightarrow$ &    NNH  +   H$_2$O  & $ 2.54\!\times\! 10^{-14}   \left(T/298 \right)^{3.4} e^{+686/T}$    & Li96b  UPDATE\\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH  +     NH$_2$   &$\!\!\!\rightarrow$ &   N$_2$H$_2$ +  H    & $ 1.44\!\times\! 10^{-10}  \left(T/298 \right)^{-0.5}$    & Da90\\    
+ \refstepcounter{reaction}R\arabic{reaction} & NH$_2$  +  NH$_2$   &$\!\!\!\rightarrow$ &   N$_2$H$_2$ +  H$_2$    & $ 1.3\!\times\! 10^{-12}$    & Sto95 \\    % at 300 K
+ \refstepcounter{reaction}R\arabic{reaction} & N  +     NH$_3$   &$\!\!\!\rightarrow$ &   N$_2$H$_2$ +  H    & $ 7.42\!\times\! 10^{-12}  e^{-4830/T}$    & Ba88\\    %products assumed
+
+ \multicolumn{6}{l}{\bf N$_2$H$_3$}\\
+  \refstepcounter{reaction}\label{RN2H3}R\arabic{reaction} & N$_2$H$_2$  +   H +M  &$\!\!\!\rightarrow$ &   N$_2$H$_3$   +M   & $ 1.0\!\times\! 10^{-30} \left(T/298 \right)^{-2.0} e^{-1000/T} $ & \\   
+          & N$_2$H$_3$  +   H   &$\!\!\!\rightarrow$ &     N$_2$H$_4$      & $ 1.0\!\times\! 10^{-10} e^{-1000/T} $  & \\   
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_3$  +   H    &$\!\!\!\rightarrow$ &    N$_2$H$_2$   +   H$_2$     & $ 5.0\!\times\! 10^{-11} $  & \\  
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_3$  +   H    &$\!\!\!\rightarrow$ &    NH$_2$   +   NH$_2$     & $ 2.66\!\times\! 10^{-12} $  & vo71 \\  
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_3$  +   O    &$\!\!\!\rightarrow$ &    N$_2$H$_2$   +   OH     & $ 5.0\!\times\! 10^{-11} $  & \\  
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_3$  +   OH    &$\!\!\!\rightarrow$ &    N$_2$H$_2$   +   H$_2$O    & $ 5.0\!\times\! 10^{-11} $  & \\  
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_3$  +   CH$_3$    &$\!\!\!\rightarrow$ &    N$_2$H$_2$   +   CH$_4$   & $ 3.0\!\times\! 10^{-11} $  & \\  
+  
+ \multicolumn{6}{l}{\bf N$_2$H$_4$}\\
+\refstepcounter{reaction}\label{RN2H4}R\arabic{reaction} & NH$_2$  +     NH$_2$ + M &$\!\!\!\rightarrow$ &      N$_2$H$_4$ + M & $ 2.0\!\times\! 10^{-29} \left(T/298 \right)^{-3.9}  $   &  Fa95 \\     
+          & NH$_2$  +     NH$_2$ &$\!\!\!\rightarrow$ &   N$_2$H$_4$  & $ 1.2\!\times\! 10^{-10} \left(T/298 \right)^{0.3}  $    & Fa95 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_3$  +   H +M  &$\!\!\!\rightarrow$ &   N$_2$H$_4$   +M   & $ 2.0\!\times\! 10^{-29} \left(T/298 \right)^{-3.9} $ & \\   
+          & N$_2$H$_3$  +   H   &$\!\!\!\rightarrow$ &     N$_2$H$_4$      & $ 1.2\!\times\! 10^{-10} \left(T/298 \right)^{0.3} $  & \\   
+   \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_4$  +   H    &$\!\!\!\rightarrow$ &    N$_2$H$_3$   +   H$_2$     & $ 1.2\!\times\! 10^{-11} e^{-1261/T}$  & Va95 \\  
+   \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_4$  +   O    &$\!\!\!\rightarrow$ &    N$_2$H$_2$   +   H$_2$O    & $ 5.9\!\times\! 10^{-12} $  & Va01a, La92 \\  
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_4$  +   OH    &$\!\!\!\rightarrow$ &    N$_2$H$_3$   +   H$_2$O    & $ 2.2\!\times\! 10^{-11} \left(T/298 \right)^{-1.33} $  & Va01b \\  
+  \refstepcounter{reaction}R\arabic{reaction} & N$_2$H$_4$  +   CH$_3$    &$\!\!\!\rightarrow$ &    N$_2$H$_3$   +   CH$_4$   & $ 1.0\!\times\! 10^{-14} e^{-2038/T}$  & Li06 \\  
+
+
+ \multicolumn{6}{l}{\bf HNO}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  H  +     NO + M &$\!\!\!\rightarrow$ &   HNO + M & $ 1.2\!\times\! 10^{-31} \left(T/298 \right)^{-1.17} e^{-210/T} $   &  Ts91 \\     
+          & H  +     NO  &$\!\!\!\rightarrow$ &   HNO  & $ 2.4\!\times\! 10^{-10}  \left(T/298 \right)^{-0.4}$    & Ts91  \\  
+ \refstepcounter{reaction}R\arabic{reaction} & HCO  +  NO  &$\!\!\!\rightarrow$ &  HNO   +  CO   & $ 1.3\!\times\! 10^{-11}  $  & Ts91 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH  +  OH  &$\!\!\!\rightarrow$ &  HNO   +  H   & $ 3.3\!\times\! 10^{-11}  $  & Co91 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH  +  O$_2$  &$\!\!\!\rightarrow$ &  HNO   +  O   & $ 6.8\!\times\! 10^{-14} e^{-3270/T} $  & Mi92 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH$_2$ +  O  &$\!\!\!\rightarrow$ &  HNO   +  H   & $ 7.5\!\times\! 10^{-11}  $  & Co91 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH$_2$  +  O$_2$  &$\!\!\!\rightarrow$ &  HNO   +  OH   & $ 1.7\!\times\! 10^{-11} e^{-13200/T} $  & He95 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & CH$_3$O +  NO  &$\!\!\!\rightarrow$ &  HNO   +  H$_2$CO   & $ 4.0\!\times\! 10^{-12}  \left(T/298 \right)^{-0.7}$  & At97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NNH +  O  &$\!\!\!\rightarrow$ &  HNO   +  N   & $ 9.7\!\times\! 10^{-19}  \left(T/298 \right)^{4.84}$  & Ha03\\  
+ \refstepcounter{reaction}R\arabic{reaction} & H + HNO  &$\!\!\!\rightarrow$ &  H$_2$   +  NO   & $ 2.4\!\times\! 10^{-11}  \left(T/298 \right)^{0.94}  e^{-250/T} $ & Ng04\\  
+ \refstepcounter{reaction}R\arabic{reaction} & O + HNO  &$\!\!\!\rightarrow$ &  OH   +  NO   & $ 3.8\!\times\! 10^{-11} $ & In99 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & OH + HNO  &$\!\!\!\rightarrow$ &  H$_2$O   +  NO   & $ 1.8\!\times\! 10^{-12}  \left(T/298 \right)^{1.2}  e^{-168/T} $ & Ng04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H$_2$ + HNO  &$\!\!\!\rightarrow$ &  H$_2$O   +  NH   & $ 1.66\!\times\! 10^{-11}  e^{-8060/T} $ & Ro94 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & CH$_3$ + HNO  &$\!\!\!\rightarrow$ &  CH$_4$  +  NO   & $ 1.85\!\times\! 10^{-11} \left(T/298 \right)^{0.76}  e^{-176/T} $ & Ch05 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & CH$_3$O + HNO  &$\!\!\!\rightarrow$ &  CH$_3$OH  +  NO   & $ 5.25\!\times\! 10^{-11} $ & He88\\  
+ \refstepcounter{reaction}R\arabic{reaction} & CN  + HNO  &$\!\!\!\rightarrow$ &  HCN  +  NO   & $ 3.0\!\times\! 10^{-11} $ & Ts91 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & CO  + HNO  &$\!\!\!\rightarrow$ &  NH  +  CO$_2$   & $ 3.3\!\times\! 10^{-12} e^{-6190/T} $ & Ro94 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH$_2$ + HNO  &$\!\!\!\rightarrow$ &  NH$_3$  +  NO   & $ 6.5\!\times\! 10^{-13} \left(T/298 \right)^{1.63}  e^{+630/T} $ & Meb96\\  
+
+
+ \multicolumn{6}{l}{\bf N$_2$O}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  O($^1$D)  +     N$_2$ + M &$\!\!\!\rightarrow$ &   N$_2$O + M & $ 2.8\!\times\! 10^{-36}  $   &  At04 \\     
+          & O($^1$D)  +     N$_2$   &$\!\!\!\rightarrow$ &   N$_2$O  & $ 3.4\!\times\! 10^{-16} $    & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO + HNO  &$\!\!\!\rightarrow$ & N$_2$O  +  OH   & $ 1.0\!\times\! 10^{-17} \left(T/298 \right)^{4.33}  e^{-12600/T} $ & Me96, Di95 \\  % Diau does the reverse
+ \refstepcounter{reaction}R\arabic{reaction} & HNO + HNO  &$\!\!\!\rightarrow$ & N$_2$O  +  H$_2$O   & $ 4.2\!\times\! 10^{-17} \left(T/298 \right)^{4.0}  e^{-600/T} $ & He92 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NH + NO  &$\!\!\!\rightarrow$ & N$_2$O  +  H   & $ 4.0\!\times\! 10^{-11} $ & Ba94 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O + NNH  &$\!\!\!\rightarrow$ & N$_2$O  +  H$_2$O   & $ 5.1\!\times\! 10^{-10} \left(T/298 \right)^{-0.76}  e^{-775/T} $ & Ha03 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO + NCO  &$\!\!\!\rightarrow$ & N$_2$O  +  CO   & $ 5.2\!\times\! 10^{-11} \left(T/298 \right)^{-1.03}  e^{-420/T} $ & Lin93\\  
+ \refstepcounter{reaction}R\arabic{reaction} & CN + NO$_2$  &$\!\!\!\rightarrow$ & N$_2$O  +  CO   & $ 7.1\!\times\! 10^{-11} $ & Pa93 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & H + N$_2$O  &$\!\!\!\rightarrow$ & N$_2$  +  OH   & $ 1.6\!\times\! 10^{-10} e^{-7600/T} $ & Ts91 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O + N$_2$O  &$\!\!\!\rightarrow$ & NO  +  NO   & $ 1.5\!\times\! 10^{-10} e^{-14000/T} $ & Me00\\  
+ \refstepcounter{reaction}R\arabic{reaction} & O + N$_2$O  &$\!\!\!\rightarrow$ & N$_2$  +  O$_2$   & $ 6.0\!\times\! 10^{-12} e^{-8000/T} $ & Me00\\  
+ \refstepcounter{reaction}R\arabic{reaction} & OH + N$_2$O  &$\!\!\!\rightarrow$ & HO$_2$  +  N$_2$   & $ 1.0\!\times\! 10^{-14} \left(T/298 \right)^{4.72} e^{-18400/T} $ & Me96 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O($^1$D) + N$_2$O   &$\!\!\!\rightarrow$ & N$_2$  +  O$_2$   & $ 4.9\!\times\! 10^{-11} $ & De97 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & O($^1$D) + N$_2$O   &$\!\!\!\rightarrow$ & NO  +  NO   & $ 6.7\!\times\! 10^{-11} $ & De97 \\  
+
+ \multicolumn{6}{l}{\bf NO$_2$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  NO  +    O + M &$\!\!\!\rightarrow$ &   NO$_2$ + M & $ 9.0\!\times\! 10^{-32}  \left(T/298 \right)^{-1.5} $   & De97 \\     
+          & NO  +    O   &$\!\!\!\rightarrow$ &   NO$_2$  & $ 3.0\!\times\! 10^{-11} $    &  De97\\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO + O$_3$  &$\!\!\!\rightarrow$ & NO$_2$  +  O$_2$   & $ 1.4\!\times\! 10^{-12} e^{-1310/T} $ & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO + HO$_2$  &$\!\!\!\rightarrow$ & NO$_2$  +  OH   & $ 3.6\!\times\! 10^{-12} e^{+270/T} $ & At04  \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + O &$\!\!\!\rightarrow$ & NO + O$_2$  & $ 5.5\!\times\! 10^{-12} e^{+188/T} $ & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + H &$\!\!\!\rightarrow$ & NO + OH  & $ 1.5\!\times\! 10^{-10}  $ &  Su02\\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + OH &$\!\!\!\rightarrow$ & NO + HO$_2$  & $ 3.0\!\times\! 10^{-11} e^{-3360/T} $ &  Ts91 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + HCO &$\!\!\!\rightarrow$ & HNO + CO$_2$  & $ 1.94\!\times\! 10^{-11} \left(T/298 \right)^{-0.75}  e^{-971/T} $ & Ts91 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + N &$\!\!\!\rightarrow$ & N$_2$O  + O  & $ 5.8\!\times\! 10^{-12}   e^{+221/T} $ & De97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + N &$\!\!\!\rightarrow$ & NO  + NO  & $ 4.5\!\times\! 10^{-12}   e^{+221/T} $ &  De97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + N &$\!\!\!\rightarrow$ & N$_2$ + O$_2$  & $ 1.5\!\times\! 10^{-12}   e^{+221/T} $ &  De97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + HS  &$\!\!\!\rightarrow$ & HSO + NO  & $ 2.9\!\times\! 10^{-11} e^{+240/T} $ & At97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + SO  &$\!\!\!\rightarrow$ & SO$_2$ + NO  & $ 1.4\!\times\! 10^{-11}  $ &  At04 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + CH$_3$  &$\!\!\!\rightarrow$ & CH$_3$O + NO  & $ 2.66\!\times\! 10^{-11}  $ & Sri05 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + CN &$\!\!\!\rightarrow$ & NO + NCO   & $ 8.0\!\times\! 10^{-11}   e^{+186/T} $ & Pa93  \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + CN &$\!\!\!\rightarrow$ & CO + N$_2$O   & $ 7.1\!\times\! 10^{-12}    $ &  Pa93 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + CN &$\!\!\!\rightarrow$ & CO$_2$ + N$_2$   & $ 5.0\!\times\! 10^{-12}  $ & Pa93  \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + NCO &$\!\!\!\rightarrow$ & CO$_2$ + N$_2$O   & $ 1.6\!\times\! 10^{-11}  $ &  Pa93 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + NH$_2$ &$\!\!\!\rightarrow$ & N$_2$O + H$_2$O  & $ 7.0\!\times\! 10^{-12} \left(T/298 \right)^{-1.44}  e^{-135/T} $ &  Pa93 \\  
+
+
+ \multicolumn{6}{l}{\bf HNO$_2$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  NO  +    OH + M &$\!\!\!\rightarrow$ &   HNO$_2$ + M & $ 7.0\!\times\! 10^{-31}  \left(T/298 \right)^{-2.6} $   & De97 \\     
+          & NO  +    OH    &$\!\!\!\rightarrow$ &   HNO$_2$  & $ 3.6\!\times\! 10^{-11} \left(T/298 \right)^{-0.1} $    &  De97\\  
+ \refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + HNO &$\!\!\!\rightarrow$ & HNO$_2$ + NO  & $ 1.0\!\times\! 10^{-12}  e^{-1000/T} $ &  Ts91\\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + H$_2$CO  &$\!\!\!\rightarrow$ & HNO$_2$ + HCO  & $ 9.5\!\times\! 10^{-15} \left(T/298 \right)^{2.77}  e^{-6910/T} $ &  Ts91\\  
+ \refstepcounter{reaction}R\arabic{reaction} & HNO$_2$  + H &$\!\!\!\rightarrow$ & NO$_2$ + H$_2$  & $ 2.0\!\times\! 10^{-11}  e^{-3700/T} $ &  Ts91\\  
+ \refstepcounter{reaction}R\arabic{reaction} & HNO$_2$  + O &$\!\!\!\rightarrow$ & NO$_2$ + OH  & $ 2.0\!\times\! 10^{-11}  e^{-3000/T} $ & Ts91 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & HNO$_2$  + OH &$\!\!\!\rightarrow$ & NO$_2$ + H$_2$O  & $ 6.0\!\times\! 10^{-12}  $ &  At97 \\  
+
+ \multicolumn{6}{l}{\bf NO$_3$, HNO$_3$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  NO$_2$  +    OH + M &$\!\!\!\rightarrow$ &   HNO$_3$ + M & $ 2.6\!\times\! 10^{-30}  \left(T/298 \right)^{-2.9} $   &  At97 \\     
+          & NO$_2$  +    OH    &$\!\!\!\rightarrow$ &   HNO$_3$  & $ 7.5\!\times\! 10^{-11} \left(T/298 \right)^{-0.6} $    & At97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & HNO$_3$  + H   &$\!\!\!\rightarrow$ & NO$_2$ + H$_2$O  & $ 1.4\!\times\! 10^{-14} \left(T/298 \right)^{3.29}  e^{-3160/T} $ &  Bo97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & HNO$_3$  + OH   &$\!\!\!\rightarrow$ & NO$_3$ + H$_2$O  & $ 1.5\!\times\! 10^{-13}  $ & At97 \\  
+\refstepcounter{reaction}R\arabic{reaction} & HNO$_3$  + H   &$\!\!\!\rightarrow$ & NO$_3$ + H$_2$  & $ 5.6\!\times\! 10^{-12} \left(T/298 \right)^{1.53}  e^{-8250/T} $ &  Bo97\\  
+  \refstepcounter{reaction}R\arabic{reaction} &  NO$_2$  +    O + M &$\!\!\!\rightarrow$ &   NO$_3$ + M & $ 1.3\!\times\! 10^{-30}  \left(T/298 \right)^{-1.5} $   &  At04 \\     
+          & NO$_2$  +    O    &$\!\!\!\rightarrow$ &   NO$_3$  & $ 2.3\!\times\! 10^{-11} $    &  At04 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_2$  + O$_3$   &$\!\!\!\rightarrow$ & NO$_3$ + O$_2$  & $ 1.4\!\times\! 10^{-13}   e^{-2470/T} $ &  At04 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_3$  + H   &$\!\!\!\rightarrow$ & NO$_2$ + OH  & $ 9.4\!\times\! 10^{-11}   $ & Be92 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_3$  + O   &$\!\!\!\rightarrow$ & NO$_2$ + O$_2$  & $ 1.7\!\times\! 10^{-11}   $ &   At04  UPDATE\\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_3$  + OH   &$\!\!\!\rightarrow$ & NO$_2$ + HO$_2$  & $ 2.0\!\times\! 10^{-11}   $ &  At04 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_3$  + HO$_2$   &$\!\!\!\rightarrow$ & HNO$_3$ + O$_2$  & $ 1.9\!\times\! 10^{-12}   $ & Be92 \\  
+\refstepcounter{reaction}R\arabic{reaction} & NO$_3$  + NO   &$\!\!\!\rightarrow$ & NO$_2$ + NO$_2$  & $ 1.8\!\times\! 10^{-11}   e^{+110/T} $ & At04 \\  
+
+ \multicolumn{6}{l}{\bf SO$_3$}\\
+  \refstepcounter{reaction}R\arabic{reaction} &  SO$_2$  +    O + M &$\!\!\!\rightarrow$ &   SO$_3$ + M & $ 4.0\!\times\! 10^{-32}  e^{-1000/T} $   &  At97 \\     
+          & SO$_2$  +    O  &$\!\!\!\rightarrow$ &   SO$_3$  & $ 1.5\!\times\! 10^{-11}  $    &  \\  
+\refstepcounter{reaction}R\arabic{reaction} & SO$_2$  + O$_3$   &$\!\!\!\rightarrow$ & SO$_3$ + O$_2$  & $ 3.0\!\times\! 10^{-12}   e^{-7000/T} $ &  De97\\  
+\refstepcounter{reaction}R\arabic{reaction} & SO$_3$  + H   &$\!\!\!\rightarrow$ & SO$_2$ + OH  & $ 1.46\!\times\! 10^{-11} \left(T/298 \right)^{1.22}  e^{-1670/T} $ & Hi07 \\  
+\refstepcounter{reaction}R\arabic{reaction} & SO$_3$  + O   &$\!\!\!\rightarrow$ & SO$_2$ + O$_2$  & $ 1.06\!\times\! 10^{-13} \left(T/298 \right)^{2.57}  e^{-14700/T} $ &  Hi07 \\  
+\refstepcounter{reaction}R\arabic{reaction} & SO$_3$  + SO   &$\!\!\!\rightarrow$ & SO$_2$ + SO$_2$  & $ 2.0\!\times\! 10^{-15} $ &  expt \\  
+
+ \multicolumn{6}{l}{\bf HSO$_3$, H$_2$SO$_4$}\\
+  \refstepcounter{reaction}\label{RHSO3}R\arabic{reaction} &  SO$_2$  +    OH  + M &$\!\!\!\rightarrow$ &   HSO$_3$ + M & $ 4.0\!\times\! 10^{-31}  \left(T/298 \right)^{-3.3}  $   & At97 \\     
+          & SO$_2$  +    OH  &$\!\!\!\rightarrow$ &   HSO$_3$  & $ 1.3\!\times\! 10^{-12} \left(T/298 \right)^{-0.7}  $    & At04 \\  
+\refstepcounter{reaction}R\arabic{reaction} & HSO$_3$  + H   &$\!\!\!\rightarrow$ & SO$_3$ + H$_2$  & $ 0.0 $ &  \\  
+\refstepcounter{reaction}R\arabic{reaction} & HSO$_3$  + O   &$\!\!\!\rightarrow$ & SO$_3$ + OH  & $ 0.0 $ &  \\  
+\refstepcounter{reaction}R\arabic{reaction} & HSO$_3$  + OH   &$\!\!\!\rightarrow$ & SO$_3$ + H$_2$O  & $ 0.0 $ &  \\  
+\refstepcounter{reaction}R\arabic{reaction} & HSO$_3$  + O$_2$   &$\!\!\!\rightarrow$ & SO$_3$ + HO$_2$  & $ 1.3\!\times\! 10^{-12}  e^{-330/T} $ &  At04 \\  
+
+% \multicolumn{6}{l}{\bf HSO$_3$, H$_2$SO$_4$}\\
+  \refstepcounter{reaction}R\arabic{reaction} & HSO$_3$  +    OH  + M &$\!\!\!\rightarrow$ &   HSO$_3$ + M & $ 4.0\!\times\! 10^{-31}  \left(T/298 \right)^{-3.3}  $   & At97 \\     
+          & SO$_2$  +    OH  &$\!\!\!\rightarrow$ &   H$_2$SO$_4$  & $ 1.3\!\times\! 10^{-12} \left(T/298 \right)^{-0.7}  $    & At04 \\  
+  \refstepcounter{reaction}R\arabic{reaction} &  SO$_3$  +    H$_2$O  + M &$\!\!\!\rightarrow$ &   H$_2$SO$_4$ + M & $ 1.0\!\times\! 10^{-28}    $   & Re94 \\     
+          & SO$_3$  +    H$_2$O   &$\!\!\!\rightarrow$ &    H$_2$SO$_4$   & $ 1.2\!\times\! 10^{-15}  $    &  Re94 \\  
+
+ \multicolumn{6}{l}{\bf Chlorine}\\
+ \refstepcounter{reaction}\label{Chlorine}R\arabic{reaction} & Cl  +    Cl + M &$\!\!\!\rightarrow$ &      Cl$_2$ + M & $ 6.0\!\times\! 10^{-34} e^{-910/T}  $   & Ba81  \\     
+          & Cl  +    Cl  &$\!\!\!\rightarrow$ &   Cl$_2$  & $ 1.0\!\times\! 10^{-12} $    &  \\  
+% \refstepcounter{reaction}R\arabic{reaction} & HCl  +   H    &$\!\!\!\rightarrow$ &    H$_2$   +   Cl   & $ 1.3\!\times\! 10^{-11} e^{-1710/T}$  & Ba81  REVERSE \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl$_2$  +   H    &$\!\!\!\rightarrow$ &    Cl   +   HCl   & $ 1.43\!\times\! 10^{-10} e^{-590/T}$  & Ba81 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl$_2$  +   O    &$\!\!\!\rightarrow$ &    ClO  +   Cl   & $ 4.2\!\times\! 10^{-12} e^{-1370/T}$  & Ba81 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl + HO$_2$    &$\!\!\!\rightarrow$ &    ClO  +  OH   & $ 6.3\!\times\! 10^{-11} e^{-570/T}$  & At07 \\  
+\refstepcounter{reaction}R\arabic{reaction} & ClO + O    &$\!\!\!\rightarrow$ &    Cl  +  O$_2$   & $ 2.5\!\times\! 10^{-11} e^{+110/T}$  & At07   UPDATE\\   
+\refstepcounter{reaction}R\arabic{reaction} & ClO + OH    &$\!\!\!\rightarrow$ &    Cl  +  HO$_2$   & $ 1.9\!\times\! 10^{-11} $  & At07   UPDATE\\   
+\refstepcounter{reaction}R\arabic{reaction} & ClO + OH    &$\!\!\!\rightarrow$ &    HCl  +  O$_2$   & $ 1.2\!\times\! 10^{-12} $  & At07   UPDATE\\   
+ \refstepcounter{reaction}R\arabic{reaction} & Cl + H$_2$    &$\!\!\!\rightarrow$ &    HCl  +  H   & $ 3.9\!\times\! 10^{-11} e^{-2310/T}$  & At07  \\  
+ \refstepcounter{reaction}R\arabic{reaction} & HCl  +   OH    &$\!\!\!\rightarrow$ &    H$_2$O   +   Cl   & $ 1.7\!\times\! 10^{-12} e^{-230/T}$  & At07 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl + CH$_4$    &$\!\!\!\rightarrow$ &    HCl + CH$_3$   & $ 2.5\!\times\! 10^{-12} \left(T/298 \right)^{1.27} e^{-940/T}$  & Mi01\\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl + NH$_3$    &$\!\!\!\rightarrow$ &    HCl + NH$_2$   & $ 1.1\!\times\! 10^{-11} e^{-1380/T}$  & Ga06 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl + H$_2$S    &$\!\!\!\rightarrow$ &    HCl + HS   & $ 3.7\!\times\! 10^{-11} e^{+210/T}$  & At04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl + HS    &$\!\!\!\rightarrow$ &    HCl +  S   & $ 1.1\!\times\! 10^{-10} $  & Cl84 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl$_2$  + OH    &$\!\!\!\rightarrow$ &    HOCl   +   Cl   & $ 7.9\!\times\! 10^{-13} \left(T/298 \right)^{1.35} e^{-745/T}$  & Br04 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & HOCl  + H    &$\!\!\!\rightarrow$ &    HCl   + OH  & $ 4.9\!\times\! 10^{-12} \left(T/298 \right)^{1.2} e^{-187/T}$  & Wa03  PRODUCTS \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Cl  +    CO + M &$\!\!\!\rightarrow$ &      ClCO + M & $ 1.3\!\times\! 10^{-33} \left(T/298 \right)^{-3.8}  $   &  At07 \\     
+          & Cl  +    CO  &$\!\!\!\rightarrow$ &   ClCO  & $ 1.0\!\times\! 10^{-12} $    &  \\  
+ \refstepcounter{reaction}R\arabic{reaction} & ClCO  + Cl    &$\!\!\!\rightarrow$ &    CO  + Cl$_2$  & $ 2.1\!\times\! 10^{-09}  e^{-1670/T}$  & Ba81 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & ClCO  + H    &$\!\!\!\rightarrow$ &    CO  + HCl  & $ 2.1\!\times\! 10^{-09}  e^{-1670/T}$  & \\  
+
+ \multicolumn{6}{l}{\bf Na, NaH, NaOH}\\
+ \refstepcounter{reaction}R\arabic{reaction} & NaH  + H    &$\!\!\!\rightarrow$ &   Na   +   H$_2$   & $ 1.2\!\times\! 10^{-10} \left(T/298 \right)^{0.69} e^{-2350/T}$  & Ma66\\  
+ \refstepcounter{reaction}R\arabic{reaction} & Na  + HCO    &$\!\!\!\rightarrow$ &   NaH   +   CO   & $ 2.7\!\times\! 10^{-14} e^{-3860/T}$  & Ma67 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaO  + O    &$\!\!\!\rightarrow$ &   Na   +   O$_2$   & $ 3.7\!\times\! 10^{-10} $  & De97\\  
+ \refstepcounter{reaction}R\arabic{reaction} & Na  + N$_2$O    &$\!\!\!\rightarrow$ &   NaO   +   N$_2$   & $ 2.8\!\times\! 10^{-11} e^{-1600/T}$  & De97\\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaO  + H$_2$    &$\!\!\!\rightarrow$ &   NaOH  +   H   & $ 2.6\!\times\! 10^{-11} $  & De97 \\  
+ \refstepcounter{reaction}\label{RNaOH}R\arabic{reaction} & Na  +    OH + M &$\!\!\!\rightarrow$ &      NaOH + M & $ 3.9\!\times\! 10^{-30} \left(T/298 \right)^{-1.6}  $   &  Hu85 \\     
+          & Na  +    OH  &$\!\!\!\rightarrow$ &   NaOH  & $ 1.0\!\times\! 10^{-11} $    &  \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaH  + OH    &$\!\!\!\rightarrow$ &   NaOH  +   H   & $ 1.0\!\times\! 10^{-10} $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaO  + H$_2$O    &$\!\!\!\rightarrow$ &   NaOH  +   OH   & $ 4.4\!\times\! 10^{-10} e^{-505/T} $  & Co99 \\  
+ \refstepcounter{reaction}\label{RNaO}R\arabic{reaction} & NaO  +    H + M &$\!\!\!\rightarrow$ &      NaOH + M & $ 3.9\!\times\! 10^{-30} \left(T/298 \right)^{-1.6}  $   &  \\     
+          & NaO  +    H  &$\!\!\!\rightarrow$ &   NaOH  & $ 1.0\!\times\! 10^{-11} $    &  \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaOH  + H    &$\!\!\!\rightarrow$ &   Na  +   H$_2$O   & $ 1.8\!\times\! 10^{-11} e^{-990/T} $  & Je82\\  
+
+ \multicolumn{6}{l}{\bf NaCl}\\
+ \refstepcounter{reaction}\label{RNaCl}R\arabic{reaction} & Na  +    Cl + M &$\!\!\!\rightarrow$ &      NaCl + M & $ 3.9\!\times\! 10^{-30} \left(T/298 \right)^{-1.6}  $   &  CHECK \\     
+          & Na  +    Cl  &$\!\!\!\rightarrow$ &   NaCl  & $ 1.0\!\times\! 10^{-11} $    &  \\  
+ \refstepcounter{reaction}\label{RNaClb}R\arabic{reaction} & Na  + HCl   &$\!\!\!\rightarrow$ &   NaCl  +   H   & $ 4.0\!\times\! 10^{-10} e^{-4090/T} $  & Hu86 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Na  + Cl$_2$   &$\!\!\!\rightarrow$ &   NaCl  +   Cl   & $ 7.3\!\times\! 10^{-10} $  & De97\\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaH  + Cl   &$\!\!\!\rightarrow$ &   NaCl  +   H   & $ 1.0\!\times\! 10^{-10}  $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & Na  + ClCO  &$\!\!\!\rightarrow$ &   NaCl  +   CO   & $ 1.0\!\times\! 10^{-10}  $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaO  + HCl   &$\!\!\!\rightarrow$ &   NaCl  +   OH  & $ 2.8\!\times\! 10^{-10} $  & Si84 \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaOH  + HCl   &$\!\!\!\rightarrow$ &   NaCl  +   H$_2$O   & $ 2.8\!\times\! 10^{-10} $  & De97 \\  
+
+ \multicolumn{6}{l}{\bf NaCN}\\
+ \refstepcounter{reaction}\label{RNaCN}R\arabic{reaction} & Na  +    CN + M &$\!\!\!\rightarrow$ &      NaCN + M & $ 3.9\!\times\! 10^{-30} \left(T/298 \right)^{-1.6}  $   &  \\     
+          & Na  +   CN  &$\!\!\!\rightarrow$ &   NaCN  & $ 1.0\!\times\! 10^{-11} $    &  \\  
+ \refstepcounter{reaction}\label{RNaCNa}R\arabic{reaction} & Na  + HCN   &$\!\!\!\rightarrow$ &   NaCl  +   H   & $ 4.0\!\times\! 10^{-10} e^{-9000/T} $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaOH  + HCN  &$\!\!\!\rightarrow$ &   NaCN  +   H$_2$O   & $ 1.0\!\times\! 10^{-10}  $  & \\  
+ \refstepcounter{reaction}R\arabic{reaction} & NaCN  + HCl  &$\!\!\!\rightarrow$ &   NaCl  +   HCN   & $ 1.0\!\times\! 10^{-10}  $  & \\  
+
+
+\hline
+\hline
+\multicolumn{6}{l}{ }\\
+\multicolumn{6}{l}{ $a$ --- M refers to the background atmosphere, principally H$_2$ and He; units of density [cm$^{-3}$].}\\
+\multicolumn{6}{l}{$b$ --- 2-body reaction rates are in cm$^{3}$s$^{-1}$;  3-body rates are in cm$^{6}$s$^{-1}$.}\\
+\end{longtable}  
+
+\newpage
+% \addtocounter{photo}{1}
+\setlongtables % keeps the width uniform across both pages
+% \footnotesize{
+\begin{longtable}{l lcl l p{3.5cm} } 
+
+ &  {\large\bf Table 3.}  &  {\large\bf Photolysis Reactions} & \\
+\hline
+ & {\large\strut Species}  &  & {\large Products} & {\large Rate$^f$} & {\large Reference} \\
+\hline \hline 
+\endfirsthead
+\hline
+ & {\large\strut Species}  &  & {\large Products} & {\large Rate$^f$} & {\large Reference} \\
+\hline
+\endhead
+  \refstepcounter{photo} P\arabic{photo}  & H$_2$O       + h$\nu$         &$\!\!\!\rightarrow$ &  OH           + H                                       & $  1.6\!\times\! 10^{-03}$ & Sa03\\ %
+ \refstepcounter{photo} P\arabic{photo}  & CO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  CO           + O                                       & $  2.7\!\times\! 10^{-07}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & CO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  CO           + O($^1$D)                                  & $  3.0\!\times\! 10^{-05}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & O$_2$        + h$\nu$         &$\!\!\!\rightarrow$ &  O            + O                                       & $  9.6\!\times\! 10^{-06}$ & Sa03\\ %
+ \refstepcounter{photo} P\arabic{photo}  & O$_2$        + h$\nu$         &$\!\!\!\rightarrow$ &  O            + O($^1$D)                                  & $  5.1\!\times\! 10^{-04}$ & Sa03\\ %
+ \refstepcounter{photo} P\arabic{photo}  & NO           + h$\nu$         &$\!\!\!\rightarrow$ &  N            + O                                       & $  3.7\!\times\! 10^{-06}$ & Sa03 \\ %
+ \refstepcounter{photo} P\arabic{photo}  & H$_2$S       + h$\nu$         &$\!\!\!\rightarrow$ &  HS           + H                                       & $  2.7\!\times\! 10^{-02}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & NH$_3$       + h$\nu$         &$\!\!\!\rightarrow$ &  NH$_2$       + H                                       & $  1.1\!\times\! 10^{-02}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & NH$_3$       + h$\nu$         &$\!\!\!\rightarrow$ &  NH           + H$_2$                                   & $  5.5\!\times\! 10^{-03}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & CH$_4$       + h$\nu$         &$\!\!\!\rightarrow$ &  CH$_2$       + H$_2$                                   & $  3.9\!\times\! 10^{-04}$ & Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & CH$_4$       + h$\nu$         &$\!\!\!\rightarrow$ &  CH$_3$       + H                                       & $  3.9\!\times\! 10^{-04}$ & Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & SO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  SO           + O                                       & $  1.7\!\times\! 10^{-02}$ &  Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & SO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  S            + O$_2$                                   & $  6.9\!\times\! 10^{-04}$ &  Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & SO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  S            + O                          +O           & $  1.7\!\times\! 10^{-05}$ &  Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & SO           + h$\nu$         &$\!\!\!\rightarrow$ &  S            + O                                       & $  4.4\!\times\! 10^{-02}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & CS$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  CS           + S                                       & $  3.9\!\times\! 10^{-01}$ & Mo81,Ah92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & OCS          + h$\nu$         &$\!\!\!\rightarrow$ &  CO           + S                                       & $  2.5\!\times\! 10^{-03}$ & Sa03\\ %
+ \refstepcounter{photo} P\arabic{photo}  & S$_2$        + h$\nu$         &$\!\!\!\rightarrow$ &  S            + S                                       & $  1.7\!\times\! 10^{-01}$ & Za09\\ %
+ \refstepcounter{photo} P\arabic{photo}  & S$_3$        + h$\nu$         &$\!\!\!\rightarrow$ &  S$_2$        + S                                       & $  1.1\!\times\! 10^{+02}$ & Za09\\ %
+ \refstepcounter{photo} P\arabic{photo}  & S$_4$        + h$\nu$         &$\!\!\!\rightarrow$ &  S$_3$        + S                                       & $  1.1\!\times\! 10^{+01}$ & Za09\\ %
+ \refstepcounter{photo} P\arabic{photo}  & C$_2$H$_2$   + h$\nu$         &$\!\!\!\rightarrow$ &  C$_2$H       + H                                       & $  2.4\!\times\! 10^{-03}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & C$_2$H$_4$   + h$\nu$         &$\!\!\!\rightarrow$ &  C$_2$H$_3$   + H                                       & $  5.3\!\times\! 10^{-03}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & C$_2$H$_6$   + h$\nu$         &$\!\!\!\rightarrow$ &  C$_2$H$_5$   + H                                       & $  1.1\!\times\! 10^{-03}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & C$_4$H$_2$   + h$\nu$         &$\!\!\!\rightarrow$ &  C$_4$H       + H                                       & $  4.8\!\times\! 10^{-03}$ & note \\ %
+ \refstepcounter{photo} P\arabic{photo}  & H$_2$CO      + h$\nu$         &$\!\!\!\rightarrow$ &  CO           + H$_2$                                   & $  6.1\!\times\! 10^{-03}$ & Sa03\\ %
+ \refstepcounter{photo} P\arabic{photo}  & H$_2$CO    + h$\nu$   &$\!\!\!\rightarrow$ &  HCO  + H      & $   7.1\!\times\! 10^{-03}$ & Sa03\\ %
+ \refstepcounter{photo} P\arabic{photo}  & H$_2$CO      + h$\nu$         &$\!\!\!\rightarrow$ &  CO           + H                          +H           & $  0$ & Sa03 \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HCN          + h$\nu$         &$\!\!\!\rightarrow$ &  CN           + H                                       & $  2.5\!\times\! 10^{-03}$ & Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & HSO          + h$\nu$         &$\!\!\!\rightarrow$ &  HS           + O                                       & $ 6.1\!\times\! 10^{-02}$ & note \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HS           + h$\nu$         &$\!\!\!\rightarrow$ &  H            + S                                       & $  1.0\!\times\! 10^{+01}$ & Za09\\ %
+ \refstepcounter{photo} P\arabic{photo}  & CH$_4$       + h$\nu$         &$\!\!\!\rightarrow$ &  CH           + H$_2$                      +H           & $  1.9\!\times\! 10^{-04}$ & Ok78,Hu92\\ %
+ \refstepcounter{photo} P\arabic{photo}  & O$_3$       + h$\nu$         &$\!\!\!\rightarrow$ &  O($^1$D)           + O$_2$     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & O$_3$       + h$\nu$         &$\!\!\!\rightarrow$ &  O           + O$_2$     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & H$_2$O$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  OH          + OH     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  O           + OH     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HNO        + h$\nu$         &$\!\!\!\rightarrow$ &  NO          + H     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HNO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  NO           + OH     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HNO$_3$       + h$\nu$         &$\!\!\!\rightarrow$ &  NO$_2$    + OH     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & NO$_2$       + h$\nu$         &$\!\!\!\rightarrow$ &  NO           + O       & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & SO$_3$       + h$\nu$         &$\!\!\!\rightarrow$ &  SO$_2$     + O       & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & S$_8$       + h$\nu$         &$\!\!\!\rightarrow$ &  S$_8^{\ast}$                       & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & S$_8^{\ast}$       + h$\nu$         &$\!\!\!\rightarrow$ &  S$_4$     + S$_4$      & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HCl       + h$\nu$         &$\!\!\!\rightarrow$ &  H     + Cl     & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & HOCl       + h$\nu$         &$\!\!\!\rightarrow$ &  OH     + Cl      & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & Cl$_2$      + h$\nu$         &$\!\!\!\rightarrow$ &  Cl     + Cl      & $  1.9\!\times\! 10^{-04}$ &  \\ %
+ \refstepcounter{photo} P\arabic{photo}  & N$_2$H$_4$      + h$\nu$         &$\!\!\!\rightarrow$ &  N$_2$H$_3$    + H      & $  1.9\!\times\! 10^{-04}$ &  \\ %
+
+\hline
+\hline
+\multicolumn{6}{l}{$a$ --- Photolysis rates are computed at the top of the atmosphere for $I=100$ and a $30^{\circ}$ zenith angle. }\\
+%\multicolumn{6}{l}{$a$ --- Photolysis rates are computed at the top of the atmosphere for $I=100$ and a $30^{\circ}$ zenith angle.}\\
+%\end{tabular}
+%\end{center}
+%\label{default}
+%\end{table}%
+
+\end{longtable}  
+
+\newpage
+
+\noindent {\bf Notes on Reactions}
+
+ Reaction rates are selected from the publicly (http://kinetics.nist.gov/kinetics) available NIST database.
+In order of priority, we choose between reported reaction rates according to relevant temperature range, newest review, newest experiment, and newest theory.  
+Three body reactions are from experiments in H$_2$ when possible.  
+Rates are not available for all reactions, especially for reverse (endothermic) reactions and reactions involving elemental sulfur.
+Rates $k_r=K_{\rm eq}k_f$ of reverse two-body reactions are determined from the forward rate $k_f$ and the equilibrium $K_{\rm eq}=\exp{\left\{\left(-\Delta H + T\Delta S\right)/RT\right\}}$ using $H^{\circ}(T)$ and $S^{\circ}(T)$ from Chase (1998) as available.  In general we use the form $k_r \approx k_f A \left(T/300\right)^n e^{-B/T}$.  To first approximation the fits are tuned to 1400 K, so that $A=e^{\Delta S(1400)/R}$, $B=\Delta H(1400)/R$, and $n=0$.  The fits are extended to wider temperature range by adjusting $A$, $B$, and $n$.
+Where we have had to assume a rate we have left the reference blank.
+For assumed rates we also supply the thermodynamically consistent inverse.
+
+using thermodynamic data for HS from Lo04 ($H_{298}^{\circ}=142.9$ kJ/mol rather than 139.3 kJ/mol Ch98). 
+
+Thermodynamic data for C$_2$H are very uncertain.  We use reported rates for both instead of using the thermodynamic data to derive a reverse rate. 
+
+
+
+\noindent {\bf R\ref{R1}, R\ref{R2}} and many others.  The 3-body reactions are so slow that the 2-body limit is irrelevant to our calculations.
+
+\noindent {\bf R\ref{RCO}.} The 3-body recombination rate is constructed from the reported thermal decomposition rate at high temperatures and available thermodynamic data. 
+
+\noindent {\bf R\ref{RHCO}.} The 3-body recombination rate is consistent with the reported thermal decomposition rate and available thermodynamic data. 
+
+\noindent {\bf R\ref{RH2CO}.} The high pressure limit is constructed from the reported thermal decomposition rate and available thermodynamic data. 
+
+\noindent {\bf R\ref{RHCHO}.} The recombination rate is constructed from the reported thermal decomposition rate and available thermodynamic data. 
+
+\noindent {\bf R\ref{RCH}.} The 3-body recombination rate is constructed from the reported thermal decomposition rate at high temperatures and available thermodynamic data. 
+
+\noindent {\bf R\ref{RCH2}.} The recombination rate is constructed from the reported thermal decomposition rate and available thermodynamic data. 
+
+\noindent {\bf R\ref{R61}.} Products assumed.
+
+\noindent {\bf R\ref{RCH3O}.} Recombination rates are constructed from reported thermal decomposition rates and available thermodynamic data. 
+
+\noindent {\bf R\ref{R80}.}  Branching from Mo77, the rate is from Dob91.
+
+\noindent {\bf R\ref{R87}-R\ref{R89}.}  Low pressure rates are assumed.
+
+\noindent {\bf R\ref{RC2H2}.}  The rate is assumed the same as for CH$_3$+H.
+
+\noindent {\bf R\ref{RC2H3}.} The 3-body recombination rate is constructed from the reported thermal decomposition rate at high temperatures and available thermodynamic data.  In general, measured rates of thermal decomposition when expressed in Arrhenius form $Ae^{-B/RT}$ suggest lower $B$ than is suggested by the heats of formation of the shards, which would imply extrapolated low temperature rates for 3-body recombination that are much too high.  The high temperature rate is adjusted to the form $A\left(T/298\right)^c e^{-B'/RT}$ with $B'>B$ to give plausible extrapolations at low temperature. 
+
+\noindent {\bf R\ref{R137}.}  We assume the products.
+
+\noindent {\bf R\ref{RC2H4}.} This rather unlikely looking reaction is listed by Ts86 in the high pressure limit.  Ba94 list thermal breakup of C$_2$H$_4$ into C$_2$$_2$ + H$_2$ in the low pressure limit; the reverse of that rate is listed here.  
+
+\noindent {\bf R\ref{RC2H5}.} Two recent studies (Cu06, Mi05) differ by a factor of two at relevant temperatures; the older recommendation (Ba94) is close to Cu06.  
+
+\noindent {\bf R\ref{RC4H2},R\ref{R161}-R\ref{R162}.}  Placeholder rates for truncating chemistry assumed by analogy to H+C$_2$H$_2$. 
+In practice C$_4$H$_2$ readily adds H atoms and grows (Kl05).
+
+ \noindent {\bf R\ref{R163}.} Ground state C$_2$ reacts with almost any hydrocarbon to make bigger hydrocarbons.  Because C$_2$ is not very abundant in these atmospheres, we have chosen this single alternative to R62 (hydrogenation) as representative. Pa08 lists the products as ``products,'' we assume C$_4$H as the most extreme outcome.
+
+\noindent {\bf R\ref{RC2H2OH}.}  Oxidation of C$_2$H$_2$ is complicated, passing through a series of reaction intermediates that includes at least one substantial energy barrier.  The energy barrier is encountered in the reactions of the primary adduct.
+
+%\noindent {\bf R1???.}  The apparent second order rate listed in the NIST database is at a low pressure and is not the actual asymptotic rate.  
+
+ \noindent {\bf R\ref{R196}-R\ref{R197}, R\ref{R200}-R\ref{R201}, R\ref{R209}-R\ref{R211}, R\ref{R221}.}  By analogy to R\ref{R223}, Moses (Mo95a,b) assigned rates to these strongly exothermic reactions. However, high activation energies for other similar reactions such as R\ref{R212}, R\ref{R222}, and R\ref{R224} suggest that the reactions could be slower at low $T$ than given here.
+ 
+ \noindent {\bf R\ref{R199}.}  The rate is for products St95. Ya05 give NH+C$_2$H$_4$ and H$_2$CN + CH$_3$ as dominant channels.  We presume the channels break 50:50.
+
+\noindent {\bf R\ref{R191}.} Assumes that the product HNO reacts quickly with H to give H$_2$+NO. {\bf Fix}
+
+ \noindent {\bf R\ref{R220}.} The measured rate for NH$_2$+C$_2$H$_2$ of $k=6.1\!\times\! 10^{-12}e^{-5700/T}$ (He95) has a much lower activation energy than expected if the products were NH$_3$+C$_2$H.  The product is therefore likely to be an adduct
+ leading perhaps to the formation of stable molecules such as CH$_3$CN or HC$_3$N, species that we do not yet include.
+ HCN and CH$_3$ are also possible exothermic products, but these are not likely, and thus we have omitted the reaction.
+ 
+\noindent {\bf R\ref{R212}.}  A reverse fit to Xu99 for $500<T<1300$ K.  
+
+ \noindent {\bf R\ref{R222}.}  The measured rate is for all products (probably an adduct).  We have presumed an outcome of two stable molecules.
+ 
+  \noindent {\bf R\ref{R246}.}  Products assumed; the actual products may be C$_2$H$_3$CN + H.
+
+\noindent {\bf R\ref{RHCNOH}.}   The low pressure limit is assumed proportional to R164, scaled by the 2-body rates.  The product ``HCNOH'' is a proxy for the real product or products; the 
+OH may dangle off the C, in which case a likely product would cyanic acid, HOCN. 
+
+\noindent {\bf R\ref{RHCNOHa}.}  The activation barrier is from De00.
+
+ \noindent {\bf R\ref{R254}.}  The rate is for products St95. Ya05 give NH+C$_2$H$_4$ and H$_2$CN + CH$_3$ as dominant channels.  We presume the channels break 50:50.
+ 
+\noindent {\bf R\ref{R256}.} Rate from Ne90, products assumed by To03.
+ 
+\noindent {\bf R\ref{R258}-R\ref{R261}.}  The published rate for R\ref{RH2CN} leads to H$_2$CN being rather abundant.  Reported reactions of H$_2$CN are abstractions by H (To03) and OH (Ni03).  Upper limits $<10^{-15}$ cm$^3$/s have been reported on reactions with H$_2$, CO, CH$_4$, and C$_2$H$_4$ (Ni03).  Because H$_2$CN can be abundant, we have created other abstraction channels analogous to the reaction with OH.  
+
+\noindent {\bf R\ref{RS2}.}  Reported rates are highly discrepant. 
+ Ni79 estimate in their review that $k=1.2\!\times\! 10^{-29}$, Moses et al (2002) use $k=5\!\times\! 10^{-32}e^{+900/T}$ to model S$_2$ in Io's volcanic plumes (which has been observed Spencer et al 2000), and Du et al (2008) use theory to calculate that $k=2.0\!\times\! 10^{-33}e^{ +210/T}$.  At 300 K these three estimates span 3.5 orders of magnitude.
+ None of the approximations attempts to describe the reaction at the high temperatures of interest to us here.  Most of our numerical experiments are performed with a 
+ very low (conservative) reaction rate, $k= 1.0\!\times\! 10^{-32} \left(T/298 \right)^{-2.00}$.  
+ 
+\noindent {\bf R\ref{RS3}{\it ff}.}
+Rates of S$_3$ and S$_4$ reactions are effectively unknown, although 3-body recombinations among S$_n$ species are known to be fast (Fa67, La72).
+Tabulated thermodynamic properties of S$_n$ are incomplete for $n>2$.  We have used Benson's (Be78) estimates for standard enthalpies of formation for these species.
+S$_3$ and S$_4$ are especially uncertain. 
+Chase (1998) gives expressions for $H^{\circ}-H^{\circ}_{298}$ and $S^{\circ}$ for both S$_3$ and S$_4$, but does not give $H^{\circ}_{298}$ for either.
+Benson estimates that $H^{\circ}_{298}({\rm S}_3) \approx 32.5\pm 1$ kcal/mole (consistent within error of Drowart et al 1968) and $H^{\circ}_{298}({\rm S}_4)\approx 31$ kcal/mole.
+However, Benson assumes a cyclic structure for S$_3$, while Chase seems to have assumed the opposite.  Presumably the structure affects the heat capacity and entropy, which makes estimating the equilibria involving S$_3$ especially uncertain.
+
+\noindent {\bf R\ref{RS8}.}  We presume that longer sulfur changes are more readily stabilized and thus that the 3-body reactions are much faster --- this expectation is based on a loose analogy between sulfur and sulfur chains and alkyl radicals and alkanes (Be78).
+ 
+\noindent {\bf R\ref{R272}.}  HS+S $\!\leftrightarrow\!$ H+S$_2$.  
+Reported rates for R\ref{R272} are discrepant, $4.0\times 10^{-11}$ cm$^{3}$s$^{-1}$ (Sc73) and $<\!5\times 10^{-12}$ cm$^{3}$s$^{-1}$ (Nicholas et al 1979). 
+The seemingly analogous reactions O+OH $\rightarrow$ O$_2$+H ($k=3.3\times 10^{-11}$ cm$^{3}$s$^{-1}$), O+HS $\rightarrow$ SO+H ( $k=7\times 10^{-11}$ cm$^{3}$s$^{-1}$), and S+OH $\rightarrow$ SO+H ($k=6.6\times 10^{-11}$ cm$^{3}$s$^{-1}$), are all rather fast at room temperature. 
+The reverse, although very endothermic, is the major sink on S$_2$.
+
+\noindent {\bf R\ref{R273}.} S+H$_2$ $\!\leftrightarrow\!$ H+HS. This fit encompasses rates given by Sh98 and Woi95 for somewhat
+different temperature ranges.  The reverse constructed from thermodynamics is
+ $k_{r} = 2.0\!\times\! 10^{-11}\left(T/298 \right)^{0.70}$, which is  
+consistent reported rates at 300 K (Sc73, Ni79).
+
+\noindent {\bf R\ref{R274}.} Analogy to H$_2$+O$_2$.
+
+\noindent {\bf R\ref{R275}-R\ref{R276}.}
+We expect that these analogues to R\ref{R272} are the leading chemical sources and sinks of S$_3$ and S$_4$. 
+ 
+ \noindent {\bf R\ref{RCH3SH}.}  The actual product at low temperatures is CH$_3$SH, a molecule we have not included.
+ 
+\noindent {\bf R\ref{RH2S}, R\ref{RHSH}.}  We have constructed forward reaction rates that, when reversed, approximate the
+reported rates of the two thermal decomposition pathways for H$_2$S at the temperature ranges where these
+data have been obtained (Ro84, Te90, Woi94, Ol94, Sh96, KaXX).
+
+\noindent {\bf R\ref{R288}.} H+H$_2$S $\!\leftrightarrow\!$ HS+H$_2$.
+Pr77 reported a rate for HS+D$_2$ $\rightarrow$ HDS + D, $2.24\!\times\! 10^{-11} e^{-3530/T}$ cm$^{3}$s$^{-1}$ ($808<T<937$ K), that is two orders of magnitude faster than $k_{r}$ at 900 K.   
+
+\noindent {\bf R\ref{R289}.} S+H$_2$S $\!\leftrightarrow\!$ HS+HS.
+We use Sh96 because the reported activation energy is more consistent than Woi94 with thermodynamic equilibria
+and the generally high rates reported for the reverse reaction (Sc73, Ni79, St87) at room temperature.
+
+\noindent {\bf R\ref{R293}.} The measured rate at 295 K is $ 2.0\!\times\! 10^{-12}$ cm$^3$s$^{-1}$.  We have assumed the activation energy.
+ 
+\noindent {\bf R\ref{R302}.}  Assumed by analogy to N+O$_2$.
+
+ \noindent {\bf R\ref{R304}.} Assumes an analogy to SO+O$_2$.
+ 
+\noindent {\bf R\ref{R306}.}  A compromise between measured values and the available thermodynamic data.
+
+\noindent {\bf R\ref{RHSO}}{\em ff.} HSO assumed analogous to HO$_2$.  % The HSO reactions turn out to be unimportant.
+
+\noindent {\bf R\ref{R337}.}  Analogy to OH+CO.
+
+\noindent {\bf R\ref{R342}.}  Assumed twice as fast as CO+OH.
+
+\noindent {\bf R\ref{R343}-R\ref{R345}.}  Overall rate from Si88, branching ratios from Co92.
+
+
+
+\noindent {\bf R\ref{R346}.} The room temperature reaction rate is appreciable, but the product is an adduct that could be HOCS$_2$ (At04). The room temperature upper limit on the products OCS + HS is $k<2\!\times\!10^{-15}$ cm$^3$/s (At04). 
+
+\noindent {\bf R\ref{RHCS}}{\em ff}. Tabulated thermodynamic properties for HCS and H$_2$CS appear to be nonexistent, although Be78 does estimate properties at room temperatures.
+The HCS radical is by assumption an important intermediate for CS and CS$_2$ formation in our scheme.
+The HCS reactions are invented but plausible. We have in general reduced the very fast rates estimated by Mo95 by a factor of five. They are important here because they provide the chief kinetic pathway to CS and CS$_2$, two molecules that were observed to be abundant in the SL9 impacts (Harrington et al 2004). 
+ 
+\noindent {\bf R\ref{RHNCO}.}  The 3-body recombination rate is consistent with the reported thermal decomposition rate and available thermodynamic data.
+
+\noindent {\bf R\ref{RNH2CO}.}  Low pressure rate assumed.
+
+\noindent {\bf R\ref{RHCNOHb}.}  The activation barrier for rearranging is from De00.
+
+\noindent {\bf R\ref{RNH2COff}.}  NH$_2$CO reactions assumed analogous to those of CH$_3$CO.
+
+\noindent {\bf R\ref{NNH}.}  NNH is regarded as an essential intermediate in NO production in flames.
+It resembles a short-lived resonance better than it does an actual chemical species residing inside a potential well;
+indeed, it is probably better thought of as a local maximum in the potential energy surface. 
+
+\noindent {\bf R\ref{RN2H2}.} One can find estimated rates for thermal decomposition of N$_2$H$_2$, but what is listed by Gl08
+($k_r=1.6\times 10^{-08} e^{-25000/T}$) is not consistent with estimated heats of formation for NNH (254 kJ/mol, Ha03) and N$_2$H$_2$ (201 kJ/mol, Ma06) that suggest a dissociation barrier of $\sim 34000$ K.  Calculations by Bi06 are consistent with little or no barrier between NNH and N$_2$H$_2$.  We therefore use rather fast rates inspired by the somewhat analogous addition of H to HCO.
+
+\noindent {\bf R\ref{RN2H3}.} There is little information about the N$_2$H$_3$ apart from it being reactive and quick to grow to N$_2$H$_3$.  We've assumed a modest activation barrier between N$_2$H$_2$ and N$_2$H$_3$.
+
+\noindent {\bf R\ref{RN2H4}.} We assume the same rate for N$_2$H$_3$ + H as for NH$_2$+NH$_2$.
+
+\noindent {\bf R\ref{RHSO3}.}  The HSO$_3$ radical appears to be little studied because it reacts quickly with O$_2$.
+We include it as a step to H$_2$SO$_4$ for conditions where O$_2$ may be less abundant.
+
+% \noindent {\bf R\ref{Chlorine}{\em ff}.  Chlorine in an oxidizing atmosphere is well studied.
+
+\noindent {\bf R\ref{RNaOH}.}  Ya95 gives the vapor pressure (in torr) as $\log_{10}{\left(P\right)} =-48.23-1934/T+17\log_{10}{\left(T\right)}+3.74\times 10^{-4}T-8.75\times 10^{-7}T^2$  for $596<T<1830$ K. 
+
+\noindent {\bf R\ref{RNaO}.}  Assumes the same rate as Na + OH. 
+
+\noindent {\bf R\ref{RNaCl}.}  Assumes the same rate as Na + OH.  Ya95 gives the vapor pressure (in torr) as $\log_{10}{\left(P\right)} = 22.43-11358/T-4.2\log_{10}{\left(T\right)}+2.96\times 10^{-11}T-3.95\times 10^{-12}T^2$ for $1074<T<1738$ K. 
+
+\noindent {\bf R\ref{RNaCN}.}  We include NaCN because we have thermodynamic data and HCN can be abundant out of equilibrium. Ya95 give the vapor pressure (in torr) as $\log_{10}{\left(P\right)} =-2.23-8202/T+3.4\log_{10}{\left(T\right)}-2.43\times 10^{-3}T+3.93\times 10^{-7}T^2$ for $867<T<1769$ K.
+
+\noindent {\bf R\ref{RNaCNb}.}  By analogy to R\ref{RNaClb}, with the energy barrier scaled by the different heats of formation.
+
+
+
+\medskip
+\noindent {\bf P24.}  Assumes twice the cross section of C$_2$H$_2$.
+
+\noindent {\bf P29.} Assumes cross section of HO$_2$ (Sa03).
+
+%\newpage
+\medskip
+\medskip
+
+\noindent {\bf References}
+%\medskip
+
+\noindent {\bf Ad05.}
+Adam, L., Hack, W., Zhu, H., Qu, Z.W., Schinke, R. (2005). Experimental and theoretical investigation of the reaction NH +H $\rightarrow$ N($^4$S) +H2. {\em J. Chem. Phys. 122,} 114301.
+
+\noindent {\bf Ah92.}
+Ahmed S.M., Kumar, V. (1992). Measurement of photoabsorption and fluorescence cross-sections for CS2 at 188.2213 and 287.5339.5 nm. {\em Pramana 39,} 367-380.
+
+\noindent {\bf Ar81.} Arai, H., Nagai, S., Hatada, M. (1981) Radiolysis of methane containing small amounts of carbon monoxide-formation of organic acids.  {\em Radiat. Phys. Chem.  17}
+
+\noindent {\bf At89.}
+Atkinson, R., Baulch, D.L., Cox, R.A., Hampson Jr., R.F., Kerr, J.A., Troe, J. (1989). Evaluated Kinetic and Photochemical Data for Atmospheric Chemistry: Supplement III.  {\em J. Phys. Chem. Ref. Data 18,}  881-1097
+
+\noindent {\bf At04.}
+Atkinson, R., Baulch, D.L., Cox, R.A., Crowley, J.N., Hampson, R.F., Hynes, R.G., Jenkin, M.E., Rossi, M.J., Troe, J., (2004). Evaluated kinetic and photochemical data for atmospheric chemistry: Volume I - gas phase reactions of Ox, HOx, NOx and SOx species.  {\em Atmos. Chem. Phys.  4,} 1461-1738.
+
+\noindent {\bf At07.}
+Atkinson, R.;Baulch, D.L.;Cox, R.A.;Crowley, J.N.;Hampson, R.F.;Hynes, R.G.;Jenkin, M.E.;Rossi, M.J.;Troe, J. (2007).  Evaluated kinetic and photochemical data for atmospheric chemistry: Volume III - gas phase reactions of inorganic halogens.
+{\em Atmos. Chem. Phys. 7,} 981 - 1191.
+
+\noindent {\bf Ba67.}
+Basco N and Pearson AE (1967). Reactions of sulphur atoms in presence of carbon disulphide, carbonyl sulphide and nitric oxide. {\em Trans.\ Faraday Soc.\ 63,} 2684-2689.
+
+\noindent {\bf Ba81.}
+Baulch, D.L.; Duxbury, J.; Grant, S.J.; Montague, D.C. (1981).  Evaluated kinetic data for high temperature reactions. Volume 4 Homogeneous gas phase reactions of halogen- and cyanide- containing species. {\em J. Phys. Chem. Ref. Data 10,} 
+
+\noindent {\bf Ba82.}
+Bartels, M., Hoyermann, K., Sievert, R. (1982).  Elementary Reactions in the Oxidation of Ethylene: The Reaction of OH Radicals with Ethylene and the Reaction of C2H4OH Radicals with H Atoms.  {\em Symp. Int. Combust. Proc. 19,} 61-72.
+
+\noindent {\bf Ba88.}
+Basevich, V.Ya., Vedeneev, V.I. (1988). Reaction of nitrogen atoms with ammonia and hydrogen. {\em Khim. Fiz. 7,} 1552 - 1558.
+
+\noindent {\bf Ba91.}
+Balla, R.J., Casleton, K.H., Adams, J.S., Pasternack, L. (1991). Absolute rate constants for the reaction of CN with CH4, C2H6, and C3H8 from 292 to 1500 K using high-temperature photochemistry and diode laser absorption.  {\em J. Phys. Chem. 95,} 8694-8701.
+
+\noindent {\bf Ba92.}
+Baulch, D.L., Cobos, C.J., Cox, R.A., Esser, C., Frank, P., Just, Th., Kerr, J.A., Pilling, M.J., Troe, J., Walker, R.W., Warnatz, J. (1992). Evaluated kinetic data for combustion modeling. {\em J. Phys. Chem. Ref. Data. 21,} 411-429. 
+
+\noindent {\bf Ba94.}
+Baulch, D.L., Cobos, C.J., Cox, R.A., Frank, P., Hayman, G., Just, Th., Kerr, J.A., Murrells, T., Pilling, M.J., Troe, J., Walker, R.W., Warnatz, J. (1994).  Evaluated kinetic data for combusion modeling. {\em Supplement I. J. Phys. Chem. Ref. Data 23,} 847-1033.
+
+\noindent {\bf Ba95.}
+Bauerle, S., Klatt, M., Wagner, H.Gg. (2005). Recombination and decomposition of methylene radicals at high temperatures. {\em Ber. Bunsenges. Phys. Chem. 99,} 870-879.
+
+\noindent {\bf Ba07.}
+Ballester, M.Y., Caridade, P.JSB., Varandas, A.JC. (2007). Dynamics and kinetics of the H+SO2 reaction: A theoretical study. {\em Chem. Phys. Lett. 439,} 301-307.
+
+\noindent {\bf Be78.}
+Benson SW (1978). Thermochemistry and Kinetics of Sulfur-Containing Molecules and Radicals. {\em Chem.\ Rev.\ 78,} 23-35.
+
+\noindent {\bf Be84.}
+Berman, M.R. Lin, M.C. (1984). Kinetics and mechanisms of the reactions of CH and CD with H2 and D2. {\em J. Chem. Phys. 81,} 5743-5752.
+
+\noindent {\bf Be92}
+Becker, E.; Rahman, M.M.; Schindler, R.N. (1992). Determination of the rate constants for the gas phase reactions of NO3 with H, OH and HO2 radicals at 298 K. {\em Ber. Bunsenges. Phys. Chem. 96,} 776 - 783.
+
+\noindent {\bf Be00.}
+Becker KH, Kurtenbach R, Schmidt F, Weisen P (2000). Kinetics of the NCO radical reacting with atoms and selected molecules. {\em Combust. Flames 120,} 570-577.
+
+\noindent {\bf Be02.}
+ Berdyugina SV and W. C. Livingston WC (2002). Detection of the mercapto radical SH in the solar atmosphere. {\em Astron.\ Astrophys.\ 387,} L6-L9.
+
+%\noindent Bi91.
+% Billmers RI and Smith AL (1991). Ultraviolet-Visible Absorption Spectra of Equilibrium Sulfur Vapor: Molar Absorptlvlty
+%Spectra of S$_3$ and S$_4$. {\em J.\ Phys.\ Chem.\ 95,} 4242-4245.
+
+\noindent {\bf Bi06.}
+Biczysko, M, Poveda, Varandas, A.J.C. (2006). Accurate MRCI study of ground-state N2H2 potential energy surface. {\em Chem Phys Lett 424,} 4653,
+
+\noindent {\bf Bl00.}
+Blitz, M.A., McKee, K.W., Pilling, M.J. (2000). Temperature dependence of the reaction of OH with SO. {\em Proc. Combust. Inst. 28,} 2491-2497.
+
+\noindent {\bf Bl06.}
+Blitz, M.A., Hughes, K.J., Pilling, M.J., Robertson, S.H. (2006).  Combined experimental and master equation investigation of the multiwell reaction H+SO2.  {\em J. Phys. Chem. A  110,} 2996-3009.
+
+\noindent {\bf Bo85.}
+Bohland, T., Dobe, S., Temps, F., Wagner, H.Gg. (1985).  Kinetics of the reactions between CH2(X$^3$B$_1$)-radicals and saturated hydrocarbons in the temperature range 296 K to 707 K (1985). {\em Ber. Bunsenges. Phys. Chem. 89,} 432.
+
+\noindent {\bf Bo96.}
+Bohn, B., Siese, M., Zetzsch, C. (1996). Kinetics of the OH + C2H2 reaction in the presence of O2. {\em J. Chem. Soc. Faraday Trans. 92,} 1459-1466.
+
+\noindent {\bf Bo97}  Boughton, J.W.; Kristyan, S.; Lin, M.C. (1997).  Theoretical study of the reaction of hydrogen with nitric acid: ab initio MO and TST/RRKM calculations. {\em Chem. Phys. 214,} 219 - 227.
+
+\noindent {\bf Bo04}
+Bogdanchikov, G.A.; Bakanov, A.; Parker, D.H. (2004), The substitution reactions RH+O2->RO2+H: transition state theory calculations based on the ab initio and DFT potential energy surface.  {\em Chem. Phys. Lett. 385,} 486 - 490.
+
+\noindent {\bf Br97.}
+Brownsword, R.A., Canosa, A., Rowe, B.R., Sims, I.R., Smith, I.W.M., Stewart, D.W.A., Symonds, A.C., Travers, D. (1997). Kinetics over a wide range of temperature (13-744 K): rate constants for the reactions of CH($\nu$=$0$) with H2 and D2 and for the removal of CH($\nu$=$1$) by H2 and D2. {\em J. Chem. Phys. 106,} 7662-7677.
+
+\noindent {\bf Br04.}
+Bryukov, M.G.; Knyazev, V.D.; Lomnicki, S.M.; McFerrin, C.A.; Dellinger, B. (2004).  Temperature-dependent kinetics of the gas-phase reactions of OH with Cl2, CH4, and C3H8. {\em J. Phys. Chem. A 108,} 10464 - 10472.
+
+\noindent {\bf Bu90.}
+Burmeister, M., Roth P (1990).  {\em AIAA J.\  28,} 402-405.
+
+\noindent {\bf Ca01.}
+Campomanes, P., Menendez, I., Sordo, T.L. (2001). A Theoretical Study of the NCO + OH Reaction. {\em J. Phys. Chem. A 105,}  229 - 237.
+
+\noindent {\bf Ca03.}
+Carl, S.A., Sun, Q.,Teugels, L., Peeters, J.  (2003).  Experimental determination of the temperature dependence of the absolute rate coefficients of the HCCO+NO2 and HCCO+H2 reactions.  {\em Phys. Chem. Chem. Phys. 5,}  5424 - 5430.
+
+\noindent {\bf Ca05.}
+Carl, S.A., Nguyen, H.MT., Elsamra, R.MI., Nguyen, M.T., Peeters, J. (2005). Pulsed laser photolysis and quantum chemical-statistical rate study of the reaction of the ethynyl radical with water vapor.  {\em J. Chem. Phys. 122,} 114307.
+
+\noindent {\bf Ca05b.}
+Caridade PJSB, Rodrigues SPJ, Sousa F, and Varandas AJC. (2005). Unimolecular and Bimolecular Calculations for HN2. {\em J. Phys. Chem. A  109,} 2356-2363.
+
+\noindent {\bf Ca08.}
+Carvalho, E.FV.; Barauna, A.N.; Machado, F.BC.; Roberto, O. (2008).  Theoretical calculations of energetics, structures, and rate constants for the H+CH3OH hydrogen abstraction reactions. {\em Chem. Phys. Lett.  463,}  33 - 37.
+
+\noindent {\bf Cd05.}
+Caridade, P.JSB., Rodrigues, S.PJ., Sousa, F., Varandas, A.JC. (2005). Unimolecular and bimolecular calculations for HN2.   {\em J. Phys. Chem. A  109,} 2356-2363. 
+
+\noindent {\bf Ch03.}
+Che, C.-b., Zhang, H.; Zhang, X., Liu, Y., Liu, B. (2003). Ab Initio and Kinetic Study on CH3 Radical Reaction with H2CO.  {\em J. Phys. Chem. A 107,} 2929 - 2933.
+
+\noindent {\bf Ch05}
+Choi, Y.M.; Lin, M.C.  (2005). Kinetics and mechanisms for reactions of HNO with CH3 and C6H5 studied by quantum-chemical and statistical-theory calculations.   Inter. J. Chem. Kinet.   37,  261 - 274. 
+
+\noindent {\bf Cl06.}
+Cleary, P.A., Romero, M.TB., Blitz, M.A., Heard, D.E., Pilling, M.J., Seakins, P.W., Wang, L. (2006). Determination of the temperature and pressure dependence of the reaction OH + C2H4 from 200-400 K using experimental and master equation analyses. {\em Phys. Chem. Chem. Phys. 8,} 5633 - 5642.
+
+\noindent {\bf Ch98.}
+Chase MW (1998) {\em NIST-JANAF Themochemical Tables, Fourth Edition, J.\ Phys.\ Chem.\ Ref.\ Data, Monograph 9,} 1-1951.
+
+\noindent {\bf Cl84.}
+Clyne, M.A.A.; MacRobert, A.J.; Murrells, T.P.; Stief, L.J. (1984). Kinetics of the reactions of atomic chlorine with H2S, HS and OCS.
+{\em J. Chem. Soc. Faraday Trans. 2, 80,} 877 - 886.
+
+\noindent {\bf Cl06.}
+Cleary, P.A.,Romero, M.TB.,Blitz, M.A.,Heard, D.E.,Pilling, M.J.,Seakins, P.W.,Wang, L. (2006). Determination of the temperature and pressure dependence of the reaction OH + C2H4 from 200-400 K using experimental and master equation analyses. {\em Phys. Chem. Chem. Phys. 8,} 5633-5642.
+
+\noindent {\bf Co85.}
+Cobos, C.J. Troe, J. (1985). Theory of thermal unimolecular reactions at high pressures. II. Analysis of experimental results. {\em  J. Chem. Phys. 83,} 1010-1015.
+
+\noindent {\bf Co91.}
+Cohen, N. Westberg, K.R. (1991).  Chemical kinetic data sheets for high-temperature reactions. Part II.
+{\em J. Phys. Chem. Ref. Data  20,}  1211-1311.
+
+\noindent {\bf Co92.}
+Cooper, W.F., Hershberger, J.F. (1992).  An infrared laser study of the O($^3$P) + CS2 reaction.   {\em J. Phys. Chem. 96,} 5405-5410.
+
+\noindent {\bf Co97.}
+Corchado, J.C., Espinosa-Garcia, J. (1997). Analytical potential energy surface for the NH3+H=NH2+H2 reaction: application of variational transition-state theory and analysis of the equilibrium constants and kinetic isotope effects using curvilinear and rectilinear coordinates. {\em J. Chem. Phys. 106,} 4013-4021.
+
+\noindent {\bf Co99.}
+Cox, R.M.; Plane, J.M.C. (1999). An Experimental and Theoretical Study of the Reactions NaO + H2O(D2O) ?? NaOH(D) + OH(OD)
+{\em Phys. Chem. Chem. Phys. 1,} 4713 - 4720
+
+\noindent {\bf Cu06.}
+Curran, H.J. (2006). Rate constant estimation for C-1 to C-4 alkyl and alkoxyl radical decomposition.  {\em Int. J. Chem. Kinet. 38,} 250-275.
+
+\noindent {\bf Da90.}
+Davidson DF, Kohse-Hoinghaus K, Chang AY, Hanson RK (1990). A pyrolysis mechanism for ammonia.  {\em Int J Chem Kin 22,} 513-535.
+
+\noindent {\bf Da95.}
+Darwin, D.C., Moore, C.B. (1995).  Reaction rate constants (295 K) for $^3$CH2 with H2S, SO2, and NO2: upper bounds for rate constants with less reactive partners. {\em J. Phys. Chem. 99,} 13467-13470.
+
+\noindent {\bf De82.}
+Demissy, M. Lesclaux, R. (1982). Absolute Rate Constants for the Reactions between Amino and Alkyl Radicals at 298 K.  {\em Int. J. Chem. Kinet. 14,} 1-12.
+
+\noindent {\bf De91.}
+Dean, A.J.; Hanson, R.K.; Bowman, C.T. (1991). A shock tube study of reactions of C atoms and CH with NO including product channel measurements.  {\em J. Phys. Chem. 95,} 3180-3189.
+
+\noindent {\bf De92.}
+Dean, A.J., Hanson, R.K. (1992).  CH and C-atom time histories in dilute hydrocarbon pyrolysis: measurements and kinetics calculations.  {\em Int. J. Chem. Kinet. 24,} 517-532.
+
+\noindent {\bf De95.}
+Devriendt, K., Van Poppel, M., Boullart, W., Peeters, J. (1995).  Kinetic investigation of the CH2(X$^3$B$_1$) + H $\rightarrow$ CH(X$^2$II) + H2 reaction in the temperature range $400{\rm~K}<T<1000$ K. {\em J Phys Chem 99,} 16953-16959.
+
+\noindent {\bf De97.}
+DeMore, W.B., Sander, S.P., Golden, D.M., Hampson, R.F., Kurylo, M.J., Howard, C.J., Ravishankara, A.R., Kolb, C.E., Molina, M.J. (1997). {\em Chemical kinetics and photochemical data for use in stratospheric modeling. Evaluation number 12.}  JPL Publication 97-4.
+
+\noindent {\bf De98.} 
+Deppe, J., Friedrichs, G., Ibrahim, A., Romming, H.-J., Wagner, H.Gg. (1998). The thermal decomposition of NH2 and NH radicals.   {\em Ber. Bunsenges. Phys. Chem. 102,} 1474-1485.
+
+\noindent {\bf De00.} 
+Dean, AM and Bozzelli, JW (2000). Combustion chemistry of nitrogen. In Gas-Phase Combustion Chemistry, WC Gardiner, Jr., Ed. Springer, pp 125-341.
+
+\noindent {\bf Di95}
+Diau, E.W.; Halbgewachs, M.J.; Smith, A.R.; Lin, M.C. (1995). Thermal reduction of NO by H2: kinetic measurement and computer modeling of the HNO + NO reaction.  Int. J. Chem. Kinet. 27, 867 - 881.  
+
+\noindent {\bf Dob91.}
+Dobe, S., Berces, T., Szilagyi, I. (1991). Kinetics of the reaction between methoxyl radicals and hydrogen atoms. {\em J. Chem. Soc. Faraday Trans. l:  87,} 2331-2336.
+
+\noindent {\bf Du08.}
+ Du, S.Y., Francisco, J.S., Shepler, B.C., Peterson, K.A. (2008). Determination of the rate constant for sulfur recombination by quasiclassical trajectory calculations. {\em J. Chem. Phys. 128,} 204306.
+
+\noindent {\bf Ei98.}
+Eiteneer, B., Yu, C.-L., Goldenberg, M., Frenklach, M. (1998). Determination of rate coefficients for reactions of formaldehyde pyrolysis and oxidation in the gas phase. {\em J. Phys. Chem. A  102,} 5196-5205.
+
+\noindent {\bf Ei03.}
+Eiteneer, B., Frenklach, M. (2003).  Experimental and Modeling Study of Shock-Tube Oxidation of Acetylene. {\em Int J. Chem. Kinet. 35,} 391-414.
+
+\noindent {\bf Fa67.}
+Fair, R.W.; Thrush, B.A. (1967).  Mechanism of S2 chemiluminescence in the reaction of hydrogen atoms with hydrogen sulphide. { \em Trans. Faraday Soc. 65,} 1208-1218.
+
+\noindent {\bf Fa95}
+Fagerstrom, K.; Jodkowski, J.T.; Lund, A.; Ratajczak, E. (1995). Kinetics of the self-reaction and the reaction with OH of the amidogen radical. Chem. Phys. Lett. 236, 103-110.
+
+\noindent {\bf Fa00.}
+Faravelli, T., Goldaniga, A., Zappella, L., Ranzi, E., Dagaut, P., Cathonnet, M. (2000). An experimental and kinetic modeling study of propyne and allene oxidation. {\em Proc. Combust. Inst. 28,} 2601 - 2608.
+
+\noindent {\bf Fe98.}
+Fernandez, A., Goumri, A., Fontijn, A. (1998). Kinetics of the reactions of N($^4$S) atoms with O2 and CO2 over wide temperatures ranges. {\em J. Phys. Chem. A 102,} 168-172.
+
+\noindent {\bf Fl02.}
+Fleurat-Lessard, P., Rayez, J.C., Bergeat, A., Loison, J.C. (2002). Reaction of methylidyne CH(X$^2\pi$) radical with CH4 and H2S: overall rate constant and absolute atomic hydrogen production. {\em Chem. Phys. 279,} 87-99. %products
+
+\noindent {\bf Fo06.}
+Fontijn, A., Shamsuddin, S.M., Crammond, D., Marshall, P., Anderson, W.R. (2006).   Kinetics of the NH reaction with H2 and reassessment of HNO formation from NH + CO2, H2O. {\em Combust. Flame 145,} 543-551.
+
+\noindent {\bf Fr84.}
+Frank, P., Just, Th. (1984). High temperature kinetics of ethylene-oxygen reaction. {\em  Proc. Int. Symp. Shock Tubes Waves 14,} 706.
+
+\noindent {\bf Fr88.}
+Frank, P., Bhaskaran, K.A., Just, Th. (1988). Acetylene oxidation: the reaction of C2H2 + O at high temperatures.  {\em Symp. Int. Combust. Proc. 21,} 885 - 893.
+
+\noindent {\bf Fr02.} Friedrichs, G.; Herbon, J.T.; Davidson, D.F.; Hanson, R.K. (2002)   Quantitative Detection of HCO Behind Shock Waves: The Thermal Decomposition of HCO.  {\em Phys. Chem. Chem. Phys. 4,} 5778 - 5788.
+
+\noindent {\bf Fu97a.}
+Fulle, D., Hippler, H. (1997).  The temperature and pressure dependence of the reaction CH+H2 $\rightarrow$ CH3 $\rightarrow$ CH2+H.  {\em J. Chem. Phys. 106,} 8691-8698.
+
+\noindent {\bf Fu97b.}
+Fulle, D., Hamann, H.F., Hippler, H., Jansch, C.P.  (1997).  The high pressure range of the addition of OH to C2H2 and C2H4. {\em Ber. Bunsenges. Phys. Chem. 101,} 1443-1442.
+
+\noindent {\bf Fu98.} Fulle D, Hippler H, Striebel F (1998). The high pressure range of the reaction CH+CO+M=HCCO+M. {\em J. Chem. Phys. 108,} 6709-6716.
+
+\noindent {\bf Ga98.}
+Garland NL (1998). Temperature dependence of the reaction: SO + O2. {\em Chem. Phys. Lett. 290,} 385-390.
+
+\noindent {\bf Ga06.}
+Gao, Y.D.; Alecu, I.M.; Hsieh, P.C.; Morgan, B.P.; Marshall, P.; Krasnoperov, L.N. (2006). Thermochemistry is not a lower bound to the activation energy of endothermic reactions: A kinetic study of the gas-phase reaction of atomic chlorine with ammonia.  {\em J. Phys. Chem. A 100,}  6844 - 6850.
+
+\noindent {\bf Ga07.}
+Gannon, K.L., Glowacki, D.R., Blitz, M.A., Hughes, K.J., Pilling, M.J., Seakins, P.W. (2007). H atom yields from the reactions of CN radicals with C2H2, C2H4, C3H6, trans-2-C4H8, and iso-C4H8. {\em J. Phys. Chem. A 111,}  6679-6692.
+
+\noindent {\bf Ga08.}
+Gannon, K.L.; Blitz, M.A.; Pilling, M.J.; Seakins, P.W.; Klippenstein, S.J.; Harding, L.B. (2008). Kinetics and product branching ratios of the reaction of CH2 (singlet) with H2 and D2.  {\em J. Phys. Chem. A 112,} 9575 - 9583.
+
+\noindent {\bf Ge99.}
+Geiger, H., Wiesen, P., Becker, K.H. (1999).  A Product Study of the Reaction of CH Radicals with Nitric Oxide at 298 K.  {\em Phys. Chem. Chem. Phys. 1,} 5601 - 5606.
+
+\noindent {\bf Gl00}
+Glass, G.P., Kumaran, S.S., Michael, J.V. (2000).  Photolysis of Ketene at 193 nm and the Rate Constant for H + HCCO at 297 K.  {em J. Phys. Chem. A 104,} 8360 - 8367.
+
+\noindent {\bf Gl08}
+Glassman, I., Yetter, R.  (2008).  {\em Combustion.}  Academic Press. 800pp.
+
+\noindent {\bf Go08.}
+Golden DM (2008). Yet another look at the reaction CH3+H+M $\rightarrow$ CH4+M. {\em Int. J. Chem. Kinet. 40,} 310-319.
+
+\noindent {\bf Gr94.}
+Grussdorf, J., Nolte, J., Temps, F., Wagner, H.Gg. (1994).  Primary products of the elementary reactions of CH2CO with F, Cl, and OH in the gas phase.  {\em Ber. Bunsenges. Phys. Chem.  98,} 546 - 553.
+
+\noindent {\bf Ha84.}
+Hanson, R.K., Salimian, S. (1984). Survey of rate constants in the N/H/O system. In {\em Combustion Chemistry.} Ed. W.C. Gardiner,Jr., Springer-Verlag, NY, p.\ 361.
+
+\noindent {\bf Ha93.}
+Harding, L.B., Guadagnini, R., Schatz, G.C. (1993). Theoretical studies of the reactions H + CH $\rightarrow$ C + H2 and C + H2 $\rightarrow$ CH2 using an ab initio global ground-state potential surface for CH2. {\em J. Phys. Chem. 97,} 5472-5481.
+
+\noindent {\bf Ha05.}
+Harding, L.B., Klippenstein, S.J., Georgievskii, Y. (2005). Reactions of oxygen atoms with hydrocarbon radicals: a priori kinetic predictions for the CH3+O, C2H5+O, and C2H3+O reactions. {\em Proc. Combust. Inst. 30,} 985-993.
+
+\noindent {\bf Ha03}
+Haworth, N.L.; Mackie, J.C.; Bacskay, G.B. (2003)  An Ab Initio Quantum Chemical and Kinetic Study of the NNH + O Reaction Potential Energy Surface: How Important Is This Route to NO in Combustion?   J. Phys. Chem. A  107,  6792 - 6803.
+
+\noindent {\bf He88}
+He, Y.; Sanders, W.A.; Lin, M.C. (1988).  Thermal Decomposition of Methyl Nitrite: Kinetic Modeling of Detailed Product Measurements by Gas-Liquid Chromatography and Fourier Transform Infrared Spectroscopy.   J. Phys. Chem. 92, 5474.
+
+\noindent {\bf He92}
+He, Y.; Lin, M.C. (1992).   Effects of nitric oxide on the thermal decomposition of methyl nitrite: overall kinetics and rate constants for the HNO + HNO and HNO + 2NO reactions.  {\em Int. J. Chem. Kinet. 24,} 743 - 760.
+
+\noindent {\bf He93}
+He, Y.; Liu, X.; Lin, M.C.; Melius, C.F. (1993).  Thermal reaction of HNCO with NO2 at moderate temperatures.  {\em Int. J. Chem. Kinet. 25,} 845 - 863.
+
+\noindent {\bf He95.}
+Hennig, G., Wagner, H.Gg. (1995). A study about the reactions of NH2(X$^2$B$_1$) radicals with unsaturated hydrocarbons in the gas phase.  {\em Ber. Bunsenges. Phys. Chem. 99,} 989-994.
+
+\noindent {\bf Hi87.}
+Hills, A.J., Cicerone, R.J., Calvert, J.G., Birks, J.W. (1987).  Kinetics of the reactions of S2 with O, O2, O3, N2O, NO, and NO2. {\em J. Phys. Chem. 91,} 1199-1204.
+
+\noindent {\bf Hi89.}
+Hidaka, Y., Oki, T., Kawano, H. (1989).  Thermal decomposition of methanol in shock waves.  {\em J. Phys. Chem. 93,} 7134 - 7139.
+
+\noindent {\bf Hi96.}
+Hidaka Y, Hattori K, Okuno T, Inami K, Abe T, Koike T (1996).  Shock tube and modeling study of acetylene pyrolysis and oxidation.  {\em Combust. Flames 107,} 401-417.
+
+\noindent {\bf Hi00.}
+Hidaka, Y.; Sato, K.; Yamane, M. (2000).  High-temperature pyrolysis of dimethyl ether in shock waves. {\em Combust. Flame 123,} 1-22.
+
+\noindent {\bf Hi01.}
+Hippler, H., Striebel, F., Viskolcz, B. (2001) A Detailed Experimental and Theoretical Study on the Decomposition of Methoxy Radicals.  {\em Phys. Chem. Chem. Phys.  3,} 2450 - 2458.
+
+\noindent {\bf Hi07}
+Hindiyarti, L.; Glarborg, P.; Marshall, P. (2007).  Reactions of SO3 with the O/H radical pool under combustion conditions.   J. Phys. Chem. A 111, 3984 - 3991.
+
+\noindent {\bf Hu75.}
+Husain, D. Young, A.N. (1975). Kinetic investigation of ground state carbon atoms, C(2$^3$P$_j$).  {\em J. Chem. Soc. Faraday Trans. 2, 71,} 525.
+
+\noindent {\bf Hu85.}
+Husain, D.; Plane, J.M.C.; Xiang, C.C. (1985).  Absolute rate data for Rb + OH + He determined by time-resolved molecular resonance-fluoroescence spectroscopy, OH(A$^2\Sigma$ - X$^2\pi$), coupled with steady atomic resonance-fluoroescence measurements, Rb(6$^2$P$_{\rm J}$ - 5$^2$S$_{1/2}$) {\em J. Chem. Soc. Faraday Trans. 2, 81,}
+
+\noindent {\bf Hu86.}
+Husain, D.; Marshall, P. (1986). Determination of absolute rate data for the reactions of atomic sodium, Na(3$^2$S$_{1/2}$), with CH$_3$F, CH$_3$Cl, CH$_3$Br, HCl, and HBr as a function of temperature by time-resolved atomic resonance spectroscopy. {\em Int. J. Chem. Kinet. 18,}
+
+\noindent {\bf Hu92.}
+Huebner, W. F.; Keady, J. J.; Lyon, S. P. (1992). Solar photo rates for planetary atmospheres and atmospheric pollutants.  {\em Astrophys. Space Sci., 195,} 1-294.
+
+\noindent {\bf In99}
+Inomata, S.; Washida, N.  (1999). Rate Constants for the Reactions of NH2 and HNO with Atomic Oxygen at Temperatures Between 242 and 473 K. {\em  J. Phys. Chem. A 103,} 5023 - 5031.
+
+\noindent {\bf Ja03.}
+Javoy, S. Naudet, V. Abid, S. Paillard, C.E. (2003).  Elementary reaction kinetics studies of interest in H2 supersonic combustion chemistry.  {\em Expt. Thermal Fluid Sci. 27,}  371-377.
+
+\noindent {\bf Ja07.}
+Jasper, A.W., Klippenstein, S.J., Harding, L.B.  (2007). Secondary kinetics of methanol decomposition: Theoretical rate coefficients for (CH2)-C3+OH, (CH2)-C3+(CH2)-C3, and (CH2)-C3+CH3. {\em J Phys Chem A 111,} 8699-8707.
+
+\noindent {\bf Je82.}
+Jensen, D.E.; Jones, G.A. (1982). Kinetics of flame inhibition by sodium. {\em J. Chem. Soc. Faraday Trans. 1, 78,}
+
+\noindent {\bf Jo99.}
+Jodkowski, J.T., Rayez, M.-T., Rayez, J.-C. (1999). Theoretical Study of the Kinetics of the Hydrogen Abstraction from Methanol. 3. Reaction of Methanol with Hydrogen Atom, Methyl, and Hydroxyl Radicals. {\em J. Phys. Chem. A 103,} 3750-3765. 
+ 
+\noindent {\bf Ka89.}
+Kasting JF, Zahnle KJ, Pinto JP, and Young AT (1989). Sulfur, ultraviolet radiation, and the early evolution of life. {\em Origins of Life 19,} 95-108.
+
+\noindent {\bf Ka05.}
+Karach, S.P., Osherov, V.I.  (2005). Ab Initio Analysis of the Transition States on the Lowest Triplet H2O2 Potential Surface. {\em J. Chem. Phys. 110,} 11918-11927.
+
+%\noindent KD74.
+%Klemm RB and Davis DD (1974). A Flash Photolysis-Resonance Fluorescence Kinetics Study of the Reaction S($^3$P) + OCS. {\em  J.\ Phys.\ Chem.\ 78,} 1137-1146.
+
+\noindent {\bf Ke72.}
+Kerr, J.A.; Parsonage, M.J. (1972). {\em Evaluated Kinetic Data on Gas Phase Addition Reactions. Reactions of Atoms and Radicals with Alkenes, Alkynes and Aromatic Compounds.} Butterworths, London.
+
+\noindent {\bf Kn88.}
+Knipovich, O.M.; Rubtsova, E.A.; Nekrasov, L.I. (1988).   Volume recombination of nitrogen atoms in the afterglow of a condensed discharge. {\em Russ. J. Phys. Chem. (Engl. Transl.) 62,} 867-870.
+
+\noindent {\bf Kn96.}
+Knyazev, V.D., Bencsura, A., Stoliarov, S.I., Slagle, I.R. (1996).  Kinetics of the C2H3 + H2 = H + C2H4 and CH3 + H2 = H + CH4 reactions. {\em J. Phys. Chem. 100,} 11346-11354.
+
+\noindent {\bf Ko00.}
+Koike, T., Kudo, M., Yamada, H. (2000). Rate Constants of CH4 + M = CH3 + H + M and CH3OH + M = CH3 + OH + M over 1400 - 2500 K.  {\em Int. J. Chem. Kin. 32,} 1-6.
+
+%\noindent Kr87.
+%Krasnopolsky VA (1987).  S3 and S4 absorption cross sections in the range of 340 to 600 nm and evaluation of the S3 abundance in the lower atmosphere of Venus.
+%  {\em Adv. Space Phys.\ 7,} 25-27.
+
+\noindent {\bf Kr97.}
+Kruse, T.; Roth, P. (1997). Kinetics of C2 reactions during high-temperature pyrolysis of acetylene. {\em J. Phys. Chem. A 101,}  2138-2146.
+
+\noindent {\bf Ku95.}
+Kurbanov, M.A., Mamedov, Kh.F.  (1995). The role of the reaction CO + SH $\rightarrow$ COS + H in hydrogen formation in the course of interaction between CO and H2S. {\em Kinet. Catal.  36,} 455-457.
+
+\noindent {\bf La72.}
+Langford, R.B.; Oldershaw, G.A. (1972). Mechanism of Sulfur Formation in the Flash Photolysis of Carbonyl Sulphide. {\em J. Chem. Soc. Faraday Trans. 1, 69,}1550-1559.
+
+\noindent {\bf La90.}
+Lander, D.R., Unfried, K.G., Glass, G.P., Curl, R.F. (1990). Rate constant measurements of C2H with CH4, C2H6, C2H4, D2, and CO.  {\em J. Phys. Chem. 94,} 7759-7763. 
+
+\noindent {\bf La92}
+Lang, V.I. (1992)  Rate constants for reactions of hydrazine fuels with O(3P).  J. Phys. Chem. 96, 3047-3050.
+
+\noindent {\bf Lai92}
+Lai, L-H., Hsu, Y-C., Lee, Y-P. (1992). The enthalpy change and the detailed rate coefficients of the equilibrium reaction OH+C2H2 + M = HOC2H2 + M over the temperature range 627-713K.  {\em J. Chem. Phys. 97,} 3092 - 3099.
+
+\noindent {\bf La04.}
+Laufer, A.H., Fahr, A. (2004). Reactions and kinetics of unsaturated C2 hydrocarbon radicals. {\em Chem. Rev. 104,} 2813-2832.
+
+\noindent {\bf Le77.}
+Lee, J.H., Stief, L.J., Timmons, R.B. (1977). Absolute Rate Parameters for the Reaction of Atomic Hydrogen with Carbonyl Sulfide and Ethylene Episulfide,  {\em J. Chem. Phys. 67,} 1705-1714.
+
+\noindent {\bf Li84.}
+Lichtin, D.A. Berman, M.R., Lin, M.C. (1984). NH(A$^3\pi \rightarrow$ X$^3\Sigma^-$) Chemiluminescence from the CH(X$^3\pi$) + NO reaction.  {\em Chem. Phys. Lett. 108,} 18-24.
+
+\noindent {\bf Li91.}
+Lifshitz, A., Michael, J.V. (1991). Rate constants for the reaction, O + H2O $\rightarrow$? OH + OH, over the temperature range, 1500-2400 K, by the flash photolysis-shock tube technique: a further consideration of the back reaction. {em Symp. Int. Combust. Proc. 23,}  59-67.
+
+\noindent {\bf Li96.}
+Li, S.C., Williams, F.A. (1996). Experimental and numerical studies of two-stage methanol flames.  {\em Symp. Int. Combust. Proc. 26,} 1017-1024.
+
+\noindent {\bf Lin93}
+Lin, M.C.; He, Y.; Melius, C.F. (1993). Theoretical aspects of product formation from the NCO + NO reaction.  J. Phys. Chem. 97,  9124 - 9128.
+
+\noindent {\bf Li96b.}
+Linder DP, Duan X, Page M (1996). Thermal rate constant for R+N2H2 $\rightarrow$ RH+NNH (R=H,OH,NH2) determined from multireference configuration interaction and variational transition state theory calculations. {\em J. Chem Phys. 104,} 6298-6306.
+
+\noindent {\bf Li03.}
+Liu, J.Y., Li, Z.S., Wu, J.Y., Wei, Z.G., Zhang, G., Sun, C.C. (2003). Theoretical study and rate constant calculation of the CH2O + CH3 reaction.  {\em J. Chem. Phys. 119,} 7214-7221.
+
+\noindent {\bf Li04.}
+Li, Q.S., Zhang, Y., Zhang, S.W. (2004). Direct ab initio dynamics study on the rate constants and kinetics isotope effects of CH3O + H $\rightarrow$ CH2O + H2 reaction. {\em J. Chem. Phys. 121,}  9474-9480
+
+\noindent {\bf Li06.}
+Li, Q.S.; Zhang, X. (2006).   Direct dynamics study on the hydrogen abstraction reactions N2H4 + R ? N2H3 + RH (R=NH2,CH3).  J. Chem. Phys. 125,
+
+\noindent {\bf Li07.}
+Li, J.,Zhao, Z.W., Kazakov, A., Chaos, M.,Dryer, F.L., Scire, J.J. (2007). A comprehensive kinetic mechanism for CO, CH2O, and CH3OH combustion. {\em  Int. J. Chem. Kinet. 39,}109-136.
+
+\noindent {\bf Lo04.}
+Lodders K. (2004). Revised and updated thermochemical properties of the gases Mercapto (HS), Disulfur Monoxide (S2O), Thiazyl (NS), and Thioxophosphino (PS). {\em J. Phys. Chem. Ref. Data, Vol. 33,} 357-367.
+
+\noindent {\bf Lu03.}
+Lu, C.W., Wu, Y.J., Lee, Y.P., Zhu, R.S., Lin, M.C.(2003). Experiments and calculations on rate coefficients for pyrolysis of SO2 and the reaction O plus SO at high temperatures. {\em J. Phys. Chem. A. 107,} 11020-11029.
+
+\noindent {\bf Lu04.}
+Lu, C.W., Wu, Y.J., Lee, Y.P., Zhu, R.S., Lin, M.C. (2004). Experimental and theoretical investigations of rate coefficients of the reaction S($^3$P) + O2 in the temperature range 298-878 K.  {\em J Chem Phys. 121,} 8271-8278
+
+\noindent {\bf Lu06.}
+Lu, C.W.,Wu, Y.J.,Lee, Y.P.,Zhu, R.S.,Lin, M.C. (2006).  Experimental and theoretical investigation of rate coefficients of the reaction S($^3$P) + OCS in the temperature range of 298-985 K.  {\em J. Chem. Phys. 125,} 164329.
+
+\noindent {\bf Ma66.}
+Mayer, S.W.; Schieler, L.(1966). Computed high-temperature rate constants for hydrogen-atom transfers involving light atoms.
+{\em  J. Chem. Phys. 45,}
+
+\noindent {\bf Ma67.}
+Mayer, S.W.; Schieler, L.; Johnston, H.S. (1967). Computation of high-temperature rate constants for bimolecular reactions of combustion products. {\em Symp. Int. Combust. Proc. 11,} 837 - 844.
+
+\noindent {\bf Ma83.}
+ Martinez RI and Herron JT (1983).  Methyl thiirane: Kinetic gas-phase titration of sulfur atoms in S$_x$O$_y$ systems.  {\em Int.\ J.\ Chem.\ Kinet.\ 15,} 1127-1140.
+
+\noindent {\bf Ma89.}
+Marston, G., Nesbitt, F.L., Stief, L.J. (1989). Branching ratios in the N + CH3 reaction: Formation of the methylene amidogen (H2CN) radical.  {\em J. Chem. Phys. 91,} 3483.
+
+\noindent {\bf Ma98.}
+Marinov, N.M.; Pitz, W.J.; Westbrook, C.K.; Vincitore, A.M.; Castaldi, M.J.; Senkan, S.M. (1998).
+Aromatic and Polycyclic Aromatic Hydrocarbon Formation in a Laminar Premixed n-butane Flame.  {\em Combust. Flame 114,} 192 - 213.
+
+\noindent {\bf Ma06.}
+Matus MH, Arduengo AJ 3rd, Dixon DA. (2006).  The heats of formation of diazene, hydrazine, N2H3+, N2H5+, N2H, and N2H3 and the Methyl Derivatives CH3NNH, CH3NNCH3, and CH3HNNHCH3. {\em J Phys Chem A. 110,} 10116-10121.
+
+\noindent {\bf Me81.}
+Messing, I., Filseth, S.V., Sadowski, C.M.; Carrington, T. (1981). Absolute Rate Constants for the Reactions of CH with O and N Atoms.  {\em J. Chem. Phys. 74,} 3874.
+
+\noindent {\bf Me91.}
+Mertens, J.D., Kohse-Hoinghaus, K., Hanson, R.K., Bowman, C.T. (1991).  A shock tube study of H + HNCO $\rightarrow$ NH$_2$ + CO.  {\em Int. J. Chem. Kinet. 23,} 655 - 668.
+
+\noindent {\bf Me93.}
+Meads, R.F., Maclagan, R.G.A.R., Phillips, L.F. (1993) Kinetics, energetics, and dynamics of the reactions of CN with NH3 and ND3.   {\em J. Phys. Chem.  97,} 3257-3265.
+
+\noindent {\bf Me00}
+Meagher, N.E.; Anderson, W.R. (2000).  Kinetics of the O($^3$P) + N$_2$O Reaction. 2. Interpretation and Recommended Rate Coefficients.  J. Phys. Chem. A  104, 6013 - 6031.
+
+\noindent {\bf Me96}
+Mebel, A.M.; Lin, M.C.; Morokuma, K.; Melius, C.F. (1996).  Theoretical study of reactions of N$_2$O with NO and OH radicals.  {\em Int. J. Chem. Kinet.  28,}  693 - 703.
+
+\noindent {\bf Meb96}
+Mebel, A.M.; Diau, E.W.G.; Lin, M.C.; Morokuma, K. (1996). Theoretical rate constants for the NH$_3$ + NO$_x$ $\rightarrow$? NH$_2$ + HNO$_x$ (x = 1, 2) reactions by ab initio MO/VTST calculations {\em J. Phys. Chem. 100,} 7517 - 7525.
+
+\noindent {\bf Mer96.} Mertens, J.D., Hanson, R.K. (1996). A shock tube study of H + HNCO $\rightarrow$ H2 + NCO and the thermal decomposition of NCO.  {\em Symp. Int. Combust. Proc. 26,} 551 - 558.
+
+\noindent {\bf Mi88.}
+Miller, J.A., Melius, C.F. (1988). A theoretical analysis of the reaction between hydroxyl and acetylene. {\em Symp. Int. Combust. Proc. 22,} 1031-1039.
+
+\noindent {\bf Mi92.}
+Miller JA, Melius CF (1992). A theoretical study of the reaction between hydrogen atoms and isocyanic acid.  {\em Int. J. Che.. Kin. 24,} 421-432.
+
+\noindent {\bf Mi97.}
+Millar TJ, Farquhar PRA, and Willacy K (1997). The UMIST database for astrochemistry 1995. {\em Astron. Astrophys. Suppl. Ser. 121,} 139-185.
+
+\noindent {\bf Mi01.}
+Michelsen, H.A.; Simpson, W.R. (2001). Relating State-Dependent Cross Sections to Non-Arrhenius Behavior for the Cl + CH4 Reaction. {\em J. Phys. Chem. A 105,} 1476 - 1488
+
+\noindent {\bf Mi03.}
+Miller, J.A., Klippenstein, S.J. , Glarborg, P. (2003).   A kinetic issue in reburning: The fate of HCNO.  {\em Combust. Flame 135,} 357 - 362.
+
+\noindent {\bf Mi05.}
+Michael, J.V., Su, M.C., Sutherland, J.W., Harding, L.B., Wagner, A.F.  (2005). Rate constants for D+C2H4 $\rightarrow$ C2H3D+H at high temperature: implications to the high pressure rate constant for H+C2H4 $\rightarrow$C2H5.  {\em Proc. Combust. Inst. 30,} 965-973.
+
+\noindent {\bf Mo77.}
+Moortgat, G.K., Slemr, F., Warneck, P. (1977). Kinetics and Mechanism of the Reaction H + CH3ONO. {\em  Int. J. Chem. Kinet.  9,} 267.
+
+\noindent {\bf Mo81.}
+Molina, L.T., Lamb, J.J., Molina, M.J.  (1981). Temperature dependent UV absorption cross sections for carbonyl sulfide. {\em Geophys.\ Res.\ Lett.\ 8,} 1008-1011.
+
+\noindent {\bf Mo95a.}
+Moses, J.I. Allen, M., Gladstone, G.R. (1995).	Post-SL9 sulfur photochemistry on Jupiter. {\em Geophys.\ Res.\ Lett.\ 22,} 1597-1600.
+
+\noindent {\bf Mo95b.}
+Moses, J.I. Allen, M., Gladstone, G.R. (1995).	Nitrogen and oxygen photochemistry following SL9. {\em Geophys.\ Res.\ Lett.\ 22,} 1601-1604.
+
+\noindent {\bf Mo02.}
+Moses JI, Zolotov MY, and Fegley BJ (2002). Photochemistry of a Volcanically Driven Atmosphere on Io: Sulfur and Oxygen Species from a Pele-Type Eruption. {\em Icarus 156,} 76-106.
+
+\noindent {\bf Mu87.}
+Mulenko, S.A. (1987). The application of an intracavity laser spectroscopy method for elementary processes study in gas-phase reactions. {\em Rev. Roum. Phys. 32,} 173.
+
+\noindent {\bf Ni79.}
+Nicholas, J.E., Amodio, C.A., Baker, M.J. (1979).  Kinetics and Mechanism of the Decomposition of H2S, CH3SH and (CH3)$_2$S in a Radio-frequency Pulse Discharge. {\em J. Chem. Soc. Faraday Trans. 1, 75,} 1868-1880.
+
+\noindent {\bf Ni03.}
+Nizamov, B., Dagdigian, P.J. (2003).  Spectroscopic and Kinetic Investigation of Methylene Amidogen by Cavity Ring-Down Spectroscopy. {\em J. Phys. Chem. A 107,} 2256-2263.
+
+\noindent {\bf Ne90.}
+Nesbitt, F.L.; Marston, G.; Stief, L.J. (1990). Kinetic studies of the reactions of H2CN and D2CN radicals with N and H.  {\em J. Phys. Chem. 94,} 4946.
+
+\noindent {\bf Ng96}
+Nguyen, M.T.; Sengupta, D.; Vereecken, L.; Peeters, J.; Vanquickenborne, L.G. (1996).
+ Reaction of isocyanic acid and hydrogen atom (H + HNCO): theoretical characterization.  J. Phys. Chem. 100, 1615 - 1621.
+
+\noindent {\bf Ng04}
+Nguyen, H.MT.; Zhang, S.W.; Peeters, J.; Truong, T.N.; Nguyen, M.T. (2004).  Direct ab initio dynamics studies of the reactions of HNO with H and OH radicals.  Chem. Phys. Lett.   388, 94 - 99.
+
+\noindent {\bf No89.}
+Norton, T.S., Dryer, F.L. (1989). Some new observations on methanol oxidation chemistry.  {\em Combust. Sci. Technol.  63,} 107-129.
+
+\noindent {\bf Oe92.}
+Oehlers, C., Temps, F., Wagner, H.Gg., Wolf, M. (1992). Kinetics of the reaction of OH radicals with CH2CO. {\em Ber. Bunsenges. Phys. Chem. 96,} 171 - 175.
+
+\noindent {\bf Ok78.}
+Okabe H (1978) {\em The Photochemistry of Small Molecules.} Wiley-Interscience, New York, 431 pp.
+
+\noindent {\bf Oy94.}
+Oya, M., Shiina, H., Tsuchiya, K., Matsui, H. (1994). Thermal decomposition of COS. {\em Bull. Chem. Soc. Japan 67,} 2311-2313.
+
+\noindent {\bf Pa79.}
+Pagsberg, P.B. Eriksen, J. Christensen, H.C. (1979).  Pulse Radiolysis of Gaseous Ammonia-Oxygen Mixtures.  {\em J. Phys. Chem. 83,} 582.
+
+\noindent {\bf Pa93}
+Park, J.; Hershberger, J.F. (1993).  Kinetics and product branching ratios of the CN+NO2 reaction. J. Chem. Phys.  99,  3488 - 3493
+
+\noindent {\bf Pa96.}
+Payne, W.A., Monks, P.S., Nesbitt, F.L., Stief, L.J. (1996). The reaction between N($^4$S) and C2H3: rate constant and primary reaction channels.  {\em J. Chem. Phys. 104,} 9808-9815.
+
+\noindent {\bf Pa08.}
+Paramo, A., Canosa, A., Le Picard, S.D., Sims, I.R. (2008). Rate coefficients for the reactions of C2 with various hydrocarbons (CH4, C2H2, C2H4, C2H6, and C3H8): A gas-phase experimental study over the temperature range 24-300 K.  {\em J. Phys. Chem. A 112, } 9591-9600.
+
+
+\noindent {\bf Pe99.}
+Pen, J., Hu, X., Marshall, P. (1999).  Experimental and ab Initio Investigations of the Kinetics of the Reaction of H Atoms with H2S.  {\em J. Phys. Chem. A, 103,} 5307-5311.
+
+\noindent {\bf Pe85.}
+Perry, R.A., Melius, C.F. (1985).  The rate and mechanism of the reaction of HCN with oxygen atoms over the temperature range 540-900 K.  {\em Symp. Int. Combust. Proc. 20,} 20639.
+
+\noindent {\bf Pe88.}
+Perrin, D., Richard, C., Martin, R. (1988). Etude cinetique de la reaction thermique du pentene-2 cis vers 500$^{\circ}$C. III - Influence de H2S. {\em  J. Chim. Phys. 85,} 185-192.
+
+\noindent {\bf Pe95.}
+Peeters, J., Boullart, W., Devriendt, K. (1995).  CH formation in the reaction between ketenyl radicals and oxygen atoms. Determination of the CH yield between 405 and 960 K.  {\em J. Phys. Chem. 99,} 3583 - 3591.
+
+\noindent {\bf Po91.}
+Pople JA, Curtiss LA (1991). The energy of N2H2 and related compounds.  {\em J. Chem. Phys. 95,} 4385-4388.
+
+\noindent {\bf Pr77.}
+Pratt, G.; Rogers, D. (1977). Homogeneous Isotope Exchange Reactions. Part 3. H2S + D2.  {\em J. Chem. Soc. Faraday Trans. 1, 73,} 54.
+
+\noindent {\bf Ra03.}
+Rauk, A., Boyd, R.J., Boyd, S.L., Henry, D.J., Radom, L. (2003).  Alkoxy radicals in the gaseous phase: beta-scission reactions and formation by radical addition to carbonyl compounds.  {\em Can. J. Chem. 81,} 431 - 442.
+
+\noindent {\bf Re94}
+Reiner, T.; Arnold, F. (1994).  Laboratory investigations of gaseous sulfuric acid formation via SO3+H2O+M??H2SO4+M: measurement of the rate constant and product identification. {\em J. Chem. Phys. 101,} 7399 - 7407.
+
+\noindent {\bf Ri99.}
+Rim, K.T., Hershberger, J.F. (1999).  Temperature dependence of the product branching ratio of the CN + O2 reaction. {\em J. Phys. Chem. A. 103,}  372-3725.
+
+\noindent {\bf Ro94.}
+Rohrig, M., Wagner, H.G. (1994). The reactions of NH(X$^3\Sigma^-$) with the water gas components CO2, H2O, and H2.  {\em Symp. Int. Combust. Proc.  25,} 975-981.
+
+\noindent {\bf Rod96.}
+Rodgers, A.S., Smith, G.P. (1996). Pressure and temperature dependence of the reactions of CH with N2. {\em Chem. Phys. Lett. 253,} 313-321.
+
+\noindent {\bf Rom96.}
+Romming, H.J., Wagner, H.Gg. (1996). A kinetic study of the reactions of NH(X$^3\Sigma^-$) with O2 and NO in the temperature range from 1200 to 2200 K.  {\em Symp. Int. Combust. Proc. 26,} 559-566.
+
+\noindent {\bf Sa80.}
+Saito, K., Toriyama, Y., Yokubo, T., Higashihara, T., Murakami, I. (1980). A Measurement of the Thermal Decomposition of CS2 behind Reflected Shock Waves. {\em Bull. Chem. Soc. Japan 53,} 1437-1438.
+
+\noindent {\bf Sa03.}
+Sander SP, Friedl RR,  Ravishankara AR, Golden DM, Kolb CE, Kurylo MJ, Huie RE, Orkin VL, Molina MJ, Moortgat GK, and Finlayson-Pitts BJ (2003).
+{\em Chemical Kinetics and Photochemical Data for Use in Atmospheric Studies. Evaluation Number 14.} JPL Publication 02-25.
+
+\noindent {\bf Sc73.}
+Schofield, K.  (1973).  Evaluated chemical kinetic rate constants for various gas phase reactions.  {\em J. Phys. Chem. Ref. Data 2,} 25-84.
+
+\noindent {\bf Se06a.}  Senosiain, J.P., Klippenstein, S.J., Miller, J.A. (2006). Pathways and rate coefficients for the decomposition of vinoxy and acetyl radicals.  {\em J. Phys. Chem. A 110,} 5772 - 5781.
+
+\noindent {\bf Se06b.}
+Senosiain JP, Klippenstein SJ, Miller JA (2006).  Reaction of ethylene hydroxyl radicals.  {\em J. Phys. Chem. A 110,} 6960-6970.
+
+\noindent {\bf Sh85.}
+Shum, L.G.S.; Benson, S.W. (1985). The pyrolysis of dimethyl sulfide, kinetics and mechanism.  {\em Int. J. Chem. Kinet. 17,} 749.
+
+\noindent {\bf Sh96.}
+Shiina, H., Oya, M., Yamashita, K., Miyoshi, A., Matsui, H. (1996). Kinetic studies on the pyrolysis of H2S. {\em  Phys. Chem. 100,} 2136-2140.
+
+\noindent {\bf Sh98.}
+Shiina, H., Miyoshi, A., Matsui, H. (1998). Investigation on the insertion channel in the S(3P) + H2 reaction.  {\em J. Phys. Chem. A 102,} 3556 - 3559.
+
+\noindent {\bf Si84.}
+Silver, J.A.; Stanton, A.C.; Zahniser, M.S.; Kolb, C.E. (1984). Gas-phase reaction rate of sodium hydroxide with hydrochloric acid.  {\em J. Phys. Chem.  88,}
+
+\noindent {\bf Si88.}
+Singleton, D.L., Cvetanovic, R.J.  (1988). Evaluated chemical kinetic data for the reactions of atomic oxygen O(3P) with sulfur containing compounds.  {\em J. Phys. Chem. Ref. Data 17,} 1377-1399.
+
+\noindent {\bf So01.}
+Song, S., Hanson, R.K., Bowman, C.T., Golden, D.M.  (2001). Shock Tube Determination of the Overall Rate of NH2 + NO -> Products in the Thermal De-NOx Temperature Window.  {\em Int J. Chem. Kinet. 33,} 715-721.
+
+\noindent {\bf So03.}
+Song, S., Golden, D.M., Hanson, R.K., Bowman, C.T., Senosiain, J.P., Musgrave, C.B., Friedrichs, G. (2003). A Shock Tube Study of the Reaction NH2 + CH4 $\rightarrow$ NH3 + CH3 and Comparison With Transition State Theory.  {\em Int. J. Chem. Kinet. 35,} 304-309.
+
+\noindent {\bf Sri05}
+Srinivasan, N.K.; Su, M.C.; Sutherland, J.W.; Michael, J.V. (2005).  Reflected shock tube studies of high-temperature rate constants for OH+CH4 -> CH3+H2O and CH3+NO2 -> CH3O+NO.  J. Phys. Chem. A  109,  1857 - 1863.
+
+\noindent {\bf Sp00.}
+Spencer JR, Jessup, KL, McGrath MA, Ballester GE, amd Yelle RV (2000). Discovery of Gaseous S$_2$ in Io's Pele Plume. {\em Science 288,} 1208-1210.
+
+\noindent {\bf St87.}
+Stachnik R. and Molina MJ  (1987). Kinetics of the reactions of SH radicals with NO$_2$ and O$_2$. {\em  J.\ Phys.\ Chem.\  91,} 4603-4611.
+
+\noindent {\bf St88.}
+Stief, L.J., Marston, G., Nava, D.F., Payne, W.A., Nesbitt, F.L. (1988). Rate constant for the reaction of N($^4$S) with CH3 at 298 K.  {\em Chem. Phys. Lett. 147,}
+
+\noindent {\bf St95.}
+Stief, L.J.; Nesbitt, F.L.; Payne, W.A.; Kuo, S.C.; Tao, W.; Klemm, R.B. (1995). Rate constant and reaction channels for the reaction of atomic nitrogen with the ethyl radical. {\em  J. Chem. Phys. 102,} 5309-5316.
+
+\noindent {\bf Sto95.}
+Stothard N, Humpfer R, Grotheer H-H (1995). The multichannel reaction NH2+NH2 at ambient temperature and low pressures. {\em Chem. Phys. Lett. 240,} 474-480.
+
+\noindent {\bf Sut02.}
+Sutherland, J.W., Su, M.-C., Michael, J.V. (2002). Rate Constants for H + CH4, CH3 + H2, and CH4 Dissociation at High Temperature. {\em Int. J. Chem. Kinet. 33,} 669-684.
+
+\noindent {\bf Su02.}
+Su, M.-C.; Kumaran, S.S.; Lim, K.P.; Michael, J.V.; Wagner, A.F.; Harding, L.B.; Fang, D.-C. (2002).   Rate Constants, 1100<T<2000K, for H + NO2 -> OH + NO Using Two Shock Tube Techniques: Comparison of Theory to Experiment.  J. Phys. Chem. A   106, 8261 - 8270.
+
+\noindent {\bf Te90.}
+Tesner, P.A., Nemirovskii, M.S., Motyl, D.N. (1990). Kinetics of the thermal decomposition of hydrogen sulfide at 600-1200$^{\circ}$C.  {\em Kinet. Catal. 31,} 1081-1083.
+
+\noindent {\bf Th86.}
+Thielen, K., Roth, P. (1986).  N atom measurements in high-temperature N2 dissociation kinetics. {\em AIAA J.  24,} 1102-1105
+
+\noindent {\bf To84.}
+Toby, S.; Sheth, S.; Toby, F.S. (1984).  Reaction of carbon monoxide with ozone with oxygen atoms. {\em Int. J. Chem. Kinet. 16,} 149.
+
+\noindent {\bf To03.}
+Tomeczek, J., Gradon, B. (2003). The role of N2O and NNH in the formation of NO via HCN in hydrocarbon flames. {\em  Combust. Flame 133,} 311-322.
+
+\noindent {\bf Tr05.}
+Troe J (2005). Theory of multichannel thermal unimolecular reactions. 2. Application to the thermal dissociation of formaldehyde. {\em J. Phys. Chem. A 109,} 8320-8328.
+
+\noindent {\bf Ts81.}
+Tsuboi, T., Katoh, M., Kikuchi, S., Hashimoto, K. (1981). Thermal Decomposition of Methanol behind Shock Waves.  {\em Japan J. Appl. Phys. 20,} 985.
+
+\noindent {\bf Ts86.}
+Tsang, W., Hampson, R.F. (1986). Chemical kinetic data base for combustion chemistry. Part I. Methane and related compounds.  {\em J. Phys. Chem. Ref. Data 15,} 1087-1280.
+
+\noindent {\bf Ts87.}
+Tsang, W. (1987).  Chemical kinetic data base for combustion chemistry. Part 2. Methanol.  {\em J. Phys. Chem. Ref. Data 16,} 471-509.
+
+\noindent {\bf Ts90.}
+Tsai C.P. McFadden, D.L. (1990). Gas-phase atom-radical kinetics of atomic hydrogen, nitrogen, and oxygen reactions with fluoromethylene radicals.  {\em J. Phys. Chem.94,} 3298.
+
+\noindent {\bf Ts91.}
+Tsang W., Herron J. (1991).
+Chemical Kinetic Data Base for Propellant Combustion I. Reactions Involving NO, NO2, HNO, HNO2, HCN and N2.
+{\em J. Phys. Chem. Ref. Data 20,} 609-664.
+
+\noindent {\bf Va77.}
+Vandooren, J., Van Tiggelen, P.J. (1977). Reaction Mechanisms of Combustion in Low Pressure Acetylene-Oxygen Flames. {\em Symp. Int. Combust. Proc. 16,} 165.
+
+\noindent {\bf Va95.}
+Vaghjiani, G.L. (1995).  Laser photolysis studies of hydrazine vapor: 193 and 222-nm H-atom primary quantum yields at 296 K, and the kinetics of H + N2H4.   
+
+\noindent {\bf Va01a.}
+Vaghjiani, G.L. (2001).  Gas Phase Reaction Kinetics of O Atoms with (CH3)2NNH2, CH3NHNH2, and N2H4, and Branching Ratios of the OH Product.  J. Phys. Chem. A 105, 4682-4690.
+
+\noindent {\bf Va01b.}
+Vaghjiani, G.L. (2001).  Kinetics of OH Reactions with N2H4, CH3NHNH2 and (CH3)2NNH2 in the Gas Phase.   Int J. Chem. Kinet. 33, 354-362.
+
+\noindent {\bf vo1971.}
+von Gehring, M.; Hoyermann, K.; Wagner, H.Gg.; Wolfrum, J. (1971).  Die Reaktion von Atomarem Wasserstoff mit Hydrazin.  Ber. Bunsenges. Phys. Chem. 75.
+
+%\noindent Va01.
+%Van der Heijden and Van der Mullen (2001). {\em J.\ Phys.\ B. Atom.\ Mol.\ Opt.\ Phys.\ 34,} 4183-4201.
+
+\noindent {\bf Wa75.}
+Walkauskas, Kaufman (1975). 
+
+\noindent {\bf Wa84.}
+Warnatz, J. (1984).  Rate coefficients in the C/H/O system.  In {\em Combustion Chemistry.} ed. W.C. Gardiner,Jr.  Springer-Verlag NY p.\ 197.
+
+%\noindent {\bf Wa03.}
+%Wang, B.S., Hou, H., Yoder, L.M., Muckerman, J.T., Fockenberg, C. (2003). Experimental and theoretical investigations on the methyl-methyl recombination reaction. {\em J. Phys. Chem. A 107,} 11414-11426.
+
+\noindent {\bf Wa03.}
+Wang, L.; Liu, J.-y.; Li, Z.-s.; Huang, X.-r.; Sun, C.-c. (2003).  Theoretical Study and Rate Constant Calculation of the Cl + HOCl and H + HOCl Reactions. {\em J. Phys. Chem. A 107,} 4921 - 4928.  % products
+
+\noindent {\bf Wh83.}
+Whyte, A.R., Phillips, L.F. (1983).  Rate of reaction of N with CN($\mu$=0,1). {\em Chem. Phys. Lett.  98,} 590.
+
+\noindent {\bf Wh84.}
+Whyte, A.R., Phillips, L.F. (1984).  Products of reaction of nitrogen atoms with NH2. {\em J. Phys. Chem.  88,} 5670.
+
+\noindent{\bf Wo94.}
+Woods, I.T., Haynes, B.S. (1994). C1/C2 chemistry in fuel-rich post-flame gases: detailed kinetic modelling. {\em Symp. Int. Combust. Proc. 25,} 909 - 917.
+
+\noindent {\bf Woo95.}
+Wooldridge, S.T., Hanson, R.K., Bowman, C.T. (1995). Simultaneous laser absorption measurements of CN and OH in a shock tube study of HCN + OH $\rightarrow$ products.  {\em Int. J. Chem. Kinet. 27,} 1075-1087.
+
+\noindent {\bf Wo96a.}
+Wooldridge, M.S., Hanson, R.K., Bowman, C.T. (1996). A shock tube study of CO + OH $\rightarrow$ CO2 + H and HNCO + OH $\rightarrow$ products via simultaneous laser absorption measurements of OH and CO2.  {\em Int. J. Chem. Kinet. 28,} 361-372.
+
+\noindent {\bf Wo96b.}
+Wooldridge, S.T., Hanson, R.K., Bowman, C.T. (1996). A shock tube study of reactions of CN with HCN, OH, and H2 using CN and OH laser absorption.   {\em Int. J. Chem. Kinet. 28,} 24 -258.
+
+\noindent {\bf Woi94.}
+Woiki, D.; Roth, P. (1994). Kinetics of the high-temperature H2S decomposition.  {\em J. Phys. Chem. 98,} 12958 - 12963
+
+\noindent {\bf Woi95a.}
+Woiki, D.; Roth, P. (1995). A shock tube study of the reaction S + H2 = SH + H in pyrolysis and photolysis systems. {\em Int. J. Chem. Kinet. 27,}  547-553.
+
+\noindent {\bf Woi95b.}
+Woiki, D., Roth, P. (1995). Oxidation of S and SO by O2 in high-temperature pyrolysis and photolysis reaction systems. {\em Int. J. Chem. Kinet. 27,} 5 -71.
+
+\noindent {\bf Xu99.}
+Xu, Z.-F.; Li, S.-M.; Yu, Y.-X.; Li, Z.-S.; Sun, C.-C. (1999).  Theoretical Studies on the Reaction Path Dynamics and Variational Transition-State Theory Rate Constants of the Hydrogen-Abstraction Reactions of the NH(X$^3\Sigma^-$) Radical with Methane and Ethane. {\em J. Phys. Chem. A 103,} 4910-4917.
+
+\noindent {\bf Ya95.}
+Yaws CL (1995).  {\em Handbook of Vapor Pressure Volume 4.}
+Gulf Publishing Company.
+
+\noindent {\bf Ya97.}
+Yamada, T. Bozzelli, J.W. Lay, T. (1999). Kinetic and Thermodynamic Analysis on OH Addition to Ethylene: Adduct Formation, Isomerization, and Isomer Dissociations.
+{\em J. Phys. Chem. A  103,} 7646-7655.
+
+\noindent {\bf Ya05.}
+Yang, Y.; Zhang, W.J.; Pei, S.X.; Shao, H.; Huang, W.; Gao, X.M. (2005). Theoretical study on the mechanism of the N($^4$S)+C2H5 reaction.  {\em J. Mol. Struct. (Theochem) 725,} 133-138.
+
+\noindent {\bf Ya08.}
+Yasunaga, K., Kubo, S., Hoshikawa, H.,Kamesawa, T., Hidaka, Y. (2008). Shock-tube and modeling study of acetaldehyde pyrolysis and oxidation
+{\em Int. J. Chem. Kinet. 40,} 73 - 102.
+
+\noindent {\bf Yu98.}
+Yu, Y-X., Li, S-M., Xu, Z-F., Li, Z-S., Sun, C-C. (1998). An ab initio study on the reaction NH2 + CH4 $\rightarrow$ NH3 + CH3. {\em Chem. Phys. Lett. 296,} 131-136.
+
+\noindent {\bf Za09.}
+Zahnle, K., Marley, M.M., Lodders, K., and Fortney, J.J. (2009). Atmospheric sulfur chemistry on hot Jupiters. {\em Astrophys. J. Lett. 701,} L20-L24.
+
+\noindent {\bf Zh05.}
+Zhu, R.S., Park, J., Lin, M.C. (2005). Ab initio kinetic study on the low-energy paths of the HO+C2H4 reaction.  {\em Chem. Phys. Lett. 408,} 25-30.
+
+\noindent {\bf Zu97.}
+Zu, Z-F., Fang, D-C., Fu, X-Y. (1997). Ab initio study on the reaction 2NH(X$^3\Sigma^-$)  $\rightarrow$ NH2(X$^2$B$_1$) + N($^4$S).  {\em Chem. Phys. Lett. 275,} 386-391.
+
+\end{document}
+
+Sulfanes (H$_2$S$_n$, hydropolysulfides) are liquids at room temperature (Steudel 2003). The smaller ones will be present and possibly rather abundant at hot Jupiter conditions.  Sulfanes absorb VUV between 260 nm and 330 nm (Steudel 2003), wavelengths that are absorbed by the more abundant S$_2$ and HS.  Two groups have used theoretical tools to study the reactions of HS$_2$  and H$_2$S$_2$ in combustion (Sendt et al 2002, Sendt and Haynes 2005, Cerru et al 2006, Zhou et al 2008).  Reaction rates have been estimated by fitting complex systems.  The resulting set of reaction rates are rather puzzling, but fast enough that thermochemical equilibrium is important.  Unfortunately, thermochemical data are incomplete.  For H$_2$S$_2$(g), $H_{298}^{\circ}=16$ kJ/mol (Feher and Winkhaus 1957).  From computer modeling, Denis (2006) estimates that $H_{298}^{\circ}=105$ kJ/mol for HS$_2$.   
+
+

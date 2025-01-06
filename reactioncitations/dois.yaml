@@ -1,0 +1,1729 @@
+Ad05:
+  title1: Experimental and theoretical investigation of the reaction NH +H $\rightarrow$
+    N($^4$S) +H2.
+  title2: "Experimental and theoretical investigation of the reaction NH(X <SUP>3</SUP>\u03A3\
+    <SUP>-</SUP>)+H(<SUP>2</SUP>S)--&gt;N(<SUP>4</SUP>S)+H<SUB>2</SUB>(X <SUP>1</SUP>\u03A3\
+    <SUB>g</SUB><SUP>+</SUP>)"
+  doi: 10.1063/1.1862615
+  doublecheck: false
+
+Ah92:
+  title1: Measurement of photoabsorption and fluorescence cross-sections for CS2 at
+    188.2213 and 287.5339.5 nm.
+  title2: Measurement of photoabsorption and fluorescence cross-sections for CS<SUB>2</SUB>
+    at 188.2-213 and 287.5-339.5 nm
+  doi: 10.1007/BF02845821
+  doublecheck: false
+
+Ar81:
+  title1: Radiolysis of methane containing small amounts of carbon monoxide-formation
+    of organic acids.
+  title2: "Radiolysis of methane containing small amounts of carbon monoxide\u2014\
+    formation of organic acids"
+  doi: 10.1016/0146-5724(81)90333-2
+  doublecheck: false
+
+At89:
+  title1: 'Evaluated Kinetic and Photochemical Data for Atmospheric Chemistry: Supplement
+    III.'
+  title2: 'Evaluated Kinetic and Photochemical Data for Atmospheric Chemistry: Supplement
+    III. IUPAC Subcommittee on Gas Kinetic Data Evaluation for Atmospheric Chemistry'
+  doi: 10.1063/1.555832
+  doublecheck: false
+
+At04:
+  title1: 'Evaluated kinetic and photochemical data for atmospheric chemistry: Volume
+    I - gas phase reactions of Ox, HOx, NOx and SOx species.'
+  title2: 'Evaluated kinetic and photochemical data for atmospheric chemistry: Volume
+    I - gas phase reactions of O<SUB>x</SUB>, HO<SUB>x</SUB>, NO<SUB>x</SUB> and SO<SUB>x</SUB>
+    species'
+  doi: 10.5194/acp-4-1461-2004
+  doublecheck: false
+
+At07:
+  title1: 'Evaluated kinetic and photochemical data for atmospheric chemistry: Volume
+    III - gas phase reactions of inorganic halogens.'
+  title2: 'Evaluated kinetic and photochemical data for atmospheric chemistry: Volume
+    III - gas phase reactions of inorganic halogens'
+  doi: 10.5194/acp-7-981-2007
+  doublecheck: false
+
+Ba67:
+  title1: Reactions of sulphur atoms in presence of carbon disulphide, carbonyl sulphide
+    and nitric oxide.
+  title2: Reactions of sulphur atoms in presence of carbon disulphide, carbonyl sulphide
+    and nitric oxide
+  doi: 10.1039/tf9676302684
+  doublecheck: true
+
+Ba81:
+  title1: Evaluated kinetic data for high temperature reactions. Volume 4 Homogeneous
+    gas phase reactions of halogen- and cyanide- containing species.
+  title2: null
+  doi: null
+  doublecheck: true
+  url: https://srd.nist.gov/JPCRD/jpcrdS1Vol10.pdf
+
+Ba82:
+  title1: 'Elementary Reactions in the Oxidation of Ethylene: The Reaction of OH Radicals
+    with Ethylene and the Reaction of C2H4OH Radicals with H Atoms.'
+  title2: 'Elementary reactions in the oxidation of ethylene: The reaction of OH radicals
+    with ethylene and the reaction of C2H4OH radicals with H atoms'
+  doi: 10.1016/s0082-0784(82)80178-1
+  doublecheck: true
+
+Ba88:
+  title1: Reaction of nitrogen atoms with ammonia and hydrogen.
+  title2: null
+  doi: null
+  doublecheck: true
+  squib: 1988BAS/VED1552-1558
+
+Ba91:
+  title1: Absolute rate constants for the reaction of CN with CH4, C2H6, and C3H8
+    from 292 to 1500 K using high-temperature photochemistry and diode laser absorption.
+  title2: "ChemInform Abstract: Absolute Rate Constants for the Reaction of CN with\
+    \ CH4, C2H6, and C3H8 from 292 to 1500 K Using High\u2010Temperature Photochemistry\
+    \ and Diode Laser Absorption."
+  doi: 10.1002/chin.199206096
+  doublecheck: true
+
+Ba92:
+  title1: Evaluated kinetic data for combustion modeling.
+  title2: Evaluated Kinetic Data for Combustion Modelling
+  doi: 10.1063/1.555908
+  doublecheck: false
+
+Ba94:
+  title1: Evaluated kinetic data for combusion modeling.
+  title2: Evaluated Kinetic Data for Combustion Modeling. Supplement I
+  doi: 10.1063/1.555953
+  doublecheck: false
+
+Ba95:
+  title1: Recombination and decomposition of methylene radicals at high temperatures.
+  title2: Recombination and Decomposition of Methylene Radicals at high Temperatures
+  doi: 10.1002/bbpc.19950990612
+  doublecheck: true
+
+Ba07:
+  title1: 'Dynamics and kinetics of the H+SO2 reaction: A theoretical study.'
+  title2: 'Dynamics and kinetics of the H+SO2 reaction: A theoretical study'
+  doi: 10.1016/j.cplett.2007.03.112
+  doublecheck: true
+
+Be78:
+  title1: Thermochemistry and Kinetics of Sulfur-Containing Molecules and Radicals.
+  title2: Thermochemistry and kinetics of sulfur-containing molecules and radicals
+  doi: 10.1021/cr60311a003
+  doublecheck: true
+
+Be84:
+  title1: Kinetics and mechanisms of the reactions of CH and CD with H2 and D2.
+  title2: Kinetics and mechanisms of the reactions of CH and CD with H<SUB>2</SUB>
+    and D<SUB>2</SUB>
+  doi: 10.1063/1.447626
+  doublecheck: false
+
+Be92:
+  title1: Determination of the rate constants for the gas phase reactions of NO3 with
+    H, OH and HO2 radicals at 298 K.
+  title2: 'ChemInform Abstract: Determination of the Rate Constants for the Gas Phase
+    Reactions of NO3 with H, OH and HO2 Radicals at 298 K.'
+  doi: 10.1002/chin.199242020
+  doublecheck: true
+
+Be00:
+  title1: Kinetics of the NCO radical reacting with atoms and selected molecules.
+  title2: Kinetics of the NCO radical reacting with atoms and selected molecules
+  doi: 10.1016/S0010-2180(99)00108-X
+  doublecheck: false
+
+Be02:
+  title1: Detection of the mercapto radical SH in the solar atmosphere.
+  title2: Detection of the mercapto radical SH in the solar atmosphere
+  doi: 10.1051/0004-6361:20020364
+  doublecheck: false
+
+Bi06:
+  title1: Accurate MRCI study of ground-state N2H2 potential energy surface.
+  title2: Accurate MRCI study of ground-state N2H2 potential energy surface
+  doi: 10.1016/j.cplett.2006.04.073
+  doublecheck: true
+
+Bl00:
+  title1: Temperature dependence of the reaction of OH with SO.
+  title2: Temperature dependence of the reaction of OH with SO
+  doi: 10.1016/S0082-0784(00)80664-5
+  doublecheck: false
+
+Bl06:
+  title1: Combined experimental and master equation investigation of the multiwell
+    reaction H+SO2.
+  title2: "Combined Experimental and Master Equation Investigation of the Multiwell\
+    \ Reaction H + SO2\u2020"
+  doi: 10.1021/jp054722u
+  doublecheck: false
+
+Bo85:
+  title1: Kinetics of the reactions between CH2(X$^3$B$_1$)-radicals and saturated
+    hydrocarbons in the temperature range 296 K to 707 K (1985).
+  title2: "Kinetics of the Reactions between CH<sub>2</sub>(X\u0303<sup>3</sup>B<sub>1</sub>)\u2010\
+    Radicals and Saturated Hydrocarbons in the Temperature Range 296 K \u2264 T \u2264\
+    \ 707 K"
+  doi: 10.1002/bbpc.19850891018
+  doublecheck: true
+
+Bo96:
+  title1: Kinetics of the OH + C2H2 reaction in the presence of O2.
+  title2: Kinetics of the OH + C2H2 reaction in the presence of O2
+  doi: 10.1039/ft9969201459
+  doublecheck: true
+
+Bo97:
+  title1: 'Theoretical study of the reaction of hydrogen with nitric acid: ab initio
+    MO and TST/RRKM calculations.'
+  title2: 'Theoretical study of the reaction of hydrogen with nitric acid: ab initio
+    MO and TST/RRKM calculations'
+  doi: 10.1016/S0301-0104(96)00313-8
+  doublecheck: false
+
+Bo04:
+  title1: 'The substitution reactions RH+O2->RO2+H: transition state theory calculations
+    based on the ab initio and DFT potential energy surface.'
+  title2: "The substitution reactions RH + O2\u2192 RO2+ H: transition state theory\
+    \ calculations based on the ab initio and DFT potential energy surface"
+  doi: 10.1016/j.cplett.2004.01.015
+  doublecheck: true
+
+Br97:
+  title1: 'Kinetics over a wide range of temperature (13-744 K): rate constants for
+    the reactions of CH($\nu$=$0$) with H2 and D2 and for the removal of CH($\nu$=$1$)
+    by H2 and D2.'
+  title2: 'Kinetics over a wide range of temperature (13-744 K): Rate constants for
+    the reactions of CH(nu = 0) with H<SUB>2</SUB> and D<SUB>2</SUB> and for the removal
+    of CH(nu = 1) by H<SUB>2</SUB> and D<SUB>2</SUB>'
+  doi: 10.1063/1.473750
+  doublecheck: false
+
+Br04:
+  title1: Temperature-dependent kinetics of the gas-phase reactions of OH with Cl2,
+    CH4, and C3H8.
+  title2: Temperature-Dependent Kinetics of the Gas-Phase Reactions of OH with Cl2,
+    CH4, and C3H8
+  doi: 10.1021/jp047340h
+  doublecheck: false
+
+Bu90:
+  title1: ''
+  title2: ARAS measurements on the thermal decomposition of CO2 behind shock waves
+  doi: 10.2514/3.10406
+  doublecheck: false
+
+Ca01:
+  title1: A Theoretical Study of the NCO + OH Reaction.
+  title2: A Theoretical Study of the <sup>2</sup>NCO + <sup>2</sup>OH Reaction
+  doi: 10.1021/jp002732j
+  doublecheck: true
+
+Ca03:
+  title1: Experimental determination of the temperature dependence of the absolute
+    rate coefficients of the HCCO+NO2 and HCCO+H2 reactions.
+  title2: Experimental determination of the temperature dependence of the absolute
+    rate coefficients of the HCCO?+?NO2 and HCCO?+?H2 reactions
+  doi: 10.1039/B311684K
+  doublecheck: false
+
+Ca05:
+  title1: Pulsed laser photolysis and quantum chemical-statistical rate study of the
+    reaction of the ethynyl radical with water vapor.
+  title2: Pulsed laser photolysis and quantum chemical-statistical rate study of the
+    reaction of the ethynyl radical with water vapor
+  doi: 10.1063/1.1861887
+  doublecheck: false
+
+Ca05b:
+  title1: Unimolecular and Bimolecular Calculations for HN2.
+  title2: Unimolecular and Bimolecular Calculations for HN2
+  doi: 10.1021/jp045102g
+  doublecheck: false
+
+Ca08:
+  title1: Theoretical calculations of energetics, structures, and rate constants for
+    the H+CH3OH hydrogen abstraction reactions.
+  title2: Theoretical calculations of energetics, structures, and rate constants for
+    the H + CH <SUB>3</SUB>OH hydrogen abstraction reactions
+  doi: 10.1016/j.cplett.2008.08.012
+  doublecheck: false
+
+Cd05:
+  title1: Unimolecular and bimolecular calculations for HN2.
+  title2: Unimolecular and Bimolecular Calculations for HN2
+  doi: 10.1021/jp045102g
+  doublecheck: false
+
+Ch03:
+  title1: Ab Initio and Kinetic Study on CH3 Radical Reaction with H2CO.
+  title2: null
+  doi: 10.1021/jp0274233
+  doublecheck: true
+
+Ch05:
+  title1: Kinetics and mechanisms for reactions of HNO with CH3 and C6H5 studied by
+    quantum-chemical and statistical-theory calculations.   Inter. J. Chem. Kinet.   37,  261
+    - 274.
+  title2: "Kinetics and mechanisms for reactions of HNO with CH<sub>3</sub> and C<sub>6</sub>H<sub>5</sub>\
+    \ studied by quantum\u2010chemical and statistical\u2010theory calculations"
+  doi: 10.1002/kin.20079
+  doublecheck: true
+
+Cl06:
+  title1: Determination of the temperature and pressure dependence of the reaction
+    OH + C2H4 from 200-400 K using experimental and master equation analyses.
+  title2: Determination of the temperature and pressure dependence of the reaction
+    OH + C2H4from 200-400 K using experimental and master equation analyses
+  doi: 10.1039/B612127F
+  doublecheck: false
+
+Ch98:
+  title1: ''
+  title2: null
+  doi: null
+  doublecheck: false
+
+Cl84:
+  title1: Kinetics of the reactions of atomic chlorine with H2S, HS and OCS.
+  title2: Kinetics of the reactions of atomic chlorine with H2S, HS and OCS
+  doi: 10.1039/f29848000877
+  doublecheck: true
+
+Co85:
+  title1: Theory of thermal unimolecular reactions at high pressures. II. Analysis
+    of experimental results.
+  title2: Theory of thermal unimolecular reactions at high pressures. II. Analysis
+    of experimental results
+  doi: 10.1063/1.449464
+  doublecheck: false
+
+Co91:
+  title1: Chemical kinetic data sheets for high-temperature reactions. Part II.
+  title2: Chemical Kinetic Data Sheets for High-Temperature Reactions. Part II
+  doi: 10.1063/1.555901
+  doublecheck: false
+
+Co92:
+  title1: An infrared laser study of the O($^3$P) + CS2 reaction.
+  title2: null
+  doi: 10.1021/j100192a041
+  doublecheck: true
+
+Co97:
+  title1: 'Analytical potential energy surface for the NH3+H=NH2+H2 reaction: application
+    of variational transition-state theory and analysis of the equilibrium constants
+    and kinetic isotope effects using curvilinear and rectilinear coordinates.'
+  title2: 'Analytical potential energy surface for the NH<SUB>3</SUB>+H &lt;--&gt;
+    NH<SUB>2</SUB>+H<SUB>2</SUB> reaction: Application of variational transition-state
+    theory and analysis of the equilibrium constants and kinetic isotope effects using
+    curvilinear and rectilinear coordinates'
+  doi: 10.1063/1.473119
+  doublecheck: false
+
+Co99:
+  title1: An Experimental and Theoretical Study of the Reactions NaO + H2O(D2O) ??
+    NaOH(D) + OH(OD)
+  title2: "An experimental and theoretical study of the reactions NaO+H2O(D2O)\u2192\
+    NaOH(D)+OH(OD)"
+  doi: 10.1039/a905601g
+  doublecheck: true
+
+Cu06:
+  title1: Rate constant estimation for C-1 to C-4 alkyl and alkoxyl radical decomposition.
+  title2: Rate constant estimation for C<sub>1</sub> to C<sub>4</sub> alkyl and alkoxyl
+    radical decomposition
+  doi: 10.1002/kin.20153
+  doublecheck: true
+
+Da90:
+  title1: A pyrolysis mechanism for ammonia.
+  title2: null
+  doi: 10.1002/kin.550220508
+  doublecheck: true
+
+Da95:
+  title1: 'Reaction rate constants (295 K) for $^3$CH2 with H2S, SO2, and NO2: upper
+    bounds for rate constants with less reactive partners.'
+  title2: 'Reaction Rate Constants (295 K) for 3CH2 with H2S, SO2, and NO2: Upper
+    Bounds for Rate Constants with Less Reactive Partners'
+  doi: 10.1021/j100036a022
+  doublecheck: true
+
+De82:
+  title1: Absolute Rate Constants for the Reactions between Amino and Alkyl Radicals
+    at 298 K.
+  title2: 'ChemInform Abstract: ABSOLUTE RATE CONSTANTS FOR THE REACTIONS BETWEEN
+    AMINO AND ALKYL RADICALS AT 298 K'
+  doi: 10.1002/chin.198222137
+  doublecheck: true
+
+De91:
+  title1: A shock tube study of reactions of C atoms and CH with NO including product
+    channel measurements.
+  title2: A shock tube study of reactions of carbon atoms and methylidyne with nitric
+    oxide including product channel measurements
+  doi: 10.1021/j100161a042
+  doublecheck: true
+
+De92:
+  title1: 'CH and C-atom time histories in dilute hydrocarbon pyrolysis: measurements
+    and kinetics calculations.'
+  title2: "CH and C\u2010atom time histories in dilute hydrocarbon pyrolysis: Measurements\
+    \ and kinetics calculations"
+  doi: 10.1002/kin.550240602
+  doublecheck: true
+
+De95:
+  title1: Kinetic investigation of the CH2(X$^3$B$_1$) + H $\rightarrow$ CH(X$^2$II)
+    + H2 reaction in the temperature range $400
+  title2: null
+  doi: 10.1021/j100046a022
+  doublecheck: true
+
+De97:
+  title1: ''
+  title2: null
+  doi: null
+  doublecheck: true
+  url: https://jpldataeval.jpl.nasa.gov/pdf/Atmos97_Anotated.pdf
+
+De98:
+  title1: The thermal decomposition of NH2 and NH radicals.
+  title2: null
+  doi: 10.1002/bbpc.199800016
+  doublecheck: true
+
+De00:
+  title1: Combustion chemistry of nitrogen. In Gas-Phase Combustion Chemistry, WC
+    Gardiner, Jr., Ed. Springer, pp 125-341.
+  title2: Combustion Chemistry of Nitrogen
+  doi: 10.1007/978-1-4612-1310-9_2
+  doublecheck: true
+
+Di95:
+  title1: 'Thermal reduction of NO by H2: kinetic measurement and computer modeling
+    of the HNO + NO reaction.  Int. J. Chem. Kinet. 27, 867 - 881.'
+  title2: 'Thermal reduction of NO by H<sub>2</sub>: Kinetic measurement and computer
+    modeling of the HNO + NO reaction'
+  doi: 10.1002/kin.550270905
+  doublecheck: true
+
+Dob91:
+  title1: Kinetics of the reaction between methoxyl radicals and hydrogen atoms.
+  title2: Kinetics of the reaction between methoxyl radicals and hydrogen atoms
+  doi: 10.1039/ft9918702331
+  doublecheck: true
+
+Du08:
+  title1: Determination of the rate constant for sulfur recombination by quasiclassical
+    trajectory calculations.
+  title2: Determination of the rate constant for sulfur recombination by quasiclassical
+    trajectory calculations
+  doi: 10.1063/1.2919569
+  doublecheck: false
+
+Ei98:
+  title1: Determination of rate coefficients for reactions of formaldehyde pyrolysis
+    and oxidation in the gas phase.
+  title2: Determination of Rate Coefficients for Reactions of Formaldehyde Pyrolysis
+    and Oxidation in the Gas Phase
+  doi: 10.1021/jp981184v
+  doublecheck: false
+
+Ei03:
+  title1: Experimental and Modeling Study of Shock-Tube Oxidation of Acetylene.
+  title2: "Experimental and modeling study of shock\u2010tube oxidation of acetylene"
+  doi: 10.1002/kin.10141
+  doublecheck: true
+
+Fa67:
+  title1: Mechanism of S2 chemiluminescence in the reaction of hydrogen atoms with
+    hydrogen sulphide.
+  title2: Mechanism of S2 chemiluminescence in the reaction of hydrogen atoms with
+    hydrogen sulphide
+  doi: 10.1039/tf9696501208
+  doublecheck: true
+
+Fa95:
+  title1: Kinetics of the self-reaction and the reaction with OH of the amidogen radical.
+    Chem. Phys. Lett. 236, 103-110.
+  title2: Kinetics of the self-reaction and the reaction with OH of the amidogen radical
+  doi: 10.1016/0009-2614(95)00154-v
+  doublecheck: true
+
+Fa00:
+  title1: An experimental and kinetic modeling study of propyne and allene oxidation.
+  title2: An experimental and kinetic modeling study of propyne and allene oxidation
+  doi: 10.1016/s0082-0784(00)80678-5
+  doublecheck: true
+
+Fe98:
+  title1: Kinetics of the reactions of N($^4$S) atoms with O2 and CO2 over wide temperatures
+    ranges.
+  title2: Kinetics of the Reactions of N(4S) Atoms with O2and CO2over Wide Temperatures
+    Ranges
+  doi: 10.1021/jp972365k
+  doublecheck: false
+
+Fl02:
+  title1: 'Reaction of methylidyne CH(X$^2\pi$) radical with CH4 and H2S: overall
+    rate constant and absolute atomic hydrogen production.'
+  title2: 'Reaction of methylidyne radical with CH4 and H2S: overall rate constant
+    and absolute atomic hydrogen production'
+  doi: 10.1016/s0301-0104(02)00443-3
+  doublecheck: true
+
+Fo06:
+  title1: Kinetics of the NH reaction with H2 and reassessment of HNO formation from
+    NH + CO2, H2O.
+  title2: Kinetics of the NH reaction with H <SUB>2</SUB> and reassessment of HNO
+    formation from NH + CO <SUB>2</SUB>, H <SUB>2</SUB>O
+  doi: 10.1016/j.combustflame.2005.12.012
+  doublecheck: false
+
+Fr84:
+  title1: High temperature kinetics of ethylene-oxygen reaction.
+  title2: null
+  doi: null
+  doublecheck: true
+  squib: 1984FRA/JUS705
+
+Fr88:
+  title1: 'Acetylene oxidation: the reaction of C2H2 + O at high temperatures.'
+  title2: 'Acetylene oxidation: The reaction C2H2+O at high temperatures'
+  doi: 10.1016/s0082-0784(88)80320-5
+  doublecheck: true
+
+Fr02:
+  title1: 'Quantitative Detection of HCO Behind Shock Waves: The Thermal Decomposition
+    of HCO.'
+  title2: 'Quantitative detection of HCO behind shock waves: The thermal decomposition
+    of HCO'
+  doi: 10.1039/B205692E
+  doublecheck: false
+
+Fu97a:
+  title1: The temperature and pressure dependence of the reaction CH+H2 $\rightarrow$
+    CH3 $\rightarrow$ CH2+H.
+  title2: "The temperature and pressure dependence of the reaction CH+H2\u21D4CH3\u21D4\
+    CH2+H"
+  doi: 10.1063/1.473930
+  doublecheck: true
+
+Fu97b:
+  title1: The high pressure range of the addition of OH to C2H2 and C2H4.
+  title2: null
+  doi: 10.1002/bbpc.199700004
+  doublecheck: true
+
+Fu98:
+  title1: The high pressure range of the reaction CH+CO+M=HCCO+M.
+  title2: "The high-pressure range of the reaction CH(<SUP>2</SUP>\u03A0)+CO+M\u21D2\
+    HCCO+M"
+  doi: 10.1063/1.476086
+  doublecheck: false
+
+Ga98:
+  title1: 'Temperature dependence of the reaction: SO + O2.'
+  title2: 'Temperature dependence of the reaction: SO+O2'
+  doi: 10.1016/s0009-2614(98)00553-3
+  doublecheck: true
+
+Ga06:
+  title1: 'Thermochemistry is not a lower bound to the activation energy of endothermic
+    reactions: A kinetic study of the gas-phase reaction of atomic chlorine with ammonia.'
+  title2: "Thermochemistry Is Not a Lower Bound to the Activation Energy of Endothermic\
+    \ Reactions:\u2009 A Kinetic Study of the Gas-Phase Reaction of Atomic Chlorine\
+    \ with Ammonia"
+  doi: 10.1021/jp056406l
+  doublecheck: true
+
+Ga07:
+  title1: H atom yields from the reactions of CN radicals with C2H2, C2H4, C3H6, trans-2-C4H8,
+    and iso-C4H8.
+  title2: "H Atom Yields from the Reactions of CN Radicals with C2H2, C2H4, C3H6,trans-2-C4H8,\
+    \ andiso-C4H8\u2020"
+  doi: 10.1021/jp0689520
+  doublecheck: false
+
+Ga08:
+  title1: Kinetics and product branching ratios of the reaction of CH2 (singlet) with
+    H2 and D2.
+  title2: "Kinetics and Product Branching Ratios of the Reaction of1CH2with H2and\
+    \ D2\u2020"
+  doi: 10.1021/jp803038s
+  doublecheck: false
+
+Ge99:
+  title1: A Product Study of the Reaction of CH Radicals with Nitric Oxide at 298
+    K.
+  title2: A product study of the reaction of CH radicals with nitric oxide at 298
+    K
+  doi: 10.1039/A906587C
+  doublecheck: false
+
+Gl00:
+  title1: Photolysis of Ketene at 193 nm and the Rate Constant for H + HCCO at 297
+    K.
+  title2: Photolysis of Ketene at 193 nm and the Rate Constant for H + HCCO at 297
+    K
+  doi: 10.1021/jp000782i
+  doublecheck: false
+
+Gl08:
+  title1: ''
+  title2: null
+  doi: null
+  doublecheck: true
+
+Go08:
+  title1: Yet another look at the reaction CH3+H+M $\rightarrow$ CH4+M.
+  title2: null
+  doi: 10.1002/kin.20322
+  doublecheck: true
+
+Gr94:
+  title1: Primary products of the elementary reactions of CH2CO with F, Cl, and OH
+    in the gas phase.
+  title2: Primary products of the elementary reactions of CH<sub>2</sub>CO with F,
+    Cl, and OH in the gas phase
+  doi: 10.1002/bbpc.19940980403
+  doublecheck: true
+
+Ha84:
+  title1: Survey of rate constants in the N/H/O system. In
+  title2: Survey of Rate Constants in the N/H/O System
+  doi: 10.1007/978-1-4684-0186-8_6
+  doublecheck: true
+
+Ha93:
+  title1: Theoretical studies of the reactions H + CH $\rightarrow$ C + H2 and C +
+    H2 $\rightarrow$ CH2 using an ab initio global ground-state potential surface
+    for CH2.
+  title2: null
+  doi: 10.1021/j100123a005
+  doublecheck: true
+
+Ha05:
+  title1: 'Reactions of oxygen atoms with hydrocarbon radicals: a priori kinetic predictions
+    for the CH3+O, C2H5+O, and C2H3+O reactions.'
+  title2: 'Reactions of oxygen atoms with hydrocarbon radicals: a priori kinetic predictions
+    for the CH <SUB loc="post">3</SUB> + O, C <SUB loc="post">2</SUB>H <SUB loc="post">5</SUB>
+    + O, and C <SUB loc="post">2</SUB>H <SUB loc="post">3</SUB> + O reactions'
+  doi: 10.1016/j.proci.2004.08.184
+  doublecheck: false
+
+Ha03:
+  title1: 'An Ab Initio Quantum Chemical and Kinetic Study of the NNH + O Reaction
+    Potential Energy Surface: How Important Is This Route to NO in Combustion?   J.
+    Phys. Chem. A  107,  6792 - 6803.'
+  title2: 'An Ab Initio Quantum Chemical and Kinetic Study of the NNH + O Reaction
+    Potential Energy Surface:  How Important Is This Route to NO in Combustion?'
+  doi: 10.1021/jp034421p
+  doublecheck: false
+
+He88:
+  title1: 'Thermal Decomposition of Methyl Nitrite: Kinetic Modeling of Detailed Product
+    Measurements by Gas-Liquid Chromatography and Fourier Transform Infrared Spectroscopy.   J.
+    Phys. Chem. 92, 5474.'
+  title2: 'Thermal decomposition of methyl nitrite: kinetic modeling of detailed product
+    measurements by gas-liquid chromatography and Fourier-transform infrared spectroscopy'
+  doi: 10.1021/j100330a028
+  doublecheck: true
+
+He92:
+  title1: 'Effects of nitric oxide on the thermal decomposition of methyl nitrite:
+    overall kinetics and rate constants for the HNO + HNO and HNO + 2NO reactions.'
+  title2: 'Effects of nitric oxide on the thermal decomposition of methyl nitrite:
+    Overall kinetics and rate constants for the HNO + HNO and HNO + 2NO reactions'
+  doi: 10.1002/kin.550240808
+  doublecheck: true
+
+He93:
+  title1: Thermal reaction of HNCO with NO2 at moderate temperatures.
+  title2: 'ChemInform Abstract: The Thermal Reaction of HNCO at Moderate Temperatures'
+  doi: 10.1002/chin.199209070
+  doublecheck: true
+
+He95:
+  title1: A study about the reactions of NH2(X$^2$B$_1$) radicals with unsaturated
+    hydrocarbons in the gas phase.
+  title2: "A Study about the Reactions of NH<sub>2</sub> (X\u0303<sup>2</sup>B<sub>1</sub>)\
+    \ Radicals with Unsaturated Hydrocarbons in the Gas Phase"
+  doi: 10.1002/bbpc.199500014
+  doublecheck: true
+
+Hi87:
+  title1: Kinetics of the reactions of S2 with O, O2, O3, N2O, NO, and NO2.
+  title2: 'ChemInform Abstract: The Kinetics of the Reactions of S2 with O, O2, O3,
+    N2O, NO, and NO2'
+  doi: 10.1002/chin.198720026
+  doublecheck: true
+
+Hi89:
+  title1: Thermal decomposition of methanol in shock waves.
+  title2: null
+  doi: 10.1021/j100357a022
+  doublecheck: true
+
+Hi96:
+  title1: Shock tube and modeling study of acetylene pyrolysis and oxidation.
+  title2: Shock-tube and modeling study of acetylene pyrolysis and oxidation
+  doi: 10.1016/S0010-2180(96)00094-6
+  doublecheck: false
+
+Hi00:
+  title1: High-temperature pyrolysis of dimethyl ether in shock waves.
+  title2: High-temperature pyrolysis of dimethyl ether in shock waves
+  doi: 10.1016/S0010-2180(00)00122-X
+  doublecheck: false
+
+Hi01:
+  title1: A Detailed Experimental and Theoretical Study on the Decomposition of Methoxy
+    Radicals.
+  title2: A detailed experimental and theoretical study on the decomposition of methoxy
+    radicals
+  doi: 10.1039/B101376I
+  doublecheck: false
+
+Hi07:
+  title1: Reactions of SO3 with the O/H radical pool under combustion conditions.   J.
+    Phys. Chem. A 111, 3984 - 3991.
+  title2: Reactions of SO<sub>3</sub> with the O/H Radical Pool under Combustion Conditions
+  doi: 10.1021/jp067499p
+  doublecheck: true
+
+Hu75:
+  title1: Kinetic investigation of ground state carbon atoms, C(2$^3$P$_j$).
+  title2: Kinetic investigation of ground state carbon atoms, C(23 P  J )
+  doi: 10.1039/f29757100525
+  doublecheck: true
+
+Hu85:
+  title1: Absolute rate data for Rb + OH + He determined by time-resolved molecular
+    resonance-fluoroescence spectroscopy, OH(A$^2\Sigma$ - X$^2\pi$), coupled with
+    steady atomic resonance-fluoroescence measurements, Rb(6$^2$P$_
+  title2: null
+  doi: 10.1039/F29858100561
+  doublecheck: true
+
+Hu86:
+  title1: Determination of absolute rate data for the reactions of atomic sodium,
+    Na(3$^2$S$_
+  title2: "Determination of absolute rate data for the reactions of atomic sodium,\
+    \ Na(3<sup>2</sup>S<sub>1/2</sub>), with CH<sub>3</sub>F, CH<sub>3</sub>Cl, CH<sub>3</sub>Br,\
+    \ HCl, and HBr as a function of temperature by time\u2010resolved atomic resonance\
+    \ spectroscopy"
+  doi: 10.1002/kin.550180108
+  doublecheck: true
+
+Hu92:
+  title1: Solar photo rates for planetary atmospheres and atmospheric pollutants.
+  title2: Solar Photo Rates for Planetary Atmospheres and Atmospheric Pollutants
+  doi: 10.1007/BF00644558
+  doublecheck: false
+
+In99:
+  title1: Rate Constants for the Reactions of NH2 and HNO with Atomic Oxygen at Temperatures
+    Between 242 and 473 K.
+  title2: Rate Constants for the Reactions of NH2and HNO with Atomic Oxygen at Temperatures
+    between 242 and 473 K
+  doi: 10.1021/jp984569m
+  doublecheck: false
+
+Ja03:
+  title1: Elementary reaction kinetics studies of interest in H2 supersonic combustion
+    chemistry.
+  title2: Elementary reaction kinetics studies of interest in H <SUB loc="post">2</SUB>
+    supersonic combustion chemistry
+  doi: 10.1016/S0894-1777(02)00241-8
+  doublecheck: false
+
+Ja07:
+  title1: 'Secondary kinetics of methanol decomposition: Theoretical rate coefficients
+    for (CH2)-C3+OH, (CH2)-C3+(CH2)-C3, and (CH2)-C3+CH3.'
+  title2: null
+  doi: 10.1021/jp0736950
+  doublecheck: true
+
+Je82:
+  title1: Kinetics of flame inhibition by sodium.
+  title2: Kinetics of flame inhibition by sodium
+  doi: 10.1039/f19827802843
+  doublecheck: true
+
+Jo99:
+  title1: Theoretical Study of the Kinetics of the Hydrogen Abstraction from Methanol.
+    3. Reaction of Methanol with Hydrogen Atom, Methyl, and Hydroxyl Radicals.
+  title2: Theoretical Study of the Kinetics of the Hydrogen Abstraction from Methanol.
+    3. Reaction of Methanol with Hydrogen Atom, Methyl, and Hydroxyl Radicals
+  doi: 10.1021/jp984367q
+  doublecheck: false
+
+Ka89:
+  title1: Sulfur, ultraviolet radiation, and the early evolution of life.
+  title2: Sulfur, ultraviolet radiation, and the early evolution of life
+  doi: 10.1007/bf01808144
+  doublecheck: true
+
+Ka05:
+  title1: Ab Initio Analysis of the Transition States on the Lowest Triplet H2O2 Potential
+    Surface.
+  title2: <i>Ab initio</i> analysis of the transition states on the lowest triplet
+    H2O2 potential surface
+  doi: 10.1063/1.479131
+  doublecheck: true
+
+Ke72:
+  title1: ''
+  title2: null
+  doi: 10.1002/bbpc.19730770320
+  doublecheck: false
+
+Kn88:
+  title1: Volume recombination of nitrogen atoms in the afterglow of a condensed discharge.
+  title2: null
+  doi: null
+  doublecheck: true
+  squib: 1988KNI/RUB867
+
+Kn96:
+  title1: Kinetics of the C2H3 + H2 = H + C2H4 and CH3 + H2 = H + CH4 reactions.
+  title2: null
+  doi: 10.1021/jp9606568
+  doublecheck: true
+
+Ko00:
+  title1: Rate Constants of CH4 + M = CH3 + H + M and CH3OH + M = CH3 + OH + M over
+    1400 - 2500 K.
+  title2: Rate Constants of CH4 + M?CH3 + H + M and CH3OH + M?CH3 + OH + M over 1400-2500
+    K
+  doi: 10.1002/(sici)1097-4601(2000)32:1<1::aid-jck1>3.0.co;2-c
+  doublecheck: true
+
+Kr97:
+  title1: Kinetics of C2 reactions during high-temperature pyrolysis of acetylene.
+  title2: Kinetics of C<sub>2</sub> Reactions during High-Temperature Pyrolysis of
+    Acetylene
+  doi: 10.1021/jp963373o
+  doublecheck: true
+
+Ku95:
+  title1: The role of the reaction CO + SH $\rightarrow$ COS + H in hydrogen formation
+    in the course of interaction between CO and H2S.
+  title2: null
+  doi: null
+  doublecheck: true
+  url: https://www.osti.gov/biblio/159595
+
+La72:
+  title1: Mechanism of Sulfur Formation in the Flash Photolysis of Carbonyl Sulphide.
+  title2: Mechanism of sulphur formation in the flash photolysis of carbonyl sulphide
+  doi: 10.1039/f19736901389
+  doublecheck: true
+
+La90:
+  title1: Rate constant measurements of C2H with CH4, C2H6, C2H4, D2, and CO.
+  title2: null
+  doi: 10.1021/j100383a003
+  doublecheck: true
+
+La92:
+  title1: Rate constants for reactions of hydrazine fuels with O(3P).  J. Phys. Chem.
+    96, 3047-3050.
+  title2: Rate constants for reactions of hydrazine fuels with atomic oxygen (3P)
+  doi: 10.1021/j100186a049
+  doublecheck: true
+
+Lai92:
+  title1: The enthalpy change and the detailed rate coefficients of the equilibrium
+    reaction OH+C2H2 + M = HOC2H2 + M over the temperature range 627-713K.
+  title2: "The enthalpy change and the detailed rate coefficients of the equilibrium\
+    \ reaction OH+C2H2=MHOC2H2 over the temperature range 627\u2013713 K"
+  doi: 10.1063/1.462996
+  doublecheck: true
+
+La04:
+  title1: Reactions and kinetics of unsaturated C2 hydrocarbon radicals.
+  title2: Reactions and Kinetics of Unsaturated C<sub>2</sub> Hydrocarbon Radicals
+  doi: 10.1002/chin.200434290
+  doublecheck: true
+
+Le77:
+  title1: Absolute Rate Parameters for the Reaction of Atomic Hydrogen with Carbonyl
+    Sulfide and Ethylene Episulfide,
+  title2: Absolute rate parameters for the reaction of atomic hydrogen with carbonyl
+    sulfide and ethylene episulfide
+  doi: 10.1063/1.435005
+  doublecheck: false
+
+Li84:
+  title1: NH(A$^3\pi \rightarrow$ X$^3\Sigma^-$) Chemiluminescence from the CH(X$^3\pi$)
+    + NO reaction.
+  title2: "NH(A <SUP>3</SUP>\u03A0 \u2192 X <SUP>3</SUP>\u03A3 <SUP>-</SUP>) Chemiluminescence\
+    \ from the CH(X <SUP>2</SUP> \u03A0) + NO reaction"
+  doi: 10.1016/0009-2614(84)80360-7
+  doublecheck: false
+
+Li91:
+  title1: 'Rate constants for the reaction, O + H2O $\rightarrow$? OH + OH, over the
+    temperature range, 1500-2400 K, by the flash photolysis-shock tube technique:
+    a further consideration of the back reaction.'
+  title2: "Rate constants for the reaction, O+H2O\u2192OH+OH, over the temperature\
+    \ range, 1500\u20132400 K, by the flash photolysis-shock tube technique: A further\
+    \ consideration of the back reaction"
+  doi: 10.1016/s0082-0784(06)80242-0
+  doublecheck: true
+
+Li96:
+  title1: Experimental and numerical studies of two-stage methanol flames.
+  title2: Experimental and numerical studies of two-stage methanol flames
+  doi: 10.1016/s0082-0784(96)80315-8
+  doublecheck: true
+
+Lin93:
+  title1: Theoretical aspects of product formation from the NCO + NO reaction.  J.
+    Phys. Chem. 97,  9124 - 9128.
+  title2: Theoretical aspects of product formation from the cyanato radical + nitric
+    oxide reaction
+  doi: 10.1021/j100138a010
+  doublecheck: true
+
+Li96b:
+  title1: Thermal rate constant for R+N2H2 $\rightarrow$ RH+NNH (R=H,OH,NH2) determined
+    from multireference configuration interaction and variational transition state
+    theory calculations.
+  title2: Thermal rate constants for R+N<SUB>2</SUB>H<SUB>2</SUB> --&gt; RH+N<SUB>2</SUB>H
+    (R=H, OH, NH<SUB>2</SUB>) determined from multireference configuration interaction
+    and variational transition state theory calculations
+  doi: 10.1063/1.471290
+  doublecheck: false
+
+Li03:
+  title1: Theoretical study and rate constant calculation of the CH2O + CH3 reaction.
+  title2: Theoretical study and rate constant calculation of the CH<SUB>2</SUB>O+CH<SUB>3</SUB>
+    reaction
+  doi: 10.1063/1.1605938
+  doublecheck: false
+
+Li04:
+  title1: Direct ab initio dynamics study on the rate constants and kinetics isotope
+    effects of CH3O + H $\rightarrow$ CH2O + H2 reaction.
+  title2: Direct ab initio dynamics study on the rate constants and kinetics isotope
+    effects of CH<SUB>3</SUB>O+H--&gt;CH<SUB>2</SUB>O+H<SUB>2</SUB> reaction
+  doi: 10.1063/1.1807391
+  doublecheck: false
+
+Li06:
+  title1: Direct dynamics study on the hydrogen abstraction reactions N2H4 + R ? N2H3
+    + RH (R=NH2,CH3).  J. Chem. Phys. 125,
+  title2: "Direct dynamics study on the hydrogen abstraction reactions N<SUB>2</SUB>H<SUB>4</SUB>+R\u2192\
+    N<SUB>2</SUB>H<SUB>3</SUB>+RH (R=NH<SUB>2</SUB>,CH<SUB>3</SUB>)"
+  doi: 10.1063/1.2217949
+  doublecheck: false
+
+Li07:
+  title1: A comprehensive kinetic mechanism for CO, CH2O, and CH3OH combustion.
+  title2: null
+  doi: 10.1002/kin.20218
+  doublecheck: true
+
+Lo04:
+  title1: Revised and updated thermochemical properties of the gases Mercapto (HS),
+    Disulfur Monoxide (S2O), Thiazyl (NS), and Thioxophosphino (PS).
+  title2: Revised and Updated Thermochemical Properties of the Gases Mercapto (HS),
+    Disulfur Monoxide (S<SUB>2</SUB>O), Thiazyl (NS), and Thioxophosphino (PS)
+  doi: 10.1063/1.1611178
+  doublecheck: false
+
+Lu03:
+  title1: Experiments and calculations on rate coefficients for pyrolysis of SO2 and
+    the reaction O plus SO at high temperatures.
+  title2: Experiments and Calculations on Rate Coefficients for Pyrolysis of SO2and
+    the Reaction O + SO at High Temperatures
+  doi: 10.1021/jp036025c
+  doublecheck: false
+
+Lu04:
+  title1: Experimental and theoretical investigations of rate coefficients of the
+    reaction S($^3$P) + O2 in the temperature range 298-878 K.
+  title2: Experimental and theoretical investigations of rate coefficients of the
+    reaction S(<SUP>3</SUP>P)+O<SUB>2</SUB> in the temperature range 298-878 K
+  doi: 10.1063/1.1792611
+  doublecheck: false
+
+Lu06:
+  title1: Experimental and theoretical investigation of rate coefficients of the reaction
+    S($^3$P) + OCS in the temperature range of 298-985 K.
+  title2: Experimental and theoretical investigation of rate coefficients of the reaction
+    S(<SUP>3</SUP>P)+OCS in the temperature range of 298-985 K
+  doi: 10.1063/1.2357739
+  doublecheck: false
+
+Ma66:
+  title1: Computed high-temperature rate constants for hydrogen-atom transfers involving
+    light atoms.
+  title2: Computed High-Temperature Rate Constants for Hydrogen-Atom Transfers Involving
+    Light Atoms
+  doi: 10.1063/1.1727340
+  doublecheck: false
+
+Ma67:
+  title1: Computation of high-temperature rate constants for bimolecular reactions
+    of combustion products.
+  title2: Computation of high-temperature rate constants for bimolecular reactions
+    of combustion products
+  doi: 10.1016/s0082-0784(67)80209-1
+  doublecheck: true
+
+Ma83:
+  title1: 'Methyl thiirane: Kinetic gas-phase titration of sulfur atoms in S$_x$O$_y$
+    systems.'
+  title2: "Methyl thiirane: Kinetic gas\u2010phase titration of sulfur atoms in S<sub>X</sub>\
+    \ O<sub>Y</sub> systems"
+  doi: 10.1002/kin.550151102
+  doublecheck: true
+
+Ma89:
+  title1: 'Branching ratios in the N + CH3 reaction: Formation of the methylene amidogen
+    (H2CN) radical.'
+  title2: Branching ratios in the N + CH3 reaction - Formation of the methylene amidogen
+    (H2CN) radical
+  doi: 10.1063/1.456878
+  doublecheck: false
+
+Ma98:
+  title1: Aromatic and Polycyclic Aromatic Hydrocarbon Formation in a Laminar Premixed
+    n-butane Flame.
+  title2: Aromatic and Polycyclic Aromatic Hydrocarbon Formation in a Laminar Premixed
+    n-Butane Flame
+  doi: 10.1016/S0010-2180(97)00275-7
+  doublecheck: false
+
+Ma06:
+  title1: The heats of formation of diazene, hydrazine, N2H3+, N2H5+, N2H, and N2H3
+    and the Methyl Derivatives CH3NNH, CH3NNCH3, and CH3HNNHCH3.
+  title2: The Heats of Formation of Diazene, Hydrazine, N2H3+, N2H5+, N2H, and N2H3and
+    the Methyl Derivatives CH3NNH, CH3NNCH3, and CH3HNNHCH3
+  doi: 10.1021/jp061854u
+  doublecheck: false
+
+Me81:
+  title1: Absolute Rate Constants for the Reactions of CH with O and N Atoms.
+  title2: Absolute rate constants for the reactions of CH with O and N atoms
+  doi: 10.1063/1.441563
+  doublecheck: false
+
+Me91:
+  title1: A shock tube study of H + HNCO $\rightarrow$ NH$_2$ + CO.
+  title2: "A shock tube study of H + HNCO \u2192 NH<sub>2</sub> + CO"
+  doi: 10.1002/kin.550230802
+  doublecheck: true
+
+Me93:
+  title1: Kinetics, energetics, and dynamics of the reactions of CN with NH3 and ND3.
+  title2: null
+  doi: 10.1021/j100115a029
+  doublecheck: true
+
+Me00:
+  title1: Kinetics of the O($^3$P) + N$_2$O Reaction. 2. Interpretation and Recommended
+    Rate Coefficients.  J. Phys. Chem. A  104, 6013 - 6031.
+  title2: Kinetics of the O(3P) + N2O Reaction. 2. Interpretation and Recommended
+    Rate Coefficients
+  doi: 10.1021/jp994471n
+  doublecheck: false
+
+Me96:
+  title1: Theoretical study of reactions of N$_2$O with NO and OH radicals.
+  title2: null
+  doi: 10.1002/(SICI)1097-4601(1996)28:9<693::AID-KIN8>3.0.CO;2-Q
+  doublecheck: true
+
+Meb96:
+  title1: Theoretical rate constants for the NH$_3$ + NO$_x$ $\rightarrow$? NH$_2$
+    + HNO$_x$ (x = 1, 2) reactions by ab initio MO/VTST calculations
+  title2: "Theoretical Rate Constants for the NH<sub>3</sub> + NO<i><sub>x</sub></i>\
+    \ \u2192 NH<sub>2</sub> + HNO<i><sub>x</sub></i> (<i>x</i> = 1, 2) Reactions by\
+    \ ab Initio MO/VTST Calculations"
+  doi: 10.1021/jp953644f
+  doublecheck: true
+
+Mer96:
+  title1: A shock tube study of H + HNCO $\rightarrow$ H2 + NCO and the thermal decomposition
+    of NCO.
+  title2: "A shock tube study of H+HNCO\u2192H2+NCO and the thermal decomposition\
+    \ of NCO"
+  doi: 10.1016/s0082-0784(96)80259-1
+  doublecheck: true
+
+Mi88:
+  title1: A theoretical analysis of the reaction between hydroxyl and acetylene.
+  title2: A theoretical analysis of the reaction between hydroxyl and acetylene
+  doi: 10.1016/s0082-0784(89)80113-4
+  doublecheck: true
+
+Mi92:
+  title1: A theoretical study of the reaction between hydrogen atoms and isocyanic
+    acid.
+  title2: A theoretical analysis of the reaction between hydrogen atoms and isocyanic
+    acid
+  doi: 10.1002/kin.550240503
+  doublecheck: true
+
+Mi97:
+  title1: The UMIST database for astrochemistry 1995.
+  title2: The UMIST Database for Astrochemistry 1995
+  doi: 10.1051/aas:1997118
+  doublecheck: false
+
+Mi01:
+  title1: Relating State-Dependent Cross Sections to Non-Arrhenius Behavior for the
+    Cl + CH4 Reaction.
+  title2: "Relating State-Dependent Cross Sections to Non-Arrhenius Behavior for the\
+    \ Cl + CH4Reaction\u2020"
+  doi: 10.1021/jp0016784
+  doublecheck: false
+
+Mi03:
+  title1: 'A kinetic issue in reburning: The fate of HCNO.'
+  title2: 'A kinetic issue in reburning: the fate of HCNO'
+  doi: 10.1016/j.combustflame.2003.07.002
+  doublecheck: true
+
+Mi05:
+  title1: 'Rate constants for D+C2H4 $\rightarrow$ C2H3D+H at high temperature: implications
+    to the high pressure rate constant for H+C2H4 $\rightarrow$C2H5.'
+  title2: "Rate constants for D + C <SUB loc=\"post\">2</SUB>H <SUB loc=\"post\">4</SUB>\
+    \ \u2192 C <SUB loc=\"post\">2</SUB>H <SUB loc=\"post\">3</SUB>D + H at high temperature:\
+    \ implications to the high pressure rate constant for H + C <SUB loc=\"post\"\
+    >2</SUB>H <SUB loc=\"post\">4</SUB> \u2192 C <SUB loc=\"post\">2</SUB>H <SUB loc=\"\
+    post\">5</SUB>"
+  doi: 10.1016/j.proci.2004.08.213
+  doublecheck: false
+
+Mo77:
+  title1: Kinetics and Mechanism of the Reaction H + CH3ONO.
+  title2: null
+  doi: 10.1002/kin.550090209
+  doublecheck: true
+
+Mo81:
+  title1: Temperature dependent UV absorption cross sections for carbonyl sulfide.
+  title2: Temperature dependent UV absorption cross sections for carbonyl sulfide
+  doi: 10.1029/GL008i009p01008
+  doublecheck: false
+
+Mo95a:
+  title1: Post-SL9 sulfur photochemistry on Jupiter.
+  title2: Post-SL9 sulfur photochemistry on Jupiter
+  doi: 10.1029/95GL01200
+  doublecheck: false
+
+Mo95b:
+  title1: Nitrogen and oxygen photochemistry following SL9.
+  title2: Nitrogen and oxygen photochemistry following SL9
+  doi: 10.1029/95GL01199
+  doublecheck: false
+
+Mo02:
+  title1: 'Photochemistry of a Volcanically Driven Atmosphere on Io: Sulfur and Oxygen
+    Species from a Pele-Type Eruption.'
+  title2: 'Photochemistry of a Volcanically Driven Atmosphere on Io: Sulfur and Oxygen
+    Species from a Pele-Type Eruption'
+  doi: 10.1006/icar.2001.6758
+  doublecheck: false
+
+Mu87:
+  title1: The application of an intracavity laser spectroscopy method for elementary
+    processes study in gas-phase reactions.
+  title2: null
+  doi: null
+  doublecheck: true
+  squib: 1987MUL173
+
+Ni79:
+  title1: Kinetics and Mechanism of the Decomposition of H2S, CH3SH and (CH3)$_2$S
+    in a Radio-frequency Pulse Discharge.
+  title2: Kinetics and mechanism of the decomposition of H2S, CH3SH and (CH3)2S in
+    a radio-frequency pulse discharge
+  doi: 10.1039/f19797501868
+  doublecheck: true
+
+Ni03:
+  title1: Spectroscopic and Kinetic Investigation of Methylene Amidogen by Cavity
+    Ring-Down Spectroscopy.
+  title2: Spectroscopic and Kinetic Investigation of Methylene Amidogen by Cavity
+    Ring-Down Spectroscopy
+  doi: 10.1021/jp022197i
+  doublecheck: false
+
+Ne90:
+  title1: Kinetic studies of the reactions of H2CN and D2CN radicals with N and H.
+  title2: 'ChemInform Abstract: Kinetic Studies of the Reactions of H2CN and D2CN
+    Radicals with N and H'
+  doi: 10.1002/chin.199040094
+  doublecheck: true
+
+Ng96:
+  title1: 'Reaction of isocyanic acid and hydrogen atom (H + HNCO): theoretical characterization.  J.
+    Phys. Chem. 100, 1615 - 1621.'
+  title2: "Reaction of Isocyanic Acid and Hydrogen Atom (H + HNCO):\u2009 Theoretical\
+    \ Characterization"
+  doi: 10.1021/jp9510507
+  doublecheck: true
+
+Ng04:
+  title1: Direct ab initio dynamics studies of the reactions of HNO with H and OH
+    radicals.  Chem. Phys. Lett.   388, 94 - 99.
+  title2: Direct ab initio dynamics studies of the reactions of HNO with H and OH
+    radicals
+  doi: 10.1016/j.cplett.2004.03.005
+  doublecheck: false
+
+No89:
+  title1: Some new observations on methanol oxidation chemistry.
+  title2: Some New Observations on Methanol Oxidation Chemistry
+  doi: 10.1080/00102208908947121
+  doublecheck: true
+
+Oe92:
+  title1: Kinetics of the reaction of OH radicals with CH2CO.
+  title2: null
+  doi: 10.1002/bbpc.19920960211
+  doublecheck: true
+
+Ok78:
+  title1: ''
+  title2: null
+  doi: null
+  doublecheck: true
+  isbn: 9780471653042
+
+Oy94:
+  title1: Thermal decomposition of COS.
+  title2: Thermal Decomposition of COS
+  doi: 10.1246/bcsj.67.2311
+  doublecheck: true
+
+Pa79:
+  title1: Pulse Radiolysis of Gaseous Ammonia-Oxygen Mixtures.
+  title2: "ChemInform Abstract: PULSE RADIOLYSIS OF GASEOUS AMMONIA\u2010OXYGEN MIXTURES"
+  doi: 10.1002/chin.197924024
+  doublecheck: true
+
+Pa93:
+  title1: Kinetics and product branching ratios of the CN+NO2 reaction. J. Chem. Phys.  99,  3488
+    - 3493
+  title2: Kinetics and product branching ratios of the CN+NO<SUB>2</SUB> reaction
+  doi: 10.1063/1.466171
+  doublecheck: false
+
+Pa96:
+  title1: 'The reaction between N($^4$S) and C2H3: rate constant and primary reaction
+    channels.'
+  title2: 'The reaction between N(4<i>S</i>) and C2H3: Rate constant and primary reaction
+    channels'
+  doi: 10.1063/1.471740
+  doublecheck: true
+
+Pa08:
+  title1: 'Rate coefficients for the reactions of C2 with various hydrocarbons (CH4,
+    C2H2, C2H4, C2H6, and C3H8): A gas-phase experimental study over the temperature
+    range 24-300 K.'
+  title2: "Rate Coefficients for the Reactions of C2(a3\u03A0u) and C2(X1\u03A3g+)\
+    \ with Various Hydrocarbons (CH4, C2H2, C2H4, C2H6, and C3H8): A Gas-Phase Experimental\
+    \ Study over the Temperature Range 24-300 K\u2020"
+  doi: 10.1021/jp8025336
+  doublecheck: false
+
+Pe99:
+  title1: Experimental and ab Initio Investigations of the Kinetics of the Reaction
+    of H Atoms with H2S.
+  title2: Experimental and ab Initio Investigations of the Kinetics of the Reaction
+    of H Atoms with H<sub>2</sub>S
+  doi: 10.1021/jp984242l
+  doublecheck: true
+
+Pe85:
+  title1: The rate and mechanism of the reaction of HCN with oxygen atoms over the
+    temperature range 540-900 K.
+  title2: "The rate and mechanism of the reaction of HCN with oxygen atoms over the\
+    \ temperature range 540\u2013900 K"
+  doi: 10.1016/s0082-0784(85)80553-1
+  doublecheck: true
+
+Pe88:
+  title1: Etude cinetique de la reaction thermique du pentene-2 cis vers 500$^
+  title2: null
+  doi: 10.1051/jcp/1988850185
+  doublecheck: false
+
+Pe95:
+  title1: CH formation in the reaction between ketenyl radicals and oxygen atoms.
+    Determination of the CH yield between 405 and 960 K.
+  title2: CH(a4.SIGMA.- and/or X2.PI.) Formation in the Reaction Between Ketenyl Radicals
+    and Oxygen Atoms. Determination of the CH-yield between 405 and 960 K
+  doi: 10.1021/j100011a027
+  doublecheck: true
+
+Po91:
+  title1: The energy of N2H2 and related compounds.
+  title2: The energy of N<SUB>2</SUB>H<SUB>2</SUB> and related compounds
+  doi: 10.1063/1.461762
+  doublecheck: false
+
+Pr77:
+  title1: Homogeneous Isotope Exchange Reactions. Part 3. H2S + D2.
+  title2: "Homogeneous isotope exchange reactions. Part 3.\u2014H2S + D2"
+  doi: 10.1039/f19777300054
+  doublecheck: true
+
+Ra03:
+  title1: 'Alkoxy radicals in the gaseous phase: beta-scission reactions and formation
+    by radical addition to carbonyl compounds.'
+  title2: "Alkoxy radicals in the gaseous phase: \u03B2-scission reactions and formation\
+    \ by radical addition to carbonyl compounds"
+  doi: 10.1139/v02-206
+  doublecheck: true
+
+Re94:
+  title1: 'Laboratory investigations of gaseous sulfuric acid formation via SO3+H2O+M??H2SO4+M:
+    measurement of the rate constant and product identification.'
+  title2: 'Laboratory investigations of gaseous sulfuric acid formation via SO<SUB>3</SUB>+H<SUB>2</SUB>O+M
+    --&gt; H<SUB>2</SUB>SO<SUB>4</SUB>+M: Measurement of the rate constant and product
+    identification'
+  doi: 10.1063/1.468298
+  doublecheck: false
+
+Ri99:
+  title1: Temperature dependence of the product branching ratio of the CN + O2 reaction.
+  title2: Temperature Dependence of the Product Branching Ratio of the CN + O2Reaction
+  doi: 10.1021/jp990373q
+  doublecheck: false
+
+Ro94:
+  title1: The reactions of NH(X$^3\Sigma^-$) with the water gas components CO2, H2O,
+    and H2.
+  title2: "The reactions of NH(X3\u03A3\u2212) with the water gas componentsCO2, H2O,\
+    \ and H2"
+  doi: 10.1016/s0082-0784(06)80734-4
+  doublecheck: true
+
+Rod96:
+  title1: Pressure and temperature dependence of the reactions of CH with N2.
+  title2: Pressure and temperature dependence of the reactions of CH with N <SUB>2</SUB>
+  doi: 10.1016/0009-2614(96)00204-7
+  doublecheck: false
+
+Rom96:
+  title1: A kinetic study of the reactions of NH(X$^3\Sigma^-$) with O2 and NO in
+    the temperature range from 1200 to 2200 K.
+  title2: "A kinetic study of the reactions of NH(X3\u03A3\u2212) with O2 and no in\
+    \ the temperature range from 1200 to 2200 K"
+  doi: 10.1016/s0082-0784(96)80260-8
+  doublecheck: true
+
+Sa80:
+  title1: A Measurement of the Thermal Decomposition of CS2 behind Reflected Shock
+    Waves.
+  title2: A Measurement of the Thermal Decomposition of CS2 behind Reflected Shock
+    Waves
+  doi: 10.1246/bcsj.53.1437
+  doublecheck: true
+
+Sa03:
+  title1: ''
+  title2: null
+  doi: null
+  doublecheck: false
+  url: https://jpldataeval.jpl.nasa.gov/pdf/JPL_02-25_rev02.pdf
+
+Sc73:
+  title1: Evaluated chemical kinetic rate constants for various gas phase reactions.
+  title2: Evaluated Chemical Kinetic Rate Constants for Various Gas Phase Reactions
+  doi: 10.1063/1.3253112
+  doublecheck: false
+
+Se06a:
+  title1: Pathways and rate coefficients for the decomposition of vinoxy and acetyl
+    radicals.
+  title2: Pathways and Rate Coefficients for the Decomposition of Vinoxy and Acetyl
+    Radicals
+  doi: 10.1021/jp054934r
+  doublecheck: false
+
+Se06b:
+  title1: Reaction of ethylene hydroxyl radicals.
+  title2: "Reaction of Ethylene with Hydroxyl Radicals:  A Theoretical Study\u2020"
+  doi: 10.1021/jp0566820
+  doublecheck: false
+
+Sh85:
+  title1: The pyrolysis of dimethyl sulfide, kinetics and mechanism.
+  title2: The pyrolysis of dimethyl sulfide, kinetics and mechanism
+  doi: 10.1002/kin.550170705
+  doublecheck: true
+
+Sh96:
+  title1: Kinetic studies on the pyrolysis of H2S.
+  title2: null
+  doi: 10.1021/jp952472j
+  doublecheck: true
+
+Sh98:
+  title1: Investigation on the insertion channel in the S(3P) + H2 reaction.
+  title2: Investigation on the Insertion Channel in the S(3P) + H2Reaction
+  doi: 10.1021/jp980650d
+  doublecheck: false
+
+Si84:
+  title1: Gas-phase reaction rate of sodium hydroxide with hydrochloric acid.
+  title2: "ChemInform Abstract: GAS\u2010PHASE REACTION RATE OF SODIUM HYDROXIDE WITH\
+    \ HYDROCHLORIC ACID"
+  doi: 10.1002/chin.198440021
+  doublecheck: true
+
+Si88:
+  title1: Evaluated chemical kinetic data for the reactions of atomic oxygen O(3P)
+    with sulfur containing compounds.
+  title2: Evaluated Chemical Kinetic Data for the Reactions of Atomic Oxygen O(<SUP>3</SUP>P)
+    with Sulfur Containing Compounds
+  doi: 10.1063/1.555811
+  doublecheck: false
+
+So01:
+  title1: Shock Tube Determination of the Overall Rate of NH2 + NO -> Products in
+    the Thermal De-NOx Temperature Window.
+  title2: "Shock tube determination of the overall rate of NH<sub>2</sub> + NO \u2192\
+    \ products in the thermal De\u2010NOx temperature window"
+  doi: 10.1002/kin.1068
+  doublecheck: true
+
+So03:
+  title1: A Shock Tube Study of the Reaction NH2 + CH4 $\rightarrow$ NH3 + CH3 and
+    Comparison With Transition State Theory.
+  title2: null
+  doi: 10.1002/kin.10131
+  doublecheck: true
+
+Sri05:
+  title1: Reflected shock tube studies of high-temperature rate constants for OH+CH4
+    -> CH3+H2O and CH3+NO2 -> CH3O+NO.  J. Phys. Chem. A  109,  1857 - 1863.
+  title2: "Reflected Shock Tube Studies of High-Temperature Rate Constants for OH\
+    \ + CH4\u2192 CH3+ H2O and CH3+ NO2\u2192 CH3O + NO"
+  doi: 10.1021/jp040679j
+  doublecheck: false
+
+Sp00:
+  title1: Discovery of Gaseous S$_2$ in Io's Pele Plume.
+  title2: "Discovery of Gaseous S\n            <sub>2</sub>\n            in Io's Pele\
+    \ Plume"
+  doi: 10.1126/science.288.5469.1208
+  doublecheck: true
+
+St87:
+  title1: Kinetics of the reactions of SH radicals with NO$_2$ and O$_2$.
+  title2: null
+  doi: 10.1021/j100301a035
+  doublecheck: true
+
+St88:
+  title1: Rate constant for the reaction of N($^4$S) with CH3 at 298 K.
+  title2: Rate constant for the reaction of N( <SUP>4</SUP>S) with CH <SUB>3</SUB>
+    AT 298 K
+  doi: 10.1016/0009-2614(88)80270-7
+  doublecheck: false
+
+St95:
+  title1: Rate constant and reaction channels for the reaction of atomic nitrogen
+    with the ethyl radical.
+  title2: Rate constant and reaction channels for the reaction of atomic nitrogen
+    with the ethyl radical
+  doi: 10.1063/1.469257
+  doublecheck: false
+
+Sto95:
+  title1: The multichannel reaction NH2+NH2 at ambient temperature and low pressures.
+  title2: The multichannel reaction NH2 + NH2 at ambient temperature and low pressures
+  doi: 10.1016/0009-2614(95)00563-j
+  doublecheck: true
+
+Sut02:
+  title1: Rate Constants for H + CH4, CH3 + H2, and CH4 Dissociation at High Temperature.
+  title2: null
+  doi: 10.1002/kin.1064
+  doublecheck: true
+
+Su02:
+  title1: 'Rate Constants, 1100<T<2000K, for H + NO2 -> OH + NO Using Two Shock Tube
+    Techniques: Comparison of Theory to Experiment.  J. Phys. Chem. A   106, 8261
+    - 8270.'
+  title2: "Rate Constants, 1100 \u2264 <i>T</i> \u2264 2000 K, for H + NO<sub>2</sub>\
+    \ \u2192 OH + NO Using Two Shock Tube Techniques:\u2009 Comparison of Theory to\
+    \ Experiment"
+  doi: 10.1021/jp0141023
+  doublecheck: true
+
+Te90:
+  title1: Kinetics of the thermal decomposition of hydrogen sulfide at 600-1200$^
+  title2: null
+  doi: null
+  doublecheck: true
+  url: https://www.elibrary.ru/item.asp?id=31092969
+
+Th86:
+  title1: N atom measurements in high-temperature N2 dissociation kinetics.
+  title2: N atom measurements in high-temperature N2 dissociation kinetics
+  doi: 10.2514/3.9398
+  doublecheck: false
+
+To84:
+  title1: Reaction of carbon monoxide with ozone with oxygen atoms.
+  title2: Reaction of carbon monoxide with ozone and oxygen atoms
+  doi: 10.1002/kin.550160206
+  doublecheck: true
+
+To03:
+  title1: The role of N2O and NNH in the formation of NO via HCN in hydrocarbon flames.
+  title2: The role of N <SUB>2</SUB>O and NNH in the formation of NO via HCN in hydrocarbon
+    flames
+  doi: 10.1016/S0010-2180(03)00013-0
+  doublecheck: false
+
+Tr05:
+  title1: Theory of multichannel thermal unimolecular reactions. 2. Application to
+    the thermal dissociation of formaldehyde.
+  title2: Theory of Multichannel Thermal Unimolecular Reactions. 2. Application to
+    the Thermal Dissociation of Formaldehyde
+  doi: 10.1021/jp051027d
+  doublecheck: false
+
+Ts81:
+  title1: Thermal Decomposition of Methanol behind Shock Waves.
+  title2: Thermal Decomposition of Methanol behind Shock Waves
+  doi: 10.1143/JJAP.20.985
+  doublecheck: false
+
+Ts86:
+  title1: Chemical kinetic data base for combustion chemistry. Part I. Methane and
+    related compounds.
+  title2: Chemical Kinetic Data Base for Combustion Chemistry. Part I. Methane and
+    Related Compounds
+  doi: 10.1063/1.555759
+  doublecheck: false
+
+Ts87:
+  title1: Chemical kinetic data base for combustion chemistry. Part 2. Methanol.
+  title2: Chemical Kinetic Data Base for Combustion Chemistry. Part 2. Methanol
+  doi: 10.1063/1.555802
+  doublecheck: false
+
+Ts90:
+  title1: Gas-phase atom-radical kinetics of atomic hydrogen, nitrogen, and oxygen
+    reactions with fluoromethylene radicals.
+  title2: Gas-phase atom-radical kinetics of atomic hydrogen, nitrogen, and oxygen
+    reactions with fluoromethylene radicals
+  doi: 10.1021/j100371a017
+  doublecheck: true
+
+Ts91:
+  title1: Chemical Kinetic Data Base for Propellant Combustion I. Reactions Involving
+    NO, NO2, HNO, HNO2, HCN and N2.
+  title2: Chemical Kinetic Data Base for Propellant Combustion I. Reactions Involving
+    NO, NO<SUB>2</SUB>, HNO, HNO<SUB>2</SUB>, HCN and N<SUB>2</SUB>O
+  doi: 10.1063/1.555890
+  doublecheck: false
+
+Va77:
+  title1: Reaction Mechanisms of Combustion in Low Pressure Acetylene-Oxygen Flames.
+  title2: Reaction mechanisms of combustion in low pressure acetylene-oxygen flames
+  doi: 10.1016/s0082-0784(77)80402-5
+  doublecheck: true
+
+Va95:
+  title1: 'Laser photolysis studies of hydrazine vapor: 193 and 222-nm H-atom primary
+    quantum yields at 296 K, and the kinetics of H + N2H4.'
+  title2: "Laser photolysis studies of hydrazine vapor: 193 and 222\u2010nm H\u2010\
+    atom primary quantum yields at 296 K, and the kinetics of H + N<sub>2</sub>H<sub>4</sub>\
+    \ reaction over the temperature range 222\u2013657 K"
+  doi: 10.1002/kin.550270805
+  doublecheck: true
+
+Va01a:
+  title1: Gas Phase Reaction Kinetics of O Atoms with (CH3)2NNH2, CH3NHNH2, and N2H4,
+    and Branching Ratios of the OH Product.  J. Phys. Chem. A 105, 4682-4690.
+  title2: Gas Phase Reaction Kinetics of O Atoms with (CH3)2NNH2, CH3NHNH2, and N2H4,
+    and Branching Ratios of the OH Product
+  doi: 10.1021/jp004492d
+  doublecheck: false
+
+Va01b:
+  title1: Kinetics of OH Reactions with N2H4, CH3NHNH2 and (CH3)2NNH2 in the Gas Phase.   Int
+    J. Chem. Kinet. 33, 354-362.
+  title2: Kinetics of OH Reactions with N2H4, CH3NHNH2 and (CH3)2NNH2 in the Gas Phase
+  doi: 10.21236/ada409315
+  doublecheck: true
+
+vo1971:
+  title1: Die Reaktion von Atomarem Wasserstoff mit Hydrazin.  Ber. Bunsenges. Phys.
+    Chem. 75.
+  title2: Die Reaktion von atomarem Wasserstoff mit Hydrazin
+  doi: 10.1002/bbpc.197100005
+  doublecheck: true
+
+Wa75:
+  title1: ''
+  title2: null
+  doi: 10.1016/S0082-0784(75)80339-0
+  doublecheck: true
+
+Wa84:
+  title1: Rate coefficients in the C/H/O system.  In
+  title2: null
+  doi: 10.1007/978-1-4684-0186-8_5
+  doublecheck: true
+
+Wa03:
+  title1: Theoretical Study and Rate Constant Calculation of the Cl + HOCl and H +
+    HOCl Reactions.
+  title2: Theoretical Study and Rate Constant Calculation of the Cl + HOCl and H +
+    HOCl Reactions
+  doi: 10.1021/jp0277558
+  doublecheck: false
+
+Wh83:
+  title1: Rate of reaction of N with CN($\mu$=0,1).
+  title2: "Rate of reaction of N with CN (\u03C5 = 0,1)"
+  doi: 10.1016/0009-2614(83)80248-6
+  doublecheck: false
+
+Wh84:
+  title1: Products of reaction of nitrogen atoms with NH2.
+  title2: 'ChemInform Abstract: PRODUCTS OF REACTION OF NITROGEN ATOMS WITH AMIDOGEN'
+  doi: 10.1002/chin.198507026
+  doublecheck: true
+
+Wo94:
+  title1: 'C1/C2 chemistry in fuel-rich post-flame gases: detailed kinetic modelling.'
+  title2: 'C1/C2 chemistry in fuel-rich post-flame gases: Detailed kinetic modelling'
+  doi: 10.1016/s0082-0784(06)80726-5
+  doublecheck: true
+
+Woo95:
+  title1: Simultaneous laser absorption measurements of CN and OH in a shock tube
+    study of HCN + OH $\rightarrow$ products.
+  title2: "Simultaneous laser absorption measurements of CN and OH in a shock tube\
+    \ study of HCN + OH \u2192 products"
+  doi: 10.1002/kin.550271105
+  doublecheck: true
+
+Wo96a:
+  title1: A shock tube study of CO + OH $\rightarrow$ CO2 + H and HNCO + OH $\rightarrow$
+    products via simultaneous laser absorption measurements of OH and CO2.
+  title2: "A shock tube study of CO + OH \u2192 CO2 + H and HNCO + OH \u2192 products\
+    \ via simultaneous laser absorption measurements of OH and CO2"
+  doi: 10.1002/(sici)1097-4601(1996)28:5<361::aid-kin5>3.3.co;2-y
+  doublecheck: true
+
+Wo96b:
+  title1: A shock tube study of reactions of CN with HCN, OH, and H2 using CN and
+    OH laser absorption.
+  title2: A shock tube study of reactions of CN with HCN, OH, and H2 using CN and
+    OH laser absorption
+  doi: 10.1002/(sici)1097-4601(1996)28:4<245::aid-kin2>3.3.co;2-2
+  doublecheck: true
+
+Woi94:
+  title1: Kinetics of the high-temperature H2S decomposition.
+  title2: Kinetics of the High-Temperature H2S Decomposition
+  doi: 10.1021/j100100a024
+  doublecheck: true
+
+Woi95a:
+  title1: A shock tube study of the reaction S + H2 = SH + H in pyrolysis and photolysis
+    systems.
+  title2: "A shock tube study of the reaction S + H<sub>2</sub> \u21CC SH + H in pyrolysis\
+    \ and photolysis systems"
+  doi: 10.1002/kin.550270604
+  doublecheck: true
+
+Woi95b:
+  title1: Oxidation of S and SO by O2 in high-temperature pyrolysis and photolysis
+    reaction systems.
+  title2: "Oxidation of S and SO by O<sub>2</sub> in high\u2010temperature pyrolysis\
+    \ and photolysis reaction systems"
+  doi: 10.1002/kin.550270108
+  doublecheck: true
+
+Xu99:
+  title1: Theoretical Studies on the Reaction Path Dynamics and Variational Transition-State
+    Theory Rate Constants of the Hydrogen-Abstraction Reactions of the NH(X$^3\Sigma^-$)
+    Radical with Methane and Ethane.
+  title2: "Theoretical Studies on the Reaction Path Dynamics and Variational Transition-State\
+    \ Theory Rate Constants of the Hydrogen-Abstraction Reactions of the NH(X3\u03A3\
+    -) Radical with Methane and Ethane"
+  doi: 10.1021/jp984499j
+  doublecheck: false
+
+Ya95:
+  title1: ''
+  title2: null
+  doi: null
+  doublecheck: true
+
+Ya97:
+  title1: 'Kinetic and Thermodynamic Analysis on OH Addition to Ethylene: Adduct Formation,
+    Isomerization, and Isomer Dissociations.'
+  title2: 'Kinetic and Thermodynamic Analysis on OH Addition to Ethylene:  Adduct
+    Formation, Isomerization, and Isomer Dissociations'
+  doi: 10.1021/jp990193g
+  doublecheck: false
+
+Ya05:
+  title1: Theoretical study on the mechanism of the N($^4$S)+C2H5 reaction.
+  title2: null
+  doi: 10.1016/j.theochem.2005.02.081
+  doublecheck: false
+
+Ya08:
+  title1: Shock-tube and modeling study of acetaldehyde pyrolysis and oxidation
+  title2: "Shock\u2010tube and modeling study of acetaldehyde pyrolysis and oxidation"
+  doi: 10.1002/kin.20294
+  doublecheck: true
+
+Yu98:
+  title1: An ab initio study on the reaction NH2 + CH4 $\rightarrow$ NH3 + CH3.
+  title2: "An ab initio study on the reaction NH <SUB>2</SUB>+CH <SUB>4</SUB> \u2192\
+    \ NH <SUB>3</SUB>+CH <SUB>3</SUB>"
+  doi: 10.1016/S0009-2614(98)01020-3
+  doublecheck: false
+
+Za09:
+  title1: Atmospheric sulfur chemistry on hot Jupiters.
+  title2: ATMOSPHERIC SULFUR PHOTOCHEMISTRY ON HOT JUPITERS
+  doi: 10.1088/0004-637x/701/1/l20
+  doublecheck: true
+
+Zh05:
+  title1: Ab initio kinetic study on the low-energy paths of the HO+C2H4 reaction.
+  title2: Ab initio kinetic study on the low-energy paths of the HO + C <SUB>2</SUB>H
+    <SUB>4</SUB> reaction
+  doi: 10.1016/j.cplett.2005.03.133
+  doublecheck: false
+
+Zu97:
+  title1: Ab initio study on the reaction 2NH(X$^3\Sigma^-$)  $\rightarrow$ NH2(X$^2$B$_1$)
+    + N($^4$S).
+  title2: "Ab initio study on the reaction 2NH(X3\u03A3\u2212) \u2192 NH2(X2B1) +\
+    \ N(4S)"
+  doi: 10.1016/s0009-2614(97)00748-3
+  doublecheck: true
