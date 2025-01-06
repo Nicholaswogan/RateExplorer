@@ -262,6 +262,9 @@ Cd05:
   doi: 10.1021/jp045102g
   doublecheck: false
 
+Ce00:
+  doi: 10.1016/S0009-2614(00)01033-2
+
 Ch03:
   title1: Ab Initio and Kinetic Study on CH3 Radical Reaction with H2CO.
   title2: null
@@ -754,6 +757,9 @@ Ja07:
   doi: 10.1021/jp0736950
   doublecheck: true
 
+Ja09:
+  doi: 10.1016/j.proci.2008.05.036
+
 Je82:
   title1: Kinetics of flame inhibition by sodium.
   title2: Kinetics of flame inhibition by sodium
@@ -968,6 +974,9 @@ Lu06:
   doi: 10.1063/1.2357739
   doublecheck: false
 
+Lu10:
+  doi: 10.1021/jp100535r
+
 Ma66:
   title1: Computed high-temperature rate constants for hydrogen-atom transfers involving
     light atoms.
@@ -1047,6 +1056,9 @@ Me96:
   title2: null
   doi: 10.1002/(SICI)1097-4601(1996)28:9<693::AID-KIN8>3.0.CO;2-Q
   doublecheck: true
+
+Mea11:
+  doi: 10.1063/1.3555763
 
 Meb96:
   title1: Theoretical rate constants for the NH$_3$ + NO$_x$ $\rightarrow$? NH$_2$
