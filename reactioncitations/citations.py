@@ -563,7 +563,7 @@ def add_citations_to_zahnle():
     print(kk1, kk2)
 
     sol = FormatReactions_main(sol)
-    with open('zahnle_earth_v0.20.yaml','w') as f:
+    with open('zahnle_earth_v0.20_cite.yaml','w') as f:
         yaml.dump(sol, f, MyDumper,sort_keys=False,width=70)
 
 if __name__ == '__main__':
