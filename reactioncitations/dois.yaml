@@ -23,6 +23,9 @@ Ar81:
   doi: 10.1016/0146-5724(81)90333-2
   doublecheck: false
 
+At97:
+  doi: 10.1063/1.556010
+
 At89:
   title1: 'Evaluated Kinetic and Photochemical Data for Atmospheric Chemistry: Supplement
     III.'
@@ -944,6 +947,9 @@ Li07:
   title2: null
   doi: 10.1002/kin.20218
   doublecheck: true
+
+Lo95:
+  doi: 10.1016/S0082-0784(85)80556-7
 
 Lo04:
   title1: Revised and updated thermochemical properties of the gases Mercapto (HS),
