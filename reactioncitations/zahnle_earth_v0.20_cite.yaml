@@ -3120,71 +3120,71 @@ reactions:
   low-P-rate-constant: {A: 2.7e-26, b: -2.0, Ea: 500.0}
   high-P-rate-constant: {A: 2.7e-06, b: -2.0, Ea: 500.0}
   citation: {low-P: inspired by H+HCO>H2CO.  fixed to give the right reverse
-      to Glassman Yetter at 3000 K, high-P: Assumed CSV}
+      to Glassman Yetter at 3000 K, high-P: Assumed}
   location: [csv L2792, equation-rate latex R403]
   checked: false
 - equation: H + N2H2 <=> NNH + H2
   rate-constant: {A: 1.384425e-19, b: 2.63, Ea: -115.0}
   citation: Li96b
   location: latex R404
-  checked: false
+  checked: true
 - equation: OH + N2H2 <=> NNH + H2O
   rate-constant: {A: 9.607745e-23, b: 3.4, Ea: -686.0}
-  citation: Li96b  UPDATE
+  citation: Li96b
   location: latex R405
-  checked: false
+  checked: true
 - equation: NH + NH2 <=> N2H2 + H
   rate-constant: {A: 2.494153e-09, b: -0.5, Ea: 0.0}
   citation: Da90
   location: latex R406
-  checked: false
+  checked: true
 - equation: NH2 + NH2 <=> N2H2 + H2
   rate-constant: {A: 1.3e-12, b: 0.0, Ea: 0.0}
   citation: Sto95
   location: latex R407
-  checked: false
+  checked: true
 - equation: N + NH3 <=> N2H2 + H
   rate-constant: {A: 7.42e-12, b: 0.0, Ea: 4830.0}
   citation: Ba88
   location: latex R408
-  checked: false
+  checked: true
 - equation: H + O2 (+ M) <=> HO2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.581907e-27, b: -1.8, Ea: 0.0}
   high-P-rate-constant: {A: 7.5e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: At97, high-P: At97}
   location: latex R10
-  checked: false
+  checked: true
 - equation: H + HO2 <=> H2 + O2
   rate-constant: {A: 5.6e-12, b: 0.0, Ea: 0.0}
   citation: At04
   location: latex R11
-  checked: false
+  checked: true
 - equation: H + HO2 <=> H2O + O
   rate-constant: {A: 2.4e-12, b: 0.0, Ea: 0.0}
   citation: At04
   location: latex R12
-  checked: false
+  checked: true
 - equation: H + HO2 <=> OH + OH
   rate-constant: {A: 7.2e-11, b: 0.0, Ea: 0.0}
   citation: At04
   location: latex R13
-  checked: false
+  checked: true
 - equation: OH + HO2 <=> H2O + O2
   rate-constant: {A: 4.8e-11, b: 0.0, Ea: -250.0}
   citation: At04
   location: latex R14
-  checked: false
+  checked: true
 - equation: HO2 + O <=> OH + O2
   rate-constant: {A: 2.7e-11, b: 0.0, Ea: -240.0}
   citation: At04
   location: latex R15
-  checked: false
+  checked: true
 - equation: HCO + O2 <=> HO2 + CO
   rate-constant: {A: 5.2e-12, b: 0.0, Ea: 0.0}
   citation: At01
   location: latex R40
-  checked: false
+  checked: true
 - equation: HS + HO2 <=> H2S + O2
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -3209,36 +3209,36 @@ reactions:
   type: falloff
   low-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: Assumed, high-P: Assumed}
   location: None
-  checked: false
+  checked: true
 - equation: HO2 + C2H <=> O2 + C2H2
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
-  citation: Assumed
+  citation: Ts86
   location: latex R123
-  checked: false
+  checked: true
 - equation: HO2 + CO <=> OH + CO2
   rate-constant: {A: 2.5e-10, b: 0.0, Ea: 11900.0}
-  citation: Assumed
+  citation: Ts86
   location: latex R34
-  checked: false
+  checked: true
 - equation: CH3O + O2 <=> H2CO + HO2
   rate-constant: {A: 7.2e-14, b: 0.0, Ea: 1080.0}
   citation: At01
   location: latex R82
-  checked: false
+  checked: true
 - equation: C2H3 + O2 <=> C2H2 + HO2
   rate-constant: {A: 8.724021e-09, b: -1.26, Ea: 1660.0}
   citation: Ma98
   location: latex R133
-  checked: false
+  checked: true
 - equation: OH + OH (+ M) <=> H2O2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 6.615247e-29, b: -0.8, Ea: 0.0}
   high-P-rate-constant: {A: 2.6e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: At97, high-P: At97}
   location: latex R22
-  checked: false
+  checked: true
 - equation: HO2 + HO2 <=> H2O2 + O2
   rate-constant: {A: 3.19e-19, b: 2.01, Ea: -1274.3}
   citation: null
@@ -3248,74 +3248,74 @@ reactions:
   rate-constant: {A: 6.735753e-20, b: 2.5, Ea: 5140.0}
   citation: Ei98
   location: latex R47
-  checked: false
+  checked: true
 - equation: H2O2 + H <=> H2 + HO2
   rate-constant: {A: 2.8e-12, b: 0.0, Ea: 1890.0}
   citation: Ba92
   location: latex R24
-  checked: false
+  checked: true
 - equation: H2O2 + H <=> H2O + OH
   rate-constant: {A: 1.7e-11, b: 0.0, Ea: 1800.0}
   citation: Ba92
   location: latex R25
-  checked: false
+  checked: true
 - equation: H2O2 + OH <=> HO2 + H2O
   rate-constant: {A: 2.9e-12, b: 0.0, Ea: 160.0}
   citation: At04
   location: latex R26
-  checked: false
+  checked: true
 - equation: H2O2 + O <=> OH + HO2
   rate-constant: {A: 1.4e-12, b: 0.0, Ea: 2000.0}
   citation: At04
   location: latex R27
-  checked: false
+  checked: true
 - equation: H2O2 + CH3 <=> CH4 + HO2
   rate-constant: {A: 2.0e-14, b: 0.0, Ea: -300.0}
   citation: Ts86
   location: latex R77
-  checked: false
+  checked: true
 - equation: O + O2 (+ M) <=> O3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.989029e-28, b: -2.3, Ea: 0.0}
   high-P-rate-constant: {A: 2.8e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: De97, high-P: De97}
   location: latex R16
-  checked: false
+  checked: true
 - equation: O + O3 <=> O2 + O2
   rate-constant: {A: 8.0e-12, b: 0.0, Ea: 2060.0}
   citation: At04
   location: latex R17
-  checked: false
+  checked: true
 - equation: H + O3 <=> OH + O2
   rate-constant: {A: 1.4e-10, b: 0.0, Ea: 470.0}
   citation: De97
   location: latex R18
-  checked: false
+  checked: true
 - equation: OH + O3 <=> HO2 + O2
   rate-constant: {A: 1.6e-12, b: 0.0, Ea: 940.0}
   citation: De97
   location: latex R19
-  checked: false
+  checked: true
 - equation: CH3 + O3 <=> H2CO + HO2
   rate-constant: {A: 5.1e-12, b: 0.0, Ea: 210.0}
   citation: At01
   location: latex R69
-  checked: false
+  checked: true
 - equation: O1D + O3 <=> O2 + O2
   rate-constant: {A: 1.2e-10, b: 0.0, Ea: 0.0}
   citation: De97
   location: latex R20
-  checked: false
+  checked: true
 - equation: S + O3 <=> SO + O2
   rate-constant: {A: 1.2e-11, b: 0.0, Ea: 0.0}
-  citation: Atkinson et al 2004
+  citation: At04
   location: [csv L2892, equation-rate latex R307]
-  checked: false
+  checked: true
 - equation: SO + O3 <=> SO2 + O2
   rate-constant: {A: 4.5e-12, b: 0.0, Ea: 1170.0}
-  citation: Atkinson et al 2004
+  citation: At04
   location: [csv L2884, equation-rate latex R308]
-  checked: false
+  checked: true
 - equation: HS + O3 <=> HSO + O2
   rate-constant: {A: 9.5e-12, b: 0.0, Ea: 280.0}
   citation: Assumed
@@ -3323,196 +3323,196 @@ reactions:
   checked: false
 - equation: CS + O3 <=> OCS + O2
   rate-constant: {A: 3.0e-16, b: 0.0, Ea: 0.0}
-  citation: Assumed
+  citation: At04
   location: latex R338
-  checked: false
+  checked: true
 - equation: H + NO (+ M) <=> HNO (+ M)
   type: falloff
   low-P-rate-constant: {A: 9.493211e-29, b: -1.17, Ea: 210.0}
   high-P-rate-constant: {A: 2.349956e-09, b: -0.4, Ea: 0.0}
   citation: {low-P: Ts91, high-P: Ts91}
   location: latex R421
-  checked: false
+  checked: true
 - equation: HCO + NO <=> HNO + CO
   rate-constant: {A: 1.3e-11, b: 0.0, Ea: 0.0}
   citation: Ts91
   location: latex R422
-  checked: false
+  checked: true
 - equation: NH + OH <=> HNO + H
   rate-constant: {A: 3.3e-11, b: 0.0, Ea: 0.0}
   citation: Co91
   location: latex R423
-  checked: false
+  checked: true
 - equation: NH + O2 <=> HNO + O
   rate-constant: {A: 7.555556e-19, b: 2.0, Ea: 3270.0}
-  citation: 300-3300 K Miller Melius1992
+  citation: Mi92
   location: [csv L2927, equation-rate latex R424]
-  checked: false
+  checked: true
+  note: Valid for 300 to 3000 K.
 - equation: NH2 + O <=> HNO + H
   rate-constant: {A: 7.5e-11, b: 0.0, Ea: 0.0}
   citation: Co91
   location: latex R425
-  checked: false
+  checked: true
 - equation: NH2 + O2 <=> HNO + OH
   rate-constant: {A: 1.7e-11, b: 0.0, Ea: 13200.0}
   citation: He95
   location: latex R426
-  checked: false
+  checked: true
 - equation: CH3O + NO <=> HNO + H2CO
   rate-constant: {A: 2.167928e-10, b: -0.7, Ea: 0.0}
   citation: At97
   location: latex R427
-  checked: false
+  checked: true
 - equation: H + HNO <=> H2 + NO
   rate-constant: {A: 1.126464e-13, b: 0.94, Ea: 250.0}
   citation: Ng04
   location: latex R429
-  checked: false
+  checked: true
 - equation: O + HNO <=> OH + NO
   rate-constant: {A: 3.8e-11, b: 0.0, Ea: 0.0}
   citation: In99
   location: latex R430
-  checked: false
+  checked: true
 - equation: OH + HNO <=> H2O + NO
   rate-constant: {A: 1.917463e-15, b: 1.2, Ea: 168.0}
   citation: Ng04
   location: latex R431
-  checked: false
+  checked: true
 - equation: H2 + HNO <=> H2O + NH
   rate-constant: {A: 1.66e-10, b: 0.0, Ea: 8060.0}
-  citation: "Rohrig, M.; Wagner, H.G.  The reactions of NH(X3\u03A3-) with\
-    \ the water gas components CO2, H2O, and H2.  Symp. Int. Combust. Proc.\
-    \ 25,  975 - 981 1994"
+  citation: Ro94
   location: [csv L2917, equation-rate latex R432]
-  checked: false
+  checked: true
 - equation: CH3 + HNO <=> CH4 + NO
   rate-constant: {A: 2.42415e-13, b: 0.76, Ea: 176.0}
   citation: Ch05
   location: latex R433
-  checked: false
+  checked: true
 - equation: CH3O + HNO (+ M) <=> CH3OH + NO (+ M)
   type: falloff
   low-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: Assumed, high-P: Assumed}
   location: None
-  checked: false
+  checked: true
 - equation: CN + HNO <=> HCN + NO
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: Ts91
   location: latex R435
-  checked: false
+  checked: true
 - equation: CO + HNO <=> NH + CO2
   rate-constant: {A: 3.3e-12, b: 0.0, Ea: 6190.0}
   citation: Ro94
   location: latex R436
-  checked: false
+  checked: true
 - equation: NH2 + HNO <=> NH3 + NO
   rate-constant: {A: 5.959444e-17, b: 1.63, Ea: -630.0}
   citation: Meb96
   location: latex R437
-  checked: false
+  checked: true
 - equation: O1D + N2 (+ M) <=> N2O (+ M)
   type: falloff
   low-P-rate-constant: {A: 2.8e-36, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 3.4e-16, b: 0.0, Ea: 0.0}
   citation: {low-P: At04, high-P: At04}
   location: latex R438
-  checked: false
+  checked: true
 - equation: NO + HNO <=> N2O + OH
   rate-constant: {A: 1.879598e-28, b: 4.33, Ea: 12600.0}
   citation: Me96, Di95
   location: latex R439
-  checked: false
+  checked: true
 - equation: HNO + HNO <=> N2O + H2O
   rate-constant: {A: 5.185185e-27, b: 4.0, Ea: 600.0}
   citation: He92
   location: latex R440
-  checked: false
+  checked: true
 - equation: NH + NO <=> N2O + H
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba94
   location: latex R441
-  checked: false
+  checked: true
 - equation: NNH + O <=> N2O + H
   rate-constant: {A: 9.0e-11, b: 0.0, Ea: 0.0}
-  citation: null
+  citation: Ha03
   location: [reactants-rate latex R401, equation-rate csv L2781]
   checked: false
+  note: We use a temperature-constant rate from \citet{Ha03} evaluated T = 1400 K. 
 - equation: NO + NCO <=> N2O + CO
   rate-constant: {A: 1.851136e-08, b: -1.03, Ea: 420.0}
   citation: Lin93
   location: latex R443
-  checked: false
+  checked: true
 - equation: CN + NO2 <=> N2O + CO
   rate-constant: {A: 7.1e-12, b: 0.0, Ea: 0.0}
   citation: Pa93
   location: latex R465
-  checked: false
+  checked: true
 - equation: H + N2O <=> N2 + OH
   rate-constant: {A: 1.6e-10, b: 0.0, Ea: 7600.0}
   citation: Ts91
   location: latex R445
-  checked: false
+  checked: true
 - equation: O + N2O <=> NO + NO
   rate-constant: {A: 1.5e-10, b: 0.0, Ea: 14000.0}
   citation: Me00
   location: latex R446
-  checked: false
+  checked: true
 - equation: O + N2O <=> N2 + O2
   rate-constant: {A: 6.0e-12, b: 0.0, Ea: 8000.0}
   citation: Me00
   location: latex R447
-  checked: false
+  checked: true
 - equation: OH + N2O <=> HO2 + N2
   rate-constant: {A: 2.032299e-26, b: 4.72, Ea: 18400.0}
   citation: Me96
   location: latex R448
-  checked: false
+  checked: true
 - equation: O1D + N2O <=> N2 + O2
   rate-constant: {A: 4.9e-11, b: 0.0, Ea: 0.0}
   citation: De97
   location: latex R449
-  checked: false
+  checked: true
 - equation: O1D + N2O <=> NO + NO
   rate-constant: {A: 6.7e-11, b: 0.0, Ea: 0.0}
   citation: De97
   location: latex R450
-  checked: false
+  checked: true
 - equation: NO + O (+ M) <=> NO2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 4.676537e-28, b: -1.5, Ea: 0.0}
   high-P-rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: De97, high-P: De97}
   location: latex R451
-  checked: false
+  checked: true
 - equation: NO + O3 <=> NO2 + O2
   rate-constant: {A: 1.4e-12, b: 0.0, Ea: 1310.0}
   citation: At04
   location: latex R452
-  checked: false
+  checked: true
 - equation: NO + HO2 <=> NO2 + OH
   rate-constant: {A: 3.6e-12, b: 0.0, Ea: -270.0}
   citation: At04
   location: latex R453
-  checked: false
+  checked: true
 - equation: NO2 + O <=> NO + O2
   rate-constant: {A: 5.5e-12, b: 0.0, Ea: -188.0}
   citation: At04
   location: latex R454
-  checked: false
+  checked: true
 - equation: NO2 + H <=> NO + OH
   rate-constant: {A: 1.5e-10, b: 0.0, Ea: 0.0}
   citation: Su02
   location: latex R455
-  checked: false
+  checked: true
 - equation: N2 + O (+ M) <=> N2O (+ M)
   type: falloff
   low-P-rate-constant: {A: 0.0, b: 0.0, Ea: 3000.0}
   high-P-rate-constant: {A: 0.0, b: 0.0, Ea: 3000.0}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: Assumed, high-P: Assumed}
   location: None
-  checked: false
+  checked: true
 - equation: NO2 + HCO <=> CO2 + HNO
   rate-constant: {A: 1.398436e-08, b: -0.75, Ea: 971.0}
   citation: null
@@ -3522,189 +3522,189 @@ reactions:
   rate-constant: {A: 5.8e-12, b: 0.0, Ea: -221.0}
   citation: De97
   location: latex R458
-  checked: false
+  checked: true
 - equation: NO2 + N <=> NO + NO
   rate-constant: {A: 4.5e-12, b: 0.0, Ea: -221.0}
   citation: De97
   location: latex R459
-  checked: false
+  checked: true
 - equation: NO2 + N <=> N2 + O2
   rate-constant: {A: 1.5e-12, b: 0.0, Ea: -221.0}
   citation: De97
   location: latex R460
-  checked: false
+  checked: true
 - equation: NO2 + HS <=> HSO + NO
   rate-constant: {A: 2.9e-11, b: 0.0, Ea: -240.0}
   citation: At97
   location: latex R461
-  checked: false
+  checked: true
 - equation: NO2 + SO <=> SO2 + NO
   rate-constant: {A: 1.4e-11, b: 0.0, Ea: 0.0}
   citation: At04
   location: latex R462
-  checked: false
+  checked: true
 - equation: NO2 + CH3 <=> CH3O + NO
   rate-constant: {A: 2.66e-11, b: 0.0, Ea: 0.0}
   citation: Sri05
   location: latex R463
-  checked: false
+  checked: true
 - equation: NO2 + CN <=> NO + NCO
   rate-constant: {A: 8.0e-11, b: 0.0, Ea: -186.0}
   citation: Pa93
   location: latex R464
-  checked: false
+  checked: true
 - equation: NO2 + CN <=> CO2 + N2
   rate-constant: {A: 5.0e-12, b: 0.0, Ea: 0.0}
   citation: Pa93
   location: latex R466
-  checked: false
+  checked: true
 - equation: NO2 + NCO <=> N2O + CO2
   rate-constant: {A: 1.6e-11, b: 0.0, Ea: 0.0}
   citation: Pa93
   location: latex R467
-  checked: false
+  checked: true
 - equation: NO2 + NH2 <=> N2O + H2O
   rate-constant: {A: 2.583168e-08, b: -1.44, Ea: 135.0}
   citation: Pa93
   location: latex R468
-  checked: false
+  checked: true
 - equation: NO + OH (+ M) <=> HNO2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.930249e-24, b: -2.6, Ea: 0.0}
   high-P-rate-constant: {A: 6.36817e-11, b: -0.1, Ea: 0.0}
   citation: {low-P: De97, high-P: De97}
   location: latex R469
-  checked: false
+  checked: true
 - equation: NO2 + HNO <=> HNO2 + NO
   rate-constant: {A: 1.0e-12, b: 0.0, Ea: 1000.0}
   citation: Ts91
   location: latex R470
-  checked: false
+  checked: true
 - equation: NO2 + H2CO <=> HNO2 + HCO
   rate-constant: {A: 1.27896e-21, b: 2.77, Ea: 6910.0}
   citation: Ts91
   location: latex R471
-  checked: false
+  checked: true
 - equation: HNO2 + H <=> H2 + NO2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 3700.0}
   citation: Ts91
   location: latex R472
-  checked: false
+  checked: true
 - equation: HNO2 + O <=> OH + NO2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 3000.0}
   citation: Ts91
   location: latex R473
-  checked: false
+  checked: true
 - equation: HNO2 + OH <=> H2O + NO2
   rate-constant: {A: 6.0e-12, b: 0.0, Ea: 0.0}
   citation: At97
   location: latex R474
-  checked: false
+  checked: true
 - equation: NO2 + OH (+ M) <=> HNO3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.968487e-23, b: -2.9, Ea: 0.0}
   high-P-rate-constant: {A: 2.297915e-09, b: -0.6, Ea: 0.0}
   citation: {low-P: At97, high-P: At97}
   location: latex R475
-  checked: false
+  checked: true
 - equation: HNO3 + H <=> NO2 + H2O
   rate-constant: {A: 9.917429e-23, b: 3.29, Ea: 3160.0}
   citation: Bo97
   location: latex R476
-  checked: false
+  checked: true
 - equation: HNO3 + OH <=> H2O + NO3
   rate-constant: {A: 1.5e-13, b: 0.0, Ea: 0.0}
   citation: At97
   location: latex R477
-  checked: false
+  checked: true
 - equation: HNO3 + H <=> H2 + NO3
   rate-constant: {A: 9.08223e-16, b: 1.53, Ea: 8250.0}
   citation: Bo97
   location: latex R478
-  checked: false
+  checked: true
 - equation: NO2 + O (+ M) <=> NO3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 6.754998e-28, b: -1.5, Ea: 0.0}
   high-P-rate-constant: {A: 2.3e-11, b: 0.0, Ea: 0.0}
-  citation: {low-P: Atkinson et al 2004, high-P: null}
+  citation: {low-P: At04, high-P: null}
   location: [csv L3085, equation-rate latex R479]
   checked: false
 - equation: NO2 + O3 <=> NO3 + O2
   rate-constant: {A: 1.4e-13, b: 0.0, Ea: 2470.0}
   citation: At04
   location: latex R480
-  checked: false
+  checked: true
 - equation: NO3 + H <=> NO2 + OH
   rate-constant: {A: 9.4e-11, b: 0.0, Ea: 0.0}
   citation: Be92
   location: latex R481
-  checked: false
+  checked: true
 - equation: NO3 + O <=> NO2 + O2
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: null
+  citation: De97
   location: [equation-rate latex R482, equation-rate csv L3096]
-  checked: false
+  checked: true
 - equation: NO3 + OH <=> NO2 + HO2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
   citation: At04
   location: latex R483
-  checked: false
+  checked: true
 - equation: NO3 + HO2 <=> HNO3 + O2
   rate-constant: {A: 1.9e-12, b: 0.0, Ea: 0.0}
   citation: Be92
   location: latex R484
-  checked: false
+  checked: true
 - equation: NO3 + NO <=> NO2 + NO2
   rate-constant: {A: 1.8e-11, b: 0.0, Ea: -110.0}
   citation: At04
   location: latex R485
-  checked: false
+  checked: true
 - equation: SO2 + O (+ M) <=> SO3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 4.0e-32, b: 0.0, Ea: 1000.0}
   high-P-rate-constant: {A: 1.5e-11, b: 0.0, Ea: 0.0}
   citation: {low-P: At97, high-P: Assumed}
   location: latex R486
-  checked: false
+  checked: true
 - equation: SO2 + O3 <=> SO3 + O2
   rate-constant: {A: 3.0e-12, b: 0.0, Ea: 7000.0}
   citation: De97
   location: latex R487
-  checked: false
+  checked: true
 - equation: SO3 + H <=> SO2 + OH
   rate-constant: {A: 1.387602e-14, b: 1.22, Ea: 1670.0}
   citation: Hi07
   location: latex R488
-  checked: false
+  checked: true
 - equation: SO3 + O <=> SO2 + O2
   rate-constant: {A: 4.561464e-20, b: 2.57, Ea: 14700.0}
   citation: Hi07
   location: latex R489
-  checked: false
+  checked: true
 - equation: SO3 + SO <=> SO2 + SO2
   rate-constant: {A: 2.0e-15, b: 0.0, Ea: 0.0}
-  citation: expt
+  citation: Ch75
   location: latex R490
-  checked: false
+  checked: true
 - equation: SO2 + OH (+ M) <=> HSO3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 5.978058e-23, b: -3.3, Ea: 0.0}
   high-P-rate-constant: {A: 7.045766e-11, b: -0.7, Ea: 0.0}
   citation: {low-P: At97, high-P: At04}
   location: latex R491
-  checked: false
+  checked: true
 - equation: HSO3 + O2 <=> HO2 + SO3
   rate-constant: {A: 1.3e-12, b: 0.0, Ea: 330.0}
   citation: At04
   location: latex R495
-  checked: false
+  checked: true
 - equation: HSO3 + OH (+ M) <=> H2SO4 (+ M)
   type: falloff
   low-P-rate-constant: {A: 5.978058e-23, b: -3.3, Ea: 0.0}
   high-P-rate-constant: {A: 7.045766e-11, b: -0.7, Ea: 0.0}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: At97, high-P: At04}
   location: [reactants+rate latex R496]
-  checked: false
+  checked: true
 - equation: HSO3 + H <=> H2 + SO3
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
   citation: null
@@ -3717,9 +3717,9 @@ reactions:
   checked: false
 - equation: SO3 + H2O + H2O <=> H2SO4 + H2O
   rate-constant: {A: 2.3e-43, b: 1.0, Ea: -6540.0}
-  citation: null
+  citation: Lo96
   location: [equation-rate csv L3133]
-  checked: false
+  checked: true
 - equation: CH3 + O2 (+ M) <=> CH3O2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.494515e-25, b: -3.3, Ea: 0.0}
@@ -3731,42 +3731,41 @@ reactions:
   rate-constant: {A: 1.6e-10, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R102
-  checked: false
+  checked: true
 - equation: CH3O2 + H <=> CH4 + O2
   rate-constant: {A: 4.0e-14, b: 1.0, Ea: 8350.0}
   citation: Bo04
   location: latex R103
-  checked: false
+  checked: true
 - equation: CH3O2 + O <=> CH3O + O2
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R104
-  checked: false
+  checked: true
 - equation: CH3O2 + OH (+ M) <=> CH3OH + O2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 0.0, b: 0.0, Ea: 0.0}
-  citation: {low-P: null, high-P: null}
+  citation: {low-P: Assumed, high-P: Assumed}
   location: None
-  checked: false
+  checked: true
 - equation: CH3O2 + CH3 <=> CH3O + CH3O
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 0.0}
   citation: Ts86
   location: latex R106
-  checked: false
+  checked: true
 - equation: CH3O2 + NO <=> CH3O + NO2
   rate-constant: {A: 2.8e-12, b: 0.0, Ea: -285.0}
   citation: At01
   location: latex R107
-  checked: false
+  checked: true
 - equation: CH3 + CO (+ M) <=> CH3CO (+ M)
   type: falloff
   low-P-rate-constant: {A: 5.226562e-10, b: -7.6, Ea: 5530.0}
   high-P-rate-constant: {A: 8.4e-13, b: 0.0, Ea: 3460.0}
-  citation: {low-P: 300-1700 Tsang Hampson 1986, high-P: 300-500 Baulch
-      et al 1994}
+  citation: {low-P: Ts86, high-P: Ba94}
   location: [csv L1055]
-  checked: false
+  checked: true
 - equation: CH3CO + H <=> CH2CO + H2
   rate-constant: {A: 1.4e-11, b: 0.0, Ea: 0.0}
   citation: ; Ohmori, K.; Miyoshi, A.; Matsui, H.; Washida, N. 1990.  Studies
