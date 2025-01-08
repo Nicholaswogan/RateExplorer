@@ -439,6 +439,9 @@ Du08:
   doi: 10.1063/1.2919569
   doublecheck: false
 
+Ed92:
+  doi: 10.1016/S0082-0784(06)80081-0
+
 Ei98:
   title1: Determination of rate coefficients for reactions of formaldehyde pyrolysis
     and oxidation in the gas phase.
@@ -579,6 +582,12 @@ Ge99:
   doi: 10.1039/A906587C
   doublecheck: false
 
+Gh88:
+  doi: 10.1021/j100331a058
+
+Gi16:
+  doi: 10.1021/acs.jpca.6b01564
+
 Gl00:
   title1: Photolysis of Ketene at 193 nm and the Rate Constant for H + HCCO at 297
     K.
@@ -606,6 +615,9 @@ Gr94:
     Cl, and OH in the gas phase
   doi: 10.1002/bbpc.19940980403
   doublecheck: true
+
+Gr89:
+  doi: 10.1016/S0082-0784(89)80105-5
 
 Ha84:
   title1: Survey of rate constants in the N/H/O system. In
@@ -669,6 +681,9 @@ He95:
     \ Radicals with Unsaturated Hydrocarbons in the Gas Phase"
   doi: 10.1002/bbpc.199500014
   doublecheck: true
+
+He99:
+  doi: 10.1063/1.556043
 
 Hi87:
   title1: Kinetics of the reactions of S2 with O, O2, O3, N2O, NO, and NO2.
@@ -803,6 +818,12 @@ Ke72:
   doi: 10.1002/bbpc.19730770320
   doublecheck: false
 
+Ki84:
+  doi: 10.1021/j150654a029
+
+Kl22:
+  doi: 10.1016/j.combustflame.2021.111975
+
 Kn88:
   title1: Volume recombination of nitrogen atoms in the afterglow of a condensed discharge.
   title2: null
@@ -871,6 +892,9 @@ La04:
   title2: Reactions and Kinetics of Unsaturated C<sub>2</sub> Hydrocarbon Radicals
   doi: 10.1002/chin.200434290
   doublecheck: true
+
+La09:
+  doi: 10.1016/j.pss.2007.05.026
 
 Le77:
   title1: Absolute Rate Parameters for the Reaction of Atomic Hydrogen with Carbonyl
@@ -964,6 +988,9 @@ Lo04:
     Disulfur Monoxide (S<SUB>2</SUB>O), Thiazyl (NS), and Thioxophosphino (PS)
   doi: 10.1063/1.1611178
   doublecheck: false
+
+Lo15:
+  doi: 10.1016/j.icarus.2014.09.039
 
 Lu03:
   title1: Experiments and calculations on rate coefficients for pyrolysis of SO2 and
@@ -1228,6 +1255,9 @@ Oe92:
   doi: 10.1002/bbpc.19920960211
   doublecheck: true
 
+Oh90:
+  doi: 10.1021/j100371a006
+
 Ok78:
   title1: ''
   title2: null
@@ -1427,6 +1457,9 @@ Si88:
   doi: 10.1063/1.555811
   doublecheck: false
 
+Si10:
+  doi: 10.1021/jp906918z
+
 So01:
   title1: Shock Tube Determination of the Overall Rate of NH2 + NO -> Products in
     the Thermal De-NOx Temperature Window.
@@ -1619,6 +1652,9 @@ Wa84:
   doi: 10.1007/978-1-4684-0186-8_5
   doublecheck: true
 
+Wa00:
+  doi: 10.1063/1.481484
+
 Wa03:
   title1: Theoretical Study and Rate Constant Calculation of the Cl + HOCl and H +
     HOCl Reactions.
@@ -1700,6 +1736,9 @@ Xu99:
     -) Radical with Methane and Ethane"
   doi: 10.1021/jp984499j
   doublecheck: false
+
+Xu10:
+  doi: 10.1021/jp911048p
 
 Xu15:
   doi: 10.1021/acs.jpca.5b00553
