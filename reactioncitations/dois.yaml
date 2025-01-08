@@ -821,6 +821,9 @@ Ke72:
 Ki84:
   doi: 10.1021/j150654a029
 
+Kl05:
+  doi: 10.1021/jp058017x
+
 Kl22:
   doi: 10.1016/j.combustflame.2021.111975
 
@@ -1781,6 +1784,9 @@ Za09:
   title2: ATMOSPHERIC SULFUR PHOTOCHEMISTRY ON HOT JUPITERS
   doi: 10.1088/0004-637x/701/1/l20
   doublecheck: true
+
+Za16:
+  doi: 10.3847/0004-637X/824/2/137
 
 Zh05:
   title1: Ab initio kinetic study on the low-energy paths of the HO+C2H4 reaction.
