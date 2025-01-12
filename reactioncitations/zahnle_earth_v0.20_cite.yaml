@@ -1303,6 +1303,7 @@ reactions:
   citation: Ba92
   location: latex R61
   checked: true
+  note: The products are assumed.
 - equation: CH + H2 (+ M) <=> CH3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.387566e-25, b: -2.3, Ea: 0.0}
@@ -1397,10 +1398,9 @@ reactions:
   citation: Mo77, Ba92, Dob91
   location: [csv L454]
   checked: true
-  note: Custom fit based on \citet{Mo77}, \citet{Ba92}, and \citet{Dob91}.
 - equation: H + CH3O <=> H2CO + H2
   rate-constant: {A: 3.3e-11, b: 0.0, Ea: 375.0}
-  citation: Mo77, Dob91
+  citation: Mo77, Ba92, Dob91
   location: latex R80
   checked: true
 - equation: CO + CH3O <=> CH3 + CO2
@@ -1556,6 +1556,7 @@ reactions:
   citation: {low-P: Assumed, high-P: Ts86}
   location: latex R115
   checked: true
+  note: The rate is assumed to be similar to \ref{CH3 + H (+ M) <=> CH4 (+ M)}.
 - equation: CH2 + CH2 <=> C2H2 + H2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 400.0}
   citation: Ba92
@@ -1596,9 +1597,10 @@ reactions:
   type: falloff
   low-P-rate-constant: {A: 3.3e-30, b: 0.0, Ea: 740.0}
   high-P-rate-constant: {A: 9.0e-12, b: 0.0, Ea: 1220.0}
-  citation: {low-P: Ba92, high-P: Wa84}
+  citation: {low-P: rev-Ba92, high-P: rev-Wa84}
   location: latex R124
   checked: true
+  note: The 3-body recombination rate is constructed from the reported thermal decomposition rate at high temperatures and available thermodynamic data. In general, measured rates of thermal decomposition when expressed in Arrhenius form $A e^{-B/(RT)}$ suggest a lower B than is suggested by the heats of formation of the shards, which would imply extrapolated low temperature rates for 3-body recombination that are much too high. The high temperature rate is adjusted to the form $A (T/298)^c e^{-B^'/(RT)}$ with $B^' > B$ to give plausible extrapolations at low temperature.
 - equation: CH2 + CH2 <=> C2H3 + H
   rate-constant: {A: 2.0e-10, b: 0.0, Ea: 400.0}
   citation: Ba92
@@ -1660,6 +1662,7 @@ reactions:
   citation: {low-P: Assumed, high-P: Ts86}
   location: latex R135
   checked: true
+  note: This rather unlikely looking reaction is listed by \citet{Ts86} in the high pressure limit. \citet{Ba94} list thermal breakup of C$_2$H$_4$ into $\mathrm{C_2H_2} + \mathrm{H_2}$ in the low pressure limit; the reverse of that rate is listed here.
 - equation: CH2 + CH3 <=> C2H4 + H
   rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
@@ -1670,6 +1673,7 @@ reactions:
   citation: Fl02
   location: latex R137
   checked: true
+  note: The products are assumed.
 - equation: C2H3 + H2 <=> C2H4 + H
   rate-constant: {A: 5.79355e-14, b: 0.7, Ea: 3630.0}
   citation: rev-Kn96
@@ -1708,6 +1712,7 @@ reactions:
   citation: {low-P: Ba94, high-P: Mi05}
   location: latex R144
   checked: true
+  note: Two recent studies \citep{Cu06,Mi05} differ by a factor of two at relevant temperatures; the older recommendation \citet{Ba94} is close to \citet{Cu06}.
 - equation: H + C2H5 <=> CH3 + CH3
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
   citation: Ba92
@@ -1807,6 +1812,7 @@ reactions:
   citation: Pa08
   location: latex R163
   checked: true
+  note: Ground state C$_2$ reacts with almost any hydrocarbon to make bigger hydrocarbons. Because C$_2$ is not very abundant in these atmospheres, we have chosen this single alternative to \ref{CH + H2 (+ M) <=> CH3 (+ M)} (hydrogenation) as representative. We assume the products.
 - equation: C2H2 + OH (+ M) <=> C2H2OH (+ M)
   type: falloff
   low-P-rate-constant: {A: 5.04e-25, b: -2.0, Ea: 0.0}
@@ -1814,6 +1820,7 @@ reactions:
   citation: {low-P: Ba92, high-P: Ba92}
   location: latex R164
   checked: true
+  note: Oxidation of C$_2$H$_2$ is complicated, passing through a series of reaction intermediates that includes at least one substantial energy barrier. The energy barrier is encountered in the reactions of the primary adduct.
 - equation: C2H2OH + H <=> CH2CO + H2
   rate-constant: {A: 2.0e-10, b: 0.0, Ea: 1500.0}
   citation: null
@@ -2116,6 +2123,7 @@ reactions:
   citation: RH94, rev-Xu99
   location: latex R212
   checked: true
+  note: A reverse fit to \citet{Xu99} for $500 < T < 1300$ K.
 - equation: NH2 + H (+ M) <=> NH3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 3.0e-30, b: 0.0, Ea: 0.0}
@@ -2170,6 +2178,7 @@ reactions:
   citation: He95
   location: latex R222
   checked: true
+  note: The measured rate does not specify the products. We have presumed an outcome of two stable molecules.
 - equation: NH2 + C2H5 <=> NH3 + C2H4
   rate-constant: {A: 4.15e-11, b: 0.0, Ea: 0.0}
   citation: De82
@@ -2292,6 +2301,7 @@ reactions:
   citation: Ga07
   location: latex R246
   checked: true
+  note: Products assumed. The actual products may be $\mathrm{C_2H_3CN} + \mathrm{H}$.
 - equation: CN + C2H6 <=> HCN + C2H5
   rate-constant: {A: 1.966573e-19, b: 2.77, Ea: -900.0}
   citation: Ba91
@@ -2308,12 +2318,13 @@ reactions:
   high-P-rate-constant: {A: 6.75e-05, b: -3.0, Ea: 1700.0}
   citation: {low-P: null, high-P: null}
   location: [equation-rate latex R249, equation-rate csv L1631]
-  checked: true
+  checked: false
 - equation: HCNOH + H <=> NH3 + CO
   rate-constant: {A: 1.5e-10, b: 0.0, Ea: 14400.0}
   citation: Assumed
   location: latex R250
   checked: true
+  note: The activation barrier is from \citet{De00}.
 - equation: H + HCN (+ M) <=> H2CN (+ M)
   type: falloff
   low-P-rate-constant: {A: 4.51477e-24, b: -2.73, Ea: 3860.0}
@@ -2373,6 +2384,7 @@ reactions:
   citation: {low-P: Du08, high-P: Du08}
   location: latex R261
   checked: true
+  note: Reported rates are highly discrepant. \citet{Ni79} estimate in their review that $k=1.2\!\times\! 10^{-29}$, \citet{Mo02} use $k=5\!\times\! 10^{-32}e^{+900/T}$ to model S$_2$ in Io's volcanic plumes (which has been observed), and \citet{Du08} use theory to calculate that $k=2.0\!\times\! 10^{-33}e^{ +210/T}$. At 300 K these three estimates span 3.5 orders of magnitude. None of the approximations attempts to describe the reaction at the high temperatures of interest to us here.  Most of our numerical experiments are performed with a very low (conservative) reaction rate, $k= 1.0\!\times\! 10^{-32} \left(T/298 \right)^{-2.00}$.
 - equation: S + S2 (+ M) <=> S3 (+ M)
   type: falloff
   low-P-rate-constant: {A: 9.9e-26, b: -2.0, Ea: 0.0}
@@ -2423,6 +2435,7 @@ reactions:
   citation: rev-Woi95a, rev-Sh98
   location: latex R271
   checked: true
+  note: Reported rates for this reaction are discrepant, $4.0\times 10^{-11}$ cm$^{3}$s$^{-1}$ (Sc73) and $<\!5\times 10^{-12}$ cm$^{3}$s$^{-1}$ \citep{Ni79}. The seemingly analogous reactions $\mathrm{O} + \mathrm{OH} \rightarrow \mathrm{O_2} + \mathrm{H} ($k=3.3\times 10^{-11}$ cm$^{3}$s$^{-1}$), $\mathrm{O} + \mathrm{HS} \rightarrow \mathrm{SO} + \mathrm{H}$ ( $k=7\times 10^{-11}$ cm$^{3}$s$^{-1}$), and $\mathrm{S} + \mathrm{OH} \rightarrow \mathrm{SO} + \mathrm{H}$ ($k=6.6\times 10^{-11}$ cm$^{3}$s$^{-1}$), are all rather fast at room temperature. The reverse, although very endothermic, is the major sink on S$_2$.
 - equation: H + HS <=> S + H2
   rate-constant: {A: 5.535239e-13, b: 0.7, Ea: 0.0}
   citation: null
@@ -2433,6 +2446,7 @@ reactions:
   citation: Assumed
   location: latex R273
   checked: true
+  note: Analogy to $\mathrm{H_2} + \mathrm{O_2}$.
 - equation: H + S3 <=> HS + S2
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 500.0}
   citation: Assumed
@@ -2478,6 +2492,7 @@ reactions:
   citation: Sh85
   location: latex R282
   checked: true
+  note: The actual product at low temperatures is CH$_3$SH, a molecule we have not included.
 - equation: S + HCO <=> HS + CO
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
   citation: Mo95
@@ -2487,22 +2502,22 @@ reactions:
   type: falloff
   low-P-rate-constant: {A: 2.446097e-25, b: -2.52, Ea: -488.0}
   high-P-rate-constant: {A: 1.0e-10, b: 0.0, Ea: 0.0}
-  citation: {low-P: "rev-Te90, rev-Woi94, rev-Sh96", high-P: Assumed}
+  citation: {low-P: rev-Te90, rev-Woi94, rev-Sh96, rev-Ka99, high-P: Assumed}
   location: [csv L1872, equation-rate latex R285]
-  checked: false
-  note: Reverse for temperatures between 1000 and 2200 K.
+  checked: true
 - equation: S + H2 (+ M) <=> H2S (+ M)
   type: falloff
   low-P-rate-constant: {A: 7.122926e-27, b: -1.9, Ea: 8140.0}
   high-P-rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: {low-P: "rev-Te90, rev-Woi94, rev-Sh96, rev-Ka99", high-P: Assumed}
+  citation: {low-P: rev-Te90, rev-Woi94, rev-Sh96, rev-Ka99, high-P: Assumed}
   location: [csv L1881, equation-rate latex R286]
-  checked: false
+  checked: true
 - equation: H + H2S <=> HS + H2
   rate-constant: {A: 5.726191e-17, b: 1.94, Ea: 455.0}
   citation: Pe99
   location: latex R287
   checked: true
+  note: \citet{Pr77} reported a rate for $\mathrm{HS} + \mathrm{D_2} \rightarrow \mathrm{HDS} + \mathrm{D}$, $2.24\!\times\! 10^{-11} e^{-3530/T}$ cm$^{3}$s$^{-1}$ ($808<T<937$ K), that is two orders of magnitude faster than $k_{r}$ at 900 K.
 - equation: HS + HS <=> H2S + S
   rate-constant: {A: 2.716406e-12, b: 0.2, Ea: 0.0}
   citation: rev-Sh96
@@ -2528,6 +2543,7 @@ reactions:
   citation: Da95
   location: latex R292
   checked: true
+  note: The measured rate at 295 K is $ 2.0\!\times\! 10^{-12}$ cm$^3$s$^{-1}$. We have assumed the activation energy.
 - equation: HS + CH4 <=> CH3 + H2S
   rate-constant: {A: 3.06e-12, b: 0.0, Ea: 8260.0}
   citation: Pe88
@@ -2569,6 +2585,7 @@ reactions:
   citation: Assumed
   location: latex R301
   checked: true
+  note: Assumed by analogy to $\mathrm{N} + \mathrm{O_2}$.
 - equation: SO + O (+ M) <=> SO2 (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.139185e-25, b: -2.17, Ea: 0.0}
@@ -2581,6 +2598,7 @@ reactions:
   citation: Assumed
   location: latex R303
   checked: true
+  note: Assumed by analogy to $\mathrm{SO} + \mathrm{O_2}$.
 - equation: O2 + SO <=> SO2 + O
   rate-constant: {A: 3.8e-12, b: 0.0, Ea: 3710.0}
   citation: Ga98
@@ -2591,6 +2609,7 @@ reactions:
   citation: Bl00, Bl06, Ba07
   location: latex R305
   checked: true
+  note: A compomise between measured values and the avaliable thermodynamic data.
 - equation: H + SO (+ M) <=> HSO (+ M)
   type: falloff
   low-P-rate-constant: {A: 7.431425e-34, b: 0.28, Ea: 0.0}
@@ -2720,6 +2739,7 @@ reactions:
   citation: Assumed
   location: latex R336
   checked: true
+  note: Analogy to $\mathrm{OH} + \mathrm{CO}$.
 - equation: CH2 + S <=> CS + H2
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
   citation: Assumed
@@ -2742,6 +2762,7 @@ reactions:
   citation: Assumed
   location: latex R341
   checked: true
+  note: Assumed twice as fast as $\mathrm{CO} + \mathrm{OH}$.
 - equation: CS2 + O <=> CS + SO
   rate-constant: {A: 5.27e-11, b: 0.0, Ea: 822.0}
   citation: Si88, Co92
@@ -3011,6 +3032,7 @@ reactions:
   citation: {low-P: rev-Ts92, high-P: Assumed}
   location: latex R384
   checked: true
+  note: The 3-body recombination rate is consistent with the reported thermal decomposition rate and available thermodynamic data.
 - equation: OH + HCN <=> H + HNCO
   rate-constant: {A: 8.993633e-30, b: 4.71, Ea: -248.0}
   citation: Ts91
@@ -3055,6 +3077,7 @@ reactions:
   citation: {low-P: Assumed, high-P: Ng96}
   location: latex R391
   checked: true
+  note: Low pressure rate assumed.
 - equation: NH2 + CO (+ M) <=> NH2CO (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.0e-31, b: 0.0, Ea: 5000.0}
@@ -3095,6 +3118,7 @@ reactions:
   citation: {low-P: Assumed, high-P: Ca05b}
   location: latex R398
   checked: false
+  note: NNH is regarded as an essential intermediate in NO production in flames. It resembles a short-lived resonance better than it does an actual chemical species residing inside a potential well; indeed, it is probably better thought of as a local maximum in the potential energy surface. 
 - equation: NNH + H <=> N2 + H2
   rate-constant: {A: 1.67e-10, b: 0.0, Ea: 0.0}
   citation: Gl08
@@ -3695,6 +3719,7 @@ reactions:
   citation: {low-P: At97, high-P: At04}
   location: latex R491
   checked: true
+  note: The HSO$_3$ radical appears to be little studied because it reacts quickly with O$_2$. We include it as a step to H$_2$SO$_4$ for conditions where O$_2$ may be less abundant.
 - equation: HSO3 + O2 <=> HO2 + SO3
   rate-constant: {A: 1.3e-12, b: 0.0, Ea: 330.0}
   citation: At04
@@ -4012,7 +4037,7 @@ reactions:
   location: latex R500
   checked: true
 - equation: OClO + O <=> ClO + O2
-  rate-constant: {A: 2.4e-11, b: 0.0, Ea: 960.0}
+  rate-constant: {A: 2.4e-11, b: 0.0, Ea: 960.0} # This rate is close to matching one in NIST, but is slightly different.
   citation: null
   location: None
   checked: false
@@ -4080,6 +4105,7 @@ reactions:
   citation: {low-P: Fa95, high-P: Fa95}
   location: latex R415
   checked: true
+  note: We assume the same rate for N$_2$H$_3$ + H as for NH$_2$ + NH$_2$.
 - equation: N2H4 + CH3 <=> N2H3 + CH4
   rate-constant: {A: 1.234568e-24, b: 4.0, Ea: 2038.0}
   citation: null
@@ -4517,8 +4543,42 @@ reactions:
 - equation: SO3 + hv => SO2 + O
   type: photolysis
 
-
 reaction-notes:
+- reactions: [H + CH3O <=> CH3 + OH, H + CH3O <=> H2CO + H2]
+  note: The branching is from \citet{Mo77}, and the rate is a custom fit based on
+        \citet{Ba92} and \citet{Dob91}.
+- reactions: [H + CH3O (+ M) <=> CH3OH (+ M), H + H2COH (+ M) <=> CH3OH (+ M),
+              H2CO + H2 (+ M) <=> CH3OH (+ M)]
+  note: The low pressure limits are assumed.
+- reactions: [H + C4H (+ M) <=> C4H2 (+ M), H2 + C4H <=> C4H2 + H, C4H2 + C2H <=> C4H + C2H2]
+  note: Placeholder rates for truncating chemistry assumed by analogy to $\mathrm{H} + \mathrm{C_2H_2}$. In practice C$_4$H$_2$ readily adds H atoms and grows \citep{Kl05}.
+- reactions: [NH + CH2 <=> N + CH3, NH + CH3 <=> N + CH4, NH + C2H3 <=> N + C2H4, 
+              NH + C2H5 <=> N + C2H6, NH2 + C2H <=> NH + C2H2, NH + C2H3 <=> NH2 + C2H2,
+              NH + C2H5 <=> NH2 + C2H4, NH2 + C2H3 <=> NH3 + C2H2]
+  note: By analogy to \ref{NH2 + C2H5 <=> NH3 + C2H4}, \citet{Mo95a} and \citet{Mo95b} assigned rates to these strongly exothermic reactions. However, high activation energies for other similar reactions such as \ref{C2H6 + NH <=> C2H5 + NH2}, \ref{NH2 + C2H4 <=> NH3 + C2H3}, and \ref{NH2 + C2H6 <=> NH3 + C2H5} suggest that the reactions could be slower at low T than given here.
+- reactions: [N + C2H5 <=> NH + C2H4, N + C2H5 <=> H2CN + CH3]
+  note: The rate in \citet{St95} does not specify the products. \citet{Ya05} give $\mathrm{NH} + \mathrm{C_2H_4}$ and $\mathrm{H_2CN} + \mathrm{CH_3}$ as dominant channels. We presume the channels each have a 50\% yield.
+- reactions: [H2CN + CN <=> HCN + HCN, H2CN + NH2 <=> HCN + NH3, H2CN + CH3 <=> HCN + CH4,
+              H2CN + C2H <=> HCN + C2H2]
+  note: The published rate for \ref{H + HCN (+ M) <=> H2CN (+ M)} leads to H$_2$CN being rather abundant. Reported reactions of H$_2$CN are abstractions by H \citep{To03} and OH \citep{Ni03}. Upper limits $< 10^{-15} cm$^3$/s have been reported on reactions with H$_2$, CO, CH$_4$, and C$_2$H$_4$ \citep{Ni03}. Because H$_2$CN can be abundant, we have created other abstraction channels analogous to the reaction with OH.
+- reactions: [S + S2 (+ M) <=> S3 (+ M), S + S3 <=> S2 + S2, S + S3 (+ M) <=> S4 (+ M),
+              S2 + S2 (+ M) <=> S4 (+ M), S + S4 <=> S2 + S3]
+  note: Rates of S$_3$ and S$_4$ reactions are effectively unknown, although 3-body recombinations among S$_n$ species are known to be fast \citep{Fa67,La72}. Tabulated thermodynamic properties of S$_n$ are incomplete for $n>2$. We have used \citet{Be78}'s estimates for standard enthalpies of formation for these species. S$_3$ and S$_4$ are especially uncertain. \citet{Ch98} gives expressions for $H^{\circ}-H^{\circ}_{298}$ and $S^{\circ}$ for both S$_3$ and S$_4$, but does not give $H^{\circ}_{298}$ for either. \citet{Be78} estimates that $H^{\circ}_{298}({\rm S}_3) \approx 32.5\pm 1$ kcal/mole (consistent within error of \citet{Dr68}) and $H^{\circ}_{298}({\rm S}_4)\approx 31$ kcal/mole. However, \citet{Be78} assumes a cyclic structure for S$_3$, while \citet{Ch98} seems to have assumed the opposite.  Presumably the structure affects the heat capacity and entropy, which makes estimating the equilibria involving S$_3$ especially uncertain.
+- reactions: [H + S3 <=> HS + S2, H + S4 <=> HS + S3]
+  note: We expect that these analogues to \ref{S + HS <=> S2 + H} are the leading chemical sources and sinks of S$_3$ and S$_4$.
+- reactions: [H + HS (+ M) <=> H2S (+ M), S + H2 (+ M) <=> H2S (+ M)]
+  note: We have constructed forward reaction rates that, when reversed, approximate the reported rates of the two thermal decomposition pathways for H$_2$S at the temperature ranges where these data have been obtained.
+- reactions: [H + SO (+ M) <=> HSO (+ M), H + HSO <=> HS + OH, H + HSO <=> H2 + SO, H + HSO <=> H2O + S,
+              H2S + O <=> H + HSO, OH + HSO <=> H2O + SO, HS + HSO <=> H2S + SO, O + HSO <=> OH + SO,
+              O + HSO <=> HS + O2, S + HSO <=> HS + SO, SO + HCO <=> HSO + CO, SO + HO2 <=> HSO + O2,
+              HS + O3 <=> HSO + O2]
+  note: HSO assumed analogous to HO$_2$.
+- reactions: [CS2 + O <=> CS + SO, CS2 + O <=> OCS + S, CS2 + O <=> CO + S2]
+  note: Overall rate from \citet{Si88}, branching ratios from \citet{Co92}.
+- reactions: [H + CS (+ M) <=> HCS (+ M), S + CH2 <=> HCS + H, S + HCS <=> CS2 + H, S + HCS <=> CS + HS
+              S2 + CH <=> HCS + S, HCS + H <=> CS + H2, HCS + CH3 <=> CS + CH4, HCS + C2H <=> CS + C2H2,
+              HCS + OH <=> CS + H2O]
+  note: Tabulated thermodynamic properties for HCS and H$_2$CS appear to be nonexistent, although \citet{Be78} does estimate properties at room temperatures. The HCS radical is by assumption an important intermediate for CS and CS$_2$ formation in our scheme. The HCS reactions are invented but plausible. We have in general reduced the very fast rates estimated by \citet{Mo95} by a factor of five. They are important here because they provide the chief kinetic pathway to CS and CS$_2$, two molecules that were observed to be abundant in the SL9 impacts on Jupiter.
 - reactions: [H + S4 (+ M) <=> HS4 (+ M), H + S8 <=> HS4 + S4, H + HS4 <=> H2 + S4,
               OH + HS4 <=> H2O + S4, H + HS4 <=> H2S + S3, HS + HS4 <=> H2S + S4,
               NH2 + HS4 <=> NH3 + S4, HS4 + HS4 <=> H2 + S8, S + HS4 <=> HS + S4]
