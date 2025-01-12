@@ -4575,7 +4575,7 @@ reaction-notes:
   note: HSO assumed analogous to HO$_2$.
 - reactions: [CS2 + O <=> CS + SO, CS2 + O <=> OCS + S, CS2 + O <=> CO + S2]
   note: Overall rate from \citet{Si88}, branching ratios from \citet{Co92}.
-- reactions: [H + CS (+ M) <=> HCS (+ M), S + CH2 <=> HCS + H, S + HCS <=> CS2 + H, S + HCS <=> CS + HS
+- reactions: [H + CS (+ M) <=> HCS (+ M), S + CH2 <=> HCS + H, S + HCS <=> CS2 + H, S + HCS <=> CS + HS,
               S2 + CH <=> HCS + S, HCS + H <=> CS + H2, HCS + CH3 <=> CS + CH4, HCS + C2H <=> CS + C2H2,
               HCS + OH <=> CS + H2O]
   note: Tabulated thermodynamic properties for HCS and H$_2$CS appear to be nonexistent, although \citet{Be78} does estimate properties at room temperatures. The HCS radical is by assumption an important intermediate for CS and CS$_2$ formation in our scheme. The HCS reactions are invented but plausible. We have in general reduced the very fast rates estimated by \citet{Mo95} by a factor of five. They are important here because they provide the chief kinetic pathway to CS and CS$_2$, two molecules that were observed to be abundant in the SL9 impacts on Jupiter.
@@ -4583,5 +4583,5 @@ reaction-notes:
               OH + HS4 <=> H2O + S4, H + HS4 <=> H2S + S3, HS + HS4 <=> H2S + S4,
               NH2 + HS4 <=> NH3 + S4, HS4 + HS4 <=> H2 + S8, S + HS4 <=> HS + S4]
   note: All chemistry involving HS$_4$ is invented and justified in Section 5.5 in \citet{Za16}
-- reactions: [H + C4H3 <=> H2 + C4H2, H + C4H3 <=> C2H2 + C2H]
+- reactions: [H + C4H3 <=> H2 + C4H2, H + C4H3 <=> C2H2 + C2H2]
   note: See Section 4.1.1 in \citet{Za16} for justification.
