@@ -31,10 +31,10 @@ def main():
     m_real_save = np.interp(wavelength_save, wavelength, m_real)
     m_imag_save = np.interp(wavelength_save, wavelength, m_imag)
 
-    r_min = 0.001
+    r_min = 0.01
     r_max = 100.0
     nrad = 50
-    filename = 'mie_palmer1975.h5'
+    filename = 'palmer1975.h5'
     notes = """Mie optical properties for sulfuric acid aerosols based on Palmer and Williams (1975).
 
 wavelengths: Wavelength [nm]
