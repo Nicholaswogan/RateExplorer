@@ -88,7 +88,7 @@ module lusolvec_mod
       DO J=1,N
         IF (CDABS(A(I,J)).GT.AAMAX) AAMAX=CDABS(A(I,J))
       END DO
-      IF (AAMAX.EQ.0._f) PAUSE 'Singular matrix.'
+      ! IF (AAMAX.EQ.0._f) PAUSE 'Singular matrix.'
       VV(I)=1./AAMAX
     END DO
     DO J=1,N

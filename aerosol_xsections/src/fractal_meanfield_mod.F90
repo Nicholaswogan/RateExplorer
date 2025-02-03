@@ -518,7 +518,6 @@ module fractal_meanfield_mod
 
       bound=0._f
       interv=1
-      errabs = 0.0_f
       errrel=1e-5_f
       p1=0._f
       dp1=0._f
@@ -1047,9 +1046,9 @@ module fractal_meanfield_mod
     ifail = 0
     CALL dqagi(xfreal_n,fx_vars,bound,interv,errabs,errrel,rres,rerr,neval,ifail,maxsub,lenw,nsubin,iwork,work)
     if (ifail.ne.0) then
-      ! write(*,*) "funs_n::ifail=",ifail," returned by dqagi() during call of funs(",pp,") while integrating xfreal_n()"
-      ! rc = RC_ERROR
-      ! return
+      write(*,*) "funs_n::ifail=",ifail," returned by dqag() during call of funs(",pp,") while integrating xfreal_n()"
+      rc = RC_ERROR
+      return
     endif
 
     bound=0._f
@@ -1066,9 +1065,9 @@ module fractal_meanfield_mod
     ifail = 0
     CALL dqagi(xfimag_n,fx_vars,bound,interv,errabs,errrel,ires,ierr,neval,ifail,maxsub,lenw,nsubin,iwork,work)
     if(ifail.ne.0) then
-      ! write(*, *) "funs_n::ifail=",ifail," returned by dqagi() during call of funs(",pp,") while integrating xfimag_n()"
-      ! rc = RC_ERROR
-      ! return
+      write(*, *) "funs_n::ifail=",ifail," returned by dqagi() during call of funs(",pp,") while integrating xfimag_n()"
+      rc = RC_ERROR
+      return
     endif
 
     rcomplex = dcmplx(1._f,0._f)*rres + dcmplx(0._f,1._f)*ires

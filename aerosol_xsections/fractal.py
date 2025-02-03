@@ -9,9 +9,10 @@ def number_of_monomers(R, R_mon):
     return (R/R_mon)**3
 
 def make_fractal_meanfield():
+    rootdir = os.path.dirname(os.path.realpath(__file__))+'/'
     files = os.listdir('./')
     filename = [a for a in files if 'libfractal' in a][0]
-    libfractal = ct.CDLL(filename)
+    libfractal = ct.CDLL(rootdir+filename)
     fractal_meanfield = libfractal.fractal_meanfield
     fractal_meanfield.argtypes = [
         ct.c_bool,
@@ -65,8 +66,8 @@ def fractal_meanfield_single(wv, k, n, a, df, r, rmon):
         ct.byref(gfac),
         ct.byref(rc)
     )
-    # if rc.value < 0:
-    #     raise Exception('Failure!')
+    if rc.value < 0:
+        return np.nan, np.nan, np.nan
     w0 = qsca.value/qext.value
     return qext.value, w0, gfac.value
 
