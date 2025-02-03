@@ -125,7 +125,7 @@ def compute_frac_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_
     g_all = np.zeros((nrad,nw),np.float64)
 
     for i,radius in enumerate(radii):
-        print('%.4f'%radius)
+        print('Radius = %.4f um'%radius)
         qext, w0, g0 = fractal_meanfield(wavelength, m_imag, m_real, a, df, radius, rmon, nprocess)
         w0_all[i,:] = w0
         qext_all[i,:] = qext

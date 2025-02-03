@@ -8,7 +8,7 @@ def main():
     m_real_save = np.interp(wavelength_save, wavelength, m_real)
     m_imag_save = np.interp(wavelength_save, wavelength, m_imag)
 
-    r_min = 1
+    r_min = 0.05
     r_max = 5
     nrad = 50
     a = 1
@@ -31,6 +31,7 @@ g0: Asymmetry factor [unitless], dimensions (len(radii),len(wavelengths))
     utils.save_plot(filename, 0.1)
     utils.save_plot(filename, 0.5)
     utils.save_plot(filename, 1)
+    utils.save_plot(filename, 5)
     
 
 if __name__ == '__main__':
