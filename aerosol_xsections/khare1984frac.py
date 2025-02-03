@@ -15,8 +15,10 @@ def main():
     df = 2
     rmon = 0.05
     nprocess = 4
-    filename = 'mie_khare1984frac.h5'
-    notes = """Mie optical properties for hydrocarbon aerosols based on Khare et al. (1984).
+    filename = 'khare1984frac.h5'
+    notes = """Optical properties for hydrocarbon aerosols using the Khare et al. (1984) indices of
+refraction, and the Wolf et al. (2010) fractal meanfield scattering code. I use a packing coefficient
+of 1, a fractal dimension of 2, and monomer radius of 50 nm.
 
 wavelengths: Wavelength [nm]
 radii: Particle radii [um]

@@ -264,8 +264,8 @@ module adgaquad_mod
     lvl = 0
 10  if(ier.eq.6) lvl = 1
     if(ier.ne.0) then
-      write(*,*) "ERROR: abnormal return from dqag"
-      write(*,*) "       ifail=",ier,"  level=",lvl
+      ! write(*,*) "ERROR: abnormal return from dqag"
+      ! write(*,*) "       ifail=",ier,"  level=",lvl
     endif
     return
   end subroutine dqag
@@ -874,8 +874,8 @@ module adgaquad_mod
     lvl = 0
 10  if(ier.eq.6) lvl = 1
     if(ier.ne.0) then
-      write(*,*) "ERROR: abnormal return from dqagi"
-      write(*,*) "       ifail=",ier,"  level=",lvl
+      ! write(*,*) "ERROR: abnormal return from dqagi"
+      ! write(*,*) "       ifail=",ier,"  level=",lvl
     endif
     return
   end subroutine dqagi
