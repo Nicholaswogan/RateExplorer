@@ -121,7 +121,7 @@ def main():
     with open('composition.yaml','r') as f:
         comp = yaml.load(f,Loader=Loader)
 
-    zahnle_thermofile = 'thermodata121.rx'
+    zahnle_thermofile = 'thermodata121_wHe_Tlim.rx'
     species_list = [key for key in comp]
     species = species_from_zahnlethermo(species_list, zahnle_thermofile)
     species = FormatReactions_main(species)
