@@ -9,3 +9,11 @@ I have added thermodata121.rx on the basis of the following email of Kevin Zahnl
 # 2/12/25
 
 I added thermodata121_wHe_Tlim.rx which adds He, and changes the T limits of the polynomial fits to be consistent with what I'm currently using in photochem v0.6.3.
+
+I also created thermodata122.yaml, building off of thermodata121_wHe_Tlim.rx. For all species except He and H2, I created a new set of polynomials for 10 K < T < 298 K. The polynomials are designed to smoothly vary at the 298 K transition, and also at low T tend toward a heat capacity that only has translational and rotational degrees of freedom:
+
+$$c_p = \left(\frac{5}{2}\right)R + \left(\frac{N_\mathrm{rot}}{2}\right)R$$
+
+Here, $N_\mathrm{rot}$, is the number of rotational degrees of freedom. The file `rotational_dof.yaml` has the number of rotational degrees of freedom for each species.
+
+Now, the thermodynamics of all species are reasonable down to hopefully ~10 K.
