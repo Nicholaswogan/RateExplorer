@@ -1,4 +1,5 @@
 import yaml
+from photochem.utils._format import yaml, Loader, MyDumper, flowmap, FormatReactions_main
 
 def parse_zahnle_thermofile(filename):
     "Parses Kevin's thermodynamic files"
@@ -93,7 +94,7 @@ def species_from_zahnlethermo(species_list, zahnle_thermofile):
 
     data = parse_zahnle_thermofile(zahnle_thermofile)
     
-    with open('zahnledata/composition.yaml','r') as f:
+    with open('composition.yaml','r') as f:
         comp = yaml.load(f,Loader=yaml.Loader)
     
     out = []
@@ -115,3 +116,18 @@ def species_from_zahnlethermo(species_list, zahnle_thermofile):
     species = {}
     species['species'] = out
     return species
+
+def main():
+    with open('composition.yaml','r') as f:
+        comp = yaml.load(f,Loader=Loader)
+
+    zahnle_thermofile = 'thermodata121.rx'
+    species_list = [key for key in comp]
+    species = species_from_zahnlethermo(species_list, zahnle_thermofile)
+    species = FormatReactions_main(species)
+
+    with open('thermodata121.yaml','w') as f:
+        yaml.dump(species,f,sort_keys=False,Dumper=MyDumper,width=70)
+
+if __name__ == '__main__':
+    main()
