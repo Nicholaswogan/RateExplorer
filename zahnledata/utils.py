@@ -21,7 +21,7 @@ class CustomDumper(yaml.Dumper):
                 value = format(d1, 'f')
             elif np.abs(data) > 1e4:
                 value = format(d1, 'e')
-            elif np.abs(data) < 1e-4:
+            elif np.abs(data) < 1e-3:
                 value = format(d1, 'e')
             else:
                 value = format(d1, 'f')

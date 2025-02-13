@@ -5,6 +5,7 @@ import yaml
 from scipy import optimize
 from photochem.utils._format import yaml, Loader, MyDumper, flowmap, FormatReactions_main
 from matplotlib import pyplot as plt
+import os
 
 def objective(x, cp_298, cp_der_298, nr_dof_sp):
     coeffs = x
@@ -68,21 +69,32 @@ def main():
     with open('rotational_dof.yaml','r') as f:
         nr_dof = yaml.load(f,yaml.Loader)
 
+    new_data = {}
     for i,species in enumerate(mech['species']):
         if species['name'] in ['He','H']:
             continue
         coeffs = compute_low_T_thermo(species, nr_dof)
         coeffs = [float(a) for a in coeffs]
+        new_data[species['name']] = coeffs
 
+    with open('tmp.yaml','w') as f:
+        yaml.dump(new_data,f,sort_keys=False,Dumper=utils.CustomDumper,width=75)
+    with open('tmp.yaml','r') as f:
+        new_data = yaml.load(f,yaml.Loader)
+    os.remove('tmp.yaml')
+
+    for i,species in enumerate(mech['species']):
+        if species['name'] not in new_data:
+            continue
         new_Tr = [10.0, 298.0]+ mech['species'][i]['thermo']['temperature-ranges'][1:]
-        new_coeffs = [coeffs] + mech['species'][i]['thermo']['data']
+        new_coeffs = [new_data[species['name']]] + mech['species'][i]['thermo']['data']
 
         mech['species'][i]['thermo']['temperature-ranges'] = new_Tr
         mech['species'][i]['thermo']['data'] = new_coeffs
 
     mech = FormatReactions_main(mech)
     with open('thermodata122.yaml','w') as f:
-        yaml.dump(mech,f,sort_keys=False,Dumper=utils.CustomDumper,width=70)
+        yaml.dump(mech,f,sort_keys=False,Dumper=yaml.Dumper,width=75)
 
 def plot(sp, nr_dof, gas):
     fig,axs = plt.subplots(1,3,figsize=[11,3])
@@ -140,7 +152,7 @@ def plot_all():
 
 
 if __name__ == '__main__':
-    # main()
-    plot_all()
+    main()
+    # plot_all()
 
 
