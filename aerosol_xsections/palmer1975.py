@@ -43,7 +43,7 @@ w0: Single scattering albedo [unitless], dimensions (len(radii),len(wavelengths)
 qext: Extinction [1/particle], dimensions (len(radii),len(wavelengths))
 g0: Asymmetry factor [unitless], dimensions (len(radii),len(wavelengths))
 """
-    utils.compute_mie_and_save(filename, notes, wavelength_save, m_real_save, m_imag_save, r_min, r_max, nrad, delete_fringe=True)
+    utils.compute_mie_and_save(filename, notes, wavelength_save, m_real_save, m_imag_save, r_min, r_max, nrad, delete_fringe=False)
 
     utils.save_plot(filename, 0.1)
     utils.save_plot(filename, 0.5)

@@ -132,4 +132,13 @@ def compute_frac_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_
         qext_all[i,:] = qext
         g_all[i,:] = g0
 
+    # Interpolate to get rid of nans
+    for i in range(len(radii)):
+        inds = np.where(qext_all[i,:] != qext_all[i,:])[0]
+        if len(inds) > 0:
+            inds1 = np.where(qext_all[i,:] == qext_all[i,:])[0]
+            qext_all[i,:] = np.interp(wavelength_nm,wavelength_nm[inds1],qext_all[i,inds1])
+            w0_all[i,:] = np.interp(wavelength_nm,wavelength_nm[inds1],w0_all[i,inds1])
+            g_all[i,:] = np.interp(wavelength_nm,wavelength_nm[inds1],g_all[i,inds1])
+
     utils.write_file(filename, notes, wavelength_nm, radii, w0_all, qext_all, g_all)
