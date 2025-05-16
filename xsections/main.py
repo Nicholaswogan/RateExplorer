@@ -5,7 +5,7 @@ from utils import yaml
 import utils
 
 def runall():
-    species = [a for a in os.listdir('.') if '.py' in a and a not in ['main.py','template.py','utils.py']]
+    species = [a for a in os.listdir('.') if '.py' in a and a not in ['main.py','template.py','utils.py','ref.py']]
     species.sort()
 
     for sp in species:
@@ -16,7 +16,7 @@ def runall():
         print()
 
 def collect_citations():
-    species = list(set([a.replace('.h5','') for a in os.listdir('results') if '.h5' in a]))
+    species = list(set([a.replace('.h5','') for a in os.listdir('results') if '.h5' in a and a != 'bins.h5']))
     species.sort()
 
     citations = {}

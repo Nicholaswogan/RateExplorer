@@ -49,6 +49,16 @@ def main():
     out['xsp'] = np.append(out['xsp'][inds1],xs[inds2])
     out['xsi'] = np.append(out['xsi'][inds1],xs[inds2]*0.0)
 
+    wv_max = np.max(out['wv'])
+
+    wv, xs = np.loadtxt('data/Karkoschka1994_CH4.txt').T
+    wv = np.append(out['wv'][-1]*1.01,np.append(wv[0]*0.99,wv))
+    xs = np.append(0.0,np.append(0.0,xs))
+    out['wv'] = np.append(out['wv'], wv)
+    out['xsa'] = np.append(out['xsa'],xs)
+    out['xsp'] = np.append(out['xsp'],xs*0.0)
+    out['xsi'] = np.append(out['xsi'],xs*0.0)
+
     # Quantum yields
     ratios = get_yields()
     ratios = utils.rename_all_as_zahnle(ratios)
@@ -56,14 +66,15 @@ def main():
     out['missing'] = utils.get_missing_zahnle(species, ratios)
 
     # Make plots
-    utils.make_xs_plot(species, out, (vulcan, phid, wogan), ('VULCAN','Phidrates', 'Wogan'),xlim=(0,200))
+    utils.make_xs_plot(species, out, (vulcan, phid, wogan), ('VULCAN','Phidrates', 'Wogan'),xlim=(0,1000))
     utils.make_qy_plot(species, out)
 
     # Save citation
     tmp = {
     "xsections": [
         {'nm-range': [float(np.min(out['wv'])), 142.0], 'citations': ['Heays2017']},
-        {'nm-range': [142.0, float(np.max(out['wv']))], 'citations': ['Lee2001']}
+        {'nm-range': [142.0, float(wv_max)], 'citations': ['Lee2001']},
+        {'nm-range': [float(wv_max), float(np.max(out['wv']))], 'citations': ['Karkoschka1994']}
         ],
     'photodissociation-qy': [
         {'nm-range': [float(np.min(out['wv'])), 97.7], 'citations': ['Heays2017']},
