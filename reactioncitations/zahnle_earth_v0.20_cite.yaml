@@ -4495,81 +4495,14 @@ reactions:
   type: photolysis
 
 reaction-notes:
+- reactions: [O2 + CH2 <=> H2CO + O]
+  note: The products are assumed.
 - reactions: [CH2 + H (+ M) <=> CH3 (+ M)]
   note: Assumed to be very fast by analogy to \ref{CH3 + H (+ M) <=> CH4
     (+ M)}.
 - reactions: [H2 + CH2 <=> CH3 + H]
-  note: Uses the reverse of $\mathrm{CH_3} + \mathrm{H} \leftrightarrow 
+  note: Uses the reverse of $\mathrm{CH_3} + \mathrm{H} \leftrightarrow
     \mathrm{^1CH_2} + \mathrm{H_2}$ with an energy barrier adjusted to $^3$CH$_2$.
-- reactions: [H + CH3OH <=> H2COH + H2]
-  note: This is the $> 90$\% channel. The quoted fit is to products at low temperature. 
-    The reported minor channel to CH$_3$ + H$_2$O is set to zero.
-- reactions: [CH2CHO + O <=> CH2CO + OH, CH2CHO + O <=> CH3 + CO2]
-  note: Based on the analogous reaction $\mathrm{CH_3CO} + \mathrm{O}$.
-- reactions: [CH2CHO + OH <=> CH2CO + H2O]
-  note: In analogy to $\mathrm{CH_3CO} + \mathrm{OH}$.
-- reactions: [CH2CHO + M <=> CH3CO + M]
-  note: The rate is assumed to be fast with a activation energy barrier based on
-    the 298 K enthalpies of each molecule.
-- reactions: [CH2CO + CH3 <=> CO + C2H5]
-  note: The rate is based on \citet{Wo94} with an assumed 3000 K activation energy barrier.
-- reactions: [CN + CH2 <=> CH + HCN, CN + CH3 <=> HCN + CH2]
-  note: Assumed activation energy typical of favored abstraction reaction.
-- reactions: [S4 + S4 (+ M) <=> S8 (+ M)]
-  note: Assumed to be very fast.
-- reactions: [H + HS <=> S + H2]
-  note: This rates extrapolates the reported reverse of $\mathrm{S} + \mathrm{H_2}$.
-- reactions: [HS + OH <=> H2O + S]
-  note: A similar rate to OH + OH but a little faster.
-- reactions: [H + HSO <=> HS + OH, H + HSO <=> H2 + SO, H + HSO <=> H2O + S]
-  note: The branching is based on the analogous reaction $\mathrm{H} + \mathrm{HO_2}$.
-- reactions: [CO + S3 <=> S2 + OCS]
-  note: Based on \citet{Kr07}, except we use a smaller activate energy (they use $E_a = 20000$ K).
-    The strength of the S--S$_2$ bond implies that a lower activation energy, as small as $E_a = 2500$ K 
-    would be a better choice.
-- reactions: [S + CH <=> H + CS]
-  note: This rate falls between the rates used in \citet{Mi92} and \citet{Mo95a}, which 
-    differ by two orders of magnitude.
-- reactions: [C + SO <=> CS + O]
-  note: A slow version of the rate in \citet{Mi92}.
-- reactions: [1CH2 + CO <=> CH2 + CO]
-  note: By analogy to $\mathrm{O(^1D)} + \mathrm{CO}$.
-- reactions: [1CH2 + CO (+ M) <=> CH2CO (+ M)]
-  note: Assumed to be the same as $\mathrm{^1CH_2} + \mathrm{N_2} + \mathrm{M}$.
-- reactions: [NNH + H (+ M) <=> N2H2 (+ M)]
-  note: Reverse of \citet{Gl08} at 3000 K, and inspired by \ref{H + HCO (+ M) <=> H2CO (+ M)}.
-- reactions: [HS + HO2 <=> H2S + O2, S + HO2 <=> HS + O2, S + HO2 <=> SO + OH]
-  note: Assumed based on analogous reactions between O, OH and HO$_2$.
-- reactions: [SO + HO2 <=> HSO + O2]
-  note: Exothermic, and so should be fast.
-- reactions: [CH3CO + O <=> CH3 + CO2, CH3CO + O <=> CH2CO + OH]
-  note: Many reported rates are discordant. Here, we use the \citet{Ba94} rate
-    divided by three, with assumed 0.2 and 0.8 branching ratios for each channel.
-- reactions: [H + C4H3 (+ M) <=> C4H4 (+ M)]
-  note: Low pressure rate is based on \ref{H + C4H2 (+ M) <=> C4H3 (+ M)}.
-- reactions: [O + C4H3 <=> C4H2 + OH, OH + C4H3 <=> C4H2 + H2O]
-  note: The activation energy is based on \ref{O + C4H4 <=> C4H3 + OH}.
-- reactions: [ClO + O (+ M) <=> OClO (+ M)]
-  note: Assumed to have the same rate as \ref{OClO + OH (+ M) <=> HOCl + O2 (+ M)}.
-- reactions: [N2H3 + H (+ M) <=> N2H4 (+ M)]
-  note: Assumed to have the same rate as \ref{NH2 + NH2 (+ M) <=> N2H4 (+ M)}.
-- reactions: [C2H + HCN <=> HCCCN + H]
-  note: Assumed to be the same as \ref{C2H2 + CN <=> HCCCN + H}.
-- reactions: [CH2N2 + CH2 <=> N2 + C2H4, 1CH2 + CH2N2 <=> N2 + C2H4, CH2N2 + CH3 <=> N2 + C2H5, 
-      CH2N2 + H <=> CH3 + N2, CH2N2 + C2H2 <=> C3H4 + N2, CH2N2 + C2H4 <=> C3H6 + N2]
-  note: Based on $\mathrm{CH_2CO} + \mathrm{X}$ rates, but with activation energy 
-    rescaled in proportion to the bond strength.
-- reactions: [CH3CN + O <=> CH3 + NCO, CH3CN + OH <=> CH4 + NCO]
-  note: A fit to a variety of sources on NIST.
-- reactions: [CH3CN + H <=> HCN + CH3]
-  note: Based on a rescaling of the rate of $\matrm{H} + \matrm{CH_4} \rightarrow 
-    \matrm{CH_3} + \matrm{H_2}$ from \citet{Ja70}.
-- reactions: [CH2CN + H (+ M) <=> CH3CN (+ M)]
-  note: Assumed identical to \ref{H + H2COH (+ M) <=> CH3OH (+ M)}.
-- reactions: [1CH2 + HCN (+ M) <=> CH3CN (+ M)]
-  note: Assumed to be the same as \ref{1CH2 + C2H2 (+ M) <=> C3H4 (+ M)}.
-- reactions: [O2 + CH2 <=> H2CO + O]
-  note: The products are assumed.
 - reactions: [H + H2CO (+ M) <=> CH3O (+ M)]
   note: Custom fit based on \citet{Xu15}.
 - reactions: [H + CH3O <=> CH3 + OH, H + CH3O <=> H2CO + H2]
@@ -4580,6 +4513,10 @@ reaction-notes:
 - reactions: [H + CH3O (+ M) <=> CH3OH (+ M), H + H2COH (+ M) <=> CH3OH
       (+ M), H2CO + H2 (+ M) <=> CH3OH (+ M)]
   note: The low pressure limits are assumed.
+- reactions: [H + CH3OH <=> H2COH + H2]
+  note: This is the $> 90$\% channel. The quoted fit is to products at low
+    temperature. The reported minor channel to CH$_3$ + H$_2$O is set to
+    zero.
 - reactions: [C2H + H (+ M) <=> C2H2 (+ M)]
   note: The rate is assumed to be similar to \ref{CH3 + H (+ M) <=> CH4
     (+ M)}.
@@ -4626,6 +4563,16 @@ reaction-notes:
     of reaction intermediates that includes at least one substantial energy
     barrier. The energy barrier is encountered in the reactions of the primary
     adduct.
+- reactions: [CH2CHO + O <=> CH2CO + OH, CH2CHO + O <=> CH3 + CO2]
+  note: Based on the analogous reaction $\mathrm{CH_3CO} + \mathrm{O}$.
+- reactions: [CH2CHO + OH <=> CH2CO + H2O]
+  note: In analogy to $\mathrm{CH_3CO} + \mathrm{OH}$.
+- reactions: [CH2CHO + M <=> CH3CO + M]
+  note: The rate is assumed to be fast with a activation energy barrier
+    based on the 298 K enthalpies of each molecule.
+- reactions: [CH2CO + CH3 <=> CO + C2H5]
+  note: The rate is based on \citet{Wo94} with an assumed 3000 K activation
+    energy barrier.
 - reactions: [NH + CH2 <=> N + CH3, NH + CH3 <=> N + CH4, NH + C2H3 <=>
       N + C2H4, NH + C2H5 <=> N + C2H6, NH2 + C2H <=> NH + C2H2, NH + C2H3
       <=> NH2 + C2H2, NH + C2H5 <=> NH2 + C2H4, NH2 + C2H3 <=> NH3 + C2H2]
@@ -4644,6 +4591,8 @@ reaction-notes:
   note: The rate in \citet{St95} does not specify the products. \citet{Ya05}
     give $\mathrm{NH} + \mathrm{C_2H_4}$ and $\mathrm{H_2CN} + \mathrm{CH_3}$
     as dominant channels. We presume the channels each have a 50\% yield.
+- reactions: [CN + CH2 <=> CH + HCN, CN + CH3 <=> HCN + CH2]
+  note: Assumed activation energy typical of favored abstraction reaction.
 - reactions: [CN + C2H4 <=> HCN + C2H3]
   note: Products assumed. The actual products may be $\mathrm{C_2H_3CN}
     + \mathrm{H}$.
@@ -4682,6 +4631,8 @@ reaction-notes:
     for S$_3$, while \citet{Ch98} seems to have assumed the opposite.  Presumably
     the structure affects the heat capacity and entropy, which makes estimating
     the equilibria involving S$_3$ especially uncertain.
+- reactions: [S4 + S4 (+ M) <=> S8 (+ M)]
+  note: Assumed to be very fast.
 - reactions: [S + HS <=> S2 + H]
   note: Reported rates for this reaction are discrepant, $4.0\times 10^{-11}$
     cm$^{3}$s$^{-1}$ (Sc73) and $<\!5\times 10^{-12}$ cm$^{3}$s$^{-1}$ \citep{Ni79}.
@@ -4692,11 +4643,15 @@ reaction-notes:
     \mathrm{SO} + \mathrm{H}$ ($k=6.6\times 10^{-11}$ cm$^{3}$s$^{-1}$),
     are all rather fast at room temperature. The reverse, although very
     endothermic, is the major sink on S$_2$.
+- reactions: [H + HS <=> S + H2]
+  note: This rates extrapolates the reported reverse of $\mathrm{S} + \mathrm{H_2}$.
 - reactions: [HS + HS <=> S2 + H2]
   note: Analogy to $\mathrm{H_2} + \mathrm{O_2}$.
 - reactions: [H + S3 <=> HS + S2, H + S4 <=> HS + S3]
   note: We expect that these analogues to \ref{S + HS <=> S2 + H} are the
     leading chemical sources and sinks of S$_3$ and S$_4$.
+- reactions: [HS + OH <=> H2O + S]
+  note: A similar rate to OH + OH but a little faster.
 - reactions: [HS + CH3 <=> S + CH4]
   note: The actual product at low temperatures is CH$_3$SH, a molecule we
     have not included.
@@ -4721,12 +4676,25 @@ reaction-notes:
 - reactions: [OH + SO <=> SO2 + H]
   note: A compomise between measured values and the avaliable thermodynamic
     data.
+- reactions: [H + HSO <=> HS + OH, H + HSO <=> H2 + SO, H + HSO <=> H2O
+      + S]
+  note: The branching is based on the analogous reaction $\mathrm{H} + \mathrm{HO_2}$.
 - reactions: [H + SO (+ M) <=> HSO (+ M), H + HSO <=> HS + OH, H + HSO <=>
       H2 + SO, H + HSO <=> H2O + S, H2S + O <=> H + HSO, OH + HSO <=> H2O
       + SO, HS + HSO <=> H2S + SO, O + HSO <=> OH + SO, O + HSO <=> HS +
       O2, S + HSO <=> HS + SO, SO + HCO <=> HSO + CO, SO + HO2 <=> HSO +
       O2, HS + O3 <=> HSO + O2]
   note: HSO assumed analogous to HO$_2$.
+- reactions: [CO + S3 <=> S2 + OCS]
+  note: Based on \citet{Kr07}, except we use a smaller activate energy (they
+    use $E_a = 20000$ K). The strength of the S--S$_2$ bond implies that
+    a lower activation energy, as small as $E_a = 2500$ K would be a better
+    choice.
+- reactions: [S + CH <=> H + CS]
+  note: This rate falls between the rates used in \citet{Mi92} and \citet{Mo95a},
+    which differ by two orders of magnitude.
+- reactions: [C + SO <=> CS + O]
+  note: A slow version of the rate in \citet{Mi92}.
 - reactions: [OH + CS <=> OCS + H]
   note: Analogy to $\mathrm{OH} + \mathrm{CO}$.
 - reactions: [CS + HS <=> CS2 + H]
@@ -4746,6 +4714,10 @@ reaction-notes:
     by \citet{Mo95} by a factor of five. They are important here because
     they provide the chief kinetic pathway to CS and CS$_2$, two molecules
     that were observed to be abundant in the SL9 impacts on Jupiter.
+- reactions: [1CH2 + CO <=> CH2 + CO]
+  note: By analogy to $\mathrm{O(^1D)} + \mathrm{CO}$.
+- reactions: [1CH2 + CO (+ M) <=> CH2CO (+ M)]
+  note: Assumed to be the same as $\mathrm{^1CH_2} + \mathrm{N_2} + \mathrm{M}$.
 - reactions: [1CH2 + N2 <=> CH2 + N2]
   note: Assumed to be the same as \ref{O1D + N2 <=> O + N2}.
 - reactions: [1CH2 + CO2 <=> CH2 + CO2]
@@ -4769,6 +4741,14 @@ reaction-notes:
 - reactions: [NNH + O <=> NH + NO]
   note: We use a temperature-constant rate from \citet{Ha03} evaluated T
     = 1400 K.
+- reactions: [NNH + H (+ M) <=> N2H2 (+ M)]
+  note: Reverse of \citet{Gl08} at 3000 K, and inspired by \ref{H + HCO
+    (+ M) <=> H2CO (+ M)}.
+- reactions: [HS + HO2 <=> H2S + O2, S + HO2 <=> HS + O2, S + HO2 <=> SO
+      + OH]
+  note: Assumed based on analogous reactions between O, OH and HO$_2$.
+- reactions: [SO + HO2 <=> HSO + O2]
+  note: Exothermic, and so should be fast.
 - reactions: [HO2 + HO2 <=> H2O2 + O2]
   note: A custom fit based on \citet{Ki84} and \citet{Kl22}.
 - reactions: [NH + O2 <=> HNO + O]
@@ -4780,6 +4760,10 @@ reaction-notes:
   note: The HSO$_3$ radical appears to be little studied because it reacts
     quickly with O$_2$. We include it as a step to H$_2$SO$_4$ for conditions
     where O$_2$ may be less abundant.
+- reactions: [CH3CO + O <=> CH3 + CO2, CH3CO + O <=> CH2CO + OH]
+  note: Many reported rates are discordant. Here, we use the \citet{Ba94}
+    rate divided by three, with assumed 0.2 and 0.8 branching ratios for
+    each channel.
 - reactions: [H + S4 (+ M) <=> HS4 (+ M), H + S8 <=> HS4 + S4, H + HS4 <=>
       H2 + S4, OH + HS4 <=> H2O + S4, H + HS4 <=> H2S + S3, HS + HS4 <=>
       H2S + S4, NH2 + HS4 <=> NH3 + S4, HS4 + HS4 <=> H2 + S8, S + HS4 <=>
@@ -4788,13 +4772,39 @@ reaction-notes:
     5.5 in \citet{Za16}
 - reactions: [H + C4H3 <=> H2 + C4H2, H + C4H3 <=> C2H2 + C2H2]
   note: See Section 4.1.1 in \citet{Za16} for justification.
+- reactions: [H + C4H3 (+ M) <=> C4H4 (+ M)]
+  note: Low pressure rate is based on \ref{H + C4H2 (+ M) <=> C4H3 (+ M)}.
+- reactions: [O + C4H3 <=> C4H2 + OH, OH + C4H3 <=> C4H2 + H2O]
+  note: The activation energy is based on \ref{O + C4H4 <=> C4H3 + OH}.
 - reactions: [H + C4H4 <=> C4H3 + H2]
   note: An assumed temperature dependence that matches \citet{Gh88} at $\sim
     1450$ K.
+- reactions: [ClO + O (+ M) <=> OClO (+ M)]
+  note: Assumed to have the same rate as \ref{OClO + OH (+ M) <=> HOCl +
+    O2 (+ M)}.
 - reactions: [NH2 + NH2 (+ M) <=> N2H4 (+ M)]
   note: We assume the same rate for N$_2$H$_3$ + H as for NH$_2$ + NH$_2$.
+- reactions: [N2H3 + H (+ M) <=> N2H4 (+ M)]
+  note: Assumed to have the same rate as \ref{NH2 + NH2 (+ M) <=> N2H4 (+
+    M)}.
 - reactions: [N2D + H2 <=> NH + H]
   note: We assume a temperature-constant rate from \citet{He99} at 298 K.
+- reactions: [C2H + HCN <=> HCCCN + H]
+  note: Assumed to be the same as \ref{C2H2 + CN <=> HCCCN + H}.
+- reactions: [CH2N2 + CH2 <=> N2 + C2H4, 1CH2 + CH2N2 <=> N2 + C2H4, CH2N2
+      + CH3 <=> N2 + C2H5, CH2N2 + H <=> CH3 + N2, CH2N2 + C2H2 <=> C3H4
+      + N2, CH2N2 + C2H4 <=> C3H6 + N2]
+  note: Based on $\mathrm{CH_2CO} + \mathrm{X}$ rates, but with activation
+    energy rescaled in proportion to the bond strength.
+- reactions: [CH3CN + O <=> CH3 + NCO, CH3CN + OH <=> CH4 + NCO]
+  note: A fit to a variety of sources on NIST.
+- reactions: [CH3CN + H <=> HCN + CH3]
+  note: Based on a rescaling of the rate of $\matrm{H} + \matrm{CH_4} \rightarrow
+    \matrm{CH_3} + \matrm{H_2}$ from \citet{Ja70}.
+- reactions: [1CH2 + HCN (+ M) <=> CH3CN (+ M)]
+  note: Assumed to be the same as \ref{1CH2 + C2H2 (+ M) <=> C3H4 (+ M)}.
+- reactions: [CH2CN + H (+ M) <=> CH3CN (+ M)]
+  note: Assumed identical to \ref{H + H2COH (+ M) <=> CH3OH (+ M)}.
 - reactions: [C2H4 + N2D <=> CH3CN + H]
   note: We find that this reaction is the main path for CH$_3$CN production
     on Titan. However, \citet{Lo15} finds a different path for making the
