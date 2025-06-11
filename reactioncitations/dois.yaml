@@ -600,10 +600,11 @@ Gl00:
   doublecheck: false
 
 Gl08:
-  title1: ''
+  title1: 'Combustion'
   title2: null
   doi: null
   doublecheck: true
+  isbn: 978-0120885732
 
 Go08:
   title1: Yet another look at the reaction CH3+H+M $\rightarrow$ CH4+M.
@@ -1805,3 +1806,60 @@ Zu97:
     \ N(4S)"
   doi: 10.1016/s0009-2614(97)00748-3
   doublecheck: true
+
+Ca73:
+  title1: Rate constants for O(3P) recombination and association with N(4S)
+  title2: Rate constants for O(3P) recombination and association with N(4S)
+  doi: 10.1016/0009-2614(73)80479-8
+  doublecheck: false
+
+Br73:
+  title1: A measurement of the rate of the reaction N + H + M → NH + M
+  title2: A measurement of the rate of the reaction N + H + M → NH + M
+  doi: 10.1002/kin.550050416
+  doublecheck: false
+
+Kr07:
+  title1: Chemical kinetic model for the lower atmosphere of Venus
+  title2: Chemical kinetic model for the lower atmosphere of Venus
+  doi: 10.1016/j.icarus.2007.04.028
+  doublecheck: false
+
+Dav78:
+  title1: Temperature dependence of the deactivation of O(1D) by CO from 113-333 K
+  title2: Temperature dependence of the deactivation of O(1D) by CO from 113-333 K
+  doi: 10.1063/1.436657
+  doublecheck: false
+
+Kn17:
+  title1: null
+  title2: null
+  doi: 10.1016/j.cplett.2017.07.040
+  doublecheck: false
+
+Cv87:
+  title1: null
+  title2: null
+  doi: 10.1063/1.555783
+  doublecheck: false
+
+Sto00:
+  title1: null
+  title2: null
+  doi: 10.1021/jp992476e
+  doublecheck: false
+
+Su10:
+  doi: 10.1063/1.3292570
+
+At01:
+  squib: 2001ATK/BAU1-56
+
+Ja70:
+  doi: 10.1139/v70-609
+
+Mac94:
+  doi: 10.1139/v84-222
+
+Ga10:
+  doi: 10.1021/jp102276j
