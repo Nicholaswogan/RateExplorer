@@ -259,12 +259,6 @@ Ca08:
   doi: 10.1016/j.cplett.2008.08.012
   doublecheck: false
 
-Cd05:
-  title1: Unimolecular and bimolecular calculations for HN2.
-  title2: Unimolecular and Bimolecular Calculations for HN2
-  doi: 10.1021/jp045102g
-  doublecheck: false
-
 Ce00:
   doi: 10.1016/S0009-2614(00)01033-2
 
@@ -1853,6 +1847,7 @@ Su10:
   doi: 10.1063/1.3292570
 
 At01:
+  doi: null
   squib: 2001ATK/BAU1-56
 
 Ja70:

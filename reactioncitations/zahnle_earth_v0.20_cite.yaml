@@ -1533,7 +1533,7 @@ reactions:
   checked: true
 - equation: C2 + CH4 <=> C2H + CH3
   rate-constant: {A: 5.05e-11, b: 0.0, Ea: 4000.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R111
   checked: true
 - equation: O + C2H <=> CO + CH
@@ -1853,7 +1853,7 @@ reactions:
   checked: true
 - equation: C2H2 + OH <=> CH2CO + H
   rate-constant: {A: 3.563891e-28, b: 4.5, Ea: -500.0}
-  citation: Mi89, Wo94
+  citation: Mi88, Wo94
   location: latex R169
   checked: true
 - equation: CH2CO + O <=> CH2 + CO2
@@ -1994,7 +1994,7 @@ reactions:
   checked: true
 - equation: N + NH <=> N2 + H
   rate-constant: {A: 1.063415e-12, b: 0.51, Ea: 9.63}
-  citation: Cd05
+  citation: Ca05b
   location: latex R189
   checked: true
 - equation: NH + OH <=> H2O + N
@@ -2029,12 +2029,12 @@ reactions:
   checked: true
 - equation: NH + CH2 <=> N + CH3
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R196
   checked: true
 - equation: NH + CH3 <=> N + CH4
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R197
   checked: true
 - equation: N + C2H5 <=> NH + C2H4
@@ -2044,12 +2044,12 @@ reactions:
   checked: true
 - equation: NH + C2H3 <=> N + C2H4
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R200
   checked: true
 - equation: NH + C2H5 <=> N + C2H6
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R201
   checked: true
 - equation: NH + H (+ M) <=> NH2 (+ M)
@@ -2091,22 +2091,22 @@ reactions:
   checked: true
 - equation: NH2 + C2H <=> NH + C2H2
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R209
   checked: true
 - equation: NH + C2H3 <=> NH2 + C2H2
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R210
   checked: true
 - equation: NH + C2H5 <=> NH2 + C2H4
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R211
   checked: true
 - equation: C2H6 + NH <=> C2H5 + NH2
   rate-constant: {A: 1.16e-10, b: 0.0, Ea: 8420.0}
-  citation: RH94, rev-Xu99
+  citation: Ro94, rev-Xu99
   location: latex R212
   checked: true
 - equation: NH2 + H (+ M) <=> NH3 (+ M)
@@ -2155,7 +2155,7 @@ reactions:
   checked: true
 - equation: NH2 + C2H3 <=> NH3 + C2H2
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R221
   checked: true
 - equation: NH2 + C2H4 <=> NH3 + C2H3
@@ -2394,7 +2394,7 @@ reactions:
   checked: true
 - equation: S + S4 <=> S2 + S3
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 500.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R266
   checked: true
 - equation: S4 + S4 (+ M) <=> S8 (+ M)
@@ -2458,12 +2458,12 @@ reactions:
   checked: true
 - equation: NH2 + HS <=> NH3 + S
   rate-constant: {A: 5.0e-12, b: 0.0, Ea: 500.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R280
   checked: true
 - equation: HS + CH2 <=> S + CH3
   rate-constant: {A: 4.0e-12, b: 0.0, Ea: 500.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R281
   checked: true
 - equation: HS + CH3 <=> S + CH4
@@ -2473,7 +2473,7 @@ reactions:
   checked: true
 - equation: S + HCO <=> HS + CO
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R283
   checked: true
 - equation: H + HS (+ M) <=> H2S (+ M)
@@ -2547,12 +2547,12 @@ reactions:
   checked: true
 - equation: S3 + O <=> S2 + SO
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 500.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R299
   checked: true
 - equation: S4 + O <=> S3 + SO
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 500.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R300
   checked: true
 - equation: N + SO <=> NO + S
@@ -2673,7 +2673,7 @@ reactions:
   checked: true
 - equation: S + HCO <=> OCS + H
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
-  citation: Mo95
+  citation: Mo95a
   location: latex R329
   checked: true
 - equation: CO + S3 <=> S2 + OCS
@@ -4711,7 +4711,7 @@ reaction-notes:
     temperatures. The HCS radical is by assumption an important intermediate
     for CS and CS$_2$ formation in our scheme. The HCS reactions are invented
     but plausible. We have in general reduced the very fast rates estimated
-    by \citet{Mo95} by a factor of five. They are important here because
+    by \citet{Mo95a} by a factor of five. They are important here because
     they provide the chief kinetic pathway to CS and CS$_2$, two molecules
     that were observed to be abundant in the SL9 impacts on Jupiter.
 - reactions: [1CH2 + CO <=> CH2 + CO]
