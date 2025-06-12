@@ -2418,7 +2418,7 @@ reactions:
   checked: true
 - equation: H + HS <=> S + H2
   rate-constant: {A: 5.535239e-13, b: 0.7, Ea: 0.0}
-  citation: 'Sh98, Woi94'
+  citation: Sh98, Woi94
   location: [equation-rate csv L1793]
   checked: true
 - equation: HS + HS <=> S2 + H2
@@ -2683,7 +2683,7 @@ reactions:
   checked: true
 - equation: S + CH <=> H + CS
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 0.0}
-  citation: 'Mi92, Mo95a'
+  citation: Mi92, Mo95a
   location: latex R331
   checked: true
 - equation: C + HS <=> CS + H
@@ -4626,11 +4626,11 @@ reaction-notes:
     gives expressions for $H^{\circ}-H^{\circ}_{298}$ and $S^{\circ}$ for
     both S$_3$ and S$_4$, but does not give $H^{\circ}_{298}$ for either.
     \citet{Be78} estimates that $H^{\circ}_{298}({\rm S}_3) \approx 32.5\pm
-    1$ kcal/mole (consistent within error of \citet{Dr68}) and $H^{\circ}_{298}({\rm
-    S}_4)\approx 31$ kcal/mole. However, \citet{Be78} assumes a cyclic structure
-    for S$_3$, while \citet{Ch98} seems to have assumed the opposite.  Presumably
-    the structure affects the heat capacity and entropy, which makes estimating
-    the equilibria involving S$_3$ especially uncertain.
+    1$ kcal/mole and $H^{\circ}_{298}({\rm S}_4)\approx 31$ kcal/mole. However,
+    \citet{Be78} assumes a cyclic structure for S$_3$, while \citet{Ch98}
+    seems to have assumed the opposite.  Presumably the structure affects
+    the heat capacity and entropy, which makes estimating the equilibria
+    involving S$_3$ especially uncertain.
 - reactions: [S4 + S4 (+ M) <=> S8 (+ M)]
   note: Assumed to be very fast.
 - reactions: [S + HS <=> S2 + H]
