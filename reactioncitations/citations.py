@@ -22,7 +22,7 @@ class MyDumper(yaml.Dumper):
 
 def FormatReactions_main(data):
     
-    order = ['reverse-reactions','atoms','species','particles','reactions','missing']
+    order = ['reverse-reactions','atoms','species','particles','reactions','missing','reaction-notes']
     copy = data.copy()
     data.clear()
     for key in order:
@@ -80,14 +80,14 @@ def FormatReactions_main(data):
     if 'reactions' in data:
         for i in range(len(data['reactions'])):
             order = ['equation','type','rate-constant','rate-constants','low-P-rate-constant',
-                     'high-P-rate-constant','duplicate','efficiencies','JPL','citation','location','checked']
+                     'high-P-rate-constant','duplicate','efficiencies','JPL','citation','location','checked', 'typo','note','ref']
             copy = data['reactions'][i].copy()
             data['reactions'][i].clear()
             for key in order:
                 if key in copy.keys():
                     data['reactions'][i][key] = copy[key]
                     
-            flowstyle = ['rate-constant','low-P-rate-constant','high-P-rate-constant','efficiencies','citation']
+            flowstyle = ['rate-constant','low-P-rate-constant','high-P-rate-constant','efficiencies','citation','ref']
             for key in flowstyle:
                 if key in data['reactions'][i].keys():
                     if isinstance(data['reactions'][i][key],dict):
@@ -100,6 +100,16 @@ def FormatReactions_main(data):
             if 'rate-constants' in data['reactions'][i]:
                 for j in range(len(data['reactions'][i]['rate-constants'])):
                     data['reactions'][i]['rate-constants'][j] = flowmap(data['reactions'][i]['rate-constants'][j])
+
+    if 'reaction-notes' in data:
+        for i in range(len(data['reaction-notes'])):
+            order = ['reactions','note']
+            copy = data['reaction-notes'][i].copy()
+            data['reaction-notes'][i].clear()
+            for key in order:
+                if key in copy:
+                    data['reaction-notes'][i][key] = copy[key]
+            data['reaction-notes'][i]['reactions'] = blockseqtrue(data['reaction-notes'][i]['reactions'])
                     
     return data
 
@@ -324,6 +334,46 @@ def parse_reactions_latex():
         rxns.append(eq)
     return rxns
 
+def parse_reactions_latex2016():
+    with open('Eridani_re_revised.tex','r',encoding="ISO-8859-1") as f:
+        lines = f.readlines()
+    lines = lines[1691:1790]
+
+    k = 0
+    rxns = []
+    for i,line in enumerate(lines):
+        if not line.strip().startswith(r'\refstepcounter{reaction}'):
+            continue
+
+        eq = {}
+        
+        cols = line.split('&')
+        equation = parse_latex_equation(cols[1], cols[3])
+        rate = parse_latex_rate(cols[4])
+        citation = parse_latex_citation(cols[5])
+
+        eq['equation'] = equation
+        eq['rate-constant'] = rate
+        eq['citation'] = citation
+
+        if 'M' in equation:
+            line1 = lines[i+1]
+            if len(line1.strip()) > 0 and not line1.strip().startswith(r'\refstepcounter{reaction}'):
+                cols = line1.split('&')
+                rate1 = parse_latex_rate(cols[4])
+                citation1 = parse_latex_citation(cols[5])
+                del eq['rate-constant']
+                del eq['citation']
+                eq['type'] = 'falloff'
+                eq['low-P-rate-constant'] = rate
+                eq['high-P-rate-constant'] = rate1
+                eq['citation'] = {'low-P': citation, 'high-P': citation1}
+            else:
+                eq['type'] = 'three-body'    
+        rxns.append(eq)
+        k += 1
+    return rxns
+
 def parse_citations_csv():
     with open('citations.csv', 'r') as file:
         csv_reader = csv.reader(file)
@@ -455,6 +505,7 @@ def add_citations_to_zahnle():
     rxns = sol['reactions']
 
     rxns_latex = parse_reactions_latex()
+    rxns_latex16 = parse_reactions_latex2016()
     rxns_csv1 = parse_citations_csv()
     rxns_csv = reactions_with_citations_from_csv(rxns, rxns_csv1)
 
@@ -472,91 +523,112 @@ def add_citations_to_zahnle():
             elif rx['type'] == 'falloff':
                 falloff = True
 
-        # Search latex
+        # # Search latex
+        # rx['location'] = []
+        # found = False
+        # for j,rx_l in enumerate(rxns_latex):
+        #     if compare2reactions(rx['equation'],rx_l['equation']) and comparerates(rx, rx_l):
+        #         rx['citation'] = rx_l['citation']
+        #         rx['location'].append('latex R'+str(j+1))
+        #         found = True
+        #         break
+        # if found:
+        #     # If found, search for an equation match with latex doc
+        #     for j,rx_c in enumerate(rxns_csv):
+        #         if compare2reactions(rx['equation'],rx_c['equation']):
+        #             rx['location'].append('equation-rate csv L'+str(rx_c['line']))
+        #             break
+        #     rxns_new.append(rx)
+        #     continue
+
+        # Search latex 2016
+        # rx['location'] = []
         found = False
-        for j,rx_l in enumerate(rxns_latex):
+        for j,rx_l in enumerate(rxns_latex16):
             if compare2reactions(rx['equation'],rx_l['equation']) and comparerates(rx, rx_l):
                 rx['citation'] = rx_l['citation']
-                rx['location'] = 'latex R'+str(j+1)
+                rx['location'] = 'latex16 R'+str(j+1)
                 found = True
                 break
         if found:
             rxns_new.append(rx)
             continue
 
-        # Search CSV
-        rx['location'] = []
-        found = False
-        for j,rx_c in enumerate(rxns_csv):
-            if compare2reactions(rx['equation'],rx_c['equation']) and comparerates(rx, rx_c):
-                rx['citation'] = rx_c['citation']
-                rx['location'].append('csv L'+str(rx_c['line']))
-                found = True
-                break
-        if found:
-            # If found, search for an equation match with latex doc
-            for j,rx_l in enumerate(rxns_latex):
-                if compare2reactions(rx['equation'],rx_l['equation']):
-                    rx['location'].append('equation-rate latex R'+str(j+1))
-                    break
-            rxns_new.append(rx)
-            continue
+        # return
+
+        # # Search CSV
+        # rx['location'] = []
+        # found = False
+        # for j,rx_c in enumerate(rxns_csv):
+        #     if compare2reactions(rx['equation'],rx_c['equation']) and comparerates(rx, rx_c):
+        #         rx['citation'] = rx_c['citation']
+        #         rx['location'].append('csv L'+str(rx_c['line']))
+        #         found = True
+        #         break
+        # if found:
+        #     # If found, search for an equation match with latex doc
+        #     for j,rx_l in enumerate(rxns_latex):
+        #         if compare2reactions(rx['equation'],rx_l['equation']):
+        #             rx['location'].append('equation-rate latex R'+str(j+1))
+        #             break
+        #     rxns_new.append(rx)
+        #     continue
 
         kk1 += 1
         
-        rx['location'] = []
-        rx['citation'] = null_citation(falloff)
-        # Search latex for reactants + rate match
-        found = False
-        for j,rx_l in enumerate(rxns_latex):
-            if compare2reactions_reactants(rx['equation'],rx_l['equation']) and comparerates_noA(rx, rx_l):
-                rx['location'].append('reactants+rate latex R'+str(j+1))
-                found = True
-                break
-        if not found:
-            # Search latex for equation match
-            found = False
-            for j,rx_l in enumerate(rxns_latex):
-                if compare2reactions(rx['equation'],rx_l['equation']):
-                    rx['location'].append('equation-rate latex R'+str(j+1))
-                    found = True
-                    break
-            if not found:
-                # Search latex for reactants match
-                found = False
-                for j,rx_l in enumerate(rxns_latex):
-                    if compare2reactions_reactants(rx['equation'],rx_l['equation']):
-                        rx['location'].append('reactants-rate latex R'+str(j+1))
-                        found = True
-                        break
+        # rx['location'] = []
+        # rx['citation'] = null_citation(falloff)
+        # # Search latex for reactants + rate match
+        # found = False
+        # for j,rx_l in enumerate(rxns_latex):
+        #     if compare2reactions_reactants(rx['equation'],rx_l['equation']) and comparerates_noA(rx, rx_l):
+        #         rx['location'].append('reactants+rate latex R'+str(j+1))
+        #         found = True
+        #         break
+        # if not found:
+        #     # Search latex for equation match
+        #     found = False
+        #     for j,rx_l in enumerate(rxns_latex):
+        #         if compare2reactions(rx['equation'],rx_l['equation']):
+        #             rx['location'].append('equation-rate latex R'+str(j+1))
+        #             found = True
+        #             break
+        #     if not found:
+        #         # Search latex for reactants match
+        #         found = False
+        #         for j,rx_l in enumerate(rxns_latex):
+        #             if compare2reactions_reactants(rx['equation'],rx_l['equation']):
+        #                 rx['location'].append('reactants-rate latex R'+str(j+1))
+        #                 found = True
+        #                 break
         
-        # Search csv for reactants + rate match
-        found = False
-        for j,rx_c in enumerate(rxns_csv1):
-            if compare2reactions_reactants(rx['equation'],rx_c['equation']) and comparerates_noA(rx, rx_c):
-                rx['location'].append('reactants+rate csv L'+str(rx_c['line']))
-                found = True
-                break
-        if not found:
-            # Search csv for equation match
-            found = False
-            for j,rx_c in enumerate(rxns_csv1):
-                if compare2reactions(rx['equation'],rx_c['equation']):
-                    rx['location'].append('equation-rate csv L'+str(rx_c['line']))
-                    found = True
-                    break
-            if not found:
-                # Search csv for reactants match
-                found = False
-                for j,rx_c in enumerate(rxns_csv1):
-                    if compare2reactions_reactants(rx['equation'],rx_c['equation']):
-                        rx['location'].append('reactants-rate csv L'+str(rx_c['line']))
-                        found = True
-                        break
+        # # Search csv for reactants + rate match
+        # found = False
+        # for j,rx_c in enumerate(rxns_csv1):
+        #     if compare2reactions_reactants(rx['equation'],rx_c['equation']) and comparerates_noA(rx, rx_c):
+        #         rx['location'].append('reactants+rate csv L'+str(rx_c['line']))
+        #         found = True
+        #         break
+        # if not found:
+        #     # Search csv for equation match
+        #     found = False
+        #     for j,rx_c in enumerate(rxns_csv1):
+        #         if compare2reactions(rx['equation'],rx_c['equation']):
+        #             rx['location'].append('equation-rate csv L'+str(rx_c['line']))
+        #             found = True
+        #             break
+        #     if not found:
+        #         # Search csv for reactants match
+        #         found = False
+        #         for j,rx_c in enumerate(rxns_csv1):
+        #             if compare2reactions_reactants(rx['equation'],rx_c['equation']):
+        #                 rx['location'].append('reactants-rate csv L'+str(rx_c['line']))
+        #                 found = True
+        #                 break
 
-        if len(rx['location']) > 0:
-            rxns_new.append(rx)
-            continue
+        # if len(rx['location']) > 0:
+        #     rxns_new.append(rx)
+        #     continue
 
         kk2 += 1
 
@@ -574,6 +646,7 @@ def add_citations_to_zahnle():
 
 if __name__ == '__main__':
     add_citations_to_zahnle()
+    # parse_reactions_latex2016()
 
         
 
