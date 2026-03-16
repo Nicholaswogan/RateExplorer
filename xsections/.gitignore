@@ -3,3 +3,6 @@ cross_sections
 *.zip
 photochem_clima_data
 VULCAN
+*.ipynb
+template.py
+figures1
