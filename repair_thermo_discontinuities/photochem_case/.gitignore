@@ -1,0 +1,12 @@
+# Generated mechanisms and diagnostic output
+photochem_rxns.yaml
+photochem_thermo.yaml
+photochem_case_run.jsonl
+photochem-repaired-data-*/
+
+# Temporary Python and editor files
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+*.swp
