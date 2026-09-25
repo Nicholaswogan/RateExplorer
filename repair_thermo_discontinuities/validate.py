@@ -53,8 +53,9 @@ def main():
             continue
         if old_thermo["temperature-ranges"] != thermo["temperature-ranges"]:
             raise AssertionError(f"Changed temperature ranges in {name}")
+        anchor_index = 1 if len(thermo["data"]) > 1 else 0
         for index, (before, after) in enumerate(zip(old_thermo["data"], thermo["data"])):
-            if before[1:5] != after[1:5] or (index == 0 and before != after):
+            if before[1:5] != after[1:5] or (index == anchor_index and before != after):
                 raise AssertionError(f"Changed anchored/shape coefficients in {name}")
             lower, upper = thermo["temperature-ranges"][index:index + 2]
             samples = np.linspace(max(lower, 10.0), upper, 101)
@@ -74,14 +75,16 @@ def main():
             right = properties(thermo["data"][index + 1], boundary)
             original_left = properties(old_thermo["data"][index], boundary)
             original_right = properties(old_thermo["data"][index + 1], boundary)
+            changed = left if index == 0 else right
+            original_changed = original_left if index == 0 else original_right
             joins.append({
                 "species": name, "boundary_K": boundary,
                 **{f"delta_{property}": right[i] - left[i]
                    for i, property in enumerate(("H_J_mol", "S_J_mol_K", "G_J_mol", "Cp_J_mol_K"))},
                 "original_delta_G_J_mol": original_right[2] - original_left[2],
-                "repair_delta_G_J_mol": right[2] - original_right[2],
+                "repair_delta_G_J_mol": changed[2] - original_changed[2],
                 "original_delta_Cp_J_mol_K": original_right[3] - original_left[3],
-                "repair_delta_Cp_J_mol_K": right[3] - original_right[3],
+                "repair_delta_Cp_J_mol_K": changed[3] - original_changed[3],
             })
     if len(joins) != 181:
         raise AssertionError(f"Expected 181 gas joins; found {len(joins)}")

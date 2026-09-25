@@ -1,7 +1,8 @@
 """Make gas-phase Shomate H, S, G, and Cp continuous at every join.
 
-The earlier segment anchors each join. In the next segment, A matches Cp,
-F matches enthalpy, and G matches entropy. All other coefficients stay fixed.
+The original 298 K-to-higher-temperature segment anchors each species. Match
+its lower-temperature neighbor at 298 K, then match successive higher segments.
+Only A, F, and G change in the adjusted segments; all other coefficients stay fixed.
 Run on a gas-phase master YAML; phase-transition fits need separate treatment.
 
 Usage: python match_shomate_joins.py INPUT.yaml OUTPUT.yaml
@@ -35,7 +36,26 @@ def corrected_rows(mechanism):
         thermo = species.get("thermo", {})
         if thermo.get("model") != "Shomate":
             continue
-        for index, temperature in enumerate(thermo["temperature-ranges"][1:-1]):
+        rows = thermo["data"]
+        ranges = thermo["temperature-ranges"]
+        if len(rows) == 1:
+            continue
+        if ranges[1] != 298.0:
+            raise ValueError(f"Expected a 298 K join for {species['name']}")
+
+        # Preserve the polynomial that the 10-298 K approximation was built to meet.
+        lower, anchor = rows[:2]
+        temperature = ranges[1]
+        lower[0] += heat_capacity(anchor, temperature) - heat_capacity(lower, temperature)
+        anchor_h, anchor_s = enthalpy_entropy(anchor, temperature)
+        lower_h, _ = enthalpy_entropy(lower, temperature)
+        lower[5] += (anchor_h - lower_h) / 1000.0
+        _, lower_s = enthalpy_entropy(lower, temperature)
+        lower[6] += anchor_s - lower_s
+        replacements[(species["name"], 0)] = lower
+
+        for index in range(1, len(rows) - 1):
+            temperature = ranges[index + 1]
             left, right = thermo["data"][index : index + 2]
             right[0] += heat_capacity(left, temperature) - heat_capacity(right, temperature)
             left_h, left_s = enthalpy_entropy(left, temperature)
@@ -53,7 +73,8 @@ def replace_coefficients(text, replacements):
     data_index = 0
     in_data = False
     changed = set()
-    for line in text.splitlines(keepends=True):
+    lines = iter(text.splitlines(keepends=True))
+    for line in lines:
         match = re.match(r"- name: (.+)", line)
         if match:
             species = match.group(1).strip().strip("'\"")
@@ -64,6 +85,11 @@ def replace_coefficients(text, replacements):
         elif in_data and line.startswith("    - ["):
             key = (species, data_index)
             if key in replacements:
+                while "]" not in line:
+                    try:
+                        line += next(lines)
+                    except StopIteration as error:
+                        raise ValueError(f"Unclosed Shomate data for {key}") from error
                 before, rest = line.split("[", 1)
                 contents, after = rest.split("]", 1)
                 old = contents.split(",")

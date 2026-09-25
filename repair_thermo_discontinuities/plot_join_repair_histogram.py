@@ -42,7 +42,7 @@ def plot_histogram(rows, property_name, column, unit, output_name):
     ax.set_xscale("log")
     ax.set_xlim(edges[0], edges[-1])
     ax.yaxis.set_major_locator(MaxNLocator(integer=True))
-    ax.set_xlabel(f"Absolute {property_name} change to the right-hand fit at the join ({unit})")
+    ax.set_xlabel(f"Absolute {property_name} change to the adjusted fit at the join ({unit})")
     ax.set_ylabel("Number of joins per half-decade bin")
     ax.set_title(f"Size of {property_name} repairs at all {len(rows)} gas joins", weight="bold")
     ax.grid(axis="y", alpha=0.25)
@@ -59,8 +59,8 @@ def plot_histogram(rows, property_name, column, unit, output_name):
             transform=ax.transAxes, ha="right", va="top", fontsize=10,
             bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.9})
     fig.text(0.5, 0.015,
-             f"Each value is |{property_name}(repaired right segment) - "
-             f"{property_name}(original right segment)| at that join. Source: pinned v0.3.2 gas fits.",
+             f"Each value is |{property_name}(repaired adjusted segment) - "
+             f"{property_name}(original adjusted segment)| at that join. Source: pinned v0.3.2 gas fits.",
              ha="center", va="bottom", fontsize=9)
     if zero_count:
         fig.text(0.02, 0.015, f"Exact zeros: {zero_count} (outside log axis)",

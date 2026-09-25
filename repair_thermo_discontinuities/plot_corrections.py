@@ -121,7 +121,9 @@ def local_limits(old, new, boundary, segment_index, half_width, symbol, scale):
     values = []
     for thermo in (old, new):
         ranges = thermo["temperature-ranges"]
-        for index in (segment_index - 1, segment_index):
+        adjacent = ((0, 1) if segment_index == 0
+                    else (segment_index - 1, segment_index))
+        for index in adjacent:
             low = max(boundary - half_width, ranges[index], 200.0)
             high = min(boundary + half_width, ranges[index + 1])
             if low < high:
@@ -145,7 +147,8 @@ def render_plot(original, repaired, references, stem, config):
         old = original[name]["thermo"]
         new = repaired[name]["thermo"]
         reference = references.get(name)
-        boundary = float(new["temperature-ranges"][segment_index])
+        join_index = 1 if segment_index == 0 else segment_index
+        boundary = float(new["temperature-ranges"][join_index])
         full = axes[rank // 2, 2 * (rank % 2)]
         zoom = axes[rank // 2, 2 * (rank % 2) + 1]
         for ax in (full, zoom):
@@ -165,8 +168,8 @@ def render_plot(original, repaired, references, stem, config):
         zoom.set_title(f"{name} - join at {boundary:g} K", fontweight="bold")
         before = old["data"]
         at_boundary = np.array([boundary])
-        jump = (property_values(before[segment_index], at_boundary, symbol)[0]
-                - property_values(before[segment_index - 1], at_boundary, symbol)[0]) / scale
+        jump = (property_values(before[join_index], at_boundary, symbol)[0]
+                - property_values(before[join_index - 1], at_boundary, symbol)[0]) / scale
         max_change = float(item[f"max_abs_delta_{key}"]) / scale
         zoom.text(0.03, 0.04,
                   f"Max correction: {max_change:.3g} {units}\nOriginal join: {jump:+.3g} {units}",

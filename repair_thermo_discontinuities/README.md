@@ -42,7 +42,7 @@ reads its original files from Git. It writes the two final files here:
 - `zahnle_earth.yaml`: repaired gas thermodynamics and the unchanged reactions and saturation models.
 - `condensate_thermo.yaml`: regenerated condensate thermodynamics.
 
-The fetched source, numerical checks, and four comparison figures are under the ignored
+The fetched source, numerical checks, and comparison figures are under the ignored
 `results/` directory. The repair does not modify the fetched checkout. The
 `photochem_case/` folder holds its code, inputs, generated case YAMLs, and run log; its
 generated files are also ignored. NASA9 comparisons fetch SHA-256-checked [NASA CEA
@@ -51,16 +51,18 @@ and the [Burcat/Goos/Ruscic database](https://respecth.elte.hu/burcat/NEWNASA.TX
 
 ## 3. Gas thermodynamics repair
 
-For every join, `match_shomate_joins.py` keeps the earlier Shomate segment fixed and
-changes only three coefficients in the next segment: `A` to match heat capacity, `F` to
-match enthalpy, and `G` to match entropy. Since $G=H-TS$, it then
-matches too. Coefficients `B` through `E`, temperature ranges, species, particles, and
-reactions are unchanged. The correction proceeds through all later segments of each
-species.
+For each species, `match_shomate_joins.py` preserves the original polynomial
+starting at $298\,\mathrm{K}$, which anchored the previously constructed
+$10$ to $298\,\mathrm{K}$ approximation. It adjusts the low-temperature polynomial
+to meet that anchor at $298\,\mathrm{K}$, then adjusts each higher-temperature
+polynomial in order. In adjusted segments, only `A`, `F`, and `G` change to match
+heat capacity, enthalpy, and entropy. Since $G=H-TS$, Gibbs energy then matches
+too. Coefficients `B` through `E`, temperature ranges, species, particles, and
+reactions are unchanged. H and He each have one polynomial and remain unchanged.
 
 Enthalpy had the largest original discontinuities. C3H6 had a
 $100\,\mathrm{kJ\,mol^{-1}}$ enthalpy jump at $1400\,\mathrm{K}$; its repair
-produced the largest change along any gas curve, $127.1\,\mathrm{kJ\,mol^{-1}}$
+produced the largest change along any gas curve, $127.2\,\mathrm{kJ\,mol^{-1}}$
 in Gibbs energy. Nine other species had enthalpy jumps of about
 $10\,\mathrm{kJ\,mol^{-1}}$ at $1500\,\mathrm{K}$: CH2CO, HCNOH, C2H2OH,
 CH3CO, CH3O2, NH2CO, CH2N2, CH2CN, and CH3CN. All other enthalpy jumps were
@@ -73,7 +75,7 @@ entropy offsets. As far as this repository can establish, our YAML conversion
 and low-temperature extension did not introduce them. The repair makes all 181
 joins continuous across the 96 species with multiple segments. The largest
 remaining Gibbs-energy jump is
-$2.33\times10^{-9}\,\mathrm{J\,mol^{-1}}$.
+$1.63\times10^{-9}\,\mathrm{J\,mol^{-1}}$.
 
 NASA9 supports the enthalpy repairs, which address the main problem: the
 high-temperature enthalpy RMS disagreement improves for all six species with
@@ -104,7 +106,7 @@ combined `condensate_thermo.yaml`. Because the repaired gas Gibbs energy is cont
 matching condensate Gibbs energy also matches saturation pressure at each boundary.
 
 The largest remaining condensate Gibbs jump is
-$4.41\times10^{-9}\,\mathrm{J\,mol^{-1}}$. Below the critical temperature, the
+$7.80\times10^{-9}\,\mathrm{J\,mol^{-1}}$. Below the critical temperature, the
 largest saturation-pressure error is $0.01993$ in $\log_{10}(P/\mathrm{bar})$
 (about $4.7\%$), and the largest latent-heat error is
 $2.35\,\mathrm{kJ\,mol^{-1}}$. These are fit residuals, not boundary jumps. The
@@ -116,8 +118,8 @@ validated high-temperature phase equilibrium.
 
 `photochem_case/run_case.py` regenerates the repaired files and case-specific
 mechanisms, then runs the TOI-1231 b diagnostic with Photochem 0.9.0. The case contains
-its own climate and spectrum inputs. The diagnostic **converged after 1,348 robust
-steps** at model time $1.787\times10^{9}\,\mathrm{s}$, with **zero solver errors**. Its detailed
+its own climate and spectrum inputs. The diagnostic **converged after 1,335 robust
+steps** at model time $1.690\times10^{9}\,\mathrm{s}$, with **zero solver errors**. Its detailed
 record is `photochem_case/photochem_case_run.jsonl`.
 
 This shows that the repaired files work in the previously troublesome integration. It
