@@ -6,3 +6,4 @@ __pycache__
 *.mod
 build
 a.out
+.vscode/photochem_clima_data_and_rate_explorer.code-workspace
