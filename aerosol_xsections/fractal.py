@@ -113,7 +113,7 @@ def fractal_meanfield(wv, k, n, a, df, r, rmon, nprocess=None):
     res = np.array(res)
     return res[:,0], res[:,1], res[:,2]
    
-def compute_frac_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_max, nrad, a, df, rmon, nprocess=None):
+def compute_frac_and_save(filename, metadata, wavelength, m_real, m_imag, r_min, r_max, nrad, a, df, rmon, nprocess=None):
 
     radii = np.logspace(np.log10(r_min),np.log10(r_max),nrad)
     wavelength_nm = wavelength*1e3
@@ -141,4 +141,4 @@ def compute_frac_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_
             w0_all[i,:] = np.interp(wavelength_nm,wavelength_nm[inds1],w0_all[i,inds1])
             g_all[i,:] = np.interp(wavelength_nm,wavelength_nm[inds1],g_all[i,inds1])
 
-    utils.write_file(filename, notes, wavelength_nm, radii, w0_all, qext_all, g_all)
+    utils.write_file(filename, metadata, wavelength_nm, radii, w0_all, qext_all, g_all)

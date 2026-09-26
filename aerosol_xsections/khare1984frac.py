@@ -16,17 +16,16 @@ def main():
     rmon = 0.05
     nprocess = 4
     filename = 'khare1984frac.h5'
-    notes = """Optical properties for hydrocarbon aerosols using the Khare et al. (1984) indices of
-refraction, and the Wolf et al. (2010) fractal meanfield scattering code. I use a packing coefficient
-of 1, a fractal dimension of 2, and monomer radius of 50 nm.
-
-wavelengths: Wavelength [nm]
-radii: Particle radii [um]
-w0: Single scattering albedo [unitless], dimensions (len(radii),len(wavelengths))
-qext: Extinction [1/particle], dimensions (len(radii),len(wavelengths))
-g0: Asymmetry factor [unitless], dimensions (len(radii),len(wavelengths))
-"""
-    fractal.compute_frac_and_save(filename, notes, wavelength_save, m_real_save, m_imag_save, 
+    metadata = {
+        'description': 'Fractal hydrocarbon aerosol optical properties',
+        'citation': 'Khare et al. (1984) optical constants; Wolf et al. (2010) fractal mean-field model',
+        'packing_coefficient': a,
+        'fractal_dimension': df,
+        'monomer_radius_um': rmon,
+        'source_wavelength_min_um': float(wavelength.min()),
+        'source_wavelength_max_um': float(wavelength.max()),
+    }
+    fractal.compute_frac_and_save(filename, metadata, wavelength_save, m_real_save, m_imag_save,
                                   r_min, r_max, nrad, 
                                   a, df, rmon, nprocess)
 

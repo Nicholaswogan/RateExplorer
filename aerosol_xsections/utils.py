@@ -3,34 +3,41 @@ import numpy as np
 import miepython
 import matplotlib.pyplot as plt
 
-def write_file(filename, notes, wavelengths, radii, w0, qext, g0):
+def write_file(filename, metadata, wavelengths, radii, w0, qext, g0):
 
+    compression = {"compression": "gzip", "compression_opts": 4, "shuffle": True}
     with h5py.File('results/'+filename,'w') as f:
+        for key, value in metadata.items():
+            f.attrs[key] = value
 
-        dset = f.create_dataset("notes",(),dtype="S1000")
-        dset[()] = '{:1000}'.format(notes).encode()
-
-        dset = f.create_dataset("wavelengths", wavelengths.shape, 'f')
+        dset = f.create_dataset("wavelengths", wavelengths.shape, 'f', **compression)
         dset[:] = wavelengths
+        dset.attrs["units"] = "nm"
+        dset.attrs["long_name"] = "Wavelength"
 
-        dset = f.create_dataset("radii", radii.shape, 'f')
+        dset = f.create_dataset("radii", radii.shape, 'f', **compression)
         dset[:] = radii
+        dset.attrs["units"] = "um"
+        dset.attrs["long_name"] = "Particle radius"
 
-        dset = f.create_dataset("w0", w0.T.shape, 'f')
-        dset[:] = w0.T
+        for name, values, long_name in (
+            ("w0", w0, "single scattering albedo"),
+            ("qext", qext, "extinction efficiency"),
+            ("g0", g0, "asymmetry factor"),
+        ):
+            dset = f.create_dataset(name, values.T.shape, 'f', **compression)
+            dset[:] = values.T
+            dset.attrs["units"] = "1"
+            dset.attrs["long_name"] = long_name
+            dset.attrs["axis_0"] = "wavelengths"
+            dset.attrs["axis_1"] = "radii"
 
-        dset = f.create_dataset("qext", qext.T.shape, 'f')
-        dset[:] = qext.T
-
-        dset = f.create_dataset("g0", g0.T.shape, 'f')
-        dset[:] = g0.T
-
-def compute_mie_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_max, nrad, delete_fringe=True):
+def compute_mie_and_save(filename, metadata, wavelength, m_real, m_imag, r_min, r_max, nrad, delete_fringe=True):
 
     radii, rup = get_r_grid_w_max(r_min, r_max, nrad)
     wavelength_nm = wavelength*1e3
 
-    assert nrad == 50
+    # assert nrad == 50
     nw = len(wavelength)
 
     w0_all = np.zeros((nrad,nw),np.float64)
@@ -51,7 +58,7 @@ def compute_mie_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_m
         for j in range(6):
             x = 2 * np.pi * rr / wavelength
             m = m_real - 1j*m_imag
-            qext, qsca, qback, g = miepython.mie(m, x)
+            qext, qsca, qback, g = miepython.efficiencies_mx(m, x)
             w0 = qsca/qext
             
             w0_all[i,:] += w0/6
@@ -64,7 +71,7 @@ def compute_mie_and_save(filename, notes, wavelength, m_real, m_imag, r_min, r_m
                 g_all[i,:] *= 6
                 break
 
-    write_file(filename, notes, wavelength_nm, radii, w0_all, qext_all, g_all)
+    write_file(filename, metadata, wavelength_nm, radii, w0_all, qext_all, g_all)
 
 def get_r_grid_w_max(r_min, r_max, n_radii):
     """
@@ -112,4 +119,3 @@ def save_plot(filename, radius):
     
     plt.subplots_adjust(wspace=0.3)
     plt.savefig('figures/'+filename.strip('.h5')+'_%.4f.pdf'%(radii[ind]),bbox_inches='tight')
-
